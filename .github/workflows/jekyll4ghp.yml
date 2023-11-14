@@ -1,4 +1,4 @@
-name: Jekyll Deploy
+name: Jekyll (v4) Deploy 
 
 on:
   push:
