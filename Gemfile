@@ -1,6 +1,7 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.2"
-gem "webrick", "~> 1.7"
+# to publish on github page
+gem 'github-pages', group: :jekyll_plugins
+
+# to publich without github page
+#gem "jekyll"
