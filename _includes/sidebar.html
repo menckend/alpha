@@ -1,0 +1,84 @@
+{% comment %}
+lvl1 = topnav button name (e.g. "articles" or "books")
+lvl2 = sidebar name (same as topnav dropdown list entry, (e.g. "book 1" or "article 2")
+lvl3 = 1st level of entries in sidebar  (eg section or chapter)
+lvl4 = 2nd level of entries in sidebar  (eg chapter or page )
+lvl5 = 3rd level of entries in sidebar  (e.g  page or sub-page)
+{% endcomment %}
+
+<div class="medianav">
+{% include social_media_icons.html %}
+</div>
+{% comment %} <div class="mydocsidebar"> {% endcomment %}
+{% unless page.url contains 'index.html' %}
+   <div class="mencknav">
+         {% comment %} Get a list of all pages with l1/l2 index values that match *this* page.  (these are *all* the pages that should be in the sidebar)  {% endcomment %}
+         {% assign ourpages = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx %}
+         {% assign heycount = -1 | plus: 0 %}
+         {% for heynong in ourpages %}
+            {% assign heycount = heycount | plus: 1 %}
+            {% unless heynong.l3idx%}
+               {% assign progenitor = ourpages[heycount] %}
+               {% assign sbtitle = heynong.title %}
+               {% assign sburl = heynong.url %}
+            {% endunless %}
+         {% endfor %}       
+         <div class="productTitle" style="padding-top: 32px;"><p><a title="{{sbtitle}}" href="{{sburl | remove: '/'}}">{{sbtitle}}</a></p></div>
+      {% endunless %}
+      {% unless page.url contains 'index.html' %}
+            {% comment %} Get a list of all pages with l1/l2 index values that match *this* page (other than the l1 and l2 apex pages).  (these are *all* the pages that should be in the sidebar)  {% endcomment %}
+            {% assign scourpages = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx | where_exp: 'page', 'page.l3idx' %}
+            {% comment %} start building the tree if there *are* any other pages that match *this* page's l1|2 index values. {% endcomment %}
+            {% if ourpages.size > 0 %}
+               {% comment %} Get a list of all the unique/sorted l3 indices from sbpages {% endcomment %}
+               {% assign ourl3idxes = scourpages | where_exp: 'page', 'page.l4idx == nil' | sort: 'l3idx' | map: 'l3idx' | compat | uniq %}
+               {% comment %} Loop through all the unique L3 indices and create the first level entries in the sidebar menu {% endcomment %}
+               {% if ourl3idxes.size > 0 %}
+                  {% for l3ix in ourl3idxes %}
+                     {% comment %} Get a list of all the pages with *current* L3 index {% endcomment %}
+                     {% assign myl3pages = scourpages | where: 'l3idx', l3ix | sort: 'l3idx' %}
+                     {% comment %} set variables for the l3name and url value that corresponds to the l3index value of the current iteration of the loop {% endcomment %}
+                     {% assign myl3name = myl3pages | where_exp: 'page', 'page.l4idx == nil' | map: 'title' | compact | uniq %}
+                     {% assign myl3url = myl3pages | where_exp: 'page', 'page.l4idx == nil' | map: 'url' | array_to_sentence_string %}
+                     {% comment %} Get all the unique L4 indices in pages with *current* L3 index {% endcomment %}
+                     {% assign myl4idxes = myl3pages | where_exp: 'page', 'page.l5idx == nil' | sort: 'l4idx' | map: 'l4idx' | compact | uniq %}
+                     {% comment %} Testing to see if the current l3 index has any l4 children. {% endcomment %}
+                     {% if myl4idxes.size > 0 %}
+                        <details class="sbdeet" {% if page.l3idx == l3ix%}open{%endif%}><summary><a title="{{myl3name}}" href="{{myl3url | remove: '/'}}">{{myl3name}}</a></summary>
+                           {% for l4ix in myl4idxes %}
+                              {% comment %} Get a list of all the pages with *current* L4 index {% endcomment %}
+                              {% assign myl4pages = myl3pages | where: 'l4idx', l4ix %}
+                              {% assign myl4name = myl4pages | where_exp: 'page', 'page.l5idx == nil' | map: 'title' | compact | uniq %}
+                              {% assign myl4url  = myl4pages | where_exp: 'page', 'page.l5idx == nil' | map: 'url' | array_to_sentence_string %}
+                              {% comment %} Get all the unique L5 indices in pages with *current* L3&L4 index {% endcomment %}
+                              {% assign myl5idxes = myl4pages | where_exp: 'page', 'page.l6idx == nil' | map: 'l5idx' | compact | uniq %}
+                              {% if myl5idxes.size > 0 %}
+                                 <details class="sbdeet deet4" {% if page.l4idx == l4ix and page.l3idx == l3ix %} open{%endif%}><summary><a title="{{myl4name}}" href="{{myl4url | remove: '/'}}">{{myl4name}}</a></summary>
+                                    {% for l5ix in myl5idxes %}
+                                       {% assign myl5name = myl4pages | where: 'l5idx', l5ix | where_exp: 'page', 'page.l6idx == nil' | map: 'title' | compact | uniq %}
+                                       {% assign myl5url = myl4pages | where: 'l5idx', l5ix | where_exp: 'page', 'page.l6idx == nil' | map: 'url' | compact | uniq %}
+                                       <p class="l5item{% if page.l5idx == l5ix and page.l4idx == l4ix and page.l3idx == l3ix %}active{%endif%}"><a title="{{myl5name}}" href="{{myl5url[0] | remove: '/'}}">{{myl5name}}</a></p>
+                                    {% endfor %}
+                                 </details>
+                              {% else %}
+                                 <p class="l4item{% if page.l4idx == l4ix and page.l3idx == l3ix %}active{% endif %}"><a title="{{myl4name}}" href="{{myl4url | remove: '/'}}">{{myl4name}}</a></p>
+                              {% endif %}
+                           {% endfor %}
+                        </details>
+                     {% else %}
+                        <p class="l3item{% if page.l3idx == l3ix %}active{% endif %}"><a title=" {{myl3name}}" href="{{myl3url | remove: '/'}}">{{myl3name}}</a></p>
+                     {% endif %}
+                  {% endfor %}
+               {% else %}
+                  <p> Nothing here yet; check back later</p>
+               {% endif %}
+            {% else %}
+               <p> Nothing here yet; check back later</p>
+            {% endif %}   
+   </div>
+   <div class="mencknav">
+      {% include in-page-nav-buttons.html %}
+   </div>
+{% endunless %}
+
+{% comment %} </div> {% endcomment %}

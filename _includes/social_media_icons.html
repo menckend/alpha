@@ -1,0 +1,11 @@
+{% if site.data.social_media %}
+
+    {% assign sm = site.data.social_media %}
+    {% for entry in sm %}
+        {% assign key = entry | first %}
+        {% if sm[key].id %}
+<!--            <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 512 512"><a href="{{ sm[key].href }}{{ sm[key].id }}" title="{{ sm[key].title }}"><path style="fill: {{sm[key].fa-color}}" {{sm[key].fa-icon}}</a></svg> -->
+                <svg xmlns="http://www.w3.org/2000/svg" height="2.5em" viewBox="0 0 512 512"><a href="{{ sm[key].href }}{{ sm[key].id }}" title="{{ sm[key].title }}"><path style="fill: #347DBE" {{sm[key].fa-icon}}</a></svg>
+        {% endif %}
+    {% endfor %}
+{% endif %}

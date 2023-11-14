@@ -1,0 +1,100 @@
+<!--   In-page page-navigation buttons  -->
+{% unless page.pagenav == false %}
+  <!-- Create previous/next in-page navigation buttons. -->
+  <!-- Figure out what the terminal-index-level of the current page is (as "mylevel") -->
+  {% for i in (1..10) %}
+    {% assign lvlvar = "l" | append: i | append: "idx" %}
+    {% if page[lvlvar] %}
+      {% assign myidx = page[lvlvar] %}
+      {% assign mylvl = forloop.index %}
+    {% endif %}
+  {% endfor %}
+  {% assign lvlvar = "l" | append: mylvl | append: "idx" %}
+  {% assign mylvl-int = mylvl | to_i %}
+  {% assign myidx-int = myidx | to_i %}
+  {% assign parentlvl = '' | plus: 0 %}
+  {% assign parentlvl = mylvl-int | minus: 1 %}
+  {% assign nextlvl = mylvl-int | plus: 1 %}
+  <!-- <p> myidx: {{myidx-int}}.   mylvl: {{mylvl}}.  parentlvl: {{parentlvl}} </p>  -->
+  <!--  Create collection of "adjacent" pages to this one. -->  
+  {% assign ngbr_pgs = '' | split: ',' %}
+  {% assign ngbr_urls = '' | split: ',' %}
+  {% assign ngbr_idxes = '' | split: ',' %}
+  <!-- Loop through all the pages in the site -->
+  {% for cpg in site.pages %}
+    <!-- Start by assuming that each page in site.pages *is* a neighbor page for the current page -->
+    {% assign goodpage = 'true' %}
+    <!-- Loop through the page-hierarchy levls from 1 up to the parent-level of the active page -->
+    {% for i in (1..parentlvl) %}
+      {% if goodpage == 'true' %}
+        {% assign cmpvar = 'l' | append: i | append: 'idx' %}
+        {% if cpg[cmpvar] %}
+          {% if cpg[cmpvar] != page[cmpvar] %}
+            <!-- Mark the looped page as "not a neighbor", because one of the higher-levels in the hierarchy has a different value than the active page -->
+            {% assign goodpage = 'false' %}
+          {% endif %}
+        {% else %}
+          <!-- Mark the looped page as "not a neighbor", because it doesn't even *have* an index for for one higher levels in the hierarchy.  -->
+        {% assign goodpage = 'false'%}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    <!-- Loop through the page-hierarchy levls from the active-page's child-level to the deepest level (10, for now) -->
+    {% for k in (nextlvl..10) %}
+      {% if goodpage == 'true' %}
+        {% assign cmpvar = 'l' | append: k | append: 'idx' %}
+        {% if cpg[cmpvar] %}
+          {% assign goodpage = 'false' %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    {% if goodpage == 'true' %}
+      {% assign mystr = 'l' | append: mylvl | append: 'idx' %}
+      {% assign myval = page[mystr] %}
+      {% assign yourval = cpg[mystr] %}
+      {% if myval == yourval %}
+        {% assign goodpage = 'false' %}
+      {% endif %}
+    {% endif %}
+    <!-- mark the "parent-page"  of the current page as "not a neighbor"  -->
+    {% if goodpage == 'true' %}
+      {% assign str_aa = 'l' | append: parentlvl | append: 'idx' %}
+      {% assign str_bb = 'l' | append: mylvl | append: 'idx' %}
+      {% if cpg[str_aa] %}
+        {% unless cpg[str_bb] %}
+          {% assign goodpage = 'false' %}
+        {% endunless %}
+      {% endif %}
+    {% endif%}
+    {% if goodpage == 'true' %}
+      {% assign ngbr_pgs = ngbr_pgs | push: forloop.index0 %}
+      {% assign ngbr_urls = ngbr_urls | push: cpg.url %}
+      {% assign ngbr_idxes = ngbr_idxes | push: cpg[str_bb] %}
+    {% endif %}
+  {% endfor %}
+
+  <!-- Figure out the previous and next pages' site.pages' URLs, for use in the navigation buttons -->
+  {% assign ngct = ngbr_pgs | size | minus: 1 %}
+
+  {% assign lvlvar = "l" | append: mylvl | append: "idx" %}
+  {% assign prvidx = myidx | minus: 1 %}
+  {% assign nxtidx = myidx | plus: 1 %}
+
+  {% for xray in (0..ngct) %}
+    {% if ngbr_idxes[forloop.index0] == prvidx %}
+      {% assign prvurl = ngbr_urls[forloop.index0] %}
+    {% endif %}
+    {% if ngbr_idxes[forloop.index0] == nxtidx %}
+      {% assign nxturl = ngbr_urls[forloop.index0] %}
+    {% endif %}
+  {% endfor %}
+
+<p>
+  <div class="seriesContext" style="padding-bottom: 8px; padding-left: 8px; padding-right: 8px;">
+    <a href="{{ prvurl | remove: '/'}}"><button type="button" class="btn" style="float: left; border-style:solid; border-color: #dcdcdc; padding-left: 8px;">Previous Page </button></a>
+    <a href="{{ nxturl | remove: '/'}}"><button type="button" class="btn" style="float: right; border-style:solid; border-color: #dcdcdc; padding-right: 8px;">Next Page </button></a>
+  </div>
+</p>
+{% endunless %}
+
+<!--   End of in-page page-navigation buttons  -->
