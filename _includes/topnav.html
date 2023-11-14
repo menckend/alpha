@@ -1,6 +1,6 @@
 <!-- Navigation -->
 
-<nav class="navbar navbar-expand-lg navbar-inverse navbar-static-top">
+<nav class="navbar navbar-expand-lg navbar-inverse navbar-static-top"  style="background-color:#347DBE; color: whitesmoke;">
     <div class="container-fluid topnavlinks">
         <a class="fa fa-4x navbar-brand; style="display: inline-block; vertical-align: top;" href="index.html"><img style="height: 50px; overflow: visible; display: inline-block; vertical-align: top;" src="images/menckenania-logo.drawio.svg"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +21,7 @@
                     {% assign thisl1name = myl1pages | where_exp: 'page', 'page.l2idx == nil' | map: 'title' | compact | uniq %}
                     {% assign thisl1url = myl1pages | where_exp: 'page', 'page.l2idx == nil' | map: 'url' %}
                     {% comment %} Building a dropdown button for each unique l1idx value in our pages  {% endcomment %}
-                    <li class="nav-item dropdown" style="background-color:#347DBE;">
+                    <li class="nav-item dropdown">
                         {% comment %} Giving the dropdown button the same name as this("my") l1name {% endcomment %}
                         <a class="nav-link dropdown-toggle" href="{{thisl1url[0] | remove: "/"}}" style="color: whitesmoke;" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ thisl1name }}</a>
                         {% comment %} Starting the list of entries to go under this menu {% endcomment %}
