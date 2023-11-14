@@ -58,9 +58,6 @@ GEM
     unicode-display_width (1.8.0)
     webrick (1.7.0)
 
-PLATFORMS
-  x86_64-darwin-21
-
 DEPENDENCIES
   jekyll (~> 4.2)
   webrick (~> 1.7)
