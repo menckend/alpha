@@ -12,8 +12,8 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 {% comment %} toggle sidebar button {% endcomment %}
-                <li><a href="#" data-bs-target="#sidebar" data-bs-toggle="collapse" class="border rounded-3 p-1 text-decoration-none"><i class="bi bi-list bi-lg py-2 p-1"></i> Menu</a>
-                {% comment %} entries with drop-downs appear here {% endcomment %}
+                <li><a href="#" data-bs-target="#sidebar" data-bs-toggle="collapse" class="border rounded-3 p-1 text-decoration-none"><i class="bi bi-list bi-lg py-2 p-1"></i> Toggle sidebar</a>
+                    {% comment %} entries with drop-downs appear here {% endcomment %}
                 {% comment %} Get an array of all the unique "l1idx" values in all the pages on the site  {% endcomment %}
                 {% assign l1idxes = site.pages | where_exp: 'page', 'page.l2idx == nil' | sort: '11idx' | map: 'l1idx' | compact | uniq %}
                 {% comment %} Loop through the unique l1idx values {% endcomment %}
