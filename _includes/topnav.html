@@ -7,6 +7,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 {% comment %} toggle sidebar button {% endcomment %}
@@ -24,9 +25,9 @@
                     {% comment %} Building a dropdown button for each unique l1idx value in our pages  {% endcomment %}
                     <li class="nav-item dropdown">
                         {% comment %} Giving the dropdown button the same name as this("my") l1name {% endcomment %}
-                        <a class="nav-link dropdown-toggle" href="{{thisl1url[0] | remove: "/"}}" style="color: whitesmoke;" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ thisl1name }}</a>
+                        <a class="nav-link dropdown-toggle" href="{{thisl1url[0] | remove: "/"}}" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ thisl1name }}</a>
                         {% comment %} Starting the list of entries to go under this menu {% endcomment %}
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:#347DBE; border-style: solid; border-radius: 5px; border-width: 1;" >
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             {% comment %} Get list of unique l2idx values from pages with the current l1ix value {% endcomment %}
                             {% assign l2idxes = myl1pages | sort: 'l2idx' | map: 'l2idx' | compact | uniq %}
                             {% comment %} Loop through the l2idxes to build the entries in the dropdown menu {% endcomment %}
@@ -34,7 +35,7 @@
                                 {% assign myl2pages = myl1pages | where: 'l2idx', l2ix | sort: 'l2idx' | compact | uniq %}
                                 {% assign myl2name = myl2pages | where_exp: 'page', 'page.l3idx == nil' | sort: 'l2idx' | map: 'title' | compact | uniq %}
                                 {% assign myl2url = myl2pages | where_exp: 'page', 'page.l3idx == nil' | sort: 'l2idx'| map: 'url' %}
-                                <li class="dropdownItem" style="background: none; border-style: none;"><a style="color: whitesmoke; background: none; border-style: none;" href="{{myl2url[0] | remove: "/"}}">{{ myl2name }}</a></li>
+                                <li class="dropdownItem" style="background: none; border-style: none;"><a  href="{{myl2url[0] | remove: "/"}}">{{ myl2name }}</a></li>
                             {% endfor %}
                         </ul>
                     </li>
