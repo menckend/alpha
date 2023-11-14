@@ -6,6 +6,10 @@ lvl4 = 2nd level of entries in sidebar  (eg chapter or page )
 lvl5 = 3rd level of entries in sidebar  (e.g  page or sub-page)
 {% endcomment %}
 
+
+
+<div id="sidebar-nav" class="list-group border-0 rounded-0 text-sm-start min-vh-100"></div>
+
 <div class="medianav">
 {% include social_media_icons.html %}
 </div>
@@ -79,6 +83,7 @@ lvl5 = 3rd level of entries in sidebar  (e.g  page or sub-page)
    <div class="mencknav">
       {% include in-page-nav-buttons.html %}
    </div>
-{% endunless %}
+</div>
+   {% endunless %}
 
 {% comment %} </div> {% endcomment %}
