@@ -1,51 +1,64 @@
 <!-- Navigation -->
 
+
+
+
 <nav class="navbar navbar-expand-lg navbar-inverse navbar-static-top"  style="background-color:#347DBE; color: whitesmoke;">
     <div class="container-fluid topnavlinks">
-        <a class="navbar-brand" href="index.html"><img class="navbar-brand" style="height: 75px; padding-top: 0px" src="images/menckenania-logo.drawio.svg"></a>
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle top-nav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="row">
+            <div class="column">
+                <a class="navbar-brand" href="index.html"><img class="navbar-brand" style="height: 75px; padding-top: 0px" src="images/menckenania-logo.drawio.svg"></a>
+            </div>
+            <div class="column">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle top-nav">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
 
-        {% comment %} toggle sidebar button {% endcomment %}
-        <div class="form-check form-switch" data-bs-target="#sidebar" data-bs-toggle="collapse" class="bi-toggle-off" style="border-color: whitesmoke; border-style: solid; border-radius: 5px;">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-            <label class="form-check-label" for="flexSwitchCheckDefault">Side-bar</label>
-          </div>
+            <div class="column">
+                {% comment %} toggle sidebar button {% endcomment %}
+                <div class="form-check form-switch" data-bs-target="#sidebar" data-bs-toggle="collapse" class="bi-toggle-off" style="border-color: whitesmoke; border-style: solid; border-radius: 5px;">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Side-bar</label>
+                </div>
+            </div>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="column">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    {% comment %} Get an array of all the unique "l1idx" values in all the pages on the site  {% endcomment %}
+                    {% assign l1idxes = site.pages | where_exp: 'page', 'page.l2idx == nil' | sort: '11idx' | map: 'l1idx' | compact | uniq %}
+                    {% comment %} Loop through the unique l1idx values {% endcomment %}
+                    {% for l1ix in l1idxes %}
+                        {% comment %} Get all pages with this ("my") l1idx value {% endcomment %}
+                        {% assign myl1pages = site.pages | where: 'l1idx', l1ix | sort: 'l1idx' | compact %}
+                        {% comment %} Get l1name value that corresponds to the this("my") l1idx value {% endcomment %}
+                        {% assign thisl1name = myl1pages | where_exp: 'page', 'page.l2idx == nil' | map: 'title' | compact | uniq %}
+                        {% assign thisl1url = myl1pages | where_exp: 'page', 'page.l2idx == nil' | map: 'url' %}
+                        {% comment %} Building a dropdown button for each unique l1idx value in our pages  {% endcomment %}
+                        <li class="nav-item dropdown">
+                            {% comment %} Giving the dropdown button the same name as this("my") l1name {% endcomment %}
+                            <a class="nav-link dropdown-toggle" href="{{thisl1url[0] | remove: "/"}}" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ thisl1name }}</a>
+                            {% comment %} Starting the list of entries to go under this menu {% endcomment %}
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                {% comment %} Get list of unique l2idx values from pages with the current l1ix value {% endcomment %}
+                                {% assign l2idxes = myl1pages | sort: 'l2idx' | map: 'l2idx' | compact | uniq %}
+                                {% comment %} Loop through the l2idxes to build the entries in the dropdown menu {% endcomment %}
+                                {% for l2ix in l2idxes %}
+                                    {% assign myl2pages = myl1pages | where: 'l2idx', l2ix | sort: 'l2idx' | compact | uniq %}
+                                    {% assign myl2name = myl2pages | where_exp: 'page', 'page.l3idx == nil' | sort: 'l2idx' | map: 'title' | compact | uniq %}
+                                    {% assign myl2url = myl2pages | where_exp: 'page', 'page.l3idx == nil' | sort: 'l2idx'| map: 'url' %}
+                                    <li class="dropdownItem" style="background: none; border-style: none;"><a  href="{{myl2url[0] | remove: "/"}}">{{ myl2name }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% endfor %}
+                    </ul>
+                </div>
+            </div>
 
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                {% comment %} Get an array of all the unique "l1idx" values in all the pages on the site  {% endcomment %}
-                {% assign l1idxes = site.pages | where_exp: 'page', 'page.l2idx == nil' | sort: '11idx' | map: 'l1idx' | compact | uniq %}
-                {% comment %} Loop through the unique l1idx values {% endcomment %}
-                {% for l1ix in l1idxes %}
-                    {% comment %} Get all pages with this ("my") l1idx value {% endcomment %}
-                    {% assign myl1pages = site.pages | where: 'l1idx', l1ix | sort: 'l1idx' | compact %}
-                    {% comment %} Get l1name value that corresponds to the this("my") l1idx value {% endcomment %}
-                    {% assign thisl1name = myl1pages | where_exp: 'page', 'page.l2idx == nil' | map: 'title' | compact | uniq %}
-                    {% assign thisl1url = myl1pages | where_exp: 'page', 'page.l2idx == nil' | map: 'url' %}
-                    {% comment %} Building a dropdown button for each unique l1idx value in our pages  {% endcomment %}
-                    <li class="nav-item dropdown">
-                        {% comment %} Giving the dropdown button the same name as this("my") l1name {% endcomment %}
-                        <a class="nav-link dropdown-toggle" href="{{thisl1url[0] | remove: "/"}}" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ thisl1name }}</a>
-                        {% comment %} Starting the list of entries to go under this menu {% endcomment %}
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            {% comment %} Get list of unique l2idx values from pages with the current l1ix value {% endcomment %}
-                            {% assign l2idxes = myl1pages | sort: 'l2idx' | map: 'l2idx' | compact | uniq %}
-                            {% comment %} Loop through the l2idxes to build the entries in the dropdown menu {% endcomment %}
-                            {% for l2ix in l2idxes %}
-                                {% assign myl2pages = myl1pages | where: 'l2idx', l2ix | sort: 'l2idx' | compact | uniq %}
-                                {% assign myl2name = myl2pages | where_exp: 'page', 'page.l3idx == nil' | sort: 'l2idx' | map: 'title' | compact | uniq %}
-                                {% assign myl2url = myl2pages | where_exp: 'page', 'page.l3idx == nil' | sort: 'l2idx'| map: 'url' %}
-                                <li class="dropdownItem" style="background: none; border-style: none;"><a  href="{{myl2url[0] | remove: "/"}}">{{ myl2name }}</a></li>
-                            {% endfor %}
-                        </ul>
-                    </li>
-                {% endfor %}
-            </ul>
-            <form class="d-flex">
+
+                <form class="d-flex">
                 <input id="search-input" class="form-control me-2" type="search" placeholder="{{site.data.strings.search_placeholder_text}}" aria-label="Search">
                 <ul id="results-container"></ul>
                 <script src="{{ "js/jekyll-search.js"}}" type="text/javascript"></script>
@@ -67,6 +80,7 @@
 
 
 
+        </div>
     </div>
         <!-- /.container -->
 </nav>
