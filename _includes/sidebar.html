@@ -6,10 +6,13 @@ lvl4 = 2nd level of entries in sidebar  (eg chapter or page )
 lvl5 = 3rd level of entries in sidebar  (e.g  page or sub-page)
 {% endcomment %}
 
-<div class="col-auto px-0">
-   <div id="sidebar" class="collapse collapse-horizontal show border-end">
+<div class="col">
+   <div id="sidebar" class="collapse collapse-horizontal show border-end" style="padding-left: 16px">
+
       <div id="sidebar-nav" class="list-group border-0 rounded-0 text-sm-start min-vh-100"  style="background-color: whitesmoke;">
+
          {% include social_media_icons.html %}
+
          {% comment %} Get a list of all pages with l1/l2 index values that match *this* page.  (these are *all* the pages that should be in the sidebar)  {% endcomment %}
          {% assign ourpages = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx %}
          {% assign heycount = -1 | plus: 0 %}
