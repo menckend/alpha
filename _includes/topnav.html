@@ -8,11 +8,13 @@
         <div class="col">
             <a class="navbar-brand" href="index.html"><img class="navbar-brand" style="height: 75px; padding-top: 0px" src="images/menckenania-logo.drawio.svg"></a>
         </div>
+
         <div class="col">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle top-nav">
             <span class="navbar-toggler-icon"></span>
             </button>
         </div>
+
         <div class="col">
             {% comment %} toggle sidebar button {% endcomment %}
             <div class="form-check form-switch" data-bs-target="#sidebar" data-bs-toggle="collapse" class="bi-toggle-off" style="border-color: whitesmoke; border-style: solid; border-radius: 5px;">
@@ -20,6 +22,7 @@
                 <label class="form-check-label" for="flexSwitchCheckDefault">Side-bar</label>
             </div>
         </div>
+
         <div class="col justify-content-around>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -53,6 +56,7 @@
                 </ul>
             </div>
         </div>
+
         <div class="col-1 justify-content-right ">
             <form>
                 <input id="search-input" class="form-control me-2" type="search" placeholder="{{site.data.strings.search_placeholder_text}}" aria-label="Search">
@@ -69,10 +73,10 @@
                             fuzzy: true,
                         })
                         </script>
-                <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
         </div>
-    </div>
-</nav>
 
-{% comment %} Copyright 2021 Google LLC {% endcomment %}
+
+    </div>
+
+</nav>
