@@ -4,27 +4,21 @@
 	{% include head.html %}
 
     <body>
-        <div class="skippy visually-hidden-focusable overflow-hidden">
-            <div class="container-xl">
-                <a class="d-inline-flex p-2 m-1" href="#content">Skip to main content</a>
-                <a class="d-none d-md-inline-flex p-2 m-1" href="#bd-docs-nav">Skip to docs navigation</a>
-            </div>
-        </div>
-
         {% include newtemplate-header.html %}
 
-        <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
+        <div class="container-fluid">
+            <div class="row flex-nowrap">
 
-            {% include new-sidebar.html %}
+                {% include new-sidebar.html %}
 
-            <main class="bd-main order-1">
+                <main class="bd-main order-1">
 
-                {% include new-intro.html %}
-                {% include new-page-toc.html %}
-                {% include new-page-content.html %}
+                    {% include new-intro.html %}
+                    {% include new-page-toc.html %}
+                    {% include new-page-content.html %}
 
-            </main>
-
+                </main>
+            </div>
         </div>
 
     </body>
