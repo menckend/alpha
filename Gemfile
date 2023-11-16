@@ -8,4 +8,5 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 4.2"
 gem "webrick", "~> 1.7"
-gem ‘bootstrap’, ‘~> 5.3’
+gem "bootstrap", "~> 5.3"
+gem "katex", "~> 0.10.0"
