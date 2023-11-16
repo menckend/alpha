@@ -1,115 +1,124 @@
 <div class="bd-content ps-lg-2">
-  <h2 id="direction">
-    Direction 
-    <a class="anchor-link" href="#direction" aria-label="Link to this section: Direction"></a>
-  </h2>
-  <p>Set the direction of flex items in a flex container with direction utilities. In most cases you can omit the horizontal class here as the browser default is <code>row</code>. However, you may encounter situations where you needed to explicitly set this value (like responsive layouts).</p>
-  <p>Use <code>.flex-row</code> to set a horizontal direction (the browser default), or <code>.flex-row-reverse</code> to start the horizontal direction from the opposite side.</p>
-  <div class="bd-example-snippet bd-code-snippet">
-    <div class="bd-example m-0 border-0 bd-example-flex">
-      <div class="d-flex flex-row mb-3">
-        <div class="p-2">Flex item 1</div>
-        <div class="p-2">Flex item 2</div>
-        <div class="p-2">Flex item 3</div>
-      </div>
-      <div class="d-flex flex-row-reverse">
-        <div class="p-2">Flex item 1</div>
-        <div class="p-2">Flex item 2</div>
-        <div class="p-2">Flex item 3</div>
-      </div>
-    </div>
-    <div class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-0 border-top border-bottom">
-      <small class="font-monospace text-body-secondary text-uppercase">html</small>
-      <div class="d-flex ms-auto">
-        <button type="button" class="btn-edit text-nowrap" aria-label="Try it on StackBlitz" data-bs-original-title="Try it on StackBlitz">
-          <svg class="bi" aria-hidden="true"><use xlink:href="#lightning-charge-fill"></use></svg>
-        </button>
-        <button type="button" class="btn-clipboard mt-0 me-0" aria-label="Copy to clipboard" data-bs-original-title="Copy to clipboard">
-          <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
-        </button>
-      </div>
-    </div>
-    <div class="highlight">
-      <pre tabindex="0" class="chroma">
-        <code class="language-html" data-lang="html">
-          <span class="line">
-            <span class="cl">
-              <span class="p">&lt;</span>
-              <span class="nt">div</span> 
-              <span class="na">class</span>
-              <span class="o">=</span>
-              <span class="s">"d-flex flex-row mb-3"</span>
-              <span class="p">&gt;</span>
-            </span>
-          </span>
-          <span class="line">
-            <span class="cl">  
-              <span class="p">&lt;</span>
-              <span class="nt">div</span> 
-              <span class="na">class</span>
-              <span class="o">=</span>
-              <span class="s">"p-2"</span>
-              <span class="p">&gt;</span>
-              Flex item 1
-              <span class="p">&lt;/</span>
-              <span class="nt">div</span>
-              <span class="p">&gt;</span>
-            </span>
-          </span>
-          <span class="line">
-            <span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2"</span><span class="p">&gt;</span>Flex item 2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-            </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2"</span><span class="p">&gt;</span>Flex item 3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-            </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-            </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex flex-row-reverse"</span><span class="p">&gt;</span>
-            </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2"</span><span class="p">&gt;</span>Flex item 1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-            </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2"</span><span class="p">&gt;</span>Flex item 2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-            </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2"</span><span class="p">&gt;</span>Flex item 3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-            </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></span></span>
-        </code>
-      </pre>
-    </div>
-  </div>
+        
 
-  <p>Use <code>.flex-column</code> to set a vertical direction, or <code>.flex-column-reverse</code>  to start the vertical direction from the opposite side.</p>
-  
-  <div class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0 bd-example-flex">
-    <div class="d-flex flex-column mb-3">
-      <div class="p-2">Flex item 1</div>
-      <div class="p-2">Flex item 2</div>
-      <div class="p-2">Flex item 3</div>
-    </div>
-    <div class="d-flex flex-column-reverse">
-      <div class="p-2">Flex item 1</div>
-      <div class="p-2">Flex item 2</div>
-      <div class="p-2">Flex item 3</div>
-    </div>
-  </div>
-  <div class="d-flex align-items-center highlight-toolbar ps-3 pe-2 py-1 border-0 border-top border-bottom">
-    <small class="font-monospace text-body-secondary text-uppercase">html</small>
-    <div class="d-flex ms-auto">
-      <button type="button" class="btn-edit text-nowrap" aria-label="Try it on StackBlitz" data-bs-original-title="Try it on StackBlitz">
-        <svg class="bi" aria-hidden="true"><use xlink:href="#lightning-charge-fill"></use></svg>
-      </button>
-      <button type="button" class="btn-clipboard mt-0 me-0" aria-label="Copy to clipboard" data-bs-original-title="Copy to clipboard">
-        <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
-      </button>
-      </div>
-    </div>
-    <div class="highlight">
-      <pre tabindex="0" class="chroma">
-        <code class="language-html" data-lang="html">
-          <span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex flex-column mb-3"</span><span class="p">&gt;</span>
-          </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2"</span><span class="p">&gt;</span>Flex item 1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-          </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2"</span><span class="p">&gt;</span>Flex item 2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-          </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2"</span><span class="p">&gt;</span>Flex item 3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-          </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-          </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"d-flex flex-column-reverse"</span><span class="p">&gt;</span>
-          </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2"</span><span class="p">&gt;</span>Flex item 1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-          </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2"</span><span class="p">&gt;</span>Flex item 2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-          </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"p-2"</span><span class="p">&gt;</span>Flex item 3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-          </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></span></span>
-        </code>
-      </pre>
-    </div>
-  </div>
+  <h2 id="quick-start">Quick start <a class="anchor-link" href="#quick-start" aria-label="Link to this section: Quick start"></a></h2>
+<p>Get started by including Bootstrap’s production-ready CSS and JavaScript via CDN without the need for any build steps. See it in practice with this <a href="https://codepen.io/team/bootstrap/pen/qBamdLj">Bootstrap CodePen demo</a>.</p>
+<br>
+<ol>
+<li>
+<p><strong>Create a new <code>index.html</code> file in your project root.</strong> Include the <code>&lt;meta name="viewport"&gt;</code> tag as well for <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag">proper responsive behavior</a> in mobile devices.</p>
+<div class="bd-code-snippet">  <div class="bd-clipboard">    <button type="button" class="btn-clipboard">      <svg class="bi" role="img" aria-label="Copy"><use xlink:href="#clipboard"></use></svg>    </button>  </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!doctype html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"viewport"</span> <span class="na">content</span><span class="o">=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Bootstrap demo<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></div></div></li>
+<li>
+<p><strong>Include Bootstrap’s CSS and JS.</strong> Place the <code>&lt;link&gt;</code> tag in the <code>&lt;head&gt;</code> for our CSS, and the <code>&lt;script&gt;</code> tag for our JavaScript bundle (including Popper for positioning dropdowns, poppers, and tooltips) before the closing <code>&lt;/body&gt;</code>. Learn more about our <a href="#cdn-links">CDN links</a>.</p>
+<div class="bd-code-snippet">  <div class="bd-clipboard">    <button type="button" class="btn-clipboard">      <svg class="bi" role="img" aria-label="Copy"><use xlink:href="#clipboard"></use></svg>    </button>  </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!doctype html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"viewport"</span> <span class="na">content</span><span class="o">=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Bootstrap demo<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span> <span class="na">integrity</span><span class="o">=</span><span class="s">"sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">"anonymous"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"</span> <span class="na">integrity</span><span class="o">=</span><span class="s">"sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">"anonymous"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></div></div><p>You can also include <a href="https://popper.js.org/">Popper</a> and our JS separately. If you don’t plan to use dropdowns, popovers, or tooltips, save some kilobytes by not including Popper.</p>
+<div class="bd-code-snippet">  <div class="bd-clipboard">    <button type="button" class="btn-clipboard">      <svg class="bi" role="img" aria-label="Copy"><use xlink:href="#clipboard"></use></svg>    </button>  </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"</span> <span class="na">integrity</span><span class="o">=</span><span class="s">"sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">"anonymous"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"</span> <span class="na">integrity</span><span class="o">=</span><span class="s">"sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">"anonymous"</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div></div></li>
+<li>
+<p><strong>Hello, world!</strong> Open the page in your browser of choice to see your Bootstrapped page. Now you can start building with Bootstrap by creating your own <a href="/docs/5.3/layout/grid/">layout</a>, adding dozens of <a href="/docs/5.3/components/buttons/">components</a>, and utilizing <a href="/docs/5.3/examples/">our official examples</a>.</p>
+</li>
+</ol>
+<h2 id="cdn-links">CDN links <a class="anchor-link" href="#cdn-links" aria-label="Link to this section: CDN links"></a></h2>
+<p>As reference, here are our primary CDN links.</p>
+<div class="table-responsive"><table class="table">
+<thead>
+<tr>
+<th>Description</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CSS</td>
+<td><code>https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css</code></td>
+</tr>
+<tr>
+<td>JS</td>
+<td><code>https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js</code></td>
+</tr>
+</tbody>
+</table></div>
+
+<p>You can also use the CDN to fetch any of our <a href="/docs/5.3/getting-started/contents/">additional builds listed in the Contents page</a>.</p>
+<h2 id="next-steps">Next steps <a class="anchor-link" href="#next-steps" aria-label="Link to this section: Next steps"></a></h2>
+<ul>
+<li>Read a bit more about some <a href="#important-globals">important global environment settings</a> that Bootstrap utilizes.</li>
+<li>Read about what’s included in Bootstrap in our <a href="/docs/5.3/getting-started/contents/">contents section</a> and the list of <a href="#js-components">components that require JavaScript</a> below.</li>
+<li>Need a little more power? Consider building with Bootstrap by <a href="/docs/5.3/getting-started/download/#package-managers">including the source files via package manager</a>.</li>
+<li>Looking to use Bootstrap as a module with <code>&lt;script type="module"&gt;</code>? Please refer to our <a href="/docs/5.3/getting-started/javascript/#using-bootstrap-as-a-module">using Bootstrap as a module</a> section.</li>
+</ul>
+<h2 id="js-components">JS components <a class="anchor-link" href="#js-components" aria-label="Link to this section: JS components"></a></h2>
+<p>Curious which components explicitly require our JavaScript and Popper? If you’re at all unsure about the general page structure, keep reading for an example page template.</p>
+<ul>
+<li>Alerts for dismissing</li>
+<li>Buttons for toggling states and checkbox/radio functionality</li>
+<li>Carousel for all slide behaviors, controls, and indicators</li>
+<li>Collapse for toggling visibility of content</li>
+<li>Dropdowns for displaying and positioning (also requires <a href="https://popper.js.org/">Popper</a>)</li>
+<li>Modals for displaying, positioning, and scroll behavior</li>
+<li>Navbar for extending our Collapse and Offcanvas plugins to implement responsive behaviors</li>
+<li>Navs with the Tab plugin for toggling content panes</li>
+<li>Offcanvases for displaying, positioning, and scroll behavior</li>
+<li>Scrollspy for scroll behavior and navigation updates</li>
+<li>Toasts for displaying and dismissing</li>
+<li>Tooltips and popovers for displaying and positioning (also requires <a href="https://popper.js.org/">Popper</a>)</li>
+</ul>
+<h2 id="important-globals">Important globals <a class="anchor-link" href="#important-globals" aria-label="Link to this section: Important globals"></a></h2>
+<p>Bootstrap employs a handful of important global styles and settings, all of which are almost exclusively geared towards the <em>normalization</em> of cross browser styles. Let’s dive in.</p>
+<h3 id="html5-doctype">HTML5 doctype <a class="anchor-link" href="#html5-doctype" aria-label="Link to this section: HTML5 doctype"></a></h3>
+<p>Bootstrap requires the use of the HTML5 doctype. Without it, you’ll see some funky and incomplete styling.</p>
+<div class="bd-code-snippet">  <div class="bd-clipboard">    <button type="button" class="btn-clipboard">      <svg class="bi" role="img" aria-label="Copy"><use xlink:href="#clipboard"></use></svg>    </button>  </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!doctype html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  ...
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></div></div><h3 id="viewport-meta">Viewport meta <a class="anchor-link" href="#viewport-meta" aria-label="Link to this section: Viewport meta"></a></h3>
+<p>Bootstrap is developed <em>mobile first</em>, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your <code>&lt;head&gt;</code>.</p>
+<div class="bd-code-snippet">  <div class="bd-clipboard">    <button type="button" class="btn-clipboard">      <svg class="bi" role="img" aria-label="Copy"><use xlink:href="#clipboard"></use></svg>    </button>  </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"viewport"</span> <span class="na">content</span><span class="o">=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="p">&gt;</span>
+</span></span></code></pre></div></div><p>You can see an example of this in action in the <a href="#quick-start">quick start</a>.</p>
+<h3 id="box-sizing">Box-sizing <a class="anchor-link" href="#box-sizing" aria-label="Link to this section: Box-sizing"></a></h3>
+<p>For more straightforward sizing in CSS, we switch the global <code>box-sizing</code> value from <code>content-box</code> to <code>border-box</code>. This ensures <code>padding</code> does not affect the final computed width of an element, but it can cause problems with some third-party software like Google Maps and Google Custom Search Engine.</p>
+<p>On the rare occasion you need to override it, use something like the following:</p>
+<div class="bd-code-snippet">  <div class="bd-clipboard">    <button type="button" class="btn-clipboard">      <svg class="bi" role="img" aria-label="Copy"><use xlink:href="#clipboard"></use></svg>    </button>  </div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">selector-for-some-widget</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">box-sizing</span><span class="p">:</span> <span class="kc">content-box</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></div><p>With the above snippet, nested elements—including generated content via <code>::before</code> and <code>::after</code>—will all inherit the specified <code>box-sizing</code> for that <code>.selector-for-some-widget</code>.</p>
+<p>Learn more about <a href="https://css-tricks.com/box-sizing/">box model and sizing at CSS Tricks</a>.</p>
+<h3 id="reboot">Reboot <a class="anchor-link" href="#reboot" aria-label="Link to this section: Reboot"></a></h3>
+<p>For improved cross-browser rendering, we use <a href="/docs/5.3/content/reboot/">Reboot</a> to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.</p>
+<h2 id="community">Community <a class="anchor-link" href="#community" aria-label="Link to this section: Community"></a></h2>
+<p>Stay up-to-date on the development of Bootstrap and reach out to the community with these helpful resources.</p>
+<ul>
+<li>Read and subscribe to <a href="https://blog.getbootstrap.com/">The Official Bootstrap Blog</a>.</li>
+<li>Ask questions and explore <a href="https://github.com/twbs/bootstrap/discussions">our GitHub Discussions</a>.</li>
+<li>Discuss, ask questions, and more on <a href="https://discord.gg/bZUvakRU3M">the community Discord</a> or <a href="https://reddit.com/r/bootstrap">Bootstrap subreddit</a>.</li>
+<li>Chat with fellow Bootstrappers in IRC. On the <code>irc.libera.chat</code> server, in the <code>#bootstrap</code> channel.</li>
+<li>Implementation help may be found at Stack Overflow (tagged <a href="https://stackoverflow.com/questions/tagged/bootstrap-5"><code>bootstrap-5</code></a>).</li>
+<li>Developers should use the keyword <code>bootstrap</code> on packages that modify or add to the functionality of Bootstrap when distributing through <a href="https://www.npmjs.com/search?q=keywords:bootstrap">npm</a> or similar delivery mechanisms for maximum discoverability.</li>
+</ul>
+<p>You can also follow <a href="https://twitter.com/getbootstrap">@getbootstrap on Twitter</a> for the latest gossip and awesome music videos.</p>
+
 </div>
