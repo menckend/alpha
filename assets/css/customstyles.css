@@ -143,6 +143,25 @@ details.deet4[open] summary:before {
     text-decoration: none;
   }
 
+/* plus */
+details.deet5 summary:before {
+  content: '\f0fe';
+  font-family: '<i class="bi bi-plus-square"></i>';
+  font-size: 14px;
+  padding-right: 8px;
+  text-decoration: none;
+}
+
+/* minus */
+details.deet5[open] summary:before {
+  content: '<i class="bi bi-dash-square"></i>';
+  font-size: 14px;
+  padding-right: 8px;
+  text-decoration: none;
+}
+
+
+
 /* empty square*/
 p.l10item > a:before,
 p.l9item > a:before,
