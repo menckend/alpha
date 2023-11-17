@@ -24,20 +24,6 @@
     --menck-deets-border: whitesmoke;
   }
 
-  #main > div.row > #tg-sb-sidebar {
-    background-color: var(--menck-sb-bg);
-    border-right-color: var(--menck-sb-border);
-    border-right-style: solid;
-}
-
-#main > div.row > #tg-sb-sidebar * {
-    border-style: hidden;
-    background: transparent;
-    color: var(--menck-sb-text);
-}
-
-
-
 
 details.sbdeet {
     overflow: hidden;
