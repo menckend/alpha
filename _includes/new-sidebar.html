@@ -8,10 +8,12 @@
          <nav class="bd-links w-100" id="bd-docs-nav" aria-label="Docs navigation">
             <ul class="bd-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
                <li>
+                  <hr class="d-none d-md-block my-2 ms-3">
                   <div class="medianav">
                      {% include social_media_icons.html %}
                   </div>
                </li>
+               <hr class="d-none d-md-block my-2 ms-3">
                <div class="mencknav container-fluid">
                   {% comment %} Get a list of all pages with l1/l2 index values that match *this* page.  (these are *all* the pages that should be in the sidebar)  {% endcomment %}
                   {% assign ourpages = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx %}
@@ -74,7 +76,10 @@
                   {% else %}
                      <p> Nothing here yet; check back later</p>
                   {% endif %}   
+                  <hr class="d-none d-md-block my-2 ms-3">
+                  <strong class="d-none d-md-block h6 my-2 ms-3">Page flip</strong> 
                   {% include in-page-nav-buttons.html %}
+                  <hr class="d-none d-md-block my-2 ms-3">
                </div>
             </ul>
          </nav>
