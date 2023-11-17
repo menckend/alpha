@@ -222,11 +222,12 @@ div.mencknav {
     color: var(--menck-sb-txt);
     text-decoration: none;
     border-style: none;
-    border-bottom-color: var(--menck-sb-border);
+/*    border-bottom-color: var(--menck-sb-border);
     border-bottom-width: 2px;
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-top-style: none;
+*/
 }
 
 div.mencknav * {
