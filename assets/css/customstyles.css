@@ -30,15 +30,31 @@
 .bd-navbar {
   background-color: var(--menck-tn-bg);
   background-image: none;
-}
+  }
 
 .bd-toc  {
   background-color: var(--menck-sb-bg);
-}
+  color: var(--menck-sb-text)
+  }
 
 .bd-sidebar{
   background-color: var(--menck-sb-bg);
-}
+  color: var(--menck-sb-text)
+  }
+
+.bd-toc * {
+  background-color: transparent;
+  text-decoration: none;
+  color: var(--menck-sb-text)
+    }
+  
+.bd-sidebar *{
+    background-color: transparent;
+    text-decoration: none;
+    color: var(--menck-sb-text)
+    }
+  
+
 
 
 details.sbdeet {
