@@ -1,5 +1,5 @@
 <aside class="bd-sidebar">
-  <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarOffcanvasLabel">
+  <div class="offcanvas-lg offcanvas-start position-sticky" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarOffcanvasLabel">
     <div class="offcanvas-header border-bottom">
       <h5 class="offcanvas-title" id="bdSidebarOffcanvasLabel">Browse docs</h5>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdSidebar"></button>
@@ -14,7 +14,7 @@
 </div>
 </li>
 {% comment %} <div class="mydocsidebar"> {% endcomment %}
-   <div class="mencknav">
+<!--   <div class="mencknav">  -->
          {% comment %} Get a list of all pages with l1/l2 index values that match *this* page.  (these are *all* the pages that should be in the sidebar)  {% endcomment %}
          {% assign ourpages = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx %}
          {% assign heycount = -1 | plus: 0 %}
@@ -26,7 +26,7 @@
                {% assign sburl = heynong.url %}
             {% endunless %}
          {% endfor %}       
-         <div class="productTitle" style="padding-top: 32px;"><p><a title="{{sbtitle}}" href="{{sburl | remove: '/'}}">{{sbtitle}}</a></p></div>
+         <div style="padding-top: 32px;"><p><a title="{{sbtitle}}" href="{{sburl | remove: '/'}}">{{sbtitle}}</a></p></div>
             {% comment %} Get a list of all pages with l1/l2 index values that match *this* page (other than the l1 and l2 apex pages).  (these are *all* the pages that should be in the sidebar)  {% endcomment %}
             {% assign scourpages = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx | where_exp: 'page', 'page.l3idx' %}
             {% comment %} start building the tree if there *are* any other pages that match *this* page's l1|2 index values. {% endcomment %}
@@ -76,10 +76,10 @@
             {% else %}
                <p> Nothing here yet; check back later</p>
             {% endif %}   
-            </div>
-            <div class="mencknav">
+<!--            </div> -->
+<!--            <div class="mencknav"> -->
               {% include in-page-nav-buttons.html %}
-            </div>
+<!--            </div> -->
         </ul>
       </nav>
 
