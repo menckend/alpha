@@ -112,8 +112,7 @@ details summary::-webkit-details-marker {
 
 /* plus */
 details summary:before {
-  content: '\f0fe';
-  font-family: 'FontAwesome';
+  content: '<i class="bi bi-plus-square"></i>';
   font-size: 14px;
   padding-right: 8px;
   text-decoration: none;
@@ -121,8 +120,7 @@ details summary:before {
 
 /* minus */
 details[open] summary:before {
-  content: '\f146';
-  font-family: 'FontAwesome';
+  content: '<i class="bi bi-dash-square"></i>';
   font-size: 14px;
   padding-right: 8px;
   text-decoration: none;
@@ -131,7 +129,7 @@ details[open] summary:before {
 /* plus */
 details.deet4 summary:before {
     content: '\f0fe';
-    font-family: 'FontAwesome';
+    font-family: '<i class="bi bi-plus-square"></i>';
     font-size: 14px;
     padding-right: 8px;
     text-decoration: none;
@@ -139,8 +137,7 @@ details.deet4 summary:before {
 
 /* minus */
 details.deet4[open] summary:before {
-    content: '\f146';
-    font-family: 'FontAwesome';
+    content: '<i class="bi bi-dash-square"></i>';
     font-size: 14px;
     padding-right: 8px;
     text-decoration: none;
