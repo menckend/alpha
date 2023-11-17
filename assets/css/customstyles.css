@@ -12,7 +12,7 @@
     --menck-tn-dd-border: whitesmoke;
     --menck-tn-dd-txt: #347DBE;
     --menck-tn-dd-bg: white;
-    --menck-sb-bg: whitesmoke;
+    --menck-sb-bg: transparent;
     --menck-sb-text: #347DBE;
     --menck-sb-border: #347DBE;
     --menck-summary-bar: #347DBE;
@@ -43,9 +43,10 @@
   }
 
 .bd-toc * {
-  background-color: transparent;
-  text-decoration: none;
-  color: var(--menck-sb-text)
+    background-color: transparent;
+    text-decoration: none;
+    color: var(--menck-sb-text)
+
     }
   
 .bd-sidebar *{
