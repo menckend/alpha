@@ -112,7 +112,8 @@ details summary::-webkit-details-marker {
 
 /* plus */
 details summary:before {
-  content: '<i class="bi bi-plus-square"></i>';
+  content: '/F4FD';
+  font-family: "bootstrap-icons";
   font-size: 14px;
   padding-right: 8px;
   text-decoration: none;
@@ -120,7 +121,8 @@ details summary:before {
 
 /* minus */
 details[open] summary:before {
-  content: '<i class="bi bi-dash-square"></i>';
+  content: '\F2E9';
+  font-family: "bootstrap-icons";
   font-size: 14px;
   padding-right: 8px;
   text-decoration: none;
@@ -128,8 +130,8 @@ details[open] summary:before {
 
 /* plus */
 details.deet4 summary:before {
-    content: '\f0fe';
-    font-family: '<i class="bi bi-plus-square"></i>';
+    content: '/F4FD';
+    font-family: "bootstrap-icons";
     font-size: 14px;
     padding-right: 8px;
     text-decoration: none;
@@ -137,7 +139,8 @@ details.deet4 summary:before {
 
 /* minus */
 details.deet4[open] summary:before {
-    content: '<i class="bi bi-dash-square"></i>';
+    content: '\F2E9';
+    font-family: "bootstrap-icons";    
     font-size: 14px;
     padding-right: 8px;
     text-decoration: none;
@@ -145,8 +148,8 @@ details.deet4[open] summary:before {
 
 /* plus */
 details.deet5 summary:before {
-  content: '\f0fe';
-  font-family: '<i class="bi bi-plus-square"></i>';
+  content: '/F4FD';
+  font-family: "bootstrap-icons";
   font-size: 14px;
   padding-right: 8px;
   text-decoration: none;
@@ -154,13 +157,12 @@ details.deet5 summary:before {
 
 /* minus */
 details.deet5[open] summary:before {
-  content: '<i class="bi bi-dash-square"></i>';
+  content: '\F2E9';
+  font-family: "bootstrap-icons";
   font-size: 14px;
   padding-right: 8px;
   text-decoration: none;
 }
-
-
 
 /* empty square*/
 p.l10item > a:before,
@@ -171,9 +173,8 @@ p.l6item > a:before,
 p.l5item > a:before,
 p.l4item > a:before,
 p.l3item > a:before {
-    content: '\f096';
-    font-family: 'FontAwesome';
-    font-size: 14px;
+    content: '\F584';
+    font-family: "bootstrap-icons";
     padding-right: 8px;
     padding-left: 8px;
     text-decoration: bold;
@@ -188,9 +189,9 @@ p.l6itemactive > a:before,
 p.l5itemactive > a:before,
 p.l4itemactive > a:before,
 p.l3itemactive > a:before {
-    content: '\f0c8';
+    content: '\F582';
+    font-family: "bootstrap-icons";
     font-size: 14px;
-    font-family: 'FontAwesome';
     padding-right: 8px;
     padding-left: 8px;
     text-decoration: none;
