@@ -12,8 +12,7 @@
                      {% include social_media_icons.html %}
                   </div>
                </li>
-               {% comment %} <div class="mydocsidebar"> {% endcomment %}
-               <div class="mencknav">
+               <div class="mencknav container-fluid">
                   {% comment %} Get a list of all pages with l1/l2 index values that match *this* page.  (these are *all* the pages that should be in the sidebar)  {% endcomment %}
                   {% assign ourpages = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx %}
                   {% assign heycount = -1 | plus: 0 %}

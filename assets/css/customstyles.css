@@ -182,19 +182,9 @@ p.l3itemactive > a:before {
 
 /* Try topnav color scheme in sidebar.  */
 div.medianav {
-    background-color: var(--menck-sb-bg) !important;
+    background-color: var(--menck-sb-bg);
     color: var(--menck-sb-txt);
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-right: 8px;
-    padding-left: 8px;
     border-style: none;
-    border-top-color: var(--menck-sb-border);
-    border-bottom-color: var(--menck-sb-border);
-    border-top-width: 2px;
-    border-bottom-width: 2px;
-    border-top-style: solid;
-    border-bottom-style: solid;
     display: flex;
     justify-content: space-evenly;
 }
@@ -208,9 +198,10 @@ div.mencknav {
     color: var(--menck-sb-txt);
     text-decoration: none;
     border-style: none;
+/*
     margin-top: 8px;
     margin-bottom: 8px;
-/*    border-bottom-color: var(--menck-sb-border);
+    border-bottom-color: var(--menck-sb-border);
     border-bottom-width: 2px;
     border-bottom-width: 2px;
     border-bottom-style: solid;
