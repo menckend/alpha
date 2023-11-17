@@ -222,6 +222,8 @@ div.mencknav {
     color: var(--menck-sb-txt);
     text-decoration: none;
     border-style: none;
+    margin-top: 8px;
+    margin-bottom: 8px;
 /*    border-bottom-color: var(--menck-sb-border);
     border-bottom-width: 2px;
     border-bottom-width: 2px;
