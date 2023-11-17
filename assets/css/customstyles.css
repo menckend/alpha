@@ -25,6 +25,11 @@
   }
 
 
+.bd-navbar {
+  background-color: var(--menck-tn-bg);
+
+}
+
 .bd-toc  {
   background-color: var(--menck-sb-bg);
 }
