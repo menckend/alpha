@@ -39,10 +39,6 @@
 
 
 
-
-
-
-
 details.sbdeet {
     overflow: hidden;
     border-collapse: separate;
@@ -112,7 +108,7 @@ details summary::-webkit-details-marker {
 
 /* plus */
 details summary:before {
-  content: '/F4FD';
+  content: '\F4FD';
   font-family: "bootstrap-icons";
   font-size: 14px;
   padding-right: 8px;
@@ -130,7 +126,7 @@ details[open] summary:before {
 
 /* plus */
 details.deet4 summary:before {
-    content: '/F4FD';
+    content: '\F4FD';
     font-family: "bootstrap-icons";
     font-size: 14px;
     padding-right: 8px;
@@ -148,7 +144,7 @@ details.deet4[open] summary:before {
 
 /* plus */
 details.deet5 summary:before {
-  content: '/F4FD';
+  content: '\F4FD';
   font-family: "bootstrap-icons";
   font-size: 14px;
   padding-right: 8px;
