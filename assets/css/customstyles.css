@@ -25,6 +25,15 @@
   }
 
 
+.bd-toc  {
+  background-color: var(--menck-sb-bg);
+}
+
+.bd-sidebar{
+  background-color: var(--menck-sb-bg);
+}
+
+
 details.sbdeet {
     overflow: hidden;
     border-collapse: separate;
