@@ -25,6 +25,11 @@
   }
 
 
+
+  .skippy{background-color:var(--menck-tn-bg)}
+  .skippy a{color:var(--menck-tn-bg)}
+
+
 .bd-navbar {
   background-color: var(--menck-tn-bg);
 
