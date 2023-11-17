@@ -362,7 +362,7 @@
     z-index:-1;
     display:block;
     content:"";
-    background-image:linear-gradient(rgba(var(--bd-violet-rgb), 1), rgba(var(--bd-violet-rgb), 0.95))
+/*    background-image:linear-gradient(rgba(var(--bd-violet-rgb), 1), rgba(var(--bd-violet-rgb), 0.95)) */
     
     }
 
@@ -401,7 +401,7 @@
     }
 .bd-navbar .navbar-nav-svg{display:inline-block;vertical-align:-.125rem
     }
-.bd-navbar .offcanvas-lg{background-color:var(--bd-violet-bg);border-left:0
+.bd-navbar .offcanvas-lg{background-color:var(--menck-tn-bg);border-left:0
     }
 
 @media (max-width: 991.98px){
