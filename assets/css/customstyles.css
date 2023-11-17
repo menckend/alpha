@@ -31,8 +31,8 @@
 
 
 .bd-navbar {
-  background-color: grey;
-
+  background-color: var(--menck-tn-bg);
+  background-image: none;
 }
 
 .bd-toc  {
