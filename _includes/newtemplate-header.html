@@ -262,23 +262,16 @@
                 {{ thisl1name }}
               </button>
               <ul class="dropdown-menu dropdown-menu-end " data-bs-popper="static">
-
                 {% assign l2idxes = myl1pages | sort: 'l2idx' | map: 'l2idx' | compact | uniq %}
                 {% comment %} Loop through the l2idxes to build the entries in the dropdown menu {% endcomment %}
-            
-
                 {% for l2ix in l2idxes %}
                   {% assign myl2pages = myl1pages | where: 'l2idx', l2ix | sort: 'l2idx' | compact | uniq %}
                   {% assign myl2name = myl2pages | where_exp: 'page', 'page.l3idx == nil' | sort: 'l2idx' | map: 'title' | compact | uniq %}
                   {% assign myl2url = myl2pages | where_exp: 'page', 'page.l3idx == nil' | sort: 'l2idx'| map: 'url' %}
-
-
-                  <li class="dropdownActive" style="background: none; border-style: none;"><a style="color: whitesmoke; background: none; border-style: none;" href="{{myl2url[0] | remove: "/"}}">{{ myl2name }}</a></li>
-
                   <li>
                     <a class="dropdown-item d-flex align-items-center justify-content-between active" aria-current="true" href="{{myl2url[0] | remove: "/"}}">
                       {{ myl2name }}
-                      {% if myl2url == page.permalink %}
+                      {% if l1ix == page.l1idx and l2ix == page.l2idx %}
                         <svg class="bi"><use xlink:href="#check2"></use></svg>
                       {% endif %}
                     </a>
