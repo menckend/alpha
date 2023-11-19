@@ -50,8 +50,8 @@
     }
   
 .mencknav{
-  background-color: var(--menck-sb-bg);
-  color: var(--menck-sb-text)
+  background-color: var(--menck-sb-bg) !important;
+  color: var(--menck-sb-text) !important;
     }
 
 
