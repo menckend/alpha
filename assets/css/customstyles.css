@@ -52,12 +52,14 @@
 .left-sidebar-chunk,
 .right-sidebar-chunk{
   background-color: var(--menck-sb-bg);
+  border-radius: 5px;
   color: var(--menck-sb-text);
   }
 
 .left-sidebar-chunk, *
 .right-sidebar-chunk *{
   background-color: transparent;
+  border-radius: 5px;
   text-decoration: none;
 }
   
