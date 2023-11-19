@@ -12,7 +12,7 @@
     --menck-tn-dd-border: whitesmoke;
     --menck-tn-dd-txt: #347DBE;
     --menck-tn-dd-bg: white;
-    --menck-sb-bg: white;
+    --menck-sb-bg: whitesmoke;
     --menck-sb-text: #347DBE;
     --menck-sb-border: #347DBE;
     --menck-summary-bar: #347DBE;
@@ -49,10 +49,25 @@
     color: var(--menck-sb-text)
     }
   
-.mencknav{
-  background-color: var(--menck-sb-bg) !important;
-  color: var(--menck-sb-text) !important;
-    }
+.left-sidebar-chunk,
+.right-sidebar-chunk{
+  background-color: var(--menck-sb-bg);
+  color: var(--menck-sb-text);
+  }
+
+.left-sidebar-chunk, *
+.right-sidebar-chunk *{
+  background-color: transparent;
+  text-decoration: none;
+}
+  
+ 
+
+
+
+
+
+
 
 
 details.sbdeet {
