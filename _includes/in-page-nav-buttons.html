@@ -39,7 +39,7 @@
         {% endif %}
       {% endif %}
     {% endfor %}
-    <!-- Loop through the page-hierarchy levls from the active-page's child-level to the deepest level (10, for now) -->
+    {%comment%} Loop through the page-hierarchy levls from the active-page's child-level to the deepest level (10, for now) {%endcomment%}
     {% for k in (nextlvl..10) %}
       {% if goodpage == 'true' %}
         {% assign cmpvar = 'l' | append: k | append: 'idx' %}
@@ -56,7 +56,7 @@
         {% assign goodpage = 'false' %}
       {% endif %}
     {% endif %}
-    <!-- mark the "parent-page"  of the current page as "not a neighbor"  -->
+    {%comment%} mark the "parent-page"  of the current page as "not a neighbor"  {%endcomment%}
     {% if goodpage == 'true' %}
       {% assign str_aa = 'l' | append: parentlvl | append: 'idx' %}
       {% assign str_bb = 'l' | append: mylvl | append: 'idx' %}
@@ -73,7 +73,7 @@
     {% endif %}
   {% endfor %}
 
-  <!-- Figure out the previous and next pages' site.pages' URLs, for use in the navigation buttons -->
+  {%comment%} Figure out the previous and next pages' site.pages' URLs, for use in the navigation buttons {%endcomment%}
   {% assign ngct = ngbr_pgs | size | minus: 1 %}
 
   {% assign lvlvar = "l" | append: mylvl | append: "idx" %}
