@@ -19,6 +19,17 @@
 <script src="assets/js/docs.min.js"></script>
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/bootstrap-toc.js"></script>
+<script src="assets/js/menck-custom.js"></script>
 
+
+<script>
+$(document).ready(function(){
+  $(".collapse").collapse().each(function(){
+      if( isStored( MenckSidebar ) ) {
+          $( MenckSidebar ).collapse( 'hide' );
+      }
+  });
+});​
+</script>
 
 </head>
