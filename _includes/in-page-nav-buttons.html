@@ -1,7 +1,7 @@
 <!--   In-page page-navigation buttons  -->
 {% unless page.pagenav == false %}
-  <!-- Create previous/next in-page navigation buttons. -->
-  <!-- Figure out what the terminal-index-level of the current page is (as "mylevel") -->
+  {%comment%} Create previous/next in-page navigation buttons. {%endcomment%}
+  {%comment%} Figure out what the terminal-index-level of the current page is (as "mylevel") {%endcomment%}
   {% for i in (1..10) %}
     {% assign lvlvar = "l" | append: i | append: "idx" %}
     {% if page[lvlvar] %}
@@ -15,26 +15,25 @@
   {% assign parentlvl = '' | plus: 0 %}
   {% assign parentlvl = mylvl-int | minus: 1 %}
   {% assign nextlvl = mylvl-int | plus: 1 %}
-  <!-- <p> myidx: {{myidx-int}}.   mylvl: {{mylvl}}.  parentlvl: {{parentlvl}} </p>  -->
-  <!--  Create collection of "adjacent" pages to this one. -->  
+  {%comment%}  Create collection of "adjacent" pages to this one. {%endcomment%}  
   {% assign ngbr_pgs = '' | split: ',' %}
   {% assign ngbr_urls = '' | split: ',' %}
   {% assign ngbr_idxes = '' | split: ',' %}
-  <!-- Loop through all the pages in the site -->
+  {%comment%} Loop through all the pages in the site {%endcomment%}
   {% for cpg in site.pages %}
-    <!-- Start by assuming that each page in site.pages *is* a neighbor page for the current page -->
+    {%comment%} Start by assuming that each page in site.pages *is* a neighbor page for the current page {%endcomment%}
     {% assign goodpage = 'true' %}
-    <!-- Loop through the page-hierarchy levls from 1 up to the parent-level of the active page -->
+    {%comment%} Loop through the page-hierarchy levls from 1 up to the parent-level of the active page {%endcomment%}
     {% for i in (1..parentlvl) %}
       {% if goodpage == 'true' %}
         {% assign cmpvar = 'l' | append: i | append: 'idx' %}
         {% if cpg[cmpvar] %}
           {% if cpg[cmpvar] != page[cmpvar] %}
-            <!-- Mark the looped page as "not a neighbor", because one of the higher-levels in the hierarchy has a different value than the active page -->
+          {%comment%} Mark the looped page as "not a neighbor", because one of the higher-levels in the hierarchy has a different value than the active page {%endcomment%}
             {% assign goodpage = 'false' %}
           {% endif %}
         {% else %}
-          <!-- Mark the looped page as "not a neighbor", because it doesn't even *have* an index for for one higher levels in the hierarchy.  -->
+        {%comment%} Mark the looped page as "not a neighbor", because it doesn't even *have* an index for for one higher levels in the hierarchy.  {%endcomment%}
         {% assign goodpage = 'false'%}
         {% endif %}
       {% endif %}
@@ -124,7 +123,7 @@
     <a href="{{ nxturl | remove: '/'}}"><button type="button" class="btn" style="border-style:solid; border-color: #dcdcdc;"><i class="bi bi-chevron-double-right"></i></button></a>
   </div>
 </p>
--->
+{%endcomment%}
 
 
 
@@ -133,4 +132,4 @@
 
 {% endunless %}
 
-<!--   End of in-page page-navigation buttons  -->
+<!--   End of in-page page-navigation buttons  {%endcomment%}
