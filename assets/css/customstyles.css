@@ -27,7 +27,7 @@
 
 
 .menck-topnav-text-color {
-  color: var(--menck-tn-text)
+  color: var(--menck-tn-text) !important;
   }
 
 .bd-navbar {
