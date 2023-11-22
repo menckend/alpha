@@ -16,14 +16,14 @@ $(document).ready(function () {
     $(".collapse").each(function () {
         if (localStorage.getItem("coll_" + this.id) === "true") {
             $(this).collapse("show");
+         }
+        else {
+            $(this).collapse("hide");
             $(".menck-tn-toggle-control").each(function () {
                 $(this).attr("data-bs-target", "");
                 $(this).trigger("click");
                 $(this).attr("data-bs-target", "#MenckSidebar");
                 });
-        }
-        else {
-            $(this).collapse("hide");
         }
     });
 
