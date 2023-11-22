@@ -1,4 +1,4 @@
-repository: menckend/writing
+repository: menckend/alpha
 
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
@@ -104,3 +104,11 @@ exclude:
   - pages-draft
 
 emptyArray: []
+
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled:     true
+  collections: false
+
