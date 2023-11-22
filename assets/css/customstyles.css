@@ -230,6 +230,37 @@ p.l3itemactive > a:before {
     text-decoration: none;
 }
 
+/* Sidebar item padding*/
+.left-sidebar-chunk > p {
+  padding-after: 2px;
+}
+
+p.l10itemactive > a:before,
+p.l9itemactive > a:before,
+p.l8itemactive > a:before,
+p.l7itemactive > a:before,
+p.l6itemactive > a:before,
+p.l5itemactive > a:before,
+p.l4itemactive > a:before,
+p.l3itemactive > a:before {
+    content: '\F582';
+    font-family: "bootstrap-icons";
+/*    font-size: 14px; */
+    padding-right: 8px;
+    padding-left: 8px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Try topnav color scheme in sidebar.  */
 div.medianav {
     background-color: var(--menck-sb-bg);
