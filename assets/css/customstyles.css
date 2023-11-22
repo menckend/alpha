@@ -232,7 +232,8 @@ p.l3itemactive > a:before {
 
 /* Sidebar item padding*/
 .left-sidebar-chunk > p {
-  padding-after: 2px;
+  padding: opx;
+  margin: 0px;
 }
 
 p.l10itemactive > a:before,
