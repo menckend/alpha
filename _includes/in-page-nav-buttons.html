@@ -89,6 +89,8 @@
   {% endfor %}
 
 
+
+  
   <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav" style="padding-left: 24px;">
     <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
       <div class="vr d-none d-lg-flex h-100 mx-lg-2 menck-topnav-text-color">
@@ -96,9 +98,9 @@
       <hr class="d-lg-none my-2 menck-topnav-text-color">
     </li>
     <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
-      <div class="form-check form-switch">
-        <input class="form-check-input menck-tn-toggle-control" type="checkbox" id="MenckSidebarToggle" checked data-bs-target="#MenckSidebar" data-bs-toggle="collapse" style="background-color:grey;">
-        <label class="form-check-label menck-tn-toggle-label" for="MenckSidebarToggle" style="color:white;">Collapse/Show Sidebar</label>
+      <div class="form-check form-switch d-flex align-self-center">
+        <input class="form-check-input menck-tn-toggle-control d-flex align-self-center" type="checkbox" id="MenckSidebarToggle" checked data-bs-target="#MenckSidebar" data-bs-toggle="collapse" style="background-color:grey;">
+        <label class="form-check-label menck-tn-toggle-label  d-flex align-self-center" for="MenckSidebarToggle" style="color:white;">Collapse/Show Sidebar</label>
       </div>
     </li>
     <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
@@ -107,13 +109,13 @@
       <hr class="d-lg-none my-2 menck-topnav-text-color">
     </li>
     <li class="nav-item col-6 col-lg-auto">
-      <a class="nav-link py-2 px-0 px-lg-2 active" aria-current="true" href="{{ prvurl | remove: '/'}}" ><i class="bi bi-chevron-double-left"></i></a>
+      <a class="nav-link py-2 px-0 px-lg-2 active" aria-current="true" href="{{ prvurl | remove: '/'}}" ><i class="bi bi-chevron-double-left d-flex align-self-center"></i></a>
     </li>
     <li class="nav-item col-6 col-lg-auto">
-      <a class="nav-link py-2 px-0 px-lg-2" >Flip Pages</a>
+      <a class="nav-link py-2 px-0 px-lg-2 d-flex align-self-center" >Flip Pages</a>
     </li>
     <li class="nav-item col-6 col-lg-auto">
-      <a class="nav-link py-2 px-0 px-lg-2 active" aria-current="true" href="{{ nxturl | remove: '/'}}" ><i class="bi bi-chevron-double-right"></i></a>
+      <a class="nav-link py-2 px-0 px-lg-2 active" aria-current="true" href="{{ nxturl | remove: '/'}}" ><i class="bi bi-chevron-double-right d-flex align-self-center"></i></a>
     <li class="nav-item col-6 col-lg-auto">
       <hr class="d-lg-none my-2 menck-topnav-text-color">
     </li>
