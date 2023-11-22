@@ -196,6 +196,19 @@ details.deet5[open] summary:before {
   text-decoration: none;
 }
 
+p.l10item, p.l10itemactive,
+p.l9item, p.l9itemactive,
+p.l8item, p.l8itemactive,
+p.l7item, p.l7itemactive,
+p.l6item, p.l6itemactive,
+p.l5item, p.l5itemactive,
+p.l4item, p.l4itemactive,
+p.l3item, p.l3itemactive
+ {
+  margin: 0px;
+  padding: 0px;
+}
+
 
 /* empty square*/
 p.l10item > a:before,
@@ -231,6 +244,8 @@ p.l3itemactive > a:before {
 }
 
 /* Sidebar item padding*/
+
+
 .left-sidebar-chunk > p {
   padding: opx;
   margin: 0px;
