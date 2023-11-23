@@ -8,7 +8,7 @@ $(document).ready(function () {
     });
 
     // When an item is collapsed/hidden, remove the related localStorage item (item ID prepended by "coll_")
-    $(".collapse").on("hidden.bs.collapse", function () {
+        $(".collapse").on("hidden.bs.collapse", function () {
         localStorage.removeItem("coll_" + this.id);
     });
 
@@ -18,13 +18,28 @@ $(document).ready(function () {
             $(this).collapse("show");
          }
         else {
-            $(this).collapse("hide");
-            $(".menck-tn-toggle-control").each(function () {
-                $(this).attr("data-bs-target", "");
-                $(this).trigger("click");
-                $(this).attr("data-bs-target", "#MenckSidebar");
-                });
-        }
+
+
+            if (this.id) === "MenckSidebarToggle"  {
+                $(this).collapse("hide");
+                $(".menck-tn-toggle-control").each(function () {
+                    $(this).attr("data-bs-target", "");
+                    $(this).trigger("click");
+                    $(this).attr("data-bs-target", "#MenckSidebar");
+                    });    
+            }
+
+            if (this.id) === "MenckRightBarToggle" {
+                $(this).collapse("hide");
+                $(".menck-tn-toggle-control").each(function () {
+                    $(this).attr("data-bs-target", "");
+                    $(this).trigger("click");
+                    $(this).attr("data-bs-target", "#MenckRightbar");
+                    });
+                    
+            }
+
+            }
     });
 
 });
