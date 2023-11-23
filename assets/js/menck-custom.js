@@ -18,7 +18,7 @@ $(document).ready(function () {
             $(this).collapse("show");
          }
         else {
-            if (this.id === "MenckSidebarToggle") === "true") {
+            if ((this.id === "MenckSidebarToggle") === "true") {
                 $(this).collapse("hide");
                 $(".menck-tn-toggle-control").each(function () {
                     $(this).attr("data-bs-target", "");
@@ -27,7 +27,7 @@ $(document).ready(function () {
                     });    
             }
 
-            if (this.id === "MenckRightBarToggle") === "true") {
+            if ((this.id === "MenckRightBarToggle") === "true") {
                 $(this).collapse("hide");
                 $(".menck-tn-rb-toggle-control").each(function () {
                     $(this).attr("data-bs-target", "");
