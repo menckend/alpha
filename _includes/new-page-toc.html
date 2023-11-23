@@ -1,13 +1,29 @@
-<div class="bd-toc mt-3 mb-5 my-lg-0 mb-lg-5 px-sm-1 text-body-secondary">
-  <button class="btn btn-link p-md-0 mb-2 mb-md-0 text-decoration-none bd-toc-toggle d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#tocContents" aria-expanded="false" aria-controls="tocContents">
-    On this page
-    <svg class="bi d-md-none ms-2" aria-hidden="true"><use xlink:href="#chevron-expand"></use></svg>
-  </button>
+<div class="col-auto px-0">
+  <div id="MenckRightbar" class="collapse-horizontal border-end collapse show" style="">
+    <aside class="menck-sidebar">
+      <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="MenckRightBarOC" aria-labelledby="bdSidebarOffcanvasLabel">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title" id="MenckRightBarOffcanvasLabel">Table of Contents</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdSidebar"></button>
+        </div>
+        <div class="offcanvas-body">
+          <nav class="bd-links w-100" id="bd-docs-nav" aria-label="Docs navigation">
+            <ul class="bd-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
+              <div class="mencknav container-fluid right-sidebar-chunk">
+                <strong class="d-none d-md-block h6 my-2 ms-3">On this page</strong>
+                <hr class="d-none d-md-block my-2 ms-3">
+                {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=3 %}
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
 
-  <div class="right-sidebar-chunk">
-    <strong class="d-none d-md-block h6 my-2 ms-3">On this page</strong>
-    <hr class="d-none d-md-block my-2 ms-3">
-    {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=3 %}
-</div>
-  
-</div>
+
+
+
+
+

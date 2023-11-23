@@ -26,6 +26,12 @@
 
 
 
+  .menck-main{
+    grid-area:main
+    }
+
+
+
 .menck-topnav-text-color {
   color: var(--menck-tn-text) !important;
   }
@@ -46,7 +52,7 @@
     color: var(--menck-sb-text)
     }
   
-.bd-sidebar *{
+.menck-sidebar *{
     background-color: transparent;
     text-decoration: none;
     color: var(--menck-sb-text)
