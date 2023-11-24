@@ -23,7 +23,7 @@ $(document).ready(function () {
                     $(this).trigger("click");
                     $(this).attr("data-bs-target", "#MenckSidebar");
                 }
-                if ((this.id == "MenckRightBarToggle") {
+                if ((this.id === "MenckRightBarToggle")) {
                     $(this).attr("data-bs-target", "");
                     $(this).trigger("click");
                     $(this).attr("data-bs-target", "#MenckRightbar");
