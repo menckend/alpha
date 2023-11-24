@@ -17,7 +17,7 @@ $(document).ready(function () {
     $(".collapse").each(function () {
 
         if (localStorage.getItem("coll_" + this.id) === "true") {
-            this.collapse("show");
+            $(this).collapse("show");
             $(".menck-tn-toggle-control").each(function () {
         
                 if ((this.id === "MenckSidebarToggle")) {
