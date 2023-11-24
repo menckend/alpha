@@ -18,22 +18,12 @@ $(document).ready(function () {
             $(this).collapse("show");
          }
         else {
-            if (this.id === "MenckSidebarToggle") {
                 $(this).collapse("hide");
                 $(".menck-tn-toggle-control").each(function () {
                     $(this).attr("data-bs-target", "");
                     $(this).trigger("click");
                     $(this).attr("data-bs-target", "#MenckSidebar");
                     });
-            }
-            if (this.id == "MenckRightbarToggle") {
-                $(this).collapse("hide");
-                $(".menck-tn-rb-toggle-control").each(function () {
-                    $(this).attr("data-bs-target", "");
-                    $(this).trigger("click");
-                    $(this).attr("data-bs-target", "#MenckRightbar");
-                    });
-            }
         }
     });
 
