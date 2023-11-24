@@ -18,6 +18,7 @@ $(document).ready(function () {
             $(this).collapse("show");
          }
         else {
+            if (this.id === "MenckSidebarToggle") {
                 $(this).collapse("hide");
                 $(".menck-tn-toggle-control").each(function () {
                     $(this).attr("data-bs-target", "");
