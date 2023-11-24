@@ -27,7 +27,7 @@ $(document).ready(function () {
                     $(this).attr("data-bs-target", "#MenckSidebar");
                     });
             }
-            if ((this.id == "MenckRightBarToggle") {
+            if ((this.id == "MenckRightBarToggle")) {
                 $(this).collapse("hide");
                 $(".menck-tn-rb-toggle-control").each(function () {
                     $(this).attr("data-bs-target", "");
