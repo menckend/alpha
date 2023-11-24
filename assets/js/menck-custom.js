@@ -25,6 +25,7 @@ $(document).ready(function () {
                     $(this).trigger("click");
                     $(this).attr("data-bs-target", "#MenckSidebar");
                     });
+            }
         }
     });
 
