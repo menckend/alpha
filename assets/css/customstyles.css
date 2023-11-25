@@ -301,8 +301,8 @@ div.mencknav * {
   --bs-dropdown-min-width: 12rem;
   --bs-dropdown-padding-x: .25rem;
   --bs-dropdown-padding-y: .25rem;
-  --bs-dropdown-link-hover-bg: var(--menck-btn-border);
-  --bs-dropdown-link-active-bg: var(--menck-btn-border);
+  --bs-dropdown-link-hover-bg: var(--menck-tn-background);
+  --bs-dropdown-link-active-bg: var(--menck-tn-background);
   --bs-dropdown-font-size:.875rem;
   --bs-dropdown-color: var(--menck-tn-text);
 
