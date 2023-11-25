@@ -18,7 +18,7 @@ $(document).ready(function () {
                 $(".menck-tn-toggle-control").each(function () {
                     var controlname = $(this).data-bs-target;
                     if ((sidebarname === controlname.id)) {
-                        jstglctrl.trigger("click");
+                        $(this).trigger("click");
                     }
                 });
             }
@@ -29,7 +29,7 @@ $(document).ready(function () {
         sessionStorage.setItem("menckenania-alpha-return-visitor", true);
         $(".menck-tn-toggle-control").each(function () {
                 var jstglctrl = $(this);
-                jstglctrl.trigger("click");
+                $(this).trigger("click");
             });
          }
 });
