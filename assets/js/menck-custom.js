@@ -15,6 +15,7 @@ $(document).ready(function () {
             var storagecomp = "coll_" + this.id;
             console.log(storagecomp);
             if (sessionStorage.getItem(storagecomp) === "true") {
+                console.log(storagecomp);
                 $(this).collapse("show");
                 var storagecomp = "coll_" + $(this).id;
                 var sidebarname = ("#" + $(this).id);
