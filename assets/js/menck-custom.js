@@ -14,7 +14,9 @@ $(document).ready(function () {
         $(".collapse").each(function () {
             $(this).collapse("show");
             var storagecomp = "coll_" + $(this).id;
+            console.log("storagecomp");
             if (sessionStorage.getItem(storagecomp) === "true") {
+                var storagecomp = "coll_" + $(this).id;
                 var sidebarname = ("#" + $(this).id);
                 $(".menck-tn-toggle-control").each(function () {
                     var controlname = $(this).data-bs-target;
