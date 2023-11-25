@@ -17,8 +17,10 @@ $(document).ready(function () {
                 var sidebarname = ("#" + $(this).id);
                 $(".menck-tn-toggle-control").each(function () {
                     var controlname = $(this).data-bs-target;
+                    console.log("matched storage key to sidebar name; values for sidebar and controller: " + controlname + " " + sidebarname);
                     if ((sidebarname === controlname.id)) {
                         $(this).trigger("click");
+                        console.log("matched " + controlname " to " + sidebarname);
                     }
                 });
             }
