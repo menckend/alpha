@@ -18,7 +18,7 @@ $(document).ready(function () {
                 $(this).collapse("show");
                 var sidebarname = "#" + this.id;
                 $(".menck-tn-toggle-control").each(function () {
-                    var controlname = $(this).dataset.bsTarget;
+                    var controlname = $(this).getAttribute('data-bs-target');
                     console.log("matched storage key to sidebar name; values for sidebar and controller: " + controlname + " " + sidebarname);
                     if ((sidebarname === controlname.id)) {
                         $(this).trigger("click");
