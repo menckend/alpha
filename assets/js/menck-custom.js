@@ -12,7 +12,7 @@ $(document).ready(function () {
     if (sessionStorage.getItem("menckenania-alpha-return-visitor") === "true") {
         // Make the state of the actual collapsible elements (and their control switches) match that of the localStorage items that track their state
         $(".collapse").each(function () {
-            var storagecomp = "coll_" + $(this).id;
+            var storagecomp = "coll_" + this.id;
             console.log(storagecomp);
             if (sessionStorage.getItem(storagecomp) === "true") {
                 $(this).collapse("show");
