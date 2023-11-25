@@ -296,9 +296,26 @@ div.mencknav * {
     color: var(--menck-sb-txt);
 }
 
+
+.bd-navbar .dropdown-menu {
+  --bs-dropdown-min-width: 12rem;
+  --bs-dropdown-padding-x: .25rem;
+  --bs-dropdown-padding-y: .25rem;
+  --bs-dropdown-link-hover-bg: var(--menck-tn-bg);
+  --bs-dropdown-link-active-bg: var(--menck-tn-bg);
+  --bs-dropdown-font-size:.875rem;
+  font-size:.875rem;
+  border-radius:.5rem;
+  box-shadow:var(--bs-box-shadow);
+  }
+
 /*                                      */
 /*                                      */
 /* Mencken's customizations end here    */
+
+
+
+
 
   @media (max-width: 600px) {
     .docnav li a {
