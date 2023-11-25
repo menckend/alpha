@@ -24,13 +24,9 @@
     --menck-deets-border: whitesmoke;
   }
 
-
-
   .menck-main{
     grid-area:main
     }
-
-
 
 .menck-topnav-text-color {
   color: var(--menck-tn-text) !important;
@@ -72,15 +68,6 @@
   text-decoration: none;
 }
   
- 
-
-
-
-
-
-
-
-
 details.sbdeet {
     overflow: hidden;
     border-collapse: separate;
@@ -215,7 +202,6 @@ p.l3item, p.l3itemactive
   padding: 0px;
 }
 
-
 /* empty square*/
 p.l10item > a:before,
 p.l9item > a:before,
@@ -273,16 +259,6 @@ p.l3itemactive > a:before {
     text-decoration: none;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* Try topnav color scheme in sidebar.  */
 div.medianav {
     background-color: var(--menck-sb-bg);
@@ -323,8 +299,6 @@ div.mencknav * {
 /*                                      */
 /*                                      */
 /* Mencken's customizations end here    */
-
-
 
   @media (max-width: 600px) {
     .docnav li a {
