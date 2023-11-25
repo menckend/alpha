@@ -12,29 +12,31 @@ $(document).ready(function () {
         localStorage.removeItem("coll_" + this.id);
     });
 
-
     // Make the state of the actual collapsible elements (and their control switches) match that of the localStorage items that track their state
     $(".collapse").each(function () {
 
         if (localStorage.getItem("coll_" + this.id) === "true") {
             $(this).collapse("show");
             $(".menck-tn-toggle-control").each(function () {
-        
+                var jstglctrl = $(this);
+                var domtglctrl = this;
+    
                 if ((this.id === "MenckSidebarToggle")) {
-                    $(this).attr("data-bs-target", "");
-                    $(this).trigger("click");
-                    $(this).attr("data-bs-target", "#MenckSidebar");
+                    jstglctrl.attr("data-bs-target", "");
+                    jstglctrl.trigger("click");
+                    jstglctrl.attr("data-bs-target", "#MenckSidebar");
                 }
         
                 if ((this.id === "MenckRightBarToggle")) {
-                    $(this).attr("data-bs-target", "");
-                    $(this).trigger("click");
-                    $(this).attr("data-bs-target", "#MenckRightbar");
+                    jstglctrl.attr("data-bs-target", "");
+                    jstglctrl.trigger("click");
+                    jstglctrl.attr("data-bs-target", "#MenckRightbar");
                 }
             });
          }
         else {
-                $(this).collapse("hide");
+            jstglctrl.collapse("hide");
             }
     });
+
 });
