@@ -8,20 +8,15 @@ $(document).ready(function () {
     $(".collapse").on("hidden.bs.collapse", function () {
     sessionStorage.removeItem("coll_" + this.id);
     });
-
     // Things to do if this is an existing browser session (synchronize sidebars and toggle-controls to shown/checked)
     if (sessionStorage.getItem("menckenania-alpha-return-visitor") === "true") {
         // Make the state of the actual collapsible elements (and their control switches) match that of the localStorage items that track their state
         $(".collapse").each(function () {
             if (sessionStorage.getItem("coll_" + this.id) === "true") {
-                $(this).collapse("show");
+                var sidebarname = ("#" + $(this).id);
                 $(".menck-tn-toggle-control").each(function () {
-                    var jstglctrl = $(this);
-                    var domtglctrl = this;
-                    if ((this.id === "MenckSidebarToggle")) {
-                        jstglctrl.trigger("click");
-                    }
-                    if ((this.id === "MenckRightBarToggle")) {
+                    var controlname = ($(this).data-bs-target);
+                    if ((sidebarname === controlname.id)) {
                         jstglctrl.trigger("click");
                     }
                 });
