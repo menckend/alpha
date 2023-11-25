@@ -48,7 +48,7 @@ $(document).ready(function () {
 
 }
 else {
-    sessionStorage.setItem("menckenania-alpha-return-visitor");
+    sessionStorage.setItem("menckenania-alpha-return-visitor", true);
     
 }
 
