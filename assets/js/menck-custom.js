@@ -13,7 +13,7 @@ $(document).ready(function () {
         // Make the state of the actual collapsible elements (and their control switches) match that of the localStorage items that track their state
         $(".collapse").each(function () {
             var storagecomp = "coll_" + $(this).id;
-            console.log("storagecomp");
+            console.log(storagecomp);
             if (sessionStorage.getItem(storagecomp) === "true") {
                 $(this).collapse("show");
                 var storagecomp = "coll_" + $(this).id;
