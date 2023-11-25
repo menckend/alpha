@@ -16,7 +16,7 @@ $(document).ready(function () {
             if (sessionStorage.getItem(storagecomp) === "true") {
                 var sidebarname = ("#" + $(this).id);
                 $(".menck-tn-toggle-control").each(function () {
-                    var controlname = $(this).data-bs-target);
+                    var controlname = $(this).data-bs-target;
                     if ((sidebarname === controlname.id)) {
                         jstglctrl.trigger("click");
                     }
