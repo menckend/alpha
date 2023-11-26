@@ -37,7 +37,9 @@ $(document).ready(function () {
     }
 
     if (document.title === " | menckenania") {
+        console.log (document.title);
         $(".collapse").each(function () {
+            console.log (this.id);
             if (this.id === "MenckenSidebar") {
             this.collapse("hide");
             }
