@@ -306,9 +306,16 @@ div.mencknav * {
   --bs-dropdown-font-size:.875rem;
   --bs-dropdown-color: var(--menck-tn-text);
     background-color: var(-menck-tn-bg);
-    border-width: 2px;
-  
+    border-style: none;
   }
+
+.bd-navbar .dropdown-menu > ul {
+  background-color: var(-menck-tn-bg);
+  border-width: 2px;
+}
+
+
+
 
 /*                                      */
 /*                                      */
