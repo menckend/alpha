@@ -38,7 +38,7 @@ $(document).ready(function () {
 
     if (document.title === "| menckenania") {
         $(".collapse").each(function () {
-            console.log (document.title);
+            console.log ("Each function iterating after all.");
             console.log (this.id);
             if (this.id === "MenckenSidebar") {
             $(this).collapse("hide");
