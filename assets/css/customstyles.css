@@ -315,7 +315,7 @@ div.mencknav * {
 }
 
 
-#bdNavbar > div.offcanvas-body.p-4.pt-0.p-lg-0 > ul.navbar-nav.flex-row.flex-wrap.ms-md-auto > li > ul {
+#bdNavbar > div.offcanvas-body > ul.navbar-nav.flex-row > li > ul {
   background-color: var(-menck-tn-bg);
   border-color: var(-menck-btn-border);
   border-style: solid;
