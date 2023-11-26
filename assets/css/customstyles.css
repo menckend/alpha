@@ -304,9 +304,10 @@ div.mencknav * {
   --bs-dropdown-link-hover-bg: var(--menck-tn-bg);
   --bs-dropdown-link-active-bg: var(--menck-tn-bg);
   --bs-dropdown-font-size:.875rem;
-  --bs-dropdown-color: var(--menck-tn-text);
-    background-color: var(-menck-tn-bg);
-    border-style: none;
+  --bs-dropdown-color: var(--menck-tn-text) !important;
+    background-color: var(-menck-tn-bg) !important;
+    border-style: solid !important;
+    border-size: 1px;
   }
 
 .bd-navbar .dropdown-menu > ul {
