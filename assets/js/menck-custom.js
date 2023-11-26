@@ -29,8 +29,20 @@ $(document).ready(function () {
     else {
         sessionStorage.setItem("menckenania-alpha-return-visitor", true);
         $(".menck-tn-toggle-control").each(function () {
-                var jstglctrl = $(this);
-                $(this).trigger("click");
-            });
-         }
+            var jstglctrl = $(this);
+            $(this).trigger("click");
+        });
+    }
+
+
+    if document.title === "menckenania" {
+        $(".collapse").each(function () {
+            if this.id === "MenckenSidebar" {
+            this.collapse("hide");
+            }
+            if this.id === "MenckenRightbar" {
+                this.collapse("hide");
+            }
+        }
+    }
 });
