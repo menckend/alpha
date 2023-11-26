@@ -14,15 +14,12 @@ $(document).ready(function () {
         $(".collapse").each(function () {
             var storagecomp = "coll_" + this.id;
             if (sessionStorage.getItem(storagecomp) === "true") {
-                console.log(storagecomp);
                 $(this).collapse("show");
                 var sidebarname = "#" + this.id;
                 $(".menck-tn-toggle-control").each(function () {
                     var controlname = this.getAttribute('data-bs-target');
-                    console.log(sidebarname + " and " + controlname)
                     if ((sidebarname === controlname)) {
                         $(this).trigger("click");
-                        console.log("matched storage key to sidebar name; values for sidebar and controller: " + controlname + " " + sidebarname);
                     }
                 });
             }
