@@ -35,17 +35,4 @@ $(document).ready(function () {
             $(this).trigger("click");
         });
     }
-
-    if (document.title === "| menckenania") {
-        $(".collapse").each(function () {
-            console.log ("Each function iterating after all.");
-            console.log (this.id);
-            if (this.id === "MenckenSidebar") {
-            $(this).collapse("hide");
-            }
-            if ($(this).id === "MenckenRightbar") {
-                $(this).collapse("hide");
-            }
-        });
-    }
 });
