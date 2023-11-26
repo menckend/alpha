@@ -14,3 +14,4 @@ The inaugural document is a generalized reference architecture for DNS-based glo
 
 All works presented here are my own; ignore them or adore them as *you* best see fit.
 {% include links.html %}
+{% include no-sidebars.html}
