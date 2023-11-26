@@ -37,7 +37,7 @@ $(document).ready(function () {
     }
 
     console.log (document.title);
-    if (document.title === " | menckenania") {
+    if (document.title === "| menckenania") {
         console.log (document.title);
         $(".collapse").each(function () {
             console.log (this.id);
