@@ -305,22 +305,11 @@ div.mencknav * {
   --bs-dropdown-link-active-bg: var(--menck-tn-bg);
   --bs-dropdown-font-size:.875rem;
   --bs-dropdown-color: var(--menck-tn-text) !important;
-    background-color: var(-menck-tn-bg) !important;
-    border-style: solid !important;
-    border-size: 1px;
+  --bs-dropdown-bg: var(--menck-tn-bg);
+  --bs-dropdown-border-color: var(-menck-btn-border);
+  --bs-dropdown-border-width: 2px;
   }
 
-.bd-navbar .dropdown-menu > ul {
-  background-color: var(-menck-tn-bg);
-  border-width: 2px;
-}
-
-
-#bdNavbar > div.offcanvas-body > ul.navbar-nav.flex-row > li > ul {
-  background-color: var(-menck-tn-bg);
-  border-color: var(-menck-btn-border);
-  border-style: solid;
-}
 
 /*                                      */
 /*                                      */
