@@ -37,10 +37,10 @@ $(document).ready(function () {
 
     if (document.title === "menckenania") {
         $(".collapse").each(function () {
-            if this.id === "MenckenSidebar" {
+            if (this.id === "MenckenSidebar") {
             this.collapse("hide");
             }
-            if this.id === "MenckenRightbar" {
+            if (this.id === "MenckenRightbar") {
                 this.collapse("hide");
             }
         }
