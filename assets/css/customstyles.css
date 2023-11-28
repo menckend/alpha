@@ -28,6 +28,10 @@
     grid-area:main
     }
 
+.menck-tn-bg-color {
+  color: var(--menck-tn-bg) !important;
+}
+    
 .menck-topnav-text-color {
   color: var(--menck-tn-text) !important;
   }

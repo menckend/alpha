@@ -79,7 +79,7 @@
                   {% assign myl2name = myl2pages | where_exp: 'page', 'page.l3idx == nil' | sort: 'l2idx' | map: 'title' | compact | uniq %}
                   {% assign myl2url = myl2pages | where_exp: 'page', 'page.l3idx == nil' | sort: 'l2idx'| map: 'url' %}
                   <li>
-                    <a class="dropdown-item d-flex align-items-center justify-content-between active" aria-current="true" href="{{myl2url[0] | remove: "/"}}">
+                    <a class="dropdown-item d-flex align-items-center justify-content-between active" aria-current="true" href="{{myl2url[0] | remove: "/"}}" style="background-color:transparent;">
                       {{ myl2name }}
                       {% if l1ix == page.l1idx and l2ix == page.l2idx %}
                         <svg class="bi"><use xlink:href="#check2"></use></svg>
@@ -102,7 +102,7 @@
               </svg>
               <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
             </button>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text" menck-topnav-text-color>
+            <ul class="dropdown-menu dropdown-menu-end menck-topnav-text-color menck-tn-bg-color" aria-labelledby="bd-theme-text">
               <li>
                 <button type="button" class="dropdown-item d-flex align-items-center active menck-topnav-text-color" data-bs-theme-value="light" aria-pressed="true">
                   <svg class="bi me-2 opacity-50 theme-icon menck-topnav-text-color">
