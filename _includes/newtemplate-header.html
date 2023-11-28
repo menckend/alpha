@@ -71,7 +71,7 @@
               <button type="button" class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle menck-topnav-text-color show" data-bs-toggle="dropdown" aria-expanded="true" data-bs-display="static">
                 {{ thisl1name }}
               </button>
-              <ul class="dropdown-menu dropdown-menu-end " data-bs-popper="static">
+              <ul class="dropdown-menu dropdown-menu-end menck-tn-bg-color" data-bs-popper="static">
                 {% assign l2idxes = myl1pages | sort: 'l2idx' | map: 'l2idx' | compact | uniq %}
                 {% comment %} Loop through the l2idxes to build the entries in the dropdown menu {% endcomment %}
                 {% for l2ix in l2idxes %}
@@ -79,7 +79,7 @@
                   {% assign myl2name = myl2pages | where_exp: 'page', 'page.l3idx == nil' | sort: 'l2idx' | map: 'title' | compact | uniq %}
                   {% assign myl2url = myl2pages | where_exp: 'page', 'page.l3idx == nil' | sort: 'l2idx'| map: 'url' %}
                   <li>
-                    <a class="dropdown-item d-flex align-items-center justify-content-between active" aria-current="true" href="{{myl2url[0] | remove: "/"}}" style="background-color:transparent;">
+                    <a class="dropdown-item d-flex align-items-center justify-content-between active" aria-current="true" href="{{myl2url[0] | remove: "/"}}" style="background-color:transparent">
                       {{ myl2name }}
                       {% if l1ix == page.l1idx and l2ix == page.l2idx %}
                         <svg class="bi"><use xlink:href="#check2"></use></svg>
