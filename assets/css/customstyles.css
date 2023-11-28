@@ -37,6 +37,12 @@
   background-image: none;
   }
 
+.menck-navbar > * {
+  background-color: var(--menck-tn-bg);
+  background-image: none;
+  color: var(--menck-tn-text)
+  }
+  
 .menck-toc  {
   background-color: transparent;
   text-decoration: none;
