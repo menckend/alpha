@@ -23,7 +23,7 @@
     --menck-deets-border: whitesmoke;
 
     --bs-dropdown-color: var(--menck-tn-text);
-    --bs-dropdown-bg: var(--menck-tn-bg);
+    --bs-dropdown-bg: #347DBE;;
     --bs-dropdown-border-color: var(--bs-border-color-translucent);
     --bs-dropdown-border-radius: var(--bs-border-radius);
     --bs-dropdown-border-width: var(--bs-border-width);
@@ -33,9 +33,9 @@
     --bs-dropdown-box-shadow: var(--bs-box-shadow);
     --bs-dropdown-link-color: var(--menck-tn-text);
     --bs-dropdown-link-hover-color: var(--menck-tn-text);
-    --bs-dropdown-link-hover-bg: var(--bs-tertiary-bg);
+    --bs-dropdown-link-hover-bg: #347DBE;
     --bs-dropdown-link-active-color: var(--menck-tn-text);
-    --bs-dropdown-link-active-bg: var(--menck-tn-bg);
+    --bs-dropdown-link-active-bg: #347DBE;
     --bs-dropdown-link-disabled-color: var(--menck-tn-text);
     --bs-dropdown-item-padding-x: 1rem;
     --bs-dropdown-item-padding-y: 0.25rem;
