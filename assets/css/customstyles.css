@@ -21,29 +21,13 @@
     --menck-btn-txt: #347DBE;
     --menck-deets-bg: whitesmoke;
     --menck-deets-border: whitesmoke;
-
-    --bs-dropdown-color: var(--menck-tn-text);
-    --bs-dropdown-bg: #347DBE;;
-    --bs-dropdown-border-color: var(--bs-border-color-translucent);
-    --bs-dropdown-border-radius: var(--bs-border-radius);
-    --bs-dropdown-border-width: var(--bs-border-width);
-    --bs-dropdown-inner-border-radius: calc(var(--bs-border-radius) - var(--bs-border-width));
-    --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
-    --bs-dropdown-divider-margin-y: 0.5rem;
-    --bs-dropdown-box-shadow: var(--bs-box-shadow);
-    --bs-dropdown-link-color: var(--menck-tn-text);
-    --bs-dropdown-link-hover-color: var(--menck-tn-text);
-    --bs-dropdown-link-hover-bg: #347DBE;
-    --bs-dropdown-link-active-color: var(--menck-tn-text);
-    --bs-dropdown-link-active-bg: #347DBE;
-    --bs-dropdown-link-disabled-color: var(--menck-tn-text);
-    --bs-dropdown-item-padding-x: 1rem;
-    --bs-dropdown-item-padding-y: 0.25rem;
-    --bs-dropdown-header-color: #6c757d;
-    --bs-dropdown-header-padding-x: 1rem;
-    --bs-dropdown-header-padding-y: 0.5rem;
   }
 
+
+  #bdNavbar > div.offcanvas-body > ul.navbar-nav.flex-row> li > * {
+    background-color: var(--menck-tn-bg) !important;
+    color:  var(--menck-tn-text) !important;
+  }
 
   dropdown-menu {
     --bs-dropdown-color: var(--menck-tn-text);
