@@ -24,7 +24,26 @@
     --menck-deets-border: whitesmoke;
   }
 
-  .menck-main{
+
+  dropdown-menu {
+    --bs-dropdown-color: var(--menck-tn-text);
+    --bs-dropdown-bg: var(--menck-tn-bg);
+    --bs-dropdown-border-color: var(--bs-border-color-translucent);
+    --bs-dropdown-border-radius: var(--bs-border-radius);
+    --bs-dropdown-border-width: var(--bs-border-width);
+    --bs-dropdown-inner-border-radius: calc(var(--bs-border-radius) - var(--bs-border-width));
+    --bs-dropdown-box-shadow: var(--bs-box-shadow);
+    --bs-dropdown-link-color: var(--menck-tn-text);
+    --bs-dropdown-link-hover-color: var(--menck-tn-text);
+    --bs-dropdown-link-hover-bg: var(--menck-tn-bg);
+    --bs-dropdown-link-active-color: var(--menck-tn-text);
+    --bs-dropdown-link-active-bg: var(--menck-tn-bg);
+    --bs-dropdown-link-disabled-color: var(--bs-tertiary-color);
+    --bs-dropdown-header-color: #6c757d;
+  }
+
+
+.menck-main{
     grid-area:main
     }
 
