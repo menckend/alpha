@@ -21,10 +21,8 @@
     --menck-btn-txt: #347DBE;
     --menck-deets-bg: whitesmoke;
     --menck-deets-border: whitesmoke;
-  }
 
-
-    --bs-dropdown-color: var(--bs-body-color);
+    --bs-dropdown-color: var(--menck-tn-text);
     --bs-dropdown-bg: var(--menck-tn-bg);
     --bs-dropdown-border-color: var(--bs-border-color-translucent);
     --bs-dropdown-border-radius: var(--bs-border-radius);
@@ -37,32 +35,14 @@
     --bs-dropdown-link-hover-color: var(--menck-tn-text);
     --bs-dropdown-link-hover-bg: var(--bs-tertiary-bg);
     --bs-dropdown-link-active-color: var(--menck-tn-text);
-    --bs-dropdown-link-active-bg:  var(--menck-tn-bg);
+    --bs-dropdown-link-active-bg: var(--menck-tn-bg);
     --bs-dropdown-link-disabled-color: var(--menck-tn-text);
     --bs-dropdown-item-padding-x: 1rem;
     --bs-dropdown-item-padding-y: 0.25rem;
     --bs-dropdown-header-color: #6c757d;
     --bs-dropdown-header-padding-x: 1rem;
     --bs-dropdown-header-padding-y: 0.5rem;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  }
 
 
   dropdown-menu {
