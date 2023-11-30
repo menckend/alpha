@@ -23,7 +23,22 @@
     --menck-deets-border: whitesmoke;
   }
 
-
+  .btn-menck-tn {
+    --bs-btn-color: var(--menck-tn-text);
+    --bs-btn-bg:  var(--menck-tn-bg);
+    --bs-btn-border-color: grey;
+    --bs-btn-hover-color: var(--menck-tn-text);
+    --bs-btn-hover-bg:var(--menck-tn-bg);
+    --bs-btn-hover-border-color: #grey;
+    --bs-btn-active-color:var(--menck-tn-text);
+    --bs-btn-active-bg:var(--menck-tn-bg);
+    --bs-btn-active-border-color:grey;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--menck-tn-bg);
+    --bs-btn-disabled-border-color: grey;
+  }
+  
+  
   #bdNavbar > div.offcanvas-body > ul.navbar-nav.flex-row> li > * {
     background-color: var(--menck-tn-bg) !important;
     color:  var(--menck-tn-text) !important;
