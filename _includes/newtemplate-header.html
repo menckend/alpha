@@ -7,7 +7,7 @@
 <!--    <button class="btn btn-menck-tn d-lg-none" data-bs-theme="dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#menckNavbar" aria-controls="offcanvasResponsive"></button> -->
     <a class="btn btn-menck-tn d-lg-none" data-bs-theme="dark" data-bs-toggle="offcanvas" href="#menckNavbar" role="button" aria-controls="offcanvasResponsive" type="button" style="border-style:none;"><i class="bi bi-larg bi-list"></i></a>
 
-    <div class="offcanvas-lg offcanvas-end flex-grow-1" data-bs-theme="dark" tabindex="-1" id="menckNavbar" aria-labelledby="menckNavbarOffcanvasLabel" data-bs-scroll="true">
+    <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="menckNavbar" aria-labelledby="menckNavbarOffcanvasLabel" data-bs-scroll="true">
       <div class="offcanvas-header px-4 pb-0">
         <h5 class="offcanvas-title menck-topnav-text-color" id="bdNavbarOffcanvasLabel"></h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#menckNavbar">
@@ -97,6 +97,58 @@
             <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
             <hr class="d-lg-none my-2 text-white-50">
           </li>
+          
+          <li class="nav-item dropdown menck-topnav-text-color">
+            <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center menck-topnav-text-color" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (light)">
+              <svg class="bi my-1 theme-icon-active menck-topnav-text-color">
+              <use href="#sun-fill">
+              </use>
+              </svg>
+              <span class="d-lg-none ms-2" id="bd-theme-text">Toggle theme</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end menck-topnav-text-color menck-tn-bg-color" aria-labelledby="bd-theme-text">
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active menck-topnav-text-color" data-bs-theme-value="light" aria-pressed="true">
+                  <svg class="bi me-2 opacity-50 theme-icon menck-topnav-text-color">
+                    <use href="#sun-fill">
+                    </use>
+                  </svg>
+                  Light
+                  <svg class="bi ms-auto d-none menck-topnav-text-color">
+                    <use href="#check2">
+                    </use>
+                  </svg>
+                </button>
+              </li>                
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                  <svg class="bi me-2 opacity-50 theme-icon">
+                  <use href="#moon-stars-fill">
+                  </use>
+                  </svg>
+                  Dark
+                  <svg class="bi ms-auto d-none">
+                    <use href="#check2">
+                    </use>
+                    </svg>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto" aria-pressed="false">
+                  <svg class="bi me-2 opacity-50 theme-icon">
+                    <use href="#circle-half">
+                    </use>
+                  </svg>
+                  Auto
+                  <svg class="bi ms-auto d-none">
+                    <use href="#check2">
+                    </use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </li>
+
         </ul>
       </div>
     </div>
