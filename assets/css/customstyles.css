@@ -70,11 +70,8 @@
     --bs-dropdown-link-disabled-color: var(--menck-tn-bg);
     --bs-dropdown-header-color: #6c757d;
 
-    color: var(--menck-tn-text);
-    background-color: var(--menck-tn-bg);
-
-    color: var(--bs-dropdown-color);
-    background-color: var(--bs-dropdown-bg);
+    color: var(--menck-tn-bg);
+    background-color: whitesmoke;
     border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);
     border-radius: var(--bs-dropdown-border-radius);
   }
