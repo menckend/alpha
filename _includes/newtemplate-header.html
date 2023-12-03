@@ -58,6 +58,10 @@
             {% assign thisl1name = myl1pages | where_exp: 'page', 'page.l2idx == nil' | map: 'title' | compact | uniq %}
             {% assign thisl1url = myl1pages | where_exp: 'page', 'page.l2idx == nil' | map: 'url' %}
             {% comment %} Building a dropdown button for each unique l1idx value in our pages  {% endcomment %}
+
+            <hr class="d-lg-none my-2 menck-topnav-text-color">
+
+
             <!-- library/dropdown-menu -->
             <li class="nav-item dropdown menck-topnav-text-color">
               <button type="button" class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle menck-topnav-text-color show" data-bs-toggle="dropdown" aria-expanded="true" data-bs-display="static">
