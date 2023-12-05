@@ -10,6 +10,6 @@ permalink: capacity_ch3_p2.html
 folder: articles\/capacity
 ---
 
-![image](./capacity-virt-2.drawio.svg)
+![image](./capacity-virt-2.drawio.svg){:class="img-fluid"}
 
 {% include links.html %}

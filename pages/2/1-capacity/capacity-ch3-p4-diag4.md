@@ -10,6 +10,6 @@ permalink: capacity_ch3_p4.html
 folder: articles\/capacity
 ---
 
-![image](./capacity-resiliency-2n.drawio.svg)
+![image](./capacity-resiliency-2n.drawio.svg){:class="img-fluid"}
 
 {% include links.html %}
