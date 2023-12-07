@@ -1,0 +1,192 @@
+<script type="text/javascript"><![CDATA[
+    function edit(image)
+    {
+        // Uses first part of path as repo name.
+        // Change this according to your setup.
+        var tokens = window.location.pathname.split('/');
+
+        if (tokens.length < 2)
+        {
+            alert('Invalid URL');
+
+            return;
+        }
+
+        var org = window.location.hostname.split('.')[0];
+        var repo = tokens[]]><![CDATA[1];
+        var path = tokens.slice(2).join('/');
+        var ref = 'gh-pages';
+
+        var wnd = null;
+
+        var save = function()
+        {
+            wnd.postMessage(JSON.stringify(
+            {
+                action: 'spinner',
+                show: 0
+            }), '*');
+
+            var username = prompt('Username');
+
+            if (username == null || usernam]]><![CDATA[e.length == 0)
+            {
+                return;
+            }
+
+            var password = prompt('Password');
+
+            if (password == null || password.length == 0)
+            {
+                return;
+            }
+
+            var msg = prompt('Commit Message', 'Update ' + tokens[tokens.length - 1]);
+
+            if (msg == null)
+            {
+                return;
+            }
+]]><![CDATA[
+            var url = 'https://api.github.com/repos/' + org + '/' + repo +
+                '/contents/' + path + '?ref=' + encodeURIComponent(ref);
+
+            getSha(url, username, password, function(sha)
+            {
+                writeFile(url, username, password, sha, msg, function(req)
+                {
+                    var success = req.status]]><![CDATA[ == 200 || req.status == 201;
+
+                    if (!success)
+                    {
+                        var obj = JSON.parse(req.responseText);
+
+                        alert((obj != null) ? obj.message : 'Error');
+                    }
+                    else
+                    {
+                        wnd.close();
+
+                        // Forces udpate of cached image
+                        window.setTimeout(functio]]><![CDATA[n()
+                        {
+                            var newImage = new Image();
+                            newImage.src = window.location.protocol + '//' + window.location.hostname +
+                                window.location.pathname + '?' + new Date().getTime();
+                        }, 3000);
+                    }
+                });
+            });
+        };
+
+        var getSha = function(url, username, password, callback)
+        {
+            xhr('GET', url, null, username, password, funct]]><![CDATA[ion(req)
+            {
+                if (req.status == 200)
+                {
+                    var obj = JSON.parse(req.responseText);
+
+                    callback((obj != null) ? obj.sha : null);
+                }
+                else
+                {
+                    callback(null);
+                }
+            });
+        };
+
+        var writeFile = function(url, username, password, sha, msg, callback)
+        {
+]]><![CDATA[				var entity =
+            {
+                path: path,
+                message: msg,
+                content: btoa('<?xml version="1.0" encoding="UTF-8"?>\n' +
+                    '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">\n' +
+                    document.documentElement.outerHTML)
+            };
+
+            if (sh]]><![CDATA[a != null)
+            {
+                entity.sha = sha;
+            }
+
+            xhr('PUT', url, JSON.stringify(entity), username, password, function(req)
+            {
+                if (req.readyState == 4)
+                {
+                    callback(req);
+                }
+            });
+        };
+
+        var xhr = function xhr(verb, url, data, username, pass, callback)
+        {
+            var re]]><![CDATA[q = new XMLHttpRequest();
+            req.onreadystatechange = function()
+            {
+                if (req.readyState == 4)
+                {
+                    callback(req);
+                }
+            };
+
+            req.open(verb, url, true);
+
+            req.setRequestHeader('Authorization', 'Basic ' +
+                btoa(username + ':' + pass));
+
+            req.send(data);
+        };
+
+        var receive = function(evt)
+        {
+            if (evt.data.length > 0)
+            {
+                var msg = JSON.parse(evt.data);
+
+                if (msg.event == 'init')
+                {
+                    wnd.postMessage(JSON.stringify({action: 'load', xml: image.ownerSVGElement.outerHTML}), '*');
+                }
+                else if (msg.event == 'export')
+                {
+                    var temp = new Image();
+
+                    temp.onload = function()
+                    {
+                        image.setAttribute('xlink:href', msg.data);
+
+                        image.setAttribute('width', temp.width + 'px');
+                        image.setAttribute('height', temp.height + 'px');
+                        image.ownerSVGElement.setAttribute('width', temp.width + 'px');
+                        image.ownerSVGElement.setAttribute('height', temp.height + 'px');
+
+                        save();
+                    };
+
+                    temp.onerror = function(err)
+                    {
+                        alert('Error ' + err);
+                    }
+
+                    temp.src = msg.data;
+                }
+                else if (msg.event == 'save')
+                {
+                    wnd.postMessage(JSON.stringify({action: 'export', format: 'png', spinKey: 'saving'}), '*');
+                    image.ownerSVGElement.setAttribute('content', msg.xml);
+                }
+                else if (msg.event == 'exit')
+                {
+                    wnd.close();
+                }
+            }
+        };
+
+        window.addEventListener('message', receive);
+        wnd = window.open('https://embed.diagrams.net/?embed=1&ui=atlas&spin=1&proto=json');
+    }
+  ]]></script>
+
