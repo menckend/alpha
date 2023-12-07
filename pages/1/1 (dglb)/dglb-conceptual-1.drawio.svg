@@ -55,7 +55,7 @@
 				{
 					return;
 				}
-]]><![CDATA[				var entity =
+]]><![CDATA[
 				var url = 'https://api.github.com/repos/' + org + '/' + repo +
 					'/contents/' + path + '?ref=' + encodeURIComponent(ref);
 
