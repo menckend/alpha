@@ -199,7 +199,7 @@
 	  ]]></script>
 
 <defs/>
-<g style="cursor:pointer;" onclick="edit(this);">
+<g">
     <path d="M 971.3 -249.12 L 893.82 -249.12 Q 883.82 -249.12 883.82 -239.12 L 883.82 57.13 Q 883.82 67.13 880.51 67.13 L 878.85 67.13 Q 877.2 67.13 880.51 67.13 L 882.16 67.13 Q 883.82 67.13 883.82 77.13 L 883.82 373.38 Q 883.82 383.38 893.82 383.38 L 971.3 383.38" fill="none" stroke="#6b6b6b" stroke-width="3" stroke-miterlimit="10" transform="rotate(90,924.25,67.13)" pointer-events="all"/>
         <rect x="630" y="613" width="580" height="100" rx="11" ry="11" fill="none" stroke="#6b6b6b" stroke-width="2" pointer-events="all"/>
         <rect x="630.86" y="43" width="580" height="561.23" rx="11.22" ry="11.22" fill="none" stroke="#6b6b6b" stroke-width="2" pointer-events="all"/>
