@@ -23,7 +23,7 @@
 			var org = window.location.hostname.split('.')[0];
 			var repo = tokens[]]><![CDATA[1];
 			var path = tokens.slice(2).join('/');
-			var ref = 'gh-pages';
+			var ref = 'main';
 
 			var wnd = null;
 
@@ -197,8 +197,6 @@
 			wnd = window.open('https://embed.diagrams.net/?embed=1&ui=atlas&spin=1&proto=json');
 		}
 	  ]]></script>
-
-
 
 <defs/>
 <g style="cursor:pointer;" onclick="edit(this);">
