@@ -156,7 +156,7 @@
 
 					if (msg.event == 'init')
 					{
-						wnd.postMessage(JSON.stringify({action: 'load', xml: image.ownerSVGElement.outerHTML}), '*');
+						wnd.postMessage(JSON.stringify({action: 'load', xml: image.ownerSVGElement}), '*');
 					}
 					else if (msg.event == 'export')
 					{
