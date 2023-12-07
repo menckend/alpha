@@ -1,4 +1,198 @@
-<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1144px" height="155px" viewBox="-0.5 -0.5 1144 155" content="&lt;mxfile&gt;&lt;diagram name=&quot;Page-1&quot; id=&quot;luPda_6Y3VakN9hGyxXw&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;">
+<svg style="cursor:pointer;" onclick="edit(this);" host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1144px" height="155px" viewBox="-0.5 -0.5 1144 155" content="&lt;mxfile&gt;&lt;diagram name=&quot;Page-1&quot; id=&quot;luPda_6Y3VakN9hGyxXw&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;">
+
+<script type="text/javascript"><![CDATA[
+		function edit(image)
+		{
+			// Uses first part of path as repo name.
+			// Change this according to your setup.
+			var tokens = window.location.pathname.split('/');
+
+			if (tokens.length < 2)
+			{
+				alert('Invalid URL');
+
+				return;
+			}
+
+			var org = window.location.hostname.split('.')[0];
+			var repo = tokens[]]><![CDATA[1];
+			var path = tokens.slice(2).join('/');
+			var ref = 'main';
+
+			var wnd = null;
+
+			var save = function()
+			{
+				wnd.postMessage(JSON.stringify(
+				{
+					action: 'spinner',
+					show: 0
+				}), '*');
+
+				var username = prompt('Username');
+
+				if (username == null || usernam]]><![CDATA[e.length == 0)
+				{
+					return;
+				}
+
+				var password = prompt('Password');
+
+				if (password == null || password.length == 0)
+				{
+					return;
+				}
+
+				var msg = prompt('Commit Message', 'Update ' + tokens[tokens.length - 1]);
+
+				if (msg == null)
+				{
+					return;
+				}
+]]><![CDATA[
+				var url = 'https://api.github.com/repos/' + org + '/' + repo +
+					'/contents/' + path + '?ref=' + encodeURIComponent(ref);
+
+				getSha(url, username, password, function(sha)
+				{
+					writeFile(url, username, password, sha, msg, function(req)
+					{
+						var success = req.status]]><![CDATA[ == 200 || req.status == 201;
+
+						if (!success)
+						{
+							var obj = JSON.parse(req.responseText);
+
+							alert((obj != null) ? obj.message : 'Error');
+						}
+						else
+						{
+							wnd.close();
+
+							// Forces udpate of cached image
+							window.setTimeout(functio]]><![CDATA[n()
+							{
+								var newImage = new Image();
+								newImage.src = window.location.protocol + '//' + window.location.hostname +
+									window.location.pathname + '?' + new Date().getTime();
+							}, 3000);
+						}
+					});
+				});
+			};
+
+			var getSha = function(url, username, password, callback)
+			{
+				xhr('GET', url, null, username, password, funct]]><![CDATA[ion(req)
+				{
+					if (req.status == 200)
+					{
+						var obj = JSON.parse(req.responseText);
+
+						callback((obj != null) ? obj.sha : null);
+					}
+					else
+					{
+						callback(null);
+					}
+				});
+			};
+
+			var writeFile = function(url, username, password, sha, msg, callback)
+			{
+]]><![CDATA[				var entity =
+				{
+					path: path,
+					message: msg,
+					content: btoa('<?xml version="1.0" encoding="UTF-8"?>\n' +
+						'<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">\n' +
+						document.documentElement.outerHTML)
+				};
+
+				if (sh]]><![CDATA[a != null)
+				{
+					entity.sha = sha;
+				}
+
+				xhr('PUT', url, JSON.stringify(entity), username, password, function(req)
+				{
+					if (req.readyState == 4)
+					{
+						callback(req);
+					}
+				});
+			};
+
+			var xhr = function xhr(verb, url, data, username, pass, callback)
+			{
+				var re]]><![CDATA[q = new XMLHttpRequest();
+				req.onreadystatechange = function()
+				{
+					if (req.readyState == 4)
+					{
+						callback(req);
+					}
+				};
+
+				req.open(verb, url, true);
+
+				req.setRequestHeader('Authorization', 'Basic ' +
+					btoa(username + ':' + pass));
+
+				req.send(data);
+			};
+
+			var receive = function(evt)
+			{
+				if (evt.data.length > 0)
+				{
+					var msg = JSON.parse(evt.data);
+
+					if (msg.event == 'init')
+					{
+						wnd.postMessage(JSON.stringify({action: 'load', xml: image.outerHTML}), '*');
+					}
+					else if (msg.event == 'export')
+					{
+						var temp = new Image();
+
+						temp.onload = function()
+						{
+							image.setAttribute('xlink:href', msg.data);
+
+							image.setAttribute('width', temp.width + 'px');
+							image.setAttribute('height', temp.height + 'px');
+							image.ownerSVGElement.setAttribute('width', temp.width + 'px');
+							image.ownerSVGElement.setAttribute('height', temp.height + 'px');
+
+							save();
+						};
+
+						temp.onerror = function(err)
+						{
+							alert('Error ' + err);
+						}
+
+						temp.src = msg.data;
+					}
+					else if (msg.event == 'save')
+					{
+						wnd.postMessage(JSON.stringify({action: 'export', format: 'png', spinKey: 'saving'}), '*');
+						image.ownerSVGElement.setAttribute('content', msg.xml);
+					}
+					else if (msg.event == 'exit')
+					{
+						wnd.close();
+					}
+				}
+			};
+
+			window.addEventListener('message', receive);
+			wnd = window.open('https://embed.diagrams.net/?embed=1&ui=atlas&spin=1&proto=json');
+		}
+	  ]]></script>
+
+
     <defs/>
     <g>
         <path d="M 120.34 1.32 L 57.96 1.32 Q 47.96 1.32 47.96 11.32 L 47.96 67.1 Q 47.96 77.1 41.99 77.1 L 39 77.1 Q 36.02 77.1 41.99 77.1 L 44.97 77.1 Q 47.96 77.1 47.96 87.1 L 47.96 142.88 Q 47.96 152.88 57.96 152.88 L 120.34 152.88" fill="none" stroke="#6b6b6b" stroke-width="3" stroke-miterlimit="10" pointer-events="all"/>
