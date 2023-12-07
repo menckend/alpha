@@ -55,7 +55,7 @@
 				{
 					return;
 				}
-]]><![CDATA[
+]]><![CDATA[				var entity =
 				var url = 'https://api.github.com/repos/' + org + '/' + repo +
 					'/contents/' + path + '?ref=' + encodeURIComponent(ref);
 
@@ -156,7 +156,7 @@
 
 					if (msg.event == 'init')
 					{
-						wnd.postMessage(JSON.stringify({action: 'load', xml: image.ownerSVGElement.innerHTML}), '*');
+						wnd.postMessage(JSON.stringify({action: 'load', xml: image.ownerSVGElement.outerHTML}), '*');
 					}
 					else if (msg.event == 'export')
 					{
