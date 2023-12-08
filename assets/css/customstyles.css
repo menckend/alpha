@@ -287,7 +287,7 @@ details summary::-webkit-details-marker {
 details summary:before,
 details.sbdeet summary:before,
 details.deet4 summary:before,
-details.deet5 summary:before{
+details.deet5 summary:before {
   content: '\F4FD';
   font-family: "bootstrap-icons";
   padding-right: 8px;
@@ -305,11 +305,19 @@ details[open] summary:before {
   text-decoration: none;
 }
 
-details.sbdeet5[open].active summary:before,
-details.deet5[open].active summary:before,
-details.deet4[open].active summary:before,
-details.deet5[open].active summary:before {
+details.sbdeet.inpath *
+details.deet4.inpath *
+details.deet5.inpath *
+l3itemactive *, l4itemactive *, l5itemactive *,
+ {
   text-decoration-thickness: 120% ;
+  text-shadow: 0 0 5px #fff,
+  0 0 1px #fff,
+  0 0 2px green,
+  0 0 3px green,
+  0 0 4px green,
+  0 0 5px green,
+  0 0 7px green;
 }
 
 
