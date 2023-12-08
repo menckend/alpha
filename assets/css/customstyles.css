@@ -207,7 +207,13 @@
   border-radius: 5px;
   text-decoration: none;
 }
-  
+
+
+
+
+
+
+
 details.sbdeet {
     overflow: hidden;
     border-collapse: separate;
@@ -226,6 +232,7 @@ details.sbdeet[open] {
     background-color: var(--menck-sb-bg);
     border-radius: 5px;
 }
+
 
 details.sbdeet summary {
     list-style: none;
@@ -275,59 +282,66 @@ details summary::-webkit-details-marker {
     display: none;
    }
 
+
+
+
+
+
+
+
 /* plus */
-details summary:before {
+details summary:before,
+details.deet4 summary:before,
+details.deet5 summary:before,{
   content: '\F4FD';
   font-family: "bootstrap-icons";
-/*    font-size: 14px; */
   padding-right: 8px;
   text-decoration: none;
-}
+  }
 
 /* minus */
+details.deet5[open] summary:before,
+details.deet4[open] summary:before,
 details[open] summary:before {
   content: '\F2E9';
   font-family: "bootstrap-icons";
-  /*    font-size: 14px; */
   padding-right: 8px;
   text-decoration: none;
 }
 
-/* plus */
-details.deet4 summary:before {
-    content: '\F4FD';
-    font-family: "bootstrap-icons";
-    /*    font-size: 14px; */
-    padding-right: 8px;
-    text-decoration: none;
-  }
-
-/* minus */
-details.deet4[open] summary:before {
-    content: '\F2E9';
-    font-family: "bootstrap-icons";    
-    /*    font-size: 14px; */
-    padding-right: 8px;
-    text-decoration: none;
-  }
-
-/* plus */
-details.deet5 summary:before {
-  content: '\F4FD';
-  font-family: "bootstrap-icons";
-  /*    font-size: 14px; */
-  padding-right: 8px;
-  text-decoration: none;
+details.sbdeet5[open].active summary:before,
+details.deet5[open].active summary:before,
+details.deet4[open].active summary:before,
+details.deet5[open].active summary:before {
+  font-weight: bold;
 }
 
-/* minus */
-details.deet5[open] summary:before {
-  content: '\F2E9';
-  /*    font-size: 14px; */
-  font-size: 14px;
-  padding-right: 8px;
-  text-decoration: none;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 p.l10item, p.l10itemactive,
 p.l9item, p.l9itemactive,
