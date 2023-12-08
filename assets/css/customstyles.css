@@ -283,14 +283,9 @@ details summary::-webkit-details-marker {
    }
 
 
-
-
-
-
-
-
 /* plus */
 details summary:before,
+details.sbdeet summary:before,
 details.deet4 summary:before,
 details.deet5 summary:before,{
   content: '\F4FD';
@@ -300,6 +295,7 @@ details.deet5 summary:before,{
   }
 
 /* minus */
+details.sbdeet[open] summary:before,
 details.deet5[open] summary:before,
 details.deet4[open] summary:before,
 details[open] summary:before {
@@ -313,7 +309,7 @@ details.sbdeet5[open].active summary:before,
 details.deet5[open].active summary:before,
 details.deet4[open].active summary:before,
 details.deet5[open].active summary:before {
-  font-weight: bold;
+  text-decoration-thickness: 120% ;
 }
 
 
