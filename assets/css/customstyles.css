@@ -333,7 +333,7 @@ p.l3item, p.l3itemactive
  {
   margin: 0px;
   padding: 0px;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px green, 0 0 30px green, 0 0 40px green, 0 0 55px green, 0 0 70px green;
+  text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 2px green, 0 0 3px green, 0 0 4px green, 0 0 5px green, 0 0 7px green;
 }
 
 /* empty square*/
