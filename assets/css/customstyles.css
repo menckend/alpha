@@ -301,15 +301,13 @@ details[open] summary:before {
   text-decoration: none;
 }
 
-details.inpath.sbdeet[open] summary:before,
-details.inpath.deet5[open] summary:before,
-details.inpath.deet4[open] summary:before,
-details.inpath[open] summary:before {
+details.inpath summary:before {
   content: '\F2E9';
   font-family: "bootstrap-icons";
   padding-right: 8px;
   text-shadow: 0 0 3px #fff, 0 0 5px var(--menck-sb-text), 0 0 7px var(--menck-sb-text);
 }
+
 
 /*
 details.sbdeet.inpath, details.deet4.inpath, details.deet5.inpath,
