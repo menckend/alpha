@@ -293,15 +293,15 @@ details.deet5 summary:before {
 
 p.l3item > a:before,
 p.l3itemactive > a:before,
-details.sbdeet summary:before {
-  padding-left: 8px;
+details.sbdeet {
+  padding-left: 2px;
   text-decoration: none;
   }
 
 p.l4item > a:before,
 p.l4itemactive > a:before,
 details.deet4 summary:before {
-    padding-left: 16px;
+    padding-left: 10px;
     text-decoration: none;
     }
 
@@ -311,7 +311,7 @@ details.deet5 summary:before {
       padding-left: 24px;
       text-decoration: none;
       }
-  
+
 
 /* minus */
 details.sbdeet[open] summary:before,
