@@ -310,7 +310,7 @@ details.deet4.inpath *
 details.deet5.inpath *
 l3itemactive *, l4itemactive *, l5itemactive *,
  {
-  text-shadow: 0 0 5px #fff, 0 0 1px #fff, 0 0 2px green, 0 0 3px green, 0 0 4px green, 0 0 5px green, 0 0 7px green;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px green, 0 0 30px green, 0 0 40px green, 0 0 50px green, 0 0 70px green;
 }
 
 
