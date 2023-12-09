@@ -291,6 +291,7 @@ details.deet5 summary:before {
   text-decoration: none;
   }
 
+p.l3item,
 p.l3item > a:before,
 p.l3itemactive > a:before,
 details.sbdeet {
@@ -298,6 +299,7 @@ details.sbdeet {
   text-decoration: none;
   }
 
+p.l4item
 p.l4item > a:before,
 p.l4itemactive > a:before,
 details.deet4 summary:before {
@@ -305,6 +307,7 @@ details.deet4 summary:before {
     text-decoration: none;
     }
 
+p.l5item
 p.l5item > a:before,
 p.l5itemactive > a:before,
 details.deet5 summary:before {
