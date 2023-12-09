@@ -235,7 +235,7 @@ details.sbdeet summary {
     list-style: none;
     overflow: hidden;
     border-collapse: separate;
-    padding: 0px 0px 2px 0px;
+    padding: 0px 0px 8px 0px;
     cursor: pointer;
     background: none;
     border: hidden;
@@ -249,7 +249,7 @@ details {
     overflow: hidden;
     border-collapse: separate;
     border-style: hidden;
-    padding: 0px 8px;
+    padding: 0px 0px 8px 0px;
     margin-bottom: 15px;
     border: hidden;
 }
@@ -257,7 +257,7 @@ details {
 details[open] {
     overflow: hidden;
     border-collapse: separate;
-    padding: 0px 8px;
+    padding: 0px 0px 8px 0px;
     border-color: var(--menck-deets-border);
     margin-bottom: 15px;
     border-style: hidden;
@@ -269,7 +269,7 @@ details summary {
     list-style: none;
     overflow: hidden;
     border-collapse: separate;
-    padding: 0px 0px 2px 0px;
+    padding: 0px 0px 8px 0px;
     cursor: pointer;
     background: none;
     border: hidden;
