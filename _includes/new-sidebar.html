@@ -35,7 +35,7 @@
                            {% assign myl4idxes = myl3pages | where_exp: 'page', 'page.l5idx == nil' | sort: 'l4idx' | map: 'l4idx' | compact | uniq %}
                            {% comment %} Testing to see if the current l3 index has any l4 children. {% endcomment %}
                            {% if myl4idxes.size > 0 %}
-                              <details class="sbdeet" {% if page.l3idx == l3ix%} open inpath{%endif%}><summary><a title="{{myl3name}}" href="{{myl3url | remove: '/'}}">{{myl3name}}</a></summary>
+                              <details class="sbdeet {% if page.l3idx == l3ix%} open inpath{%endif%}"><summary><a title="{{myl3name}}" href="{{myl3url | remove: '/'}}">{{myl3name}}</a></summary>
                                  {% for l4ix in myl4idxes %}
                                     {% comment %} Get a list of all the pages with *current* L4 index {% endcomment %}
                                     {% assign myl4pages = myl3pages | where: 'l4idx', l4ix %}
@@ -44,7 +44,7 @@
                                     {% comment %} Get all the unique L5 indices in pages with *current* L3&L4 index {% endcomment %}
                                     {% assign myl5idxes = myl4pages | where_exp: 'page', 'page.l6idx == nil' | map: 'l5idx' | compact | uniq %}
                                     {% if myl5idxes.size > 0 %}
-                                       <details class="sbdeet deet4" {% if page.l4idx == l4ix and page.l3idx == l3ix %} open inpath{%endif%}><summary><a title="{{myl4name}}" href="{{myl4url | remove: '/'}}">{{myl4name}}</a></summary>
+                                       <details class="sbdeet deet4 {% if page.l4idx == l4ix and page.l3idx == l3ix %} open inpath{%endif%}"><summary><a title="{{myl4name}}" href="{{myl4url | remove: '/'}}">{{myl4name}}</a></summary>
                                           {% for l5ix in myl5idxes %}
                                              {% assign myl5name = myl4pages | where: 'l5idx', l5ix | where_exp: 'page', 'page.l6idx == nil' | map: 'title' | compact | uniq %}
                                              {% assign myl5url = myl4pages | where: 'l5idx', l5ix | where_exp: 'page', 'page.l6idx == nil' | map: 'url' | compact | uniq %}
