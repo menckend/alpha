@@ -291,7 +291,7 @@ details.deet5 summary:before {
   text-decoration: none;
   }
 
-p.l3itema > a:before,
+p.l3item > a:before,
 p.l3itemactive > a:before,
 details.sbdeet summary:before {
   padding-left: 8px;
@@ -333,6 +333,7 @@ details.inpath summary:before {
 }
 
 
+/*
 p.l10item, p.l10itemactive,
 p.l9item, p.l9itemactive,
 p.l8item, p.l8itemactive,
@@ -345,7 +346,7 @@ p.l3item, p.l3itemactive
   margin: 0px;
   padding: 0px;
 }
-
+*/
 
 
 /* empty square*/
