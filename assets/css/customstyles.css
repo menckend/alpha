@@ -305,14 +305,14 @@ details[open] summary:before {
   text-decoration: none;
 }
 
-
+/*
 details.sbdeet.inpath, details.deet4.inpath, details.deet5.inpath,
 details.sbdeet.inpath *, details.deet4.inpath *, details.deet5.inpath *,
 l3itemactive, l4itemactive, l5itemactive, l3itemactive *, l4itemactive *, l5itemactive *,
  {
   text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 10px var(--menck-sb-text), 0 0 7px var(--menck-sb-text), 0 0 10px var(--menck-sb-text), 0 0 12px var(--menck-sb-text), 0 0 18px var(--menck-sb-text);
 }
-
+*/
 
 
 
@@ -330,7 +330,7 @@ p.l3item, p.l3itemactive
 }
 
 
-
+/*
 p.l10itemactive,
 p.l9itemactive,
 p.l8itemactive,
@@ -342,7 +342,7 @@ p.l3itemactive
  {
   text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 10px var(--menck-sb-text), 0 0 7px var(--menck-sb-text), 0 0 10px var(--menck-sb-text), 0 0 12px var(--menck-sb-text), 0 0 18px var(--menck-sb-text);
 }
-
+*/
 
 
 
@@ -379,7 +379,8 @@ p.l3itemactive > a:before {
 /*    font-size: 14px; */
     padding-right: 8px;
     padding-left: 8px;
-    text-decoration: none;
+    text-shadow: 0 0 3px #fff, 0 0 3px #fff, 0 0 10px var(--menck-sb-text), 0 0 7px var(--menck-sb-text), 0 0 10px var(--menck-sb-text), 0 0 12px var(--menck-sb-text), 0 0 18px var(--menck-sb-text);
+
 }
 
 /* Sidebar item padding*/
