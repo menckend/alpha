@@ -13,7 +13,7 @@
     --menck-tn-dd-bg: white;
     --menck-sb-bg: whitesmoke;
     --menck-sb-text: #347DBE;
-    --menck-sb-shadow: #fffc41fb;
+    --menck-sb-shadow: #347DBE;
     --menck-sb-border: #347DBE;
     --menck-summary-bar: #347DBE;
     --menck-summary-txt: #347DBE;
@@ -291,26 +291,27 @@ details.deet5 summary:before {
   text-decoration: none;
   }
 
-
+p.l3itema > a:before,
 p.l3itemactive > a:before,
 details.sbdeet summary:before {
   padding-right: 8px;
   text-decoration: none;
   }
 
+p.l4item > a:before,
 p.l4itemactive > a:before,
 details.deet4 summary:before {
     padding-right: 16px;
     text-decoration: none;
     }
 
+p.l5item > a:before,
 p.l5itemactive > a:before,
 details.deet5 summary:before {
       padding-right: 24px;
       text-decoration: none;
       }
   
-
 
 /* minus */
 details.sbdeet[open] summary:before,
