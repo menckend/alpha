@@ -308,12 +308,9 @@ details[open].inpath summary:before {
   content: '\F2E9';
   font-family: "bootstrap-icons";
   padding-right: 8px;
+  text-decoration: none;
   text-shadow: 0 0 3px #fff, 0 0 4px #fff, 0 0 6px var(--menck-sb-text);
 }
-
-
-text-shadow: 0 0 3px #fff, 0 0 4px #fff, 0 0 6px var(--menck-sb-text);
-
 
 
 
