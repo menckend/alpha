@@ -333,7 +333,7 @@ details.inpath summary:before {
 }
 
 
-/*
+
 p.l10item, p.l10itemactive,
 p.l9item, p.l9itemactive,
 p.l8item, p.l8itemactive,
@@ -344,9 +344,10 @@ p.l4item, p.l4itemactive,
 p.l3item, p.l3itemactive
  {
   margin: 0px;
-  padding: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
-*/
+
 
 
 /* empty square*/
