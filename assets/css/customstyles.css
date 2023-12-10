@@ -346,7 +346,7 @@ details.sbdeet >a:before {
 
 .l4item > a:before,
 .l4itemactive > a:before,
-.deet4 > a:before {
+details.deet4 > a:before {
   padding-left: 16px;
   padding-right: 8px;
   text-decoration: none;
