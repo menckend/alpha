@@ -13,7 +13,7 @@
     --menck-tn-dd-bg: white;
     --menck-sb-bg: whitesmoke;
     --menck-sb-text: #347DBE;
-    --menck-sb-shadow: grey;
+    --menck-sb-shadow: green;
     --menck-sb-border: #347DBE;
     --menck-summary-bar: #347DBE;
     --menck-summary-txt: #347DBE;
@@ -226,7 +226,6 @@ details {
 details[open] {
   overflow: hidden;
   border-collapse: separate;
-  padding: 0px 0px 8px 0px;
   border-color: var(--menck-deets-border);
   margin-bottom: 15px;
   border-style: hidden;
@@ -247,9 +246,6 @@ details summary {
 details summary::-webkit-details-marker {
   display: none;
  }
-
-
-
 
 
 
@@ -292,6 +288,7 @@ details.deet5 summary:before {
   content: '\F4FD';
   font-family: "bootstrap-icons";
   text-decoration: none;
+  padding-right: 2px;
   }
 
 /* Replace details element's default is-open indicator with "minus" icon */
@@ -302,16 +299,16 @@ details[open] summary:before {
   content: '\F2E9';
   font-family: "bootstrap-icons";
   text-decoration: none;
+  padding-right: 2px;
 }
 
 
 
 /*  Set desired padding for hierarchical indent of content in sidebar menu */
-p.l3item > a, p.l3item > a:before,
-p.l3itemactive > a,p.l3itemactive > a:before,
-details.sbdeet {
+.l3item > a:before,
+.l3itemactive > a:before,
+details.sbdeet >a:before {
   padding-left: 8px;
-  padding-right: 8px;
   text-decoration: none;
   }
 
