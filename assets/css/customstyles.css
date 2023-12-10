@@ -215,7 +215,7 @@ details {
   overflow: hidden;
   border-collapse: separate;
   border-style: hidden;
-  padding: 8px 8px 8px 8px;
+  padding: 4px 8px 8px 8px;
   margin-bottom: 15px;
   border: hidden;
 }
@@ -234,7 +234,7 @@ details summary {
   list-style: none;
   overflow: hidden;
   border-collapse: separate;
-  padding: 8px 8px 8px 8px;
+  padding: 4px 8px 8px 8px;
   cursor: pointer;
   background: none;
   border: hidden;
