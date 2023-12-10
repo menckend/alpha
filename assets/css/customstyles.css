@@ -330,9 +330,25 @@ details[open] summary:before {
   padding-right: 8px;
 }
 
+/* Sidebar item padding*/
 
+.left-sidebar-chunk > p {
+  padding: opx;
+  margin: 0px;
+}
 
+/* Try topnav color scheme in sidebar.  */
+div.medianav {
+    background-color: var(--menck-sb-bg);
+    color: var(--menck-sb-txt);
+    border-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
 
+div.medianav * {
+    padding: 8px;
+}
 
 
 /*  Set desired padding for hierarchical indent of content in sidebar menu */
@@ -382,26 +398,9 @@ p.l3item, p.l3itemactive
 }
 
 
-/* Sidebar item padding*/
 
 
-.left-sidebar-chunk > p {
-  padding: opx;
-  margin: 0px;
-}
 
-/* Try topnav color scheme in sidebar.  */
-div.medianav {
-    background-color: var(--menck-sb-bg);
-    color: var(--menck-sb-txt);
-    border-style: none;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-div.medianav * {
-    padding: 8px;
-}
 
 div.mencknav {
     background-color: var(--menck-sb-bg);
