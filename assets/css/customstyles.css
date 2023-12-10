@@ -215,7 +215,7 @@ details {
   overflow: hidden;
   border-collapse: separate;
   border-style: hidden;
-  padding: 4px 8px 8px 8px;
+  padding: 0px 0px 0px 0px;
   margin-bottom: 15px;
   border: hidden;
 }
@@ -234,7 +234,7 @@ details summary {
   list-style: none;
   overflow: hidden;
   border-collapse: separate;
-  padding: 4px 8px 8px 8px;
+  padding: 0px 0px 0px 0px;
   cursor: pointer;
   background: none;
   border: hidden;
@@ -274,6 +274,40 @@ details.sbdeet summary {
 }
 
 
+
+
+/* empty square*/
+p.l10item > a:before,
+p.l9item > a:before,
+p.l8item > a:before,
+p.l7item > a:before,
+p.l6item > a:before,
+p.l5item > a:before,
+p.l4item > a:before,
+p.l3item > a:before {
+    content: '\F584';
+    font-family: "bootstrap-icons";
+    text-decoration: bold;
+  }
+
+
+/* full square*/
+p.l10itemactive > a:before,
+p.l9itemactive > a:before,
+p.l8itemactive > a:before,
+p.l7itemactive > a:before,
+p.l6itemactive > a:before,
+p.l5itemactive > a:before,
+p.l4itemactive > a:before,
+p.l3itemactive > a:before {
+    content: '\F582';
+    font-family: "bootstrap-icons";
+    text-shadow: 0 0 3px #fff, 0 0 5px var(--menck-sb-shadow), 0 0 7px var(--menck-sb-shadow);
+  }
+
+
+
+
 /* Replace  details element's default is-not-open indicator with "plus" icon */
 details summary:before,
 details.sbdeet summary:before,
@@ -295,6 +329,10 @@ details[open] summary:before {
   text-decoration: none;
   padding-right: 8px;
 }
+
+
+
+
 
 
 /*  Set desired padding for hierarchical indent of content in sidebar menu */
@@ -343,40 +381,6 @@ p.l3item, p.l3itemactive
   padding-bottom: 0px;
 }
 
-
-/* empty square*/
-p.l10item > a:before,
-p.l9item > a:before,
-p.l8item > a:before,
-p.l7item > a:before,
-p.l6item > a:before,
-p.l5item > a:before,
-p.l4item > a:before,
-p.l3item > a:before {
-    content: '\F584';
-    font-family: "bootstrap-icons";
-    padding-right: 8px;
-    padding-left: 8px;
-    text-decoration: bold;
-  }
-
-
-/* full square*/
-p.l10itemactive > a:before,
-p.l9itemactive > a:before,
-p.l8itemactive > a:before,
-p.l7itemactive > a:before,
-p.l6itemactive > a:before,
-p.l5itemactive > a:before,
-p.l4itemactive > a:before,
-p.l3itemactive > a:before {
-    content: '\F582';
-    font-family: "bootstrap-icons";
-/*    font-size: 14px;
-    padding-right: 8px;
-    padding-left: 8px; */
-    text-shadow: 0 0 3px #fff, 0 0 5px var(--menck-sb-shadow), 0 0 7px var(--menck-sb-shadow);
-  }
 
 /* Sidebar item padding*/
 
