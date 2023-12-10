@@ -282,7 +282,7 @@ details.deet5 summary:before {
   content: '\F4FD';
   font-family: "bootstrap-icons";
   text-decoration: none;
-  padding-right: 2px;
+  padding-right: 8px;
   }
 
 /* Replace details element's default is-open indicator with "minus" icon */
@@ -293,7 +293,7 @@ details[open] summary:before {
   content: '\F2E9';
   font-family: "bootstrap-icons";
   text-decoration: none;
-  padding-right: 2px;
+  padding-right: 8px;
 }
 
 
