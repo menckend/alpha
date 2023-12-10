@@ -309,7 +309,7 @@ details.sbdeet >a:before {
 .l4item > a:before,
 .l4itemactive > a:before,
 .deet4 > a:before {
-  padding-left: 8px;
+  padding-left: 16px;
   padding-right: 8px;
   text-decoration: none;
   }
@@ -317,7 +317,7 @@ details.sbdeet >a:before {
 .l5item > a:before,
 .l5itemactive > a:before,
 details.deet5 > a:before {
-  padding-left: 8px;
+  padding-left: 16px;
   padding-right: 8px;
   text-decoration: none;
   }
