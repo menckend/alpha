@@ -352,7 +352,7 @@ div.medianav * {
 /*  Set desired padding for hierarchical indent of content in sidebar menu */
 .l3item > a:before,
 .l3itemactive > a:before,
-details.sbdeet >a:before {
+details.deet3 >a:before {
   padding-left: 8px;
   padding-right: 8px;
   text-decoration: none;
