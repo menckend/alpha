@@ -363,7 +363,7 @@ details.deet3 > summary >a:before {
 
 .l4item > a:before,
 .l4itemactive > a:before,
-details > details.deet4 > summary > a:before {
+details > details > summary > a:before {
   padding-left: 16px;
   padding-right: 8px;
   text-decoration: none;
