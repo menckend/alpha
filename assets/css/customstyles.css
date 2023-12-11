@@ -209,6 +209,15 @@
 }
 
 
+/* Sidebar item padding*/
+
+.left-sidebar-chunk > p {
+  padding: opx;
+  margin: 0px;
+}
+
+
+
 /* Stylings for details elements in all contexts */
 
 details {
@@ -305,36 +314,29 @@ p.l3itemactive > a:before {
   }
 
 
-
-
 /* Replace  details element's default is-not-open indicator with "plus" icon */
-details summary:before,
+details > summary:before,
 details.sbdeet summary:before,
-details.deet4 summary:before,
-details.deet5 summary:before {
+details.deet4 > summary:before,
+details.deet5 > summary:before {
   content: '\F4FD';
   font-family: "bootstrap-icons";
   text-decoration: none;
   padding-right: 8px;
   }
 
+
 /* Replace details element's default is-open indicator with "minus" icon */
-details.sbdeet[open] summary:before,
-details.deet5[open] summary:before,
-details.deet4[open] summary:before,
-details[open] summary:before {
+details.sbdeet[open] > summary:before,
+details.deet5[open] > summary:before,
+details.deet4[open] > summary:before,
+details[open] > summary:before {
   content: '\F2E9';
   font-family: "bootstrap-icons";
   text-decoration: none;
   padding-right: 8px;
 }
 
-/* Sidebar item padding*/
-
-.left-sidebar-chunk > p {
-  padding: opx;
-  margin: 0px;
-}
 
 /* Try topnav color scheme in sidebar.  */
 div.medianav {
@@ -395,10 +397,6 @@ p.l3item, p.l3itemactive
   padding-top: 0px;
   padding-bottom: 0px;
 }
-
-
-
-
 
 
 div.mencknav {
