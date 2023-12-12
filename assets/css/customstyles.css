@@ -244,7 +244,7 @@ details summary {
   overflow: hidden;
   border-collapse: separate;
   padding: 0px 0px 0px 0px;
-  padding-left: 4px;
+/*  padding-left: 4px; */
   cursor: pointer;
   background: none;
   border: hidden;
