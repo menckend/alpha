@@ -375,7 +375,7 @@ div.medianav * {
 
 /*  Set text shadow for in-path items in sidebar navbar menu */
 
-.inpath summary:before {
+.inpath > summary:before {
   text-shadow: 0 0 3px #fff, 0 0 5px var(--menck-sb-shadow), 0 0 7px var(--menck-sb-shadow);
 }
 
