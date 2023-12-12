@@ -348,25 +348,25 @@ div.medianav * {
 
 
 /*  Set desired padding for hierarchical indent of content in sidebar menu */
-.l3item a:before,
-.l3itemactive a:before,
-.deet3 summary:before {
+.l3item > a:before,
+.l3itemactive > a:before,
+.deet3 > summary:before {
   padding-left: 4px;
   padding-right: 8px;
   text-decoration: none;
   }
 
-.l4item a:before,
-.l4itemactive a:before,
-.deet4 summary:before {
+.l4item > a:before,
+.l4itemactive > a:before,
+.deet4 > summary:before {
   padding-left: 20px;
   padding-right: 8px;
   text-decoration: none;
   }
   
-.l5item a:before,
-.l5itemactive a:before,
-.deet5 summary:before {
+.l5item > a:before,
+.l5itemactive > a:before,
+.deet5 > summary:before {
   padding-left: 36px;
   padding-right: 8px;
   text-decoration: none;
