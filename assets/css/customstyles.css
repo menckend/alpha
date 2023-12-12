@@ -316,9 +316,7 @@ p.l3itemactive > a:before {
 
 /* Replace details element's default is-not-open indicator with "plus" icon */
 details > summary:before,
-details.sbdeet summary:before,
-details.deet4 > summary:before,
-details.deet5 > summary:before {
+sbdeet summary:before {
   content: '\F4FD';
   font-family: "bootstrap-icons";
   text-decoration: none;
@@ -327,9 +325,6 @@ details.deet5 > summary:before {
 
 
 /* Replace details element's default is-open indicator with "minus" icon */
-details.sbdeet[open] > summary:before,
-details.deet5[open] > summary:before,
-details.deet4[open] > summary:before,
 details[open] > summary:before {
   content: '\F2E9';
   font-family: "bootstrap-icons";
@@ -363,7 +358,7 @@ details.deet3 > summary >a:before {
 
 .l4item > a:before,
 .l4itemactive > a:before,
-details > details > summary > a:before {
+.deet4 > summary > a:before {
   padding-left: 16px;
   padding-right: 8px;
   text-decoration: none;
@@ -371,7 +366,7 @@ details > details > summary > a:before {
   
 .l5item > a:before,
 .l5itemactive > a:before,
-details.deet5 > summary > a:before {
+.deet5 > summary > a:before {
   padding-left: 24px;
   padding-right: 8px;
   text-decoration: none;
