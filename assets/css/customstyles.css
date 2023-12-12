@@ -351,7 +351,7 @@ div.medianav * {
 .l3item > a:before,
 .l3itemactive > a:before,
 details.deet3 > summary >a:before {
-  padding-left: 8px;
+  padding-left: 4px;
   padding-right: 8px;
   text-decoration: none;
   }
@@ -359,7 +359,7 @@ details.deet3 > summary >a:before {
 .l4item > a:before,
 .l4itemactive > a:before,
 .deet4 > summary > a:before {
-  padding-left: 16px;
+  padding-left: 12px;
   padding-right: 8px;
   text-decoration: none;
   }
@@ -367,7 +367,7 @@ details.deet3 > summary >a:before {
 .l5item > a:before,
 .l5itemactive > a:before,
 .deet5 > summary > a:before {
-  padding-left: 24px;
+  padding-left: 20px;
   padding-right: 8px;
   text-decoration: none;
   }
