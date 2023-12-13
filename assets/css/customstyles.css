@@ -187,6 +187,12 @@
     text-decoration: none;
     color: var(--menck-sb-text)
     }
+
+  
+.menck-sidebar {
+  padding-top: 0px;
+  padding-bottom: 16px
+  }
   
 .menck-sidebar *{
     background-color: transparent;
