@@ -15,7 +15,7 @@
                         {% assign sburl = heynong.url %}
                      {% endunless %}
                   {% endfor %}       
-                  <div style="padding-top: 32px;"><p><strong><a title="{{sbtitle}}" href="{{sburl | remove: '/'}}">{{sbtitle}}</a></strong></p></div>
+                  <div style="padding-top: 32px;"><p class="inpath"><strong><a title="{{sbtitle}}" href="{{sburl | remove: '/'}}">{{sbtitle}}</a></strong></p></div>
                   <hr class="d-none d-md-block my-2 ms-3">
                   {% comment %} Get a list of all pages with l1/l2 index values that match *this* page (other than the l1 and l2 apex pages).  (these are *all* the pages that should be in the sidebar)  {% endcomment %}
                   {% assign scourpages = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx | where_exp: 'page', 'page.l3idx' %}

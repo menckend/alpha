@@ -376,7 +376,7 @@ div.medianav * {
 
 /*  Set text shadow for in-path items in sidebar navbar menu */
 
-.inpath > * {
+.inpath * {
 /*  text-shadow: 0 0 3px #fff, 0 0 5px var(--menck-sb-shadow), 0 0 7px var(--menck-sb-shadow); */
   text-shadow: 0.4px 1.4px 1px rgba(0,0,0,0.3), 0px -0.8px 2px rgba(255,255,255,0.3);
 
