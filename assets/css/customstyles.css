@@ -394,8 +394,6 @@ div.medianav * {
 }
 
 
-body > div > div > main > div.bd-intro.pt-2.ps-lg-2 > div > div > a:nth-child(1) > i
-
 .in-page-nav a i {
   text-shadow: 0.4px 1.4px 1px rgba(0,0,0,0.3), 0px -0.8px 2px rgba(255, 255, 255, .3);
   font-size:30px;
