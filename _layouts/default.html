@@ -10,9 +10,9 @@
 						{% unless page.pagenav == false %}
 							{% include new-sidebar.html %}
 						{% endunless %}
-						{% unless page.pagenav == false %}
+						{%comment}{% unless page.pagenav == false %}
 							{% include new-page-toc.html %}
-						{% endunless %}
+						{% endunless %} {%endcomment%}
 					</div>
 					<main class="col menck-main ps-md-2 pt-2">
 						{% include new-page-intro.html %}
