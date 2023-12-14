@@ -394,6 +394,12 @@ div.medianav * {
 }
 
 
+.in-page-nav {
+  text-shadow: 0.4px 1.4px 1px rgba(0,0,0,0.3), 0px -0.8px 2px rgba(255, 255, 255, .3);
+  font-size:40px;
+  
+}
+
 
 p.l10item, p.l10itemactive,
 p.l9item, p.l9itemactive,
