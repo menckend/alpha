@@ -4,16 +4,17 @@
       <img class="d-flex align-self-center" src="images/menckenania-logo-with-font.drawio.svg" style="height: 40px"></img>
     </a>
     <a class="btn btn-menck-tn d-lg-none " data-bs-toggle="offcanvas" href="#menckNavbar" role="button" aria-controls="offcanvasResponsive" type="button" style="border-style:none;"><i class="bi bi-larg bi-list"></i></a>
+    <div class="offcanvas-body p-4 pt-0 p-lg-0">
+      <div  class="d-none d-lg-block">
+         {% include in-page-nav-buttons.html %}
+      </div>
+
     <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="menckNavbar" data-bs-backdrop="false" aria-labelledby="menckNavbarOffcanvasLabel" data-bs-scroll="true">
       <div class="offcanvas-header px-4 pb-0">
         <h5 class="offcanvas-title menck-topnav-text-color" id="bdNavbarOffcanvasLabel"></h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#menckNavbar">
               </button>
       </div>
-      <div class="offcanvas-body p-4 pt-0 p-lg-0">
-        <div  class="d-none d-lg-block">
-           {% include in-page-nav-buttons.html %}
-        </div>
         <ul class="navbar-nav flex-row flex-wrap ms-md-auto align-self-center">
           <li class="nav-item dropdown menck-topnav-text-color">
             <button type="button" class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle menck-topnav-text-color show" data-bs-toggle="dropdown" aria-expanded="true" data-bs-display="static">
@@ -59,7 +60,7 @@
 
             <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
               <div class="vr d-none d-lg-flex h-100 mx-lg-2 menck-topnav-text-color"></div>
-              <hr class="d-lg-none my-2 menck-topnav-text-color">
+<!--              <hr class="d-lg-none my-2 menck-topnav-text-color"> -->
             </li>
 
             <!-- library/dropdown-menu -->
