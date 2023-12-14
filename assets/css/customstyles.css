@@ -402,7 +402,7 @@ div.medianav * {
 }
 
 .in-page-nav a {
-  background-color: menck-sb-bg;
+  background-color: var(menck-sb-bg);
   border-style: none;
   border-radius: 5px;
 }
