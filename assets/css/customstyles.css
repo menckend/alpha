@@ -391,7 +391,7 @@ div.medianav * {
 .sbtitle,.inpath > summary:before,
 .inpath > summary > a {
   /* text-shadow: 0 0 3px #fff, 0 0 5px var(--menck-sb-shadow), 0 0 7px var(--menck-sb-shadow); */
-  text-shadow: 0.2px 0.7px 0.5px rgb(245, 245, 245, 0.3), 0px -0.4px 1px rgba(52,125,190,0.3);
+  text-shadow: 0.2px 0.7px 0.5px rgb(245, 245, 245, 0.3), 0px -0.4px 1px rgba(255,255,255,0.3);
 }
 
 
@@ -400,6 +400,13 @@ div.medianav * {
   font-size:20px;
   color:black;  
 }
+
+.in-page-nav a {
+  background-color: menck-sb-bg;
+  border-style: none;
+  border-radius: 5px;
+}
+
 
 
 p.l10item, p.l10itemactive,
