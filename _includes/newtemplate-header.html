@@ -1,5 +1,5 @@
 <header class="navbar navbar-expand-lg menck-navbar sticky-top" style="padding-top: 2px; padding-bottom: 2px; margin-bottom:16px;">
-  <nav class="container-fluid bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation" style="height:60px; padding-left: 0px;">
+  <nav class="container-fluid bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation" style="height:60px; padding-left: 0px; padding-right: 2px;">
     <a class="navbar-brand p-0 me-0 me-lg-1 d-flex align-self-center" href="/alpha"  aria-label="Site icon, links to site's home page">
       <img class="d-flex align-self-center" src="images/menckenania-logo-with-font.drawio.svg" style="height: 40px"></img>
     </a>
@@ -97,7 +97,6 @@
                         <svg class="bi" style="padding-right:4px;"><use xlink:href="#check2"></use></svg>
                       {% endif %}
                       {{ myl2name }}
-                      
                     </a>
                 {% endfor %}
               </ul>
@@ -106,11 +105,11 @@
         </ul>
       </div>
     </div>
-    <div class="form-check form-switch form-floating flex-direction: column">
-      <input class="form-check-input menck-tn-toggle-control menck-topnav-text-color d-flex align-self-start; row" type="checkbox" id="MenckSidebarToggle" data-bs-target="#MenckSidebar" data-target="#MenckSidebar" data-bs-toggle="collapse">
-      <label class="form-check-label menck-tn-toggle-label menck-topnav-text-color d-flex align-self-start row" for="MenckSidebarToggle"> Doc Nav</label>
-    </div>
-    <a class="btn btn-menck-tn d-lg-none " data-bs-toggle="offcanvas" href="#menckNavbar" role="button" aria-controls="offcanvasResponsive" type="button" style="border-style:none;"><i class="bi bi-larg bi-list"></i></a>
+    <div class="form-check form-switch form-floating" style="overflow: visible;">
+      <input class="form-check-input menck-tn-toggle-control menck-topnav-text-color d-flex align-self-start; row; overflow: visible;" type="checkbox" id="MenckSidebarToggle" data-bs-target="#MenckSidebar" data-target="#MenckSidebar" data-bs-toggle="collapse" aria-expanded="true" style="overflow: visible; width: 50px; margin-left: 8px;">
+     <label class="form-check-label menck-tn-toggle-label menck-topnav-text-color d-flex align-self-start row" for="MenckSidebarToggle" style="overflow: visible;">Doc Nav</label>
+     </div>
+         <a class="btn btn-menck-tn d-lg-none " data-bs-toggle="offcanvas" href="#menckNavbar" role="button" aria-controls="offcanvasResponsive" type="button" style="border-style:none;"><i class="bi bi-larg bi-list"></i></a>
   </nav>
   </div>
 </header>
