@@ -4,15 +4,10 @@
       <img class="d-flex align-self-center" src="images/menckenania-logo-with-font.drawio.svg" style="height: 40px"></img>
     </a>
 
+<!--
     <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav menck-topnav-text-color d-flex align-self-center justify-content-between">
         <li class="nav-item py-2 py-lg-1 col-lg-auto menck-topnav-text-color  d-flex align-self-center">
-
-          <div class="form-check form-switch form-floating flex-direction: column">
-            <input class="form-check-input menck-tn-toggle-control menck-topnav-text-color d-flex align-self-start; row; overflow: visible;" type="checkbox" id="MenckSidebarToggle" data-bs-target="#MenckSidebar" data-target="#MenckSidebar" data-bs-toggle="collapse">
-            <label class="form-check-label menck-tn-toggle-label menck-topnav-text-color d-flex align-self-start row; overflow: visible;" for="MenckSidebarToggle"> Doc Nav</label>
-          </div>
           
-<!--
           <div class="form-check form-switch d-flex align-self-center menck-topnav-text-color">
             <input class="form-check-input menck-tn-toggle-control menck-topnav-text-color d-flex align-self-center" type="checkbox" id="MenckSidebarToggle" data-bs-target="#MenckSidebar" data-target="#MenckSidebar" data-bs-toggle="collapse" style="background-color:grey;">
             <label class="form-check-label menck-tn-toggle-label menck-topnav-text-color d-flex align-self-center" for="MenckSidebarToggle" style="padding:8px;"> Doc Nav</label>
@@ -24,9 +19,9 @@
             <label class="form-check-label menck-tn-toggle-label menck-topnav-text-color d-flex align-self-center" for="MenckRightbarToggle" style="padding:8px;"> Page TOC </label>
           </div>
         </li>
--->
       </div>
     </ul>
+-->
 
 
     <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="menckNavbar" data-bs-backdrop="false" aria-labelledby="menckNavbarOffcanvasLabel" data-bs-scroll="true">
@@ -110,6 +105,10 @@
           {% endfor %}
         </ul>
       </div>
+    </div>
+    <div class="form-check form-switch form-floating flex-direction: column">
+      <input class="form-check-input menck-tn-toggle-control menck-topnav-text-color d-flex align-self-start; row" type="checkbox" id="MenckSidebarToggle" data-bs-target="#MenckSidebar" data-target="#MenckSidebar" data-bs-toggle="collapse">
+      <label class="form-check-label menck-tn-toggle-label menck-topnav-text-color d-flex align-self-start row" for="MenckSidebarToggle"> Doc Nav</label>
     </div>
     <a class="btn btn-menck-tn d-lg-none " data-bs-toggle="offcanvas" href="#menckNavbar" role="button" aria-controls="offcanvasResponsive" type="button" style="border-style:none;"><i class="bi bi-larg bi-list"></i></a>
   </nav>
