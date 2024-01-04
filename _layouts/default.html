@@ -6,13 +6,16 @@
 		{% include newtemplate-header.html %}
 			<div class="container-fluid">
 				<div class="row flex-wrap">
-					<div class="col-auto px-0 sticky-lg-top">
-						{% unless page.pagenav == false %}
-							{% include new-sidebar.html %}
-						{% endunless %}
-						{% unless page.pagenav == false %}
-							{% include new-page-toc.html %}
-						{% endunless %} 
+					<div class="col-auto px-0">
+						<div class="row sticky-lg-top">
+							{% unless page.pagenav == false %}
+								{% include new-sidebar.html %}
+							{% endunless %}
+							{% unless page.pagenav == false %}
+								{% include new-page-toc.html %}
+							{% endunless %} 
+
+						</div>
 					</div>
 					<main class="col menck-main ps-md-2">
 						{% include in-page-nav-buttons.html %}
