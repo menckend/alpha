@@ -301,7 +301,14 @@ p.l7item > a:before,
 p.l6item > a:before,
 p.l5item > a:before,
 p.l4item > a:before,
-p.l3item > a:before {
+p.l3item > a:before
+ul.inline_toc >   {
+    content: '\F584';
+    font-family: "bootstrap-icons";
+    text-decoration: bold;
+  }
+
+  ul.inline_toc li.l3item::marker>   {
     content: '\F584';
     font-family: "bootstrap-icons";
     text-decoration: bold;
