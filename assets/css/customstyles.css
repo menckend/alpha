@@ -300,8 +300,7 @@ p.l7item > a:before,
 p.l6item > a:before,
 p.l5item > a:before,
 p.l4item > a:before,
-p.l3item > a:before,
-#my_toc > li::marker {
+p.l3item > a:before {
     content: '\F584';
     font-family: "bootstrap-icons";
     text-decoration: bold;
