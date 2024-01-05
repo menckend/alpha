@@ -306,11 +306,6 @@ p.l3item > a:before {
     text-decoration: bold;
   }
 
-  ul.inline_toc li.l3item::marker {
-    content: '\F584';
-    font-family: "bootstrap-icons";
-    text-decoration: bold;
-  }
 
 
 /* full square*/
