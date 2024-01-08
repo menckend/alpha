@@ -307,6 +307,12 @@ p.l3item > a:before {
   }
 
 
+  #my_toc {
+    list-style-type: none;
+    
+  }
+
+
 /* full square*/
 p.l10itemactive > a:before,
 p.l9itemactive > a:before,
