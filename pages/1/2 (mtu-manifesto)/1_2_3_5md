@@ -1,0 +1,18 @@
+---
+l1idx: 1
+l2idx: 2
+l3idx: 3
+l4idx: 5
+title: "Additional Considerations"
+permalink: 1_2_3_5.html
+summary: "As above, so below is *not* a great design practice here"
+---
+- The overall composition of recursively hosted networks directly impacts how much "cushion" is required to allow for additional encapsulation on the upstream transport network(s)
+- In overlay/underlay network models, the same device is often responsible for maintaining separate MTUs for both the underlay and overlay networks.
+  - When these are software-defined-networking (SDN) constructs, this often creates issues
+    - SDN "routers", are not "routers" in the traditional sense.  They may not, for instance, allow for per-interface MTU configuration.
+- Path MTU Discovery (PMTUD) should be sufficient to allow for a network with an arbitrary MTU (1500 bytes) to operate in an environment where an upstream transport network operates with a smaller MTU  (e.g., 1460 bytes)
+  - If hosts A and B on network-A send 1500-byte IP packets to each other, they will be dropped by the upstream transit network, and ICMP PTB messages we be sent back to the sender,indicating a path-MTU of 1460 bytes should be assumed for the existing socket
+  - There are plenty of real-world obstacles to PMTUD operation
+    - ICMP blackholes (firewall rules, ECMP routing decisions sending the ICMP PTB messages to a different host than the one that sent the over-sized packet)
+    - Same-subnet MTU mismatches
