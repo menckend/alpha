@@ -1,4 +1,195 @@
 <svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1203px" height="373px" viewBox="-0.5 -0.5 1203 373" content="&lt;mxfile&gt;&lt;diagram name=&quot;Page-1&quot; id=&quot;rHtIOzqIj-GbMVQsOQ4Z&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;">
+<script type="text/javascript"><![CDATA[
+		function edit(image)
+		{
+			// Uses first part of path as repo name.
+			// Change this according to your setup.
+			var tokens = window.location.pathname.split('/');
+
+			if (tokens.length < 2)
+			{
+				alert('Invalid URL');
+
+				return;
+			}
+
+			var org = window.location.hostname.split('.')[0];
+			var repo = tokens[]]><![CDATA[1];
+			var path = tokens.slice(2).join('/');
+			var ref = 'main';
+
+			var wnd = null;
+
+			var save = function()
+			{
+				wnd.postMessage(JSON.stringify(
+				{
+					action: 'spinner',
+					show: 0
+				}), '*');
+
+				var username = prompt('Username');
+
+				if (username == null || usernam]]><![CDATA[e.length == 0)
+				{
+					return;
+				}
+
+				var password = prompt('Password');
+
+				if (password == null || password.length == 0)
+				{
+					return;
+				}
+
+				var msg = prompt('Commit Message', 'Update ' + tokens[tokens.length - 1]);
+
+				if (msg == null)
+				{
+					return;
+				}
+]]><![CDATA[
+				var url = 'https://api.github.com/repos/' + org + '/' + repo +
+					'/contents/' + path + '?ref=' + encodeURIComponent(ref);
+
+				getSha(url, username, password, function(sha)
+				{
+					writeFile(url, username, password, sha, msg, function(req)
+					{
+						var success = req.status]]><![CDATA[ == 200 || req.status == 201;
+
+						if (!success)
+						{
+							var obj = JSON.parse(req.responseText);
+
+							alert((obj != null) ? obj.message : 'Error');
+						}
+						else
+						{
+							wnd.close();
+
+							// Forces udpate of cached image
+							window.setTimeout(functio]]><![CDATA[n()
+							{
+								var newImage = new Image();
+								newImage.src = window.location.protocol + '//' + window.location.hostname +
+									window.location.pathname + '?' + new Date().getTime();
+							}, 3000);
+						}
+					});
+				});
+			};
+
+			var getSha = function(url, username, password, callback)
+			{
+				xhr('GET', url, null, username, password, funct]]><![CDATA[ion(req)
+				{
+					if (req.status == 200)
+					{
+						var obj = JSON.parse(req.responseText);
+
+						callback((obj != null) ? obj.sha : null);
+					}
+					else
+					{
+						callback(null);
+					}
+				});
+			};
+
+			var writeFile = function(url, username, password, sha, msg, callback)
+			{
+]]><![CDATA[				var entity =
+				{
+					path: path,
+					message: msg,
+					content: btoa('<?xml version="1.0" encoding="UTF-8"?>\n' +
+						'<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">\n' +
+						document.documentElement.outerHTML)
+				};
+
+				if (sh]]><![CDATA[a != null)
+				{
+					entity.sha = sha;
+				}
+
+				xhr('PUT', url, JSON.stringify(entity), username, password, function(req)
+				{
+					if (req.readyState == 4)
+					{
+						callback(req);
+					}
+				});
+			};
+
+			var xhr = function xhr(verb, url, data, username, pass, callback)
+			{
+				var re]]><![CDATA[q = new XMLHttpRequest();
+				req.onreadystatechange = function()
+				{
+					if (req.readyState == 4)
+					{
+						callback(req);
+					}
+				};
+
+				req.open(verb, url, true);
+
+				req.setRequestHeader('Authorization', 'Basic ' +
+					btoa(username + ':' + pass));
+
+				req.send(data);
+			};
+
+			var receive = function(evt)
+			{
+				if (evt.data.length > 0)
+				{
+					var msg = JSON.parse(evt.data);
+
+					if (msg.event == 'init')
+					{
+						wnd.postMessage(JSON.stringify({action: 'load', xml: image.outerHTML}), '*');
+					}
+					else if (msg.event == 'export')
+					{
+						var temp = new Image();
+
+						temp.onload = function()
+						{
+							image.setAttribute('xlink:href', msg.data);
+
+							image.setAttribute('width', temp.width + 'px');
+							image.setAttribute('height', temp.height + 'px');
+							image.ownerSVGElement.setAttribute('width', temp.width + 'px');
+							image.ownerSVGElement.setAttribute('height', temp.height + 'px');
+
+							save();
+						};
+
+						temp.onerror = function(err)
+						{
+							alert('Error ' + err);
+						}
+
+						temp.src = msg.data;
+					}
+					else if (msg.event == 'save')
+					{
+						wnd.postMessage(JSON.stringify({action: 'export', format: 'png', spinKey: 'saving'}), '*');
+						image.ownerSVGElement.setAttribute('content', msg.xml);
+					}
+					else if (msg.event == 'exit')
+					{
+						wnd.close();
+					}
+				}
+			};
+
+			window.addEventListener('message', receive);
+			wnd = window.open('https://embed.diagrams.net/?embed=1&ui=atlas&spin=1&proto=json');
+		}
+	  ]]></script>
     <defs/>
     <g>
         <path d="M 320.61 222 L 304.06 222 Q 294.06 222 294.06 232 L 294.06 272 Q 294.06 282 287.34 282 L 283.97 282 Q 280.61 282 287.34 282 L 290.7 282 Q 294.06 282 294.06 292 L 294.06 332 Q 294.06 342 304.06 342 L 320.61 342" fill="none" stroke="#6b6b6b" stroke-width="4" stroke-miterlimit="10" transform="rotate(-90,300.61,282)" pointer-events="all"/>
