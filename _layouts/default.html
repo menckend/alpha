@@ -11,7 +11,18 @@
 							{% unless page.pagenav == false %}
 								{% include new-sidebar.html %}
 							{% endunless %}
-
+							{% if page.pagenav == false %}
+								<div id="MenckSidebar" class="collapse-horizontal">
+									<aside class="menck-sidebar">
+									   	<nav class="bs-links w-100" id="bd-docs-nav" aria-label="Docs navigation">
+										  	<ul class="bs-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
+											 	<div class="mencknav container-fluid left-sidebar-chunk">
+												</div>
+											</ul>
+										 </nav>
+									</aside>
+							   	</div>
+							{% endif %}
 						</div>
 					</div>
 					<main class="col menck-main ps-md-2">
