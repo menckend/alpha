@@ -1,8 +1,14 @@
 ---
+title: "Welcome to Menckenania"
+pagenav: false
 toc: false
 permalink: index.html
-pagenav: false
+summary: "A place for my stuff."
+
 ---
+
+
+
 
 <div class="container-fluid">
 	<div class="row flex-wrap">
