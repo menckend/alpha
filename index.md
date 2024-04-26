@@ -7,6 +7,8 @@ summary: "Part portfolio, part blog, part (mostly performative) screaming into t
 layout: "default"
 ---
 
+<div class="col ps-md-4"></div>
+<div class="col ps-md-4">
 
 ## Greetings
 
@@ -27,12 +29,7 @@ So, anyway; here we are.
 All works presented here are my own; you'll find them categorized under the dropdown arrows in the top-right.  Ignore them; adore them; ... *abhor* them (if you must).  Regardless, I hope you find them as much fun to read as I did to write.
 
 {% include links.html %}
+</div>
 
-<div class="container-fluid">
-	<div class="row flex-wrap">
-		<div class="col ps-md-4"></div>
-		<main class="col menck-main ps-md-2">
-</main>
 <div class="col ps-md-4"></div>
-</div>
-</div>
+
