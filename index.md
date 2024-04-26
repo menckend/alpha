@@ -21,7 +21,7 @@ Long-story short, I started experimenting with a lot of Github's native "fringe"
 
 So, anyway; here we are.
 
-All works presented here are my own; you'll find them categorized under the dropdown arrows in the top-right.  Ignore them; adore them; ... *abhor* them if you must.  Either way, I hope you find them as much fun to read as I did to write.
+All works presented here are my own; you'll find them categorized under the dropdown arrows in the top-right.  Ignore them; adore them; ... *abhor* them (if you must).  Regardless, I hope you find them as much fun to read as I did to write.
 
 {% include links.html %}
 
