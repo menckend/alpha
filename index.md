@@ -4,7 +4,7 @@ pagenav: false
 toc: false
 permalink: index.html
 summary: "(A place for my stuff)"
-layout: page
+type: "pages"
 ---
 
 <div class="container-fluid">
