@@ -4,11 +4,9 @@ pagenav: false
 toc: false
 permalink: index.html
 summary: "Part portfolio, part blog, part (mostly performative) screaming into the abyss"
-layout: "default"
+layout: "page"
 ---
 
-<div class="col ps-md-4"></div>
-<div class="col ps-md-4">
 
 ## Greetings
 
@@ -29,7 +27,3 @@ So, anyway; here we are.
 All works presented here are my own; you'll find them categorized under the dropdown arrows in the top-right.  Ignore them; adore them; ... *abhor* them (if you must).  Regardless, I hope you find them as much fun to read as I did to write.
 
 {% include links.html %}
-</div>
-
-<div class="col ps-md-4"></div>
-
