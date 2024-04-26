@@ -7,10 +7,6 @@ summary: "Part portfolio, part blog, part (mostly performative) screaming into t
 layout: "default"
 ---
 
-<div class="container-fluid">
-	<div class="row flex-wrap">
-		<div class="col ps-md-4"></div>
-		<main class="col menck-main ps-md-2">
 
 ## Greetings
 
@@ -32,6 +28,10 @@ All works presented here are my own; you'll find them categorized under the drop
 
 {% include links.html %}
 
+<div class="container-fluid">
+	<div class="row flex-wrap">
+		<div class="col ps-md-4"></div>
+		<main class="col menck-main ps-md-2">
 </main>
 <div class="col ps-md-4"></div>
 </div>
