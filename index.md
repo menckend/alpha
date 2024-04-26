@@ -3,8 +3,8 @@ title: "Welcome to Menckenania"
 pagenav: false
 toc: false
 permalink: index.html
-summary: "(A place for my stuff)"
-type: "pages"
+summary: "Part portfolio, part blog, part (mostly performative) screaming into the abyss"
+layout: "default"
 ---
 
 <div class="container-fluid">
