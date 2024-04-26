@@ -9,15 +9,19 @@ pagenav: false
 		<div class="col ps-md-4"></div>
 		<main class="col menck-main ps-md-2">
 
-Hi there; I'm Mencken.  (Pleased to meet you.)
+## Greetings
 
-I'm (not only, but mainly) a: network architect; life-long technophile; husband; parent; and musician.  
+Hi there; I'm Mencken.  I'm a network architect, life-long technophile, husband, parent, and musician.  I'm other things too, obviously, but I'll leave those to your collective imaginations.
+
+## Me, me, me
 
 I also enjoy writing, but (until recently) I hadn't really written *just because I wanted to* in about twenty years or so.
 
 Also recently, I found myself motivated to try to re-define and re-tool the process associated with my practice as a newtork architect, needing to push it (and myself) in a much more agile/iterative/continuous direction.  If I was going to evanglize the inevitability and desirabiliyt of infrastruce-as-code / NeOps, it seemed "only fair" that I should be working towards "architecture as code".
 
 Long-story short, I started experimenting with a lot of Github's native "fringe" (not directly source-code-management related) but still interesting functionality.  Github pages turned out to be a very big part of that, and I wound up with conjuring a GH Pages / Jekyll baseline configuration that I decided was a decent framework for a personal site/blog/portfolio/whatever.  I'm having fun learning how to coax things out of Jekyll and *torturing* myself trying to do things with Liquid that would be ten-to-thirty times easier in JS.  Getting source-controlled SVG diagrams embedded *nicely* into published pages has been particularly fun.  (By "nicely", I mean they render pleasantly in the published page, and are clickable to open in-browser in diagrams.net, and still remain source-controlled.)
+
+## ...and, in closing.
 
 So, anyway; here we are.
 
