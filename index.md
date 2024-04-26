@@ -4,13 +4,17 @@ permalink: index.html
 pagenav: false
 ---
 
-Hi there; I'm Mencken Davidson.  Pleased to meet you.  
+## Hi there; I'm Mencken.  (Pleased to meet you.)
 
-Amongst other things, I'm a: network architect; husband; parent; and musician.  I also enjoy writing, but I haven't really written *just because I wanted to* in about twenty years or so.
+## I'm (not only, but mainly) a: network architect; life-long technophile; husband; parent; and musician.  
 
-I made this site to start hosting some network-architecture-related articles.  I did this after realizing that a lot of the same themes kept popping up as rabbit-holes of distraction when I was trying to get "real work" done. I decided that there must have been some sort of itch I wanted to scratch hiding in those rabbit holes, so I might as well lean into it.
+## I also enjoy writing, but (until recently) I hadn't really written *just because I wanted to* in about twenty years or so.
 
-The inaugural document is a generalized reference architecture for DNS-based global load-balancing.  You'll find it (and the subsequent documents/articles from the "Articles" drop-down menu at the top of this page.)
+##  Also recently, I found myself motivated to try to re-define and re-tool the process associated with my practice as a newtork architect, needing to push it (and myself) in a much more agile/iterative/continuous direction.  If I was going to evanglize the inevitability and desirabiliyt of infrastruce-as-code / NeOps, it seemed "only fair" that I should be working towards "architecture as code".
 
-All works presented here are my own; ignore them or adore them as *you* best see fit.
+## Long-story short, I started experimenting with a lot of Github's native "fringe" (not directly source-code-management related) but still interesting functionality.  Github pages turned out to be a very big part of that, and I wound up with conjuring a GH Pages / Jekyll baseline configuration that I decided was a decent framework for a personal site/blog/portfolio/whatever.
+
+## So, here we are.
+
+## All works presented here are my own. Ignore them or adore them as *you* best see fit.
 {% include links.html %}
