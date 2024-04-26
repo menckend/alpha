@@ -12,7 +12,7 @@
 								{% include new-sidebar.html %}
 							{% endunless %}
 							{% if page.pagenav == false %}
-							   	<div class="col-ps-md-2"> hmmph</div>
+							   	<div class="col" style="width:200px"></div>
 							{% endif %}
 						</div>
 					</div>
@@ -21,6 +21,9 @@
 						{% include new-page-intro.html %}
 						{% include new-page-content.html %}
 					</main>
+					{% if page.pagenav == false %}
+					<div class="col" style="width:200px"></div>
+					 {% endif %}
 				</div>
 			</div>
 		{% include new-page-footer.html%}
