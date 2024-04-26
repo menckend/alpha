@@ -3,9 +3,9 @@ title: "Welcome to Menckenania"
 pagenav: false
 toc: false
 permalink: index.html
-summary: "A place for my stuff."
+summary: "(A place for my stuff)"
+layout: page
 ---
-
 
 <div class="container-fluid">
 	<div class="row flex-wrap">
