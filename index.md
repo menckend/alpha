@@ -4,10 +4,7 @@ pagenav: false
 toc: false
 permalink: index.html
 summary: "A place for my stuff."
-
 ---
-
-
 
 
 <div class="container-fluid">
@@ -39,7 +36,3 @@ All works presented here are my own; you'll find them categorized under the drop
 <div class="col ps-md-4"></div>
 </div>
 </div>
-
-
-
-
