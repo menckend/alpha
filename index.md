@@ -3,22 +3,11 @@ title: "Welcome to Menckenania"
 pagenav: false
 toc: false
 permalink: index.html
-summary: "Part portfolio, part blog, part (mostly performative) screaming into the abyss"
+summary: "(Part portfolio, part blog, part performative screaming into the abyss)"
+type: "pages"
 layout: "page"
 ---
 
-
-<div id="MenckSidebar" class="collapse-horizontal">
-    <aside class="menck-sidebar">
-        <nav class="bs-links w-100" id="bd-docs-nav" aria-label="Docs navigation">
-            <ul class="bs-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
-                <div class="mencknav container-fluid left-sidebar-chunk">
-                </div>
-            </ul>
-        </nav>
-    </aside>
-</div>
-   
 
 
 ## Greetings
@@ -41,13 +30,3 @@ All works presented here are my own; you'll find them categorized under the drop
 
 {% include links.html %}
 
-<div id="MenckSidebar" class="collapse-horizontal">
-    <aside class="menck-sidebar">
-        <nav class="bs-links w-100" id="bd-docs-nav" aria-label="Docs navigation">
-            <ul class="bs-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
-                <div class="mencknav container-fluid left-sidebar-chunk">
-                </div>
-            </ul>
-        </nav>
-    </aside>
-</div>
