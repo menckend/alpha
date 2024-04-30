@@ -1,13 +1,10 @@
 ---
-libname: Articles
-docname: -DRAFT- Abstracting Capacity
-chapnum: 3
-chapnam: Diagrams
-pagenum: 5
-title: "Diagram (N+1 resiliency)"
-summary: "To be filed later"
-permalink: capacity_ch3_p5.html
-folder: articles\/capacity
+l1idx: 2
+l2idx: 1
+l3idx: 904
+title: "Virtualization diagram (N+1 resiliency)"
+permalink: 2_1_904.html
+summary: "Still migrating content from Confluence"
 ---
 
 ![image](./capacity-resiliency-allactive.drawio.svg){:class="img-fluid"}

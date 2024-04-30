@@ -1,14 +1,12 @@
 ---
-libname: Articles
-docname: -DRAFT- Abstracting Capacity
-chapnum: 20
-chapnam: "Multi-layered Architectures"
-pagenum: 1
-title: The Conventional Wisdowm
-summary: "Layered architectures are old-hat in information technology, but have picked up a lot of domain-specific nuance over the years.  Specialists in different fields can tend to think about layers very differently.  This page summarizes some of those perspectives."
-permalink: capacity_ch20_p1.html
-folder: articles\/capacity
+l1idx: 2
+l2idx: 1
+l3idx: 905
+title: Previous version main page
+permalink: 2_1_905.html
+summary: "Still migrating content from Confluence"
 ---
+
 
 ## The Big Idea
 

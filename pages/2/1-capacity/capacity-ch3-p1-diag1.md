@@ -1,13 +1,10 @@
 ---
-libname: Articles
-docname: -DRAFT- Abstracting Capacity
-chapnum: 3
-chapnam: Diagrams
-pagenum: 1
-title: "Diagram (virtualization.1)"
-summary: "To be filed later"
-permalink: capacity_ch3_p1.html
-folder: articles\/capacity
+l1idx: 2
+l2idx: 1
+l3idx: 900
+title: "Virtualization diagram (1)"
+permalink: 2_1_900.html
+summary: "Still migrating content from Confluence"
 ---
 
 ![image](./capacity-virt-1.drawio.svg){:class="img-fluid"}
