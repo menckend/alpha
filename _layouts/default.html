@@ -6,14 +6,11 @@
 		{% include newtemplate-header.html %}
 			<div class="container-fluid">
 				<div class="row flex-wrap">
-					<div class="col-auto px-0">
+					<div class="col-2 .d-none .d-md-block">
 						<div class="row sticky-lg-top">
 							{% unless page.pagenav == false %}
 								{% include new-sidebar.html %}
 							{% endunless %}
-							{% if page.pagenav == false %}
-							   	<div class="col-2 .d-none .d-md-block" style="width:400px"></div>
-							{% endif %}
 						</div>
 					</div>
 					<main class="col menck-main ps-md-2">
