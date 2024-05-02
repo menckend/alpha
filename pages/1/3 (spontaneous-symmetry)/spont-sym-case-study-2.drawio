@@ -1,36 +1,41 @@
-<mxfile host="app.diagrams.net" modified="2024-05-02T18:29:26.976Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="Ur2qD_1uGDdtaUgW0gPu" version="24.3.1" type="device">
+<mxfile host="app.diagrams.net" modified="2024-05-02T21:00:14.216Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="OfugEblp6UAhDF0Lgnh1" version="24.3.1" type="device">
   <diagram name="Page-1" id="6yeymBKhxuc0Mbmd6qp0">
-    <mxGraphModel dx="1067" dy="1039" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1534" dy="940" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <object label="" tags="band band-sz band-sz0" id="dSsE4svFGT5zycd-9bUz-91">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#808080;fillColor=#000000;arcSize=4;opacity=15;strokeWidth=2;shadow=1;glass=0;" vertex="1" parent="1">
+            <mxGeometry x="750" y="200" width="230" height="270" as="geometry" />
+          </mxCell>
+        </object>
         <object label="" tags="band band-devtype band-devtype-fw" id="dSsE4svFGT5zycd-9bUz-44">
-          <mxCell style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#000000;arcSize=7;opacity=5;" vertex="1" visible="0" parent="1">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#000000;arcSize=7;opacity=5;" vertex="1" parent="1">
             <mxGeometry x="1268.5" y="146" width="103" height="762" as="geometry" />
           </mxCell>
         </object>
         <object label="" tags="band band-devtype band-devtype-rtr" id="dSsE4svFGT5zycd-9bUz-45">
-          <mxCell style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#000000;arcSize=11;opacity=5;" vertex="1" visible="0" parent="1">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#000000;arcSize=11;opacity=5;" vertex="1" parent="1">
             <mxGeometry x="1378.5" y="146" width="103" height="762" as="geometry" />
           </mxCell>
         </object>
         <object label="" tags="band band-devtype band-devtype-hosts" id="dSsE4svFGT5zycd-9bUz-46">
-          <mxCell style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#000000;arcSize=5;opacity=5;" vertex="1" visible="0" parent="1">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#000000;arcSize=5;opacity=5;" vertex="1" parent="1">
             <mxGeometry x="1488.5" y="146" width="193" height="762" as="geometry" />
           </mxCell>
         </object>
         <object label="" tags="band band-devtype band-devtype-hosts" id="dSsE4svFGT5zycd-9bUz-47">
-          <mxCell style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#000000;arcSize=2;opacity=5;" vertex="1" visible="0" parent="1">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#000000;arcSize=2;opacity=5;" vertex="1" parent="1">
             <mxGeometry x="1817.5" y="146" width="193" height="762" as="geometry" />
           </mxCell>
         </object>
         <object label="" tags="band band-devtype band-devtype-rtr" id="dSsE4svFGT5zycd-9bUz-48">
-          <mxCell style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#000000;arcSize=2;opacity=5;" vertex="1" visible="0" parent="1">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#000000;arcSize=2;opacity=5;" vertex="1" parent="1">
             <mxGeometry x="2020" y="146" width="100" height="762" as="geometry" />
           </mxCell>
         </object>
         <object label="" tags="band band-devtype band-devtype-fw" id="dSsE4svFGT5zycd-9bUz-49">
-          <mxCell style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#000000;arcSize=2;opacity=5;" vertex="1" visible="0" parent="1">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#000000;arcSize=2;opacity=5;" vertex="1" parent="1">
             <mxGeometry x="2130" y="147" width="100" height="762" as="geometry" />
           </mxCell>
         </object>
@@ -367,12 +372,12 @@
           </mxCell>
         </object>
         <UserObject label="In&lt;b&gt;ter&lt;/b&gt;-site / In&lt;b&gt;tra&lt;/b&gt;-zone flow example" link="data:action/json,{&quot;actions&quot;:[{&quot;toggle&quot;:{&quot;tags&quot;:[&quot;intersite-intrazone-flow&quot;]}}]}" tags="control" id="Ux4JUTr80TsCuU6cvmH0-230">
-          <mxCell style="html=1;shadow=1;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeWidth=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacingLeft=0;fontStyle=0;fontSize=12;spacing=5;strokeColor=#666666;fontColor=#0000EE;fillColor=#FAFAFA;" parent="1" vertex="1">
-            <mxGeometry x="2400" y="160" width="279.5" height="30" as="geometry" />
+          <mxCell style="html=1;shadow=1;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeWidth=1;whiteSpace=wrap;align=right;verticalAlign=middle;spacingLeft=0;fontStyle=0;fontSize=12;spacing=5;strokeColor=#666666;fontColor=#0000EE;fillColor=#FAFAFA;" parent="1" vertex="1">
+            <mxGeometry x="680" y="630" width="279.5" height="30" as="geometry" />
           </mxCell>
         </UserObject>
         <object label="" tags="flow intersite-intrazone-flow" id="Ux4JUTr80TsCuU6cvmH0-231">
-          <mxCell style="endArrow=block;startArrow=block;html=1;strokeWidth=5;strokeColor=#666666;startFill=1;endFill=1;fontSize=18;fontStyle=1;fontColor=#666666;flowAnimation=1;backgroundOutline=0;flowAnimationDuration=750;flowAnimationDirection=alternate;fixDash=0;flowAnimationTimingFunction=ease;endSize=3;startSize=3;dashed=1;rounded=1;curved=0;shadow=1;opacity=90;entryX=0.657;entryY=0.008;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="Ux4JUTr80TsCuU6cvmH0-160" edge="1" visible="0">
+          <mxCell style="endArrow=block;startArrow=block;html=1;strokeWidth=5;strokeColor=#666666;startFill=1;endFill=1;fontSize=18;fontStyle=1;fontColor=#666666;flowAnimation=1;backgroundOutline=0;flowAnimationDuration=750;flowAnimationDirection=alternate;fixDash=0;flowAnimationTimingFunction=ease;endSize=3;startSize=3;dashed=1;rounded=1;curved=0;shadow=1;opacity=90;entryX=0.657;entryY=0.008;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="Ux4JUTr80TsCuU6cvmH0-160" edge="1">
             <mxGeometry width="50" height="50" relative="1" as="geometry">
               <mxPoint x="1620" y="821" as="sourcePoint" />
               <mxPoint x="1920" y="820" as="targetPoint" />
@@ -386,13 +391,13 @@
           </mxCell>
         </object>
         <UserObject label="In&lt;b&gt;ter&lt;/b&gt;-site / In&lt;b&gt;ter&lt;/b&gt;-zone flow example (&lt;b&gt;a&lt;/b&gt;symmetric)" link="data:action/json,{&quot;actions&quot;:[{&quot;toggle&quot;:{&quot;tags&quot;:[&quot;flow-intersite-interzone-async&quot;]}}]}" tags="control" id="Ux4JUTr80TsCuU6cvmH0-235">
-          <mxCell style="html=1;shadow=1;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeWidth=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacingLeft=0;fontStyle=0;fontSize=12;spacing=5;strokeColor=#666666;fontColor=#0000EE;fillColor=#FAFAFA;" parent="1" vertex="1">
-            <mxGeometry x="2400" y="200" width="279.5" height="30" as="geometry" />
+          <mxCell style="html=1;shadow=1;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeWidth=1;whiteSpace=wrap;align=right;verticalAlign=middle;spacingLeft=0;fontStyle=0;fontSize=12;spacing=5;strokeColor=#666666;fontColor=#0000EE;fillColor=#FAFAFA;" parent="1" vertex="1">
+            <mxGeometry x="680" y="670" width="279.5" height="30" as="geometry" />
           </mxCell>
         </UserObject>
         <UserObject label="In&lt;b&gt;ter&lt;/b&gt;-site / In&lt;b&gt;ter&lt;/b&gt;-zone flow example (symmetric)" link="data:action/json,{&quot;actions&quot;:[{&quot;toggle&quot;:{&quot;tags&quot;:[&quot;intersite-interzone-flow-good&quot;]}}]}" tags="control" id="Ux4JUTr80TsCuU6cvmH0-240">
-          <mxCell style="html=1;shadow=1;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeWidth=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacingLeft=0;fontStyle=0;fontSize=12;spacing=5;strokeColor=#666666;fontColor=#0000EE;fillColor=#FAFAFA;" parent="1" vertex="1">
-            <mxGeometry x="2400" y="244" width="279.5" height="30" as="geometry" />
+          <mxCell style="html=1;shadow=1;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeWidth=1;whiteSpace=wrap;align=right;verticalAlign=middle;spacingLeft=0;fontStyle=0;fontSize=12;spacing=5;strokeColor=#666666;fontColor=#0000EE;fillColor=#FAFAFA;" parent="1" vertex="1">
+            <mxGeometry x="680" y="714" width="279.5" height="30" as="geometry" />
           </mxCell>
         </UserObject>
         <mxCell id="dSsE4svFGT5zycd-9bUz-5" value="S2-Z3-H1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;strokeColor=#78C9BC;fontSize=18;fontStyle=1" vertex="1" parent="1">
@@ -453,67 +458,67 @@
           </mxGeometry>
         </mxCell>
         <object label="Network-attached&lt;div&gt;hosts&lt;/div&gt;" tags="band band-devtype band-devtype-hosts" id="dSsE4svFGT5zycd-9bUz-18">
-          <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;rotation=0;strokeWidth=3;strokeColor=#B3B3B3;size=0.2;direction=south;fontSize=18;fontColor=#B3B3B3;fontStyle=1" vertex="1" visible="0" parent="1">
+          <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;rotation=0;strokeWidth=3;strokeColor=#B3B3B3;size=0.2;direction=south;fontSize=18;fontColor=#B3B3B3;fontStyle=1" vertex="1" parent="1">
             <mxGeometry x="1490" y="140" width="190" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="routers&lt;div&gt;(stateless)&lt;/div&gt;" tags="band band-devtype band-devtype-rtr" id="dSsE4svFGT5zycd-9bUz-19">
-          <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;rotation=0;strokeWidth=3;strokeColor=#B3B3B3;size=0.2;direction=south;fontSize=18;fontColor=#B3B3B3;fontStyle=1" vertex="1" visible="0" parent="1">
+          <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;rotation=0;strokeWidth=3;strokeColor=#B3B3B3;size=0.2;direction=south;fontSize=18;fontColor=#B3B3B3;fontStyle=1" vertex="1" parent="1">
             <mxGeometry x="1380" y="140" width="100" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="stateful&lt;div&gt;firewalls&lt;/div&gt;" tags="band band-devtype band-devtype-fw" id="dSsE4svFGT5zycd-9bUz-20">
-          <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;rotation=0;strokeWidth=3;strokeColor=#B3B3B3;size=0.2;direction=south;fontSize=18;fontColor=#B3B3B3;fontStyle=1" vertex="1" visible="0" parent="1">
+          <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;rotation=0;strokeWidth=3;strokeColor=#B3B3B3;size=0.2;direction=south;fontSize=18;fontColor=#B3B3B3;fontStyle=1" vertex="1" parent="1">
             <mxGeometry x="1270" y="140" width="100" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="" tags="band band-devtype band-devtype-hosts" id="dSsE4svFGT5zycd-9bUz-21">
-          <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=0;strokeWidth=3;strokeColor=#B3B3B3;direction=north;size=0;fontSize=18;fontStyle=1" vertex="1" visible="0" parent="1">
+          <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=0;strokeWidth=3;strokeColor=#B3B3B3;direction=north;size=0;fontSize=18;fontStyle=1" vertex="1" parent="1">
             <mxGeometry x="1490" y="880" width="190" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="" tags="band band-devtype band-devtype-rtr" id="dSsE4svFGT5zycd-9bUz-22">
-          <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=0;strokeWidth=3;strokeColor=#B3B3B3;direction=north;size=0;fontSize=18;fontStyle=1" vertex="1" visible="0" parent="1">
+          <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=0;strokeWidth=3;strokeColor=#B3B3B3;direction=north;size=0;fontSize=18;fontStyle=1" vertex="1" parent="1">
             <mxGeometry x="1380" y="880" width="100" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="" tags="band band-devtype band-devtype-fw" id="dSsE4svFGT5zycd-9bUz-23">
-          <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=0;strokeWidth=3;strokeColor=#B3B3B3;direction=north;size=0;fontSize=18;fontStyle=1" vertex="1" visible="0" parent="1">
+          <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=0;strokeWidth=3;strokeColor=#B3B3B3;direction=north;size=0;fontSize=18;fontStyle=1" vertex="1" parent="1">
             <mxGeometry x="1270" y="880" width="100" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="Network-attached&lt;div&gt;hosts&lt;/div&gt;" tags="band band-devtype band-devtype-hosts" id="dSsE4svFGT5zycd-9bUz-24">
-          <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;rotation=0;strokeWidth=3;strokeColor=#B3B3B3;size=0.2;direction=south;fontSize=18;fontColor=#B3B3B3;fontStyle=1" vertex="1" visible="0" parent="1">
+          <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;rotation=0;strokeWidth=3;strokeColor=#B3B3B3;size=0.2;direction=south;fontSize=18;fontColor=#B3B3B3;fontStyle=1" vertex="1" parent="1">
             <mxGeometry x="1820" y="140" width="190" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="routers&lt;div&gt;(stateless)&lt;/div&gt;" tags="band band-devtype band-devtype-rtr" id="dSsE4svFGT5zycd-9bUz-25">
-          <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;rotation=0;strokeWidth=3;strokeColor=#B3B3B3;size=0.2;direction=south;fontSize=18;fontColor=#B3B3B3;fontStyle=1" vertex="1" visible="0" parent="1">
+          <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;rotation=0;strokeWidth=3;strokeColor=#B3B3B3;size=0.2;direction=south;fontSize=18;fontColor=#B3B3B3;fontStyle=1" vertex="1" parent="1">
             <mxGeometry x="2020" y="140" width="100" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="stateful&lt;div&gt;firewalls&lt;/div&gt;" tags="band band-devtype band-devtype-fw" id="dSsE4svFGT5zycd-9bUz-26">
-          <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;rotation=0;strokeWidth=3;strokeColor=#B3B3B3;size=0.2;direction=south;fontSize=18;fontColor=#B3B3B3;fontStyle=1" vertex="1" visible="0" parent="1">
+          <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;rotation=0;strokeWidth=3;strokeColor=#B3B3B3;size=0.2;direction=south;fontSize=18;fontColor=#B3B3B3;fontStyle=1" vertex="1" parent="1">
             <mxGeometry x="2130" y="140" width="100" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="" tags="band band-devtype band-devtype-hosts" id="dSsE4svFGT5zycd-9bUz-27">
-          <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=0;strokeWidth=3;strokeColor=#B3B3B3;direction=north;size=0;fontSize=18;fontStyle=1" vertex="1" visible="0" parent="1">
+          <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=0;strokeWidth=3;strokeColor=#B3B3B3;direction=north;size=0;fontSize=18;fontStyle=1" vertex="1" parent="1">
             <mxGeometry x="1820" y="880" width="190" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="" tags="band band-devtype band-devtype-rtr" id="dSsE4svFGT5zycd-9bUz-28">
-          <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=0;strokeWidth=3;strokeColor=#B3B3B3;direction=north;size=0;fontSize=18;fontStyle=1" vertex="1" visible="0" parent="1">
+          <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=0;strokeWidth=3;strokeColor=#B3B3B3;direction=north;size=0;fontSize=18;fontStyle=1" vertex="1" parent="1">
             <mxGeometry x="2020" y="880" width="100" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="" tags="band band-devtype band-devtype-fw" id="dSsE4svFGT5zycd-9bUz-29">
-          <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=0;strokeWidth=3;strokeColor=#B3B3B3;direction=north;size=0;fontSize=18;fontStyle=1" vertex="1" visible="0" parent="1">
+          <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=0;strokeWidth=3;strokeColor=#B3B3B3;direction=north;size=0;fontSize=18;fontStyle=1" vertex="1" parent="1">
             <mxGeometry x="2130" y="880" width="100" height="30" as="geometry" />
           </mxCell>
         </object>
         <object label="" tags="flow intersite-intrazone-flow" id="dSsE4svFGT5zycd-9bUz-34">
-          <mxCell style="endArrow=block;startArrow=block;html=1;strokeWidth=5;strokeColor=#666666;startFill=1;endFill=1;fontSize=18;fontStyle=1;fontColor=#666666;flowAnimation=1;backgroundOutline=0;flowAnimationDuration=750;flowAnimationDirection=alternate;fixDash=0;flowAnimationTimingFunction=ease;endSize=3;startSize=3;dashed=1;rounded=1;curved=0;shadow=1;opacity=90;entryX=0.683;entryY=0.021;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" visible="0" parent="1" target="Ux4JUTr80TsCuU6cvmH0-153">
+          <mxCell style="endArrow=block;startArrow=block;html=1;strokeWidth=5;strokeColor=#666666;startFill=1;endFill=1;fontSize=18;fontStyle=1;fontColor=#666666;flowAnimation=1;backgroundOutline=0;flowAnimationDuration=750;flowAnimationDirection=alternate;fixDash=0;flowAnimationTimingFunction=ease;endSize=3;startSize=3;dashed=1;rounded=1;curved=0;shadow=1;opacity=90;entryX=0.683;entryY=0.021;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="Ux4JUTr80TsCuU6cvmH0-153">
             <mxGeometry width="50" height="50" relative="1" as="geometry">
               <mxPoint x="1620" y="611" as="sourcePoint" />
               <mxPoint x="1923" y="611" as="targetPoint" />
@@ -527,43 +532,33 @@
           </mxCell>
         </object>
         <object label="" tags="flow intersite-intrazone-flow" id="dSsE4svFGT5zycd-9bUz-35">
-          <mxCell style="endArrow=block;startArrow=block;html=1;strokeWidth=5;strokeColor=#666666;startFill=1;endFill=1;fontSize=18;fontStyle=1;fontColor=#666666;flowAnimation=1;backgroundOutline=0;flowAnimationDuration=750;flowAnimationDirection=alternate;fixDash=0;flowAnimationTimingFunction=ease;endSize=3;startSize=3;dashed=1;rounded=1;curved=0;shadow=1;opacity=90;entryX=0.669;entryY=0.024;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" visible="0" parent="1" target="dSsE4svFGT5zycd-9bUz-5">
+          <mxCell style="endArrow=block;startArrow=block;html=1;strokeWidth=5;strokeColor=#666666;startFill=1;endFill=1;fontSize=18;fontStyle=1;fontColor=#666666;flowAnimation=1;backgroundOutline=0;flowAnimationDuration=750;flowAnimationDirection=alternate;fixDash=0;flowAnimationTimingFunction=ease;endSize=3;startSize=3;dashed=1;rounded=1;curved=0;shadow=1;opacity=90;entryX=0.343;entryY=-0.001;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="dSsE4svFGT5zycd-9bUz-5">
             <mxGeometry width="50" height="50" relative="1" as="geometry">
               <mxPoint x="1620" y="401" as="sourcePoint" />
               <mxPoint x="1923" y="401" as="targetPoint" />
               <Array as="points">
-                <mxPoint x="1450" y="370" />
+                <mxPoint x="1460" y="370" />
                 <mxPoint x="1470" y="350" />
                 <mxPoint x="2030" y="350" />
-                <mxPoint x="2050" y="370" />
+                <mxPoint x="2030" y="360" />
               </Array>
             </mxGeometry>
           </mxCell>
         </object>
-        <UserObject label="Security zone bands" link="data:action/json,{&quot;actions&quot;:[{&quot;toggle&quot;:{&quot;tags&quot;:[&quot;band-sz&quot;]}}]}" tags="control" id="dSsE4svFGT5zycd-9bUz-50">
-          <mxCell style="html=1;shadow=1;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeWidth=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacingLeft=0;fontStyle=0;fontSize=12;spacing=5;strokeColor=#666666;fontColor=#0000EE;fillColor=#FAFAFA;" vertex="1" parent="1">
-            <mxGeometry x="2400" y="370" width="279.5" height="30" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="Site bands" link="data:action/json,{&quot;actions&quot;:[{&quot;toggle&quot;:{&quot;tags&quot;:[&quot;site-band&quot;]}}]}" tags="control" id="dSsE4svFGT5zycd-9bUz-51">
-          <mxCell style="html=1;shadow=1;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeWidth=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacingLeft=0;fontStyle=0;fontSize=12;spacing=5;strokeColor=#666666;fontColor=#0000EE;fillColor=#FAFAFA;" vertex="1" parent="1">
-            <mxGeometry x="2400" y="410" width="279.5" height="30" as="geometry" />
-          </mxCell>
-        </UserObject>
-        <UserObject label="Device-type bands" link="data:action/json,{&quot;actions&quot;:[{&quot;toggle&quot;:{&quot;tags&quot;:[&quot;band-devtype&quot;]}}]}" tags="control" id="dSsE4svFGT5zycd-9bUz-52">
-          <mxCell style="html=1;shadow=1;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeWidth=1;whiteSpace=wrap;align=center;verticalAlign=middle;spacingLeft=0;fontStyle=0;fontSize=12;spacing=5;strokeColor=#666666;fontColor=#0000EE;fillColor=#FAFAFA;" vertex="1" parent="1">
-            <mxGeometry x="2400" y="450" width="279.5" height="30" as="geometry" />
+        <UserObject label="Security zones" tags="control" id="dSsE4svFGT5zycd-9bUz-50">
+          <mxCell style="html=1;shadow=1;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeWidth=1;whiteSpace=wrap;align=right;verticalAlign=middle;spacingLeft=0;fontStyle=0;fontSize=12;spacing=5;strokeColor=#666666;fontColor=#666666;fillColor=#FAFAFA;spacingRight=6;" vertex="1" parent="1">
+            <mxGeometry x="790" y="370" width="170" height="20" as="geometry" />
           </mxCell>
         </UserObject>
         <object label="" tags="flow flow-intersite-interzone-async" id="dSsE4svFGT5zycd-9bUz-53">
-          <mxCell style="endArrow=block;startArrow=oval;html=1;strokeWidth=5;strokeColor=#666666;startFill=1;endFill=1;fontSize=18;fontStyle=1;fontColor=#666666;flowAnimation=1;backgroundOutline=0;flowAnimationDuration=750;flowAnimationDirection=normal;fixDash=0;flowAnimationTimingFunction=linear;endSize=3;startSize=10;dashed=1;rounded=1;curved=0;shadow=1;opacity=90;entryX=0.975;entryY=0.675;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.227;exitY=0.063;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" visible="0" parent="1" source="Ux4JUTr80TsCuU6cvmH0-207" target="Ux4JUTr80TsCuU6cvmH0-159">
+          <mxCell style="endArrow=block;startArrow=oval;html=1;strokeWidth=5;strokeColor=#666666;startFill=1;endFill=1;fontSize=18;fontStyle=1;fontColor=#666666;flowAnimation=1;backgroundOutline=0;flowAnimationDuration=750;flowAnimationDirection=normal;fixDash=0;flowAnimationTimingFunction=linear;endSize=3;startSize=10;dashed=1;rounded=1;curved=0;shadow=1;opacity=90;entryX=0.975;entryY=0.675;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.227;exitY=0.063;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Ux4JUTr80TsCuU6cvmH0-207" target="Ux4JUTr80TsCuU6cvmH0-159">
             <mxGeometry width="50" height="50" relative="1" as="geometry">
               <mxPoint x="1630" y="261" as="sourcePoint" />
               <mxPoint x="1894" y="262" as="targetPoint" />
               <Array as="points">
-                <mxPoint x="1440" y="380" />
+                <mxPoint x="1430" y="380" />
                 <mxPoint x="1450" y="370" />
-                <mxPoint x="1470" y="350" />
+                <mxPoint x="1460" y="340" />
                 <mxPoint x="1480" y="330" />
                 <mxPoint x="2150" y="330" />
                 <mxPoint x="2080" y="250" />
@@ -586,12 +581,12 @@
           </mxCell>
         </object>
         <object label="" tags="flow flow-intersite-interzone-async" id="Ux4JUTr80TsCuU6cvmH0-239">
-          <mxCell style="shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#FF0000;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.veeam.failed;aspect=fixed;opacity=80;" parent="1" vertex="1" visible="0">
+          <mxCell style="shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#FF0000;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.veeam.failed;aspect=fixed;opacity=80;" parent="1" vertex="1">
             <mxGeometry x="2140" y="310" width="35" height="35" as="geometry" />
           </mxCell>
         </object>
         <object label="" tags="flow flow-intersite-interzone-async" id="dSsE4svFGT5zycd-9bUz-54">
-          <mxCell style="endArrow=block;startArrow=oval;html=1;strokeWidth=5;strokeColor=#666666;startFill=1;endFill=1;fontSize=18;fontStyle=1;fontColor=#666666;flowAnimation=1;backgroundOutline=0;flowAnimationDuration=750;flowAnimationDirection=normal;fixDash=0;flowAnimationTimingFunction=linear;endSize=3;startSize=10;dashed=1;rounded=1;curved=0;shadow=1;opacity=90;entryX=0.048;entryY=0.291;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.227;exitY=0.063;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" visible="0" parent="1" target="Ux4JUTr80TsCuU6cvmH0-207">
+          <mxCell style="endArrow=block;startArrow=oval;html=1;strokeWidth=5;strokeColor=#666666;startFill=1;endFill=1;fontSize=18;fontStyle=1;fontColor=#666666;flowAnimation=1;backgroundOutline=0;flowAnimationDuration=750;flowAnimationDirection=normal;fixDash=0;flowAnimationTimingFunction=linear;endSize=3;startSize=10;dashed=1;rounded=1;curved=0;shadow=1;opacity=90;entryX=0.048;entryY=0.291;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.227;exitY=0.063;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" target="Ux4JUTr80TsCuU6cvmH0-207">
             <mxGeometry width="50" height="50" relative="1" as="geometry">
               <mxPoint x="1988" y="644" as="sourcePoint" />
               <mxPoint x="1508" y="385" as="targetPoint" />
@@ -612,33 +607,190 @@
           </mxCell>
         </object>
         <object label="" tags="flow intersite-intrazone-flow" id="dSsE4svFGT5zycd-9bUz-55">
-          <mxCell style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.tick;aspect=fixed;strokeWidth=1;fillColor=#006633;" vertex="1" visible="0" parent="1">
-            <mxGeometry x="1610" y="560" width="42.51" height="50" as="geometry" />
+          <mxCell style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.tick;aspect=fixed;strokeWidth=1;fillColor=#006633;" vertex="1" parent="1">
+            <mxGeometry x="1650" y="530" width="42.51" height="50" as="geometry" />
           </mxCell>
         </object>
         <object label="" tags="flow flow-intersite-interzone-async" id="dSsE4svFGT5zycd-9bUz-56">
-          <mxCell style="shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#FF0000;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.veeam.failed;aspect=fixed;opacity=80;" vertex="1" visible="0" parent="1">
+          <mxCell style="shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#FF0000;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.veeam.failed;aspect=fixed;opacity=80;" vertex="1" parent="1">
             <mxGeometry x="2200" y="530" width="35" height="35" as="geometry" />
           </mxCell>
         </object>
         <object label="" tags="flow flow-intersite-interzone-async" id="dSsE4svFGT5zycd-9bUz-57">
-          <mxCell style="shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#FF0000;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.veeam.failed;aspect=fixed;opacity=80;" vertex="1" visible="0" parent="1">
+          <mxCell style="shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#FF0000;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.veeam.failed;aspect=fixed;opacity=80;" vertex="1" parent="1">
             <mxGeometry x="1340" y="520" width="35" height="35" as="geometry" />
           </mxCell>
         </object>
         <object label="" tags="flow flow-intersite-interzone-async" id="dSsE4svFGT5zycd-9bUz-58">
-          <mxCell style="shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#FF0000;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.veeam.failed;aspect=fixed;opacity=80;" vertex="1" visible="0" parent="1">
+          <mxCell style="shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#FF0000;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.veeam.failed;aspect=fixed;opacity=80;" vertex="1" parent="1">
             <mxGeometry x="1320" y="290" width="35" height="35" as="geometry" />
           </mxCell>
         </object>
         <object label="" tags="flow intersite-intrazone-flow" id="dSsE4svFGT5zycd-9bUz-59">
-          <mxCell style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.tick;aspect=fixed;strokeWidth=1;fillColor=#006633;" vertex="1" visible="0" parent="1">
-            <mxGeometry x="1610" y="350" width="42.51" height="50" as="geometry" />
+          <mxCell style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.tick;aspect=fixed;strokeWidth=1;fillColor=#006633;" vertex="1" parent="1">
+            <mxGeometry x="1810" y="310" width="42.51" height="50" as="geometry" />
           </mxCell>
         </object>
         <object label="" tags="flow intersite-intrazone-flow" id="dSsE4svFGT5zycd-9bUz-60">
-          <mxCell style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.tick;aspect=fixed;strokeWidth=1;fillColor=#006633;" vertex="1" visible="0" parent="1">
-            <mxGeometry x="1610" y="770" width="42.51" height="50" as="geometry" />
+          <mxCell style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.tick;aspect=fixed;strokeWidth=1;fillColor=#006633;" vertex="1" parent="1">
+            <mxGeometry x="1810" y="730" width="42.51" height="50" as="geometry" />
+          </mxCell>
+        </object>
+        <UserObject label="" link="data:action/json,{&quot;actions&quot;:[{&quot;toggle&quot;:{&quot;tags&quot;:[&quot;band-sz&quot;]}}]}" id="dSsE4svFGT5zycd-9bUz-63">
+          <mxCell style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.radioButton2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=#DEDEDE;fillColor=#EDEDED;checked=0;spacing=5;checkedFill=#0085FC;checkedStroke=#ffffff;sketch=0;strokeColor=#666666;" vertex="1" parent="1">
+            <mxGeometry x="800" y="372.5" width="15" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" link="data:action/json,{&quot;actions&quot;:[{&quot;toggle&quot;:{&quot;tags&quot;:[&quot;band-sz&quot;]}}]}" tags="band band-sz" id="dSsE4svFGT5zycd-9bUz-65">
+          <mxCell style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.radioButton2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=none;fillColor=#666666;checked=0;spacing=5;checkedFill=#0085FC;checkedStroke=#ffffff;sketch=0;strokeColor=#666666;" vertex="1" parent="1">
+            <mxGeometry x="800" y="372.5" width="15" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Sites" tags="control" id="dSsE4svFGT5zycd-9bUz-66">
+          <mxCell style="html=1;shadow=1;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeWidth=1;whiteSpace=wrap;align=right;verticalAlign=middle;spacingLeft=0;fontStyle=0;fontSize=12;spacing=5;strokeColor=#666666;fontColor=#666666;fillColor=#FAFAFA;spacingRight=6;" vertex="1" parent="1">
+            <mxGeometry x="790" y="400" width="170" height="20" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Device-types" tags="control" id="dSsE4svFGT5zycd-9bUz-67">
+          <mxCell style="html=1;shadow=1;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeWidth=1;whiteSpace=wrap;align=right;verticalAlign=middle;spacingLeft=0;fontStyle=0;fontSize=12;spacing=5;strokeColor=#666666;fontColor=#666666;fillColor=#FAFAFA;spacingRight=6;" vertex="1" parent="1">
+            <mxGeometry x="790" y="430" width="170" height="20" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" link="data:action/json,{&quot;actions&quot;:[{&quot;toggle&quot;:{&quot;tags&quot;:[&quot;site-band&quot;]}}]}" id="dSsE4svFGT5zycd-9bUz-68">
+          <mxCell style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.radioButton2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=#DEDEDE;fillColor=#EDEDED;checked=0;spacing=5;checkedFill=#0085FC;checkedStroke=#ffffff;sketch=0;strokeColor=#666666;" vertex="1" parent="1">
+            <mxGeometry x="800" y="402.5" width="15" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" link="data:action/json,{&quot;actions&quot;:[{&quot;toggle&quot;:{&quot;tags&quot;:[&quot;site-band&quot;]}}]}" tags="band band-site" id="dSsE4svFGT5zycd-9bUz-69">
+          <mxCell style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.radioButton2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=none;fillColor=#666666;checked=0;spacing=5;checkedFill=#0085FC;checkedStroke=#ffffff;sketch=0;strokeColor=#666666;" vertex="1" parent="1">
+            <mxGeometry x="800" y="402.5" width="15" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" link="data:action/json,{&quot;actions&quot;:[{&quot;toggle&quot;:{&quot;tags&quot;:[&quot;band-devtype&quot;]}}]}" id="dSsE4svFGT5zycd-9bUz-70">
+          <mxCell style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.radioButton2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=#DEDEDE;fillColor=#EDEDED;checked=0;spacing=5;checkedFill=#0085FC;checkedStroke=#ffffff;sketch=0;strokeColor=#666666;" vertex="1" parent="1">
+            <mxGeometry x="800" y="432.5" width="15" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" link="data:action/json,{&quot;actions&quot;:[{&quot;toggle&quot;:{&quot;tags&quot;:[&quot;band-devtype&quot;]}}]}" tags="band band-devtype" id="dSsE4svFGT5zycd-9bUz-71">
+          <mxCell style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.radioButton2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=none;fillColor=#666666;checked=0;spacing=5;checkedFill=#0085FC;checkedStroke=#ffffff;sketch=0;strokeColor=#666666;" vertex="1" parent="1">
+            <mxGeometry x="800" y="432.5" width="15" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;All &lt;/b&gt;framing/conceptual bands" tags="control" id="dSsE4svFGT5zycd-9bUz-72">
+          <mxCell style="html=1;shadow=1;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeWidth=1;whiteSpace=wrap;align=right;verticalAlign=middle;spacingLeft=0;fontStyle=0;fontSize=12;spacing=5;strokeColor=#666666;fontColor=#666666;fillColor=#FAFAFA;" vertex="1" parent="1">
+            <mxGeometry x="770" y="340" width="189.5" height="20" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" link="data:action/json,{&quot;actions&quot;:[{&quot;show&quot;:{&quot;tags&quot;:[&quot;band&quot;]}}]}" id="dSsE4svFGT5zycd-9bUz-73">
+          <mxCell style="whiteSpace=wrap;html=1;align=left;fillColor=#EDEDED;strokeColor=#666666;shadow=0;dashed=0;gradientColor=#DEDEDE;spacing=5;sketch=0;rounded=1;" vertex="1" parent="1">
+            <mxGeometry x="779" y="342.5" width="15" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" link="data:action/json,{&quot;actions&quot;:[{&quot;hide&quot;:{&quot;tags&quot;:[&quot;band&quot;]}}]}" tags="band" id="dSsE4svFGT5zycd-9bUz-74">
+          <mxCell style="whiteSpace=wrap;html=1;align=left;fillColor=#666666;strokeColor=#666666;shadow=0;dashed=0;gradientColor=none;spacing=5;sketch=0;rounded=1;" vertex="1" parent="1">
+            <mxGeometry x="779" y="342.5" width="15" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="In&lt;b&gt;tra&lt;/b&gt;-zone/in&lt;b&gt;te&lt;/b&gt;r-site" tags="control" id="dSsE4svFGT5zycd-9bUz-76">
+          <mxCell style="html=1;shadow=1;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeWidth=1;whiteSpace=wrap;align=right;verticalAlign=middle;spacingLeft=0;fontStyle=0;fontSize=12;spacing=5;strokeColor=#666666;fontColor=#666666;fillColor=#FAFAFA;spacingRight=6;" vertex="1" parent="1">
+            <mxGeometry x="790" y="250" width="169.5" height="20" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" link="data:action/json,{&quot;actions&quot;:[{&quot;toggle&quot;:{&quot;tags&quot;:[&quot;intersite-intrazone-flow&quot;]}}]}" id="dSsE4svFGT5zycd-9bUz-77">
+          <mxCell style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.radioButton2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=#DEDEDE;fillColor=#EDEDED;checked=0;spacing=5;checkedFill=#0085FC;checkedStroke=#ffffff;sketch=0;strokeColor=#666666;" vertex="1" parent="1">
+            <mxGeometry x="800" y="252.5" width="15" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Inter-site/inter-zone&amp;nbsp; (1)" tags="control" id="dSsE4svFGT5zycd-9bUz-78">
+          <mxCell style="html=1;shadow=1;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeWidth=1;whiteSpace=wrap;align=right;verticalAlign=middle;spacingLeft=0;fontStyle=0;fontSize=12;spacing=5;strokeColor=#666666;fontColor=#666666;fillColor=#FAFAFA;spacingRight=6;" vertex="1" parent="1">
+            <mxGeometry x="790" y="280" width="170" height="20" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Inter-site/inter-zone&amp;nbsp; (2)" tags="control" id="dSsE4svFGT5zycd-9bUz-79">
+          <mxCell style="html=1;shadow=1;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeWidth=1;whiteSpace=wrap;align=right;verticalAlign=middle;spacingLeft=0;fontStyle=0;fontSize=12;spacing=5;strokeColor=#666666;fontColor=#666666;fillColor=#FAFAFA;spacingRight=6;" vertex="1" parent="1">
+            <mxGeometry x="790" y="310" width="169.5" height="20" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" link="data:action/json,{&quot;actions&quot;:[{&quot;toggle&quot;:{&quot;tags&quot;:[&quot;flow-intersite-interzone-async&quot;]}}]}" id="dSsE4svFGT5zycd-9bUz-80">
+          <mxCell style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.radioButton2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=#DEDEDE;fillColor=#EDEDED;checked=0;spacing=5;checkedFill=#0085FC;checkedStroke=#ffffff;sketch=0;strokeColor=#666666;" vertex="1" parent="1">
+            <mxGeometry x="800" y="282.5" width="15" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;b&gt;All &lt;/b&gt;example flows" tags="control" id="dSsE4svFGT5zycd-9bUz-82">
+          <mxCell style="html=1;shadow=1;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeWidth=1;whiteSpace=wrap;align=right;verticalAlign=middle;spacingLeft=0;fontStyle=0;fontSize=12;spacing=5;strokeColor=#666666;fontColor=#666666;fillColor=#FAFAFA;" vertex="1" parent="1">
+            <mxGeometry x="770" y="220" width="189.5" height="20" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" link="data:action/json,{&quot;actions&quot;:[{&quot;show&quot;:{&quot;tags&quot;:[&quot;flow&quot;]}}]}" id="dSsE4svFGT5zycd-9bUz-83">
+          <mxCell style="whiteSpace=wrap;html=1;align=left;fillColor=#EDEDED;strokeColor=#666666;shadow=0;dashed=0;gradientColor=#DEDEDE;spacing=5;sketch=0;rounded=1;" vertex="1" parent="1">
+            <mxGeometry x="779" y="222.5" width="15" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" link="data:action/json,{&quot;actions&quot;:[{&quot;toggle&quot;:{&quot;tags&quot;:[&quot;intersite-intrazone-flow&quot;]}}]}" tags="flow intersite-intrazone-flow" id="dSsE4svFGT5zycd-9bUz-85">
+          <mxCell style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.radioButton2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=none;fillColor=#666666;checked=0;spacing=5;checkedFill=#0085FC;checkedStroke=#ffffff;sketch=0;strokeColor=#666666;" vertex="1" parent="1">
+            <mxGeometry x="800" y="252.5" width="15" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" link="data:action/json,{&quot;actions&quot;:[{&quot;toggle&quot;:{&quot;tags&quot;:[&quot;flow-intersite-interzone-async&quot;]}}]}" tags="flow flow-intersite-interzone-async" id="dSsE4svFGT5zycd-9bUz-87">
+          <mxCell style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.radioButton2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=none;fillColor=#666666;checked=0;spacing=5;checkedFill=#0085FC;checkedStroke=#ffffff;sketch=0;strokeColor=#666666;direction=south;" vertex="1" parent="1">
+            <mxGeometry x="800" y="282.5" width="15" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" link="data:action/json,{&quot;actions&quot;:[{&quot;toggle&quot;:{&quot;tags&quot;:[&quot;intersite-interzone-flow-good&quot;]}}]}" id="dSsE4svFGT5zycd-9bUz-88">
+          <mxCell style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.radioButton2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=#DEDEDE;fillColor=#EDEDED;checked=0;spacing=5;checkedFill=#0085FC;checkedStroke=#ffffff;sketch=0;strokeColor=#666666;" vertex="1" parent="1">
+            <mxGeometry x="800" y="312.5" width="15" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" link="data:action/json,{&quot;actions&quot;:[{&quot;toggle&quot;:{&quot;tags&quot;:[&quot;intersite-interzone-flow-good&quot;]}}]}" tags="flow intersite-interzone-flow-good" id="dSsE4svFGT5zycd-9bUz-89">
+          <mxCell style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.radioButton2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;gradientColor=none;fillColor=#666666;checked=0;spacing=5;checkedFill=#0085FC;checkedStroke=#ffffff;sketch=0;strokeColor=#666666;" vertex="1" parent="1">
+            <mxGeometry x="800" y="312.5" width="15" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="" link="data:action/json,{&quot;actions&quot;:[{&quot;hide&quot;:{&quot;tags&quot;:[&quot;flow&quot;]}}]}" tags="flow" id="dSsE4svFGT5zycd-9bUz-90">
+          <mxCell style="whiteSpace=wrap;html=1;align=left;fillColor=#666666;strokeColor=#666666;shadow=0;dashed=0;gradientColor=none;spacing=5;sketch=0;rounded=1;" vertex="1" parent="1">
+            <mxGeometry x="779" y="222.5" width="15" height="15" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <object label="" tags="flow intersite-interzone-flow-good" id="dSsE4svFGT5zycd-9bUz-92">
+          <mxCell style="endArrow=block;startArrow=block;html=1;strokeWidth=5;strokeColor=#666666;startFill=1;endFill=1;fontSize=18;fontStyle=1;fontColor=#666666;flowAnimation=1;backgroundOutline=0;flowAnimationDuration=750;flowAnimationDirection=alternate;fixDash=0;flowAnimationTimingFunction=ease;endSize=3;startSize=3;dashed=1;rounded=1;curved=0;shadow=1;opacity=90;entryX=1.023;entryY=0.376;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.014;exitY=0.346;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Ux4JUTr80TsCuU6cvmH0-193" target="dSsE4svFGT5zycd-9bUz-8">
+            <mxGeometry width="50" height="50" relative="1" as="geometry">
+              <mxPoint x="1500.1599999999999" y="851.6800000000001" as="sourcePoint" />
+              <mxPoint x="1072" y="596" as="targetPoint" />
+              <Array as="points">
+                <mxPoint x="1438" y="794" />
+                <mxPoint x="1410" y="794" />
+                <mxPoint x="1400" y="780" />
+                <mxPoint x="1390" y="750" />
+                <mxPoint x="1350" y="750" />
+                <mxPoint x="1330" y="730" />
+                <mxPoint x="1300" y="730" />
+                <mxPoint x="1280" y="750" />
+                <mxPoint x="1230" y="750" />
+                <mxPoint x="1230" y="200" />
+                <mxPoint x="1400" y="200" />
+                <mxPoint x="1430" y="180" />
+                <mxPoint x="1460" y="190" />
+                <mxPoint x="1470" y="210" />
+                <mxPoint x="1470" y="240" />
+                <mxPoint x="1430" y="260" />
+                <mxPoint x="1410" y="250" />
+                <mxPoint x="1360" y="310" />
+                <mxPoint x="1370" y="330" />
+                <mxPoint x="1400" y="330" />
+                <mxPoint x="1400" y="320" />
+                <mxPoint x="1420" y="300" />
+                <mxPoint x="1450" y="300" />
+                <mxPoint x="1470" y="320" />
+                <mxPoint x="2030" y="320" />
+                <mxPoint x="2040" y="350" />
+                <mxPoint x="2070" y="370" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </object>
+        <object label="" tags="flow intersite-interzone-flow-good" id="dSsE4svFGT5zycd-9bUz-93">
+          <mxCell style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.tick;aspect=fixed;strokeWidth=1;fillColor=#006633;" vertex="1" parent="1">
+            <mxGeometry x="1000" y="500" width="42.51" height="50" as="geometry" />
           </mxCell>
         </object>
       </root>
