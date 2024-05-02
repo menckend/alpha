@@ -1,0 +1,27 @@
+<mxfile modified="2024-05-02T01:51:57.418Z" host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="VhQOtbQa4fPGsjO4Hsri" version="24.3.1" type="device">
+  <diagram id="6a731a19-8d31-9384-78a2-239565b7b9f0" name="Page-1">
+    <mxGraphModel dx="2074" dy="1258" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kQuZDG23_1yAoY78vH23-1542" value="Drawing Renderer" style="text;html=1;resizable=0;points=[];autosize=1;align=left;verticalAlign=top;spacingTop=-4;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="102" y="174" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kQuZDG23_1yAoY78vH23-1543" value="Render your&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; drawings, simply and in a familiar fashion" style="text;html=1;resizable=0;points=[];autosize=1;align=left;verticalAlign=top;spacingTop=-4;" parent="1" vertex="1">
+          <mxGeometry x="102" y="203" width="350" height="20" as="geometry" />
+        </mxCell>
+        <UserObject label="draw.io&lt;br&gt;" link="https://draw.io" id="kQuZDG23_1yAoY78vH23-1544">
+          <mxCell style="text;html=1;resizable=0;points=[];autosize=1;align=left;verticalAlign=top;spacingTop=-4;fontColor=#7EA6E0;" parent="1" vertex="1">
+            <mxGeometry x="171" y="203" width="50" height="20" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="kQuZDG23_1yAoY78vH23-1545" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/basic-ui-elements-16/117/correct-128.png;fontSize=20;fontColor=#7EA6E0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="174" width="56" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="2RSXDKBtb4KKqAclgcSv-1" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/basic-ui-elements-16/117/correct-128.png;fontSize=20;fontColor=#7EA6E0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="234" width="56" height="56" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
