@@ -1,4 +1,5 @@
 <div id="drawio-diagram"></div>
+<script src="assets/js/viewer.min.js"></script>
 
 <script>
     (function () {
@@ -24,12 +25,12 @@
         // Draw.io converter
         function createMxGraphData(xml, idx = new Date().getTime()) {
             return {
-                "highlight": "#114499",
+                "highlight": "#ff8000",
                 "nav": true,
                 "resize": true,
                 edit: null,
                 lightbox: "open",
-                zoom: "1",
+                zoom: "2",
                 xml,
             };
         }
