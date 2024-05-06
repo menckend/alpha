@@ -1,12 +1,22 @@
-<mxfile host="app.diagrams.net" modified="2024-05-06T14:23:16.839Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="ZJywQBZ4NKL-k6ZKs4l5" version="24.3.1" type="device">
+<mxfile host="app.diagrams.net" modified="2024-05-06T14:29:28.342Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="nTI7Noq9k7j96BFe-shX" version="24.3.1" type="device">
   <diagram name="Page-1" id="6yeymBKhxuc0Mbmd6qp0">
     <mxGraphModel dx="963" dy="983" grid="1" gridSize="1" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <object label="" tags="band band-sz band-sz3" id="dSsE4svFGT5zycd-9bUz-38">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#000000;arcSize=5;opacity=5;" parent="1" vertex="1">
+            <mxGeometry x="1427" y="499" width="810" height="127" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="" tags="band site-band site-band1" id="dSsE4svFGT5zycd-9bUz-41">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#000000;arcSize=2;opacity=5;" parent="1" vertex="1">
+            <mxGeometry x="1455" y="387" width="330" height="533" as="geometry" />
+          </mxCell>
+        </object>
         <object label="Security&amp;nbsp;&lt;div style=&quot;font-size: 16px;&quot;&gt;Zone 1&lt;/div&gt;" tags="band band-sz band-sz1" id="Ux4JUTr80TsCuU6cvmH0-218">
           <mxCell style="shape=curlyBracket;html=1;rounded=1;labelPosition=center;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=0;strokeWidth=2;strokeColor=#999999;size=0.32;direction=east;fontSize=16;fontColor=#999999;fontStyle=1;horizontal=1;spacingRight=30;spacingLeft=0;" parent="1" vertex="1">
-            <mxGeometry x="1416" y="775" width="30" height="138" as="geometry" />
+            <mxGeometry x="1416" y="775" width="30" height="125" as="geometry" />
           </mxCell>
         </object>
         <object label="Security&amp;nbsp;&lt;div style=&quot;font-size: 16px;&quot;&gt;Zone 2&lt;/div&gt;" tags="band band-sz band-sz2" id="Ux4JUTr80TsCuU6cvmH0-220">
@@ -21,7 +31,7 @@
         </object>
         <object label="&amp;nbsp;Security&amp;nbsp;&lt;div style=&quot;font-size: 16px;&quot;&gt;Zone 3&lt;/div&gt;" tags="band band-sz band-sz3" id="Ux4JUTr80TsCuU6cvmH0-222">
           <mxCell style="shape=curlyBracket;html=1;rounded=1;labelPosition=center;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=0;strokeWidth=2;strokeColor=#999999;size=0.32;direction=east;fontSize=16;fontColor=#999999;fontStyle=1;horizontal=1;spacingRight=30;spacingLeft=-85;" parent="1" vertex="1">
-            <mxGeometry x="1416" y="500" width="30" height="132" as="geometry" />
+            <mxGeometry x="1416" y="499" width="30" height="125" as="geometry" />
           </mxCell>
         </object>
         <object label="" tags="band site-band site-band2" id="dSsE4svFGT5zycd-9bUz-42">
@@ -32,11 +42,6 @@
         <object label="Site 2 (Hosting)" tags="band site-band site-band2" id="Ux4JUTr80TsCuU6cvmH0-162">
           <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;rotation=0;strokeWidth=2;strokeColor=#B3B3B3;size=0.2;direction=south;fontSize=16;fontColor=#B3B3B3;fontStyle=1" parent="1" vertex="1">
             <mxGeometry x="1876" y="385" width="333" height="30" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="" tags="band band-sz band-sz3" id="dSsE4svFGT5zycd-9bUz-38">
-          <mxCell style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#000000;arcSize=5;opacity=5;" parent="1" vertex="1">
-            <mxGeometry x="1427" y="499" width="810" height="127" as="geometry" />
           </mxCell>
         </object>
         <object label="" tags="band band-sz band-sz0" id="dSsE4svFGT5zycd-9bUz-37">
@@ -52,11 +57,6 @@
         <object label="" tags="band band-devtype band-devtype-fw" id="dSsE4svFGT5zycd-9bUz-49">
           <mxCell style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#000000;arcSize=16;opacity=5;strokeWidth=4;" parent="1" vertex="1">
             <mxGeometry x="2130" y="414" width="70" height="495" as="geometry" />
-          </mxCell>
-        </object>
-        <object label="" tags="band site-band site-band1" id="dSsE4svFGT5zycd-9bUz-41">
-          <mxCell style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#000000;arcSize=2;opacity=5;" parent="1" vertex="1">
-            <mxGeometry x="1455" y="387" width="330" height="533" as="geometry" />
           </mxCell>
         </object>
         <object label="" tags="band site-band site-band0" id="dSsE4svFGT5zycd-9bUz-43">
@@ -96,7 +96,7 @@
         </object>
         <object label="" tags="band band-sz band-sz2" id="dSsE4svFGT5zycd-9bUz-39">
           <mxCell style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#000000;arcSize=8;opacity=5;" parent="1" vertex="1">
-            <mxGeometry x="1426" y="636" width="812" height="126" as="geometry" />
+            <mxGeometry x="1426" y="635" width="812" height="127" as="geometry" />
           </mxCell>
         </object>
         <mxCell id="Ux4JUTr80TsCuU6cvmH0-153" value="S2-Z2-H1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeWidth=2;strokeColor=#969696;fontSize=16;fontStyle=1;fillColor=#F4F4F4;fontColor=#969696;" parent="1" vertex="1">
@@ -330,17 +330,17 @@
         </object>
         <object label="" tags="band band-sz band-sz1" id="Ux4JUTr80TsCuU6cvmH0-219">
           <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=0;strokeWidth=2;strokeColor=#999999;direction=west;size=0;fontSize=18;fontStyle=1" parent="1" vertex="1">
-            <mxGeometry x="2217" y="772" width="20" height="141" as="geometry" />
+            <mxGeometry x="2217" y="775" width="20" height="125" as="geometry" />
           </mxCell>
         </object>
         <object label="" tags="band band-sz band-sz2" id="Ux4JUTr80TsCuU6cvmH0-221">
           <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=0;strokeWidth=2;strokeColor=#999999;direction=west;size=0;fontSize=18;fontStyle=1" parent="1" vertex="1">
-            <mxGeometry x="2217" y="637" width="20" height="123" as="geometry" />
+            <mxGeometry x="2217" y="635" width="20" height="125" as="geometry" />
           </mxCell>
         </object>
         <object label="" tags="band band-sz band-sz3" id="Ux4JUTr80TsCuU6cvmH0-223">
           <mxCell style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;rotation=0;strokeWidth=2;strokeColor=#999999;direction=west;size=0;fontSize=18;fontStyle=1" parent="1" vertex="1">
-            <mxGeometry x="2217" y="499" width="20" height="134" as="geometry" />
+            <mxGeometry x="2217" y="499" width="20" height="125" as="geometry" />
           </mxCell>
         </object>
         <object label="" tags="band band-sz band-sz0" id="Ux4JUTr80TsCuU6cvmH0-225">
