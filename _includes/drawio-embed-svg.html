@@ -4,25 +4,7 @@
 
 <script>
     (function () {
-        // Escape HTML
-        const chatMap = {
-            "&": "&amp;",
-            "'": "&#x27;",
-            "`": "&#x60;",
-            '"': "&quot;",
-            "<": "&lt;",
-            ">": "&gt;",
-        };
-
-        function replaceMatchedCharacters(match) {
-            return chatMap[match];
-        }
-
-        function escapeHTML(string) {
-            if (typeof string !== "string") return string;
-            return string.replace(/[&'`"<>]/g, replaceMatchedCharacters);
-        }
-
+ 
         // Draw.io converter
         function createMxGraphData(xml, idx = new Date().getTime()) {
             return {
@@ -39,7 +21,9 @@
 
         async function drawioConverterAsync(xml, idx) {
             return new Promise((resolve) => {
-                const mxGraphData = createMxGraphData(xml, idx);
+                const xmlMinusSVGFrame = mxUtils.getXml(data);
+                console.log('xml', xml);
+                const mxGraphData = createMxGraphData(xmlMinusSVGFrame, idx);
                 const json = JSON.stringify(mxGraphData);
                 const mxGraphHTML = createMxGraphHTML(json);
                 resolve(mxGraphHTML);
@@ -47,7 +31,7 @@
         }
 
         function createMxGraphHTML(json) {
-            return `<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="${escapeHTML(json)}"></div>`;
+            return `<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph=JUST-THE-CONTENT-KVP-FROM-SVG-NODE-IN-INPUT-FILE></div>`;
         }
 
         // Load Draw.io file
