@@ -1,6 +1,7 @@
+
 <div id="drawio-diagram"></div>
 <script src="assets/js/viewer.min.js"></script>
-<script src="assets/js/mxUtils.js"></script>
+
 <script>
     (function () {
         // Escape HTML
@@ -46,7 +47,7 @@
         }
 
         function createMxGraphHTML(json) {
-            return `<div class="mxgraph" style="max-width:100%;border:10px solid transparent;" data-mxgraph="${escapeHTML(json)}"></div>`;
+            return `<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="${escapeHTML(json)}"></div>`;
         }
 
         // Load Draw.io file
@@ -60,7 +61,7 @@
                 })
                 .then((content) => {
                     const graphContainer = document.getElementById('drawio-diagram');
-                    graphContainer.innerHTML = mxUtils.getXml(content);
+                    graphContainer.innerHTML = content;
                     window.GraphViewer.processElements();
                 })
                 .catch((err) => {
