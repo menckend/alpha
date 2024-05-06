@@ -1,3 +1,13 @@
+<div style="width:800px;padding:50px;margin-left:20%;" contentEditable="true">
+    <img style="display:block;padding:20px;max-width:800px;" src="inline.drawio.svg"/>
+    <img style="display:block;padding:20px;max-width:800px;" src="inline.drawio.svg"/>
+</div>
+<script type="text/javascript" src="inline.js"></script>
+
+
+
+
+
 <div id="drawio-diagram"></div>
 <script src="assets/js/viewer.min.js"></script>
 
@@ -46,7 +56,7 @@
         }
 
         function createMxGraphHTML(json) {
-            return `<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="${escapeHTML(json)}"></div>`;
+            return `<div class="mxgraph" style="max-width:100%;border:10px solid transparent;" data-mxgraph="${escapeHTML(json)}"></div>`;
         }
 
         // Load Draw.io file
@@ -60,7 +70,7 @@
                 })
                 .then((content) => {
                     const graphContainer = document.getElementById('drawio-diagram');
-                    graphContainer.innerHTML = content;
+                    graphContainer.innerHTML = mxUtils.getXML(content);
                     window.GraphViewer.processElements();
                 })
                 .catch((err) => {
