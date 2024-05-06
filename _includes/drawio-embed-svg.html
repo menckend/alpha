@@ -60,7 +60,7 @@
                 })
                 .then((content) => {
                     const graphContainer = document.getElementById('drawio-diagram');
-                    graphContainer.innerHTML = mxUtils.getXML(content);
+                    graphContainer.innerHTML = mxUtils.getXml(content);
                     window.GraphViewer.processElements();
                 })
                 .catch((err) => {
