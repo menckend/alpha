@@ -24,11 +24,12 @@
         // Draw.io converter
         function createMxGraphData(xml, idx = new Date().getTime()) {
             return {
-                editable: true,
-                highlight: "#67ab9f",
+                highlight: "#ffffff",
                 nav: true,
                 resize: true,
                 lightbox: open,
+                toolbar: zoom layers tags lightbox
+                edit: _blank,
                 xml,
             };
         }
