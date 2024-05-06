@@ -1,0 +1,75 @@
+<div id="drawio-diagram"></div>
+<script src="assets/js/viewer.min.js"></script>
+
+<script>
+    (function () {
+        // Escape HTML
+        const chatMap = {
+            "&": "&amp;",
+            "'": "&#x27;",
+            "`": "&#x60;",
+            '"': "&quot;",
+            "<": "&lt;",
+            ">": "&gt;",
+        };
+
+        function replaceMatchedCharacters(match) {
+            return chatMap[match];
+        }
+
+        function escapeHTML(string) {
+            if (typeof string !== "string") return string;
+            return string.replace(/[&'`"<>]/g, replaceMatchedCharacters);
+        }
+
+        // Draw.io converter
+        function createMxGraphData(xml, idx = new Date().getTime()) {
+            return {
+                "highlight": "#ffffff",
+                "nav": true,
+                "resize": true,
+                "edit": "_blank",
+                "editable": "true",
+                "lightbox": false,
+                zoom: "1.5",
+                xml,
+            };
+        }
+
+        async function drawioConverterAsync(xml, idx) {
+            return new Promise((resolve) => {
+                const mxGraphData = createMxGraphData(xml, idx);
+                const json = JSON.stringify(mxGraphData);
+                const mxGraphHTML = createMxGraphHTML(json);
+                resolve(mxGraphHTML);
+            });
+        }
+
+        function createMxGraphHTML(json) {
+            return `<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="${escapeHTML(json)}"></div>`;
+        }
+
+        // Load Draw.io file
+        function loadDrawioFile(url) {
+            fetch(url)
+                .then((response) => {
+                    return response.text();
+                })
+                .then((data) => {
+                    return drawioConverterAsync(data);
+                })
+                .then((content) => {
+                    const graphContainer = document.getElementById('drawio-diagram');
+                    graphContainer.innerHTML = content;
+                    window.GraphViewer.processElements();
+                })
+                .catch((err) => {
+                    console.error("Error loading draw.io file:", err);
+                });
+        }
+
+        // Initialize
+        loadDrawioFile("{{include.drawiolink}}");
+
+    })();
+</script>
