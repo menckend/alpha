@@ -36,7 +36,7 @@
         }
 
         function getAtSvgTag_contentProperty (xml){
-            const xmlDoc = new DOMParser().parseFromString(xmlg, "text/xml");
+            const xmlDoc = new DOMParser().parseFromString(xml, "text/xml");
             console.log('xmlDoc', xmlDoc);
             const svgElements = xmlDoc.getElementsByTagName("svg");
             console.log('svgElements', svgElements );
@@ -47,7 +47,6 @@
         function loadDrawioFile(url) {
             fetch(url)
                 .then((response) => {
-                    console.log('response', response);
                     return response.text();
                 })
                 .then((goGetThatContent) => {
