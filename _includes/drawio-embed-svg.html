@@ -42,7 +42,7 @@
             const svgElements = xmlDoc.getElementsByTagName("svg");
             console.log('svgElements', svgElements );
             const innerSvgElement = svgElements.outerHTML
-            console.log('innerSvgElements, innerSvgElement );
+            console.log('innerSvgElement', innerSvgElement );
             svgContentAttribute = innerSvgElement.getAttributeNode("content");
             console.log('svgContentAttribute', svgContentAttribute );
             svgContentData = svgContentAttribute.textValue;
