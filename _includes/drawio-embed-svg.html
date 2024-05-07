@@ -22,9 +22,10 @@
 
         async function drawioConverterAsync(xml, idx) {
             return new Promise((resolve) => {
-                const xmlMinusSVGFrame = mxUtils.getXml(data);
                 console.log('xml', xml);
-                const mxGraphData = createMxGraphData(xmlMinusSVGFrame, idx);
+                const xmlMinusSVGFrame = mxUtils.getXml(xml);
+                console.log('xml', xml);
+                const mxGraphData = createMxGraphData(xml, idx);
                 const json = JSON.stringify(mxGraphData);
                 const mxGraphHTML = createMxGraphHTML(json);
                 resolve(mxGraphHTML);
