@@ -8,7 +8,6 @@
     (function () {
         // Draw.io converter
 
-
         // Escape HTML
             const chatMap = {
                 "&": "&amp;",
@@ -18,11 +17,9 @@
                 "<": "&lt;",
                 ">": "&gt;",
             };
-    
             function replaceMatchedCharacters(match) {
                 return chatMap[match];
             }
-    
             function escapeHTML(string) {
                 if (typeof string !== "string") return string;
                 return string.replace(/[&'`"<>]/g, replaceMatchedCharacters);
@@ -45,22 +42,21 @@
                 const mxGraphData = createMxGraphData(xml, idx);
                 console.log('mxGraphData', mxGraphData );
                 const json = JSON.stringify(mxGraphData );
-                console.log('json', json);
                 const mxGraphHTML = createMxGraphHTML(json);
+                console.log('mxGraphHTML', mxGraphHTML );
                 resolve(mxGraphHTML);
             });
         }
 
         function createMxGraphHTML(json) {
-            console.log('json', json);
             return `<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="${escapeHTML(json)}"></div>`;
         }
 
         function pullDrawioCopyFromSvg (inboundText){
             const xmlDoc = new DOMParser().parseFromString(inboundText, "image/svg+xml");
             const svgElements = xmlDoc.getElementsByTagName("svg");
-            const mxFileAttribute = svgElements[0].attributes.content.nodeValue
-            const thePearl = new DOMParser().parseFromString(mxFileAttribute, "text/xml")
+            const mxFileAttribute = svgElements[0].attributes.content.nodeValue;
+            const thePearl = new DOMParser().parseFromString(mxFileAttribute, "text/xml");
             return mxFileAttribute;
         }
 
@@ -80,6 +76,7 @@
                 .then((content) => {
                     const graphContainer = document.getElementById('drawio-diagram');
                     graphContainer.innerHTML = content;
+                    console.log('content', content );
                     window.GraphViewer.processElements();
                 })
                 .catch((err) => {
