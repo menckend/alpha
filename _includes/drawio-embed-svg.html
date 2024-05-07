@@ -8,6 +8,26 @@
     (function () {
  
         // Draw.io converter
+        (function () {
+            // Escape HTML
+            const chatMap = {
+                "&": "&amp;",
+                "'": "&#x27;",
+                "`": "&#x60;",
+                '"': "&quot;",
+                "<": "&lt;",
+                ">": "&gt;",
+            };
+    
+            function replaceMatchedCharacters(match) {
+                return chatMap[match];
+            }
+    
+            function escapeHTML(string) {
+                if (typeof string !== "string") return string;
+                return string.replace(/[&'`"<>]/g, replaceMatchedCharacters);
+            }
+    
         function createMxGraphData(xml, idx = new Date().getTime()) {
             return {
                 "highlight": "#987654",
