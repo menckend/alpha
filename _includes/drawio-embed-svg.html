@@ -49,9 +49,10 @@
                     return parser.parseFromString(xmlDoc,"text/xml");
                 })
                 .then((mxgraphcontent) => {
-                    return xmlDoc.getElementsByTagName("_content")[0]nodeValue;
+                    return xmlDoc.getElementsByTagName("_content")[0].nodeValue;
                 })
                 .then((deflatedsvg) => {
+                    console.log(mxgraphcontent);
                     return Graph.decompress(deflatedsvg);
                 })
 
