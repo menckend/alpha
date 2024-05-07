@@ -40,29 +40,24 @@
         function loadDrawioFile(url) {
             fetch(url)
                 .then((response) => {
+                    console.log('response', response);
                     return response.text();
                 })
                 .then((extractXML) => {
+                    console.log('extractXML', extractXML);
                     return $.parseXML(extractXML);
                 })
-                .then((extractHTML) => {
-                    parser = new DOMParser();
-                    console.log('extractHTML', extractHTML);
-                    return parser.parseFromString(extractHTML,"text/html");
+                .then(($jquerything) => {
+                    console.log('$jquerything', $jquerything);
+                    return $ ( jquerything);
                 })
-                .then((extractSVG) => {
-                    parser = new DOMParser();
-                    console.log('extractSVG', extractSVG);
-                    return parser.extractSVG.InnerHTML;
+                .then((findSvgTag) => {
+                    console.log('$findSvgTag', $findSvgTag);
+                    return $findSVGTag.find( "svg") ;
                 })
-                .then((extractSVG2) => {
-                    console.log('extractSVG2', extractSVG2);
-                    return extractSVG2.getElementsByTagName("_content")[0];
-                })
-                .then((deflatedsvg) => {
-                    console.log('deflatedsvg', deflatedsvg);
-                    logFromFetch(deflatedsvg);
-                    return Graph.decompress(deflatedsvg);
+                .then((svgContent) => {
+                    console.log('svgContent', svgcontent);
+                    return svgContent;
                 })
                 .then((data) => {
                     return drawioConverterAsync(data);
