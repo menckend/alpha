@@ -45,9 +45,14 @@
                     return $.parseXML(xmlString);
                 })
                 .then((deflatedsvg) => {
-                    return Graph.inflate(deflatedsvg);
+                    return Graph.decompress(deflatedsvg);
                 })
 
+                .then((xmlDoc) => {
+                    parser = new DOMParser();
+                    return parser.parseFromString(xmlDoc,"text/xml");
+                })
+                
                 .then((data) => {
                     return drawioConverterAsync(data);
                 })
