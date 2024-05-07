@@ -31,7 +31,8 @@
         }
 
         function createMxGraphHTML(json) {
-            return `<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="_______________"></div>`;
+            console.log(deflatedsvg);
+            return `<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph=${deflatedsvg}></div>`;
         }
 
         // Load Draw.io file
@@ -45,11 +46,6 @@
                 })
                 .then((deflatedsvg) => {
                     return graph.inflate(deflatedsvg);
-                })
-
-                .then((data) => {
-                    console.log(data)
-                    return data;
                 })
 
                 .then((data) => {
