@@ -52,8 +52,8 @@
                 })
                 .then((extractSVG) => {
                     parser = new DOMParser();
-                    console.log('extractSVG', extractSVG.InnerHTML);
-                    return extractSVG.InnerHTML;
+                    console.log('extractSVG', extractSVG);
+                    return parser.extractSVG.InnerHTML;
                 })
                 .then((extractSVG2) => {
                     console.log('extractSVG2', extractSVG2);
