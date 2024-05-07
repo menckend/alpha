@@ -51,7 +51,7 @@
                     console.log('xmlDoc', xmlDoc);
                 })
                 .then((svgcontent) => {
-                    return svgcontent.getElementsByTagName("_content")[0].childNodes[0].textContent;
+                    return svgcontent.getElementsByTagName("_content")[0].textContent;
                     console.log(svgcontent);
                 })
                 .then((deflatedsvg) => {
