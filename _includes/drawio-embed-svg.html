@@ -48,8 +48,8 @@
                     parser = new DOMParser();
                     return parser.parseFromString(xmlDoc,"text/xml");
                 })
-                .then((mxgraphcontent) => {
-                    return xmlNOPEDoc.getElementsByTagName("object")[0].("svg")[0]nodeValue;
+                .then((svgcontent) => {
+                    return svgcontent.getElementsByTagName("_content")[0].childnodes[0].nodeValue;
                 })
                 .then((deflatedsvg) => {
                     console.log(mxgraphcontent);
