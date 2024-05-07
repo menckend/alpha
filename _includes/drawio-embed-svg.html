@@ -45,7 +45,7 @@
                     return $.parseXML(xmlString);
                 })
                 .then((xmlDoc) => {
-                    parser = new DOMParser();
+                    parser = new require('xmldom').DOMParser();
                     return parser.parseFromString(xmlDoc,"text/xml");
                 })
                 .then((svgcontent) => {
