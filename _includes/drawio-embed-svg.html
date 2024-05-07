@@ -43,24 +43,21 @@
                 })
                 .then((xmlString) => {
                     return $.parseXML(xmlString);
+                    console.log('xmlString', xmlString);
                 })
                 .then((xmlDoc) => {
                     parser = new DOMParser();
                     return parser.parseFromString(xmlDoc,"text/xml");
+                    console.log('xmlDoc', xmlDoc);
                 })
                 .then((svgcontent) => {
-                    console.log(svgcontent);
                     return svgcontent.getElementsByTagName("_content")[0].childNodes[0].textContent;
                     console.log(svgcontent);
                 })
                 .then((deflatedsvg) => {
-                    console.log(mxgraphcontent);
                     return Graph.decompress(deflatedsvg);
                 })
-
-
                 .then((data) => {
-                    console.log (data);
                     return drawioConverterAsync(data);
                 })
 
