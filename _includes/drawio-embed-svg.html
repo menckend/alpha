@@ -2,6 +2,7 @@
 <div id="drawio-diagram"></div>
 <script src="assets/js/viewer.min.js"></script>
 <script src="assets/js/mxUtils.js"></script>
+<script src="assets/js/Graph.js"></script>
 
 <script>
     (function () {
@@ -42,9 +43,8 @@
                 .then((xmlString) => {
                     return $.parseXML(xmlString);
                 })
-                .then((xml) => {
-                    console.log(xml)
-                    return mxUtils.getXml(xml);
+                .then((deflatedsvg) => {
+                    return graph.inflate(deflatedsvg);
                 })
 
                 .then((data) => {
