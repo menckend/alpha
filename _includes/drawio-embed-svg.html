@@ -44,16 +44,20 @@
                 .then((xmlString) => {
                     return $.parseXML(xmlString);
                 })
-                .then((deflatedsvg) => {
-                    return Graph.decompress(deflatedsvg);
-                })
-
                 .then((xmlDoc) => {
                     parser = new DOMParser();
                     return parser.parseFromString(xmlDoc,"text/xml");
                 })
+                .then((mxgraphcontent) => {
+                    return xmlDoc.getElementsByTagName("_content")[0]nodeValue;
+                })
+                .then((deflatedsvg) => {
+                    return Graph.decompress(deflatedsvg);
+                })
+
 
                 .then((data) => {
+                    console.log (data);
                     return drawioConverterAsync(data);
                 })
 
