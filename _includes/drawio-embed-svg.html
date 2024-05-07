@@ -61,7 +61,7 @@
                     return svgcontent.getElementsByTagName("_content")[0];
                 })
                 .then((deflatedsvg) => {
-                    logFromFetch(deflatedsvgcontent);
+                    logFromFetch(deflatedsvg);
                     return Graph.decompress(deflatedsvg);
                 })
                 .then((data) => {
