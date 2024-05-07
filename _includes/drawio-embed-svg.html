@@ -38,8 +38,8 @@
         function getAtSvgTag_contentProperty (xml){
             const xmlDoc = new DOMParser().parseFromString(xml, "text/xml");
             const svgElements = xmlDoc.getElementsByTagName("svg")[0];
-            console.log('svgElement', svgElement );
-            svgContentAttribute = svgElements.getAttributeNode("@content");
+            console.log('svgElements', svgElements );
+            svgContentAttribute = svgElements.getAttributeNode("content");
             console.log('svgContentAttribute', svgContentAttribute );
             svgContentData = svgContentAttribute.textValue;
             console.log('svgContentData', svgContentData );
