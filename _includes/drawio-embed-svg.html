@@ -37,7 +37,7 @@
 
         function pullDrawioCopyFromSvg (inboundText){
             console.log('FetchedText', inboundText);
-            const xmlDoc = new DOMParser().parseFromString(inboundText, "text/xml");
+            const xmlDoc = new DOMParser().parseFromString(inboundText, "text/xmimage/svg+xml");
             console.log('xmlDoc', xmlDoc);
             const svgElements = xmlDoc.getElementsByTagName("svg");
             console.log('svgElements', svgElements );
