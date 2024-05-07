@@ -35,10 +35,6 @@
             return `<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph=${json}></div>`;
         }
 
-        function logFromFetch(blob) {
-            console.log('blob', blob);
-            return 'logged';
-        }
 
         // Load Draw.io file
         function loadDrawioFile(url) {
@@ -51,13 +47,15 @@
                 })
                 .then((xmlDoc) => {
                     parser = new DOMParser();
+                    console.log('xmlDoc', xmlDoc);
                     return parser.parseFromString(xmlDoc,"text/xml");
                 })
                 .then((svgcontent) => {
-                    logFromFetch(svgcontent);
-                    return svgcontent.getElementsByTagName("_content")[0];
+                    console.log('svgcontent', svgcontent);
+                    return svgcontent.getElementsByTagName("_content")[0].textContents;
                 })
                 .then((deflatedsvg) => {
+                    console.log('deflatedsvg', deflatedsvg);
                     logFromFetch(deflatedsvg);
                     return Graph.decompress(deflatedsvg);
                 })
