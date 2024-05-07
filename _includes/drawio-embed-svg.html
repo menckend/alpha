@@ -45,11 +45,12 @@
                     return $.parseXML(xmlString);
                 })
                 .then((xmlDoc) => {
-                    parser = new require('xmldom').DOMParser();
+                    parser = new DOMParser();
                     return parser.parseFromString(xmlDoc,"text/xml");
                 })
                 .then((svgcontent) => {
-                    return svgcontent.getElementsByTagName("_content")[0].childNodes[0].nodeValue;
+                    console-log(svgcontent);
+                    return svgcontent.getElementsByTagName("_content")[0].childNodes[0].textContent;
                 })
                 .then((deflatedsvg) => {
                     console.log(mxgraphcontent);
