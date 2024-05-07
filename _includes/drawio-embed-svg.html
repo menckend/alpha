@@ -44,11 +44,9 @@
         function loadDrawioFile(url) {
             fetch(url)
                 .then((response) => {
-                    logFromFetch(response);
                     return response.text();
                 })
                 .then((xmlString) => {
-                    logFromFetch(xmlString);
                     return $.parseXML(xmlString);
                 })
                 .then((xmlDoc) => {
@@ -57,19 +55,15 @@
                     return parser.parseFromString(xmlDoc,"text/xml");
                 })
                 .then((svgcontent) => {
-                    logFromFetch(svgcontent);
                     return svgcontent.getElementsByTagName("_content")[0];
                 })
                 .then((deflatedsvg) => {
-                    logFromFetch(deflatedsvg);
                     return Graph.decompress(deflatedsvg);
                 })
                 .then((data) => {
-                    logFromFetch(data);
                     return drawioConverterAsync(data);
                 })
                 .then((content) => {
-                    logFromFetch(content);
                     const graphContainer = document.getElementById('drawio-diagram');
                     graphContainer.innerHTML = content;
                     window.GraphViewer.processElements();
