@@ -35,9 +35,11 @@
             return `<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph=${json}></div>`;
         }
 
-        function getAtSvgTag_contentProperty (xml){
-            const xmlDoc = new DOMParser().parseFromString(xml, "text/xml");
-            const svgElements = xmlDoc.getElementsByTagName("svg")[0];
+        function pullDrawioCopyFromSvg (inboundText){
+            console.log('FetchedText', inboundText);
+            const xmlDoc = new DOMParser().parseFromString(inboundText, "text/xml");
+            console.log('xmlDoc', xmlDoc);
+            const svgElements = xmlDoc.getElementsByTagName("svg");
             console.log('svgElements', svgElements );
             svgContentAttribute = svgElements.getAttributeNode("content");
             console.log('svgContentAttribute', svgContentAttribute );
@@ -52,8 +54,8 @@
                 .then((response) => {
                     return response.text();
                 })
-                .then((goGetThatContent) => {
-                    return getAtSvgTag_contentProperty(goGetThatContent);
+                .then((resolvedText) => {
+                    return pullDrawioCopyFromSvg(resolvedText);
                 })
                 .then((data) => {
                     return drawioConverterAsync(data);
