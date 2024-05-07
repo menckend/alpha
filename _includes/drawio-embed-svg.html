@@ -20,11 +20,12 @@
                 xml,
             };
         }
-
         async function drawioConverterAsync(xml, idx) {
             return new Promise((resolve) => {
                 const mxGraphData = createMxGraphData(xml, idx);
-                const json = JSON.stringify(mxGraphData);
+                console.log('mxGraphData', mxGraphData );
+                const json = JSON.stringify(mxGraphData );
+                console.log('json', json);
                 const mxGraphHTML = createMxGraphHTML(json);
                 resolve(mxGraphHTML);
             });
@@ -39,6 +40,7 @@
             const xmlDoc = new DOMParser().parseFromString(inboundText, "image/svg+xml");
             const svgElements = xmlDoc.getElementsByTagName("svg");
             const mxFileFound = svgElements[0].attributes.content.nodeValue
+            console.log('mxFileFound', mxFileFound );
         }
 
 
@@ -57,7 +59,6 @@
                 .then((content) => {
                     const graphContainer = document.getElementById('drawio-diagram');
                     graphContainer.innerHTML = content;
-                    console.log('graphContainer.innerHTML', graphcontainer.innerHTML);
                     window.GraphViewer.processElements();
                 })
                 .catch((err) => {
