@@ -47,12 +47,12 @@
                 })
                 .then((svgDoc) => {
                     parser = new DOMParser();
-                    console.log('svgDoc'innerHTML, svgDoc);
-                    return parser.parseFromString(svgDoc.innerHTML,"image/svg+xml");
+                    console.log('svgDocinnerHTML', svgDoc.innerHTML);
+                    return parser.parseFromString(svgDoc,"image/svg+xml");
                 })
                 .then((svgcontent) => {
                     console.log('svgcontent', svgcontent);
-                    return svgcontent.getElementsByTagName("_content")[0].textContents;
+                    return svgcontent.InnerHTML.getElementsByTagName("_content")[0];
                 })
                 .then((deflatedsvg) => {
                     console.log('deflatedsvg', deflatedsvg);
