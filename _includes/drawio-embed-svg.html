@@ -10,7 +10,7 @@
         // Draw.io converter
         function createMxGraphData(xml, idx = new Date().getTime()) {
             return {
-                "highlight": "#ffffff",
+                "highlight": "#987654",
                 "nav": true,
                 "resize": true,
                 "edit": "_blank",
@@ -52,7 +52,7 @@
                     parser = new DOMParser();
                     return parser.parseFromString(xmlDoc,"text/xml");
                 })
-                
+
                 .then((data) => {
                     return drawioConverterAsync(data);
                 })
