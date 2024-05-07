@@ -35,6 +35,14 @@
             return `<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph=${json}></div>`;
         }
 
+        function getAtSvgTag_contentProperty (xml){
+            console.log('xml', xml);
+            xmlDoc = $.parseXML( xml ),
+            $xml = $( xmlDoc ),
+            $_Content = $xml.find( "_content" );
+            console.log('_Content', $_Content);
+        }
+
 
         // Load Draw.io file
         function loadDrawioFile(url) {
@@ -43,21 +51,8 @@
                     console.log('response', response);
                     return response.text();
                 })
-                .then((extractXML) => {
-                    console.log('extractXML', extractXML);
-                    return $.parseXML(extractXML);
-                })
-                .then(($jquerything) => {
-                    console.log('$jquerything', $jquerything);
-                    return $ ( $jquerything);
-                })
-                .then((findSvgTag) => {
-                    console.log('$findSvgTag', $findSvgTag);
-                    return $findSVGTag.find( "svg") ;
-                })
-                .then((svgContent) => {
-                    console.log('svgContent', svgcontent);
-                    return svgContent;
+                .then((goGetThatContent) => {
+                    return getAtSvgTag_contentProperty(goGetThatContent);
                 })
                 .then((data) => {
                     return drawioConverterAsync(data);
