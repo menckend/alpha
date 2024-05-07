@@ -63,6 +63,7 @@ Original version could read files that had been saved "directly" in drawio's XML
             const xmlDoc = new DOMParser().parseFromString(inboundText, "text/xml");
             console.log('xmlDoc', xmlDoc);
             const svgElements = xmlDoc.getElementsByTagName("svg");
+            if (svgElements !== null) return inboundText;
             const mxFileAttribute = svgElements[0].attributes.content.nodeValue;
             return mxFileAttribute;
         }
