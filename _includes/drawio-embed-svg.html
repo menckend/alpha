@@ -47,8 +47,8 @@
                 })
                 .then((svgDoc) => {
                     parser = new DOMParser();
-                    console.log('svgDoc', svgDoc);
-                    return parser.parseFromString(svgDoc,"image/svg+xml");
+                    console.log('svgDoc'innerHTML, svgDoc);
+                    return parser.parseFromString(svgDoc.innerHTML,"image/svg+xml");
                 })
                 .then((svgcontent) => {
                     console.log('svgcontent', svgcontent);
