@@ -45,7 +45,7 @@
                     return $.parseXML(xmlString);
                 })
                 .then((deflatedsvg) => {
-                    return graph.inflate(deflatedsvg);
+                    return Graph.inflate(deflatedsvg);
                 })
 
                 .then((data) => {
