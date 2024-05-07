@@ -45,10 +45,10 @@
                 .then((xmlString) => {
                     return $.parseXML(xmlString);
                 })
-                .then((xmlDoc) => {
+                .then((svgDoc) => {
                     parser = new DOMParser();
-                    console.log('xmlDoc', xmlDoc);
-                    return parser.parseFromString(xmlDoc,"text/xml");
+                    console.log('svgDoc', svgDoc);
+                    return parser.parseFromString(svgDoc,"image/svg+xml");
                 })
                 .then((svgcontent) => {
                     console.log('svgcontent', svgcontent);
