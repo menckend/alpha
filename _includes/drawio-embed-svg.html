@@ -25,11 +25,14 @@
     
         function createMxGraphData(xml, idx = new Date().getTime()) {
             return {
-                "highlight": "#987654",
+                "highlight": "#123456",
                 "nav": true,
                 "resize": true,
                 "edit": "_blank",
                 "editable": "true",
+                "toolbar": "zoom lightbox layers",
+                "toolbar-position": "bottom",
+                "toolbar-nohide": true,
                 "lightbox": false,
                 zoom: "1.5",
                 xml,
