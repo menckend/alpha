@@ -59,10 +59,9 @@
         function pullDrawioCopyFromSvg (inboundText){
             const xmlDoc = new DOMParser().parseFromString(inboundText, "image/svg+xml");
             const svgElements = xmlDoc.getElementsByTagName("svg");
-            const mxFileFound = svgElements[0].attributes.content.nodeValue
-            const thePearl = new DOMParser().parseFromString(mxFileFound, "text/xml")
-            console.log('thePearl', thePearl );
-            return thePearl;
+            const mxFileAttribute = svgElements[0].attributes.content.nodeValue
+            const thePearl = new DOMParser().parseFromString(mxFileAttribute, "text/xml")
+            return mxFileAttribute;
         }
 
 
