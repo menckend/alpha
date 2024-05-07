@@ -40,10 +40,8 @@
         async function drawioConverterAsync(xml, idx) {
             return new Promise((resolve) => {
                 const mxGraphData = createMxGraphData(xml, idx);
-                console.log('mxGraphData', mxGraphData );
                 const json = JSON.stringify(mxGraphData );
                 const mxGraphHTML = createMxGraphHTML(json);
-                console.log('mxGraphHTML', mxGraphHTML );
                 resolve(mxGraphHTML);
             });
         }
@@ -59,8 +57,6 @@
             const thePearl = new DOMParser().parseFromString(mxFileAttribute, "text/xml");
             return mxFileAttribute;
         }
-
-
         // Load Draw.io file
         function loadDrawioFile(url) {
             fetch(url)
@@ -76,7 +72,6 @@
                 .then((content) => {
                     const graphContainer = document.getElementById('drawio-diagram');
                     graphContainer.innerHTML = content;
-                    console.log('content', content );
                     window.GraphViewer.processElements();
                 })
                 .catch((err) => {
