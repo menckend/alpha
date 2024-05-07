@@ -36,11 +36,10 @@
         }
 
         function getAtSvgTag_contentProperty (xml){
-            console.log('xml', xml);
-            xmlDoc = $.parseXML( xml ),
-            $xml = $( xmlDoc ),
-            $_Content = $xml.find( "_content" );
-            console.log('_Content', $_Content);
+            const xmlDoc = new DOMParser().parseFromString(xmlg, "text/xml");
+            console.log('xmlDoc', xmlDoc);
+            const svgElements = xmlDoc.getElementsByTagName("svg");
+            console.log('svgElements', svgElements );
         }
 
 
