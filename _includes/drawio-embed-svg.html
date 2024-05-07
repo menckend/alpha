@@ -49,8 +49,9 @@
                     return parser.parseFromString(xmlDoc,"text/xml");
                 })
                 .then((svgcontent) => {
-                    console-log(svgcontent);
+                    console.log(svgcontent);
                     return svgcontent.getElementsByTagName("_content")[0].childNodes[0].textContent;
+                    console.log(svgcontent);
                 })
                 .then((deflatedsvg) => {
                     console.log(mxgraphcontent);
