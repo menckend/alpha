@@ -50,14 +50,15 @@
                     return $.parseXML(xmlString);
                 })
                 .then((xmlDoc) => {
-                    logFromFetch(xmlDoc);
                     parser = new DOMParser();
                     return parser.parseFromString(xmlDoc,"text/xml");
                 })
                 .then((svgcontent) => {
+                    logFromFetch(svgcontent);
                     return svgcontent.getElementsByTagName("_content")[0];
                 })
                 .then((deflatedsvg) => {
+                    logFromFetch(deflatedsvg);
                     return Graph.decompress(deflatedsvg);
                 })
                 .then((data) => {
