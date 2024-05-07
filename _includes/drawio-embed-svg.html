@@ -22,9 +22,6 @@
 
         async function drawioConverterAsync(xml, idx) {
             return new Promise((resolve) => {
-                console.log('xml', xml);
-                const xmlMinusSVGFrame = mxUtils.getXml(xml);
-                console.log('xml', xml);
                 const mxGraphData = createMxGraphData(xml, idx);
                 const json = JSON.stringify(mxGraphData);
                 const mxGraphHTML = createMxGraphHTML(json);
@@ -33,7 +30,7 @@
         }
 
         function createMxGraphHTML(json) {
-            return `<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph=JUST-THE-CONTENT-KVP-FROM-SVG-NODE-IN-INPUT-FILE></div>`;
+            return `<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="_______________"></div>`;
         }
 
         // Load Draw.io file
@@ -42,14 +39,29 @@
                 .then((response) => {
                     return response.text();
                 })
+                .then((xmlString) => {
+                    return $.parseXML(xmlString);
+                })
+                .then((xml) => {
+                    console.log(xml)
+                    return mxUtils.getXml(xml);
+                })
+
+                .then((data) => {
+                    console.log(data)
+                    return data;
+                })
+
                 .then((data) => {
                     return drawioConverterAsync(data);
                 })
+
                 .then((content) => {
                     const graphContainer = document.getElementById('drawio-diagram');
                     graphContainer.innerHTML = content;
                     window.GraphViewer.processElements();
                 })
+
                 .catch((err) => {
                     console.error("Error loading draw.io file:", err);
                 });
