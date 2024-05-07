@@ -42,17 +42,22 @@
                 .then((response) => {
                     return response.text();
                 })
-                .then((xmlString) => {
-                    return $.parseXML(xmlString);
+                .then((extractXML) => {
+                    return $.parseXML(extractXML);
                 })
-                .then((svgDoc) => {
+                .then((extractHTML) => {
                     parser = new DOMParser();
-                    console.log('svgDocinnerHTML', svgDoc.innerHTML);
-                    return parser.parseFromString(svgDoc,"image/svg+xml");
+                    console.log('extractHTML', extractHTML);
+                    return parser.parseFromString(extractHTML,"text/html");
                 })
-                .then((svgcontent) => {
-                    console.log('svgcontent', svgcontent);
-                    return svgcontent.InnerHTML.getElementsByTagName("_content")[0];
+                .then((extractSVG) => {
+                    parser = new DOMParser();
+                    console.log('extractSVG', extractSVG.InnerHTML);
+                    return extractSVG.InnerHTML;
+                })
+                .then((extractSVG2) => {
+                    console.log('extractSVG2', extractSVG2);
+                    return extractSVG2.getElementsByTagName("_content")[0];
                 })
                 .then((deflatedsvg) => {
                     console.log('deflatedsvg', deflatedsvg);
