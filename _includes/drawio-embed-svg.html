@@ -33,7 +33,7 @@
 
         function createMxGraphHTML(json) {
             console.log('json', json);
-            return `<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph=${json}></div>`;
+            return `<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph=(${escapeHTMLjson})></div>`;
         }
 
         function pullDrawioCopyFromSvg (inboundText){
