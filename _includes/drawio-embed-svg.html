@@ -31,42 +31,49 @@
         }
 
         function createMxGraphHTML(json) {
-            console.log(json);
+            console.log('json', json);
             return `<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph=${json}></div>`;
+        }
+
+        function logFromFetch(blob) {
+            console.log('blob', blob);
+            return 'logged';
         }
 
         // Load Draw.io file
         function loadDrawioFile(url) {
             fetch(url)
                 .then((response) => {
+                    logFromFetch(response);
                     return response.text();
                 })
                 .then((xmlString) => {
+                    logFromFetch(xmlString);
                     return $.parseXML(xmlString);
-                    console.log('xmlString', xmlString);
                 })
                 .then((xmlDoc) => {
+                    logFromFetch(xmlDoc);
                     parser = new DOMParser();
                     return parser.parseFromString(xmlDoc,"text/xml");
-                    console.log('xmlDoc', xmlDoc);
                 })
                 .then((svgcontent) => {
+                    logFromFetch(svgcontent);
                     return svgcontent.getElementsByTagName("_content")[0];
-                    console.log(svgcontent);
                 })
                 .then((deflatedsvg) => {
+                    logFromFetch(deflatedsvgcontent);
                     return Graph.decompress(deflatedsvg);
                 })
                 .then((data) => {
+                    logFromFetch(data);
                     return drawioConverterAsync(data);
                 })
-
                 .then((content) => {
+                    logFromFetch(content);
                     const graphContainer = document.getElementById('drawio-diagram');
                     graphContainer.innerHTML = content;
                     window.GraphViewer.processElements();
                 })
-
                 .catch((err) => {
                     console.error("Error loading draw.io file:", err);
                 });
