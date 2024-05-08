@@ -75,7 +75,7 @@ I also added a pseudo-random tag to add to the <div> element it creates/populate
             return mxFileAttribute;
         }
         // Load Draw.io file
-        function loadDrawioFile(url, divIdForMe {
+        function loadDrawioFile(url, divIdForMe) {
             fetch(url)
                 .then((response) => { // Get the text from the file at the URL being imported
                     return response.text();
@@ -97,6 +97,6 @@ I also added a pseudo-random tag to add to the <div> element it creates/populate
         }
 
         // Initialize
-        loadDrawioFile("{{include.drawiolink}}");
+        loadDrawioFile("{{include.drawiolink}}", "{{divIdNum}}");
     })();
 </script>
