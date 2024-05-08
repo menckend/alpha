@@ -15,7 +15,7 @@ I also added a pseudo-random tag to add to the <div> element it creates/populate
 <script src="assets/js/viewer-static.min.js"></script>
 
 <!-- Insert a tag for the <div> object that the viewer-static-min.js code will render the diagram within-->
-<div id="drawio-diagram-{% divIdNum %}"></div>
+<div id="drawio-diagram-{{divIdNum}}"></div>
 
 
 <script>
@@ -99,6 +99,6 @@ I also added a pseudo-random tag to add to the <div> element it creates/populate
         }
 
         // Initialize
-        loadDrawioFile("{{include.drawiolink}}", "{% divIdNum %}");
+        loadDrawioFile("{{include.drawiolink}}", "{{divIdNum}}");
     })();
 </script>
