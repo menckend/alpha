@@ -64,7 +64,7 @@ I also added a pseudo-random tag to add to the <div> element it creates/populate
         }
         //Build the HTML content that will end up in the rendered page and acted on by viewer-min.js
         function createMxGraphHTML(json) {
-            return `<div class="mxgraph" style="max-width:100%;border:40px solid transparent;" data-mxgraph="${escapeHTML(json)}"></div>`;
+            return `<div class="mxgraph" style="max-width:100%;border:20px solid transparent;" data-mxgraph="${escapeHTML(json)}"></div>`;
         }
         // Extra extraction steps for diagrams saved in SVG containers.
         function pullDrawioCopyFromSvg (inboundText){
