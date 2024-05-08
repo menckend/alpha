@@ -7,16 +7,14 @@ I also added a pseudo-random tag to add to the <div> element it creates/populate
 -->
 
 
-{% assign min = 10 %}
-{% assign max = 20 %}
+<!-- Insert a tag for the <div> object that the viewer-static-min.js code will render the diagram within-->
+{% assign min = 1000 %}
+{% assign max = 2000 %}
 {% assign diff = max | minus: min %}
 {% assign divIdNum = "now" | date: "%N" | modulo: diff | plus: min | append: ""%}
-
-<script src="assets/js/viewer-static.min.js"></script>
-
-<!-- Insert a tag for the <div> object that the viewer-static-min.js code will render the diagram within-->
 <div id="drawio-diagram-{{divIdNum}}"></div>
 
+<script src="assets/js/viewer-static.min.js"></script>
 
 <script>
     (function () {
@@ -77,19 +75,19 @@ I also added a pseudo-random tag to add to the <div> element it creates/populate
             return mxFileAttribute;
         }
         // Load Draw.io file
-        function loadDrawioFile(url, divIdNum) {
+        function loadDrawioFile(url, divIdForMe {
             fetch(url)
                 .then((response) => { // Get the text from the file at the URL being imported
-                    return response.text(), divIdNum;
+                    return response.text();
                 })
                 .then((resolvedText) => {
-                    return pullDrawioCopyFromSvg(resolvedText), divIdNum; //Run the imported text through extra SVG extraction process
+                    return pullDrawioCopyFromSvg(resolvedText); //Run the imported text through extra SVG extraction process
                 })
                 .then((data) => {   // Run the imported text through some processing to clean it up for the draw.io viewer
-                    return drawioConverterAsync(data), divIdNum;
+                    return drawioConverterAsync(data);
                 })
                 .then((content) => {
-                    const graphContainer = document.getElementById('drawio-diagram-'+'${divIdNum}'); //Grab the HTML element that we'll render the diagram in
+                    const graphContainer = document.getElementById('drawio-diagram-{{divIdNum}}'); //Grab the HTML element that we'll render the diagram in
                     graphContainer.innerHTML = content; //Push our diagram data into the HTML element we just grabbed
                     window.GraphViewer.processElements();   //Have the draw.io viewer process/render all of the elements in the diagram data
                 })
@@ -99,6 +97,6 @@ I also added a pseudo-random tag to add to the <div> element it creates/populate
         }
 
         // Initialize
-        loadDrawioFile("{{include.drawiolink}}", "{{divIdNum}}");
+        loadDrawioFile("{{include.drawiolink}}");
     })();
 </script>
