@@ -8,18 +8,8 @@ I also added a pseudo-random tag to add to the <div> element it creates/populate
 
 <script src="assets/js/viewer-static.min.js"></script>
 
-
-<!-- Create a (probably) unique ID for the <div> tag we'll be creating-->
-    {% assign min = 100 %}
-    {% assign max = 200 %}
-    {% assign diff = max | minus: min %}
-    {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}}
-
-
-
-
-<!-- Create the <div> object that the viewer-static-min.js code will render the diagram within-->
-    <div id="drawio-diagram-{% randomNumber %}"></div>
+<!-- Insert a tag for the <div> object that the viewer-static-min.js code will render the diagram within-->
+<div id="drawio-diagram-{{include.divIdNum}}"></div>
 
 
 
@@ -76,26 +66,25 @@ I also added a pseudo-random tag to add to the <div> element it creates/populate
         // Extra extraction steps for diagrams saved in SVG containers.
         function pullDrawioCopyFromSvg (inboundText){
             const xmlDoc = new DOMParser().parseFromString(inboundText, "text/xml");
-            console.log('xmlDoc', xmlDoc);
             const svgElements = xmlDoc.getElementsByTagName("svg");
             if (svgElements !== null) return inboundText;
             const mxFileAttribute = svgElements[0].attributes.content.nodeValue;
             return mxFileAttribute;
         }
         // Load Draw.io file
-        function loadDrawioFile(url) {
+        function loadDrawioFile(url, divIdNum) {
             fetch(url)
                 .then((response) => { // Get the text from the file at the URL being imported
-                    return response.text();
+                    return response.text(), divIdNum;
                 })
                 .then((resolvedText) => {
-                    return pullDrawioCopyFromSvg(resolvedText); //Run the imported text through extra SVG extraction process
+                    return pullDrawioCopyFromSvg(resolvedText), divIdNum; //Run the imported text through extra SVG extraction process
                 })
                 .then((data) => {   // Run the imported text through some processing to clean it up for the draw.io viewer
-                    return drawioConverterAsync(data);
+                    return drawioConverterAsync(data), divIdNum;
                 })
                 .then((content) => {
-                    const graphContainer = document.getElementById('drawio-diagram-{% randomNumber %}'); //Grab the HTML element that we'll render the diagram in
+                    const graphContainer = document.getElementById('drawio-diagram-'+'${divIdNum}'); //Grab the HTML element that we'll render the diagram in
                     graphContainer.innerHTML = content; //Push our diagram data into the HTML element we just grabbed
                     window.GraphViewer.processElements();   //Have the draw.io viewer process/render all of the elements in the diagram data
                 })
@@ -105,6 +94,6 @@ I also added a pseudo-random tag to add to the <div> element it creates/populate
         }
 
         // Initialize
-        loadDrawioFile("{{include.drawiolink}}");
+        loadDrawioFile("{{include.drawiolink}}, "{{includ.divIdNum}}");
     })();
 </script>
