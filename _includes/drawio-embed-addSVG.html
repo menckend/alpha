@@ -6,11 +6,16 @@ Original version could read files that had been saved "directly" in drawio's XML
 I also added a pseudo-random tag to add to the <div> element it creates/populates so that the script can be used multiple times in the same document.
 -->
 
+<!--{%comment} Using liquid to get a random number to append to the <div> {%endcomment%}-->
+{% assign min = 10 %}
+{% assign max = 20 %}
+{% assign diff = max | minus: min %}
+{% assign divIdNum = "now" | date: "%N" | modulo: diff | plus: min | append: ""%}
+
 <script src="assets/js/viewer-static.min.js"></script>
 
 <!-- Insert a tag for the <div> object that the viewer-static-min.js code will render the diagram within-->
-<div id="drawio-diagram-{{include.divIdNum}}"></div>
-
+<div id="drawio-diagram-{% divIdNum %}"></div>
 
 
 <script>
@@ -94,6 +99,6 @@ I also added a pseudo-random tag to add to the <div> element it creates/populate
         }
 
         // Initialize
-        loadDrawioFile("{{include.drawiolink}}, "{{includ.divIdNum}}");
+        loadDrawioFile("{{include.drawiolink}}", "{% divIdNum %}");
     })();
 </script>
