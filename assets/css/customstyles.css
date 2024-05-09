@@ -469,8 +469,8 @@ blockquote {
   margin-block: 0;
   margin-inline: 0;
   margin: .75em 5px;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 30%;
   background-color: rgb(245, 245, 245);
   border-radius: 10px;
 }
@@ -483,7 +483,7 @@ blockquote > p {
 
 }
 
-blockquote:before {  
+blockquote > p:before {  
     font: 16px/24px Arial, sans-serif;
     content: open-quote;  
     font-size: 24pt;  
@@ -502,7 +502,7 @@ blockquote:before {
     width: 25px;  
 }
 
-blockquote:after {  
+blockquote > p:after {  
     font: 16px/24px Arial, sans-serif;
     content: close-quote;  
     font-size: 24pt;  
