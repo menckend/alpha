@@ -461,64 +461,61 @@ div.mencknav * {
 
 
 
-body > div > div > main > div.bd-content.ps-lg-2 > div > blockquote {
-    width:800px;
-    text-align:left;
-    padding: 0.5em 10px;
-    margin: 1.5em 10px;
-    background-color: whitesmoke;
-  }
 
-  body > div > div > main > div.bd-content.ps-lg-2 > div > blockquote > p {
-    margin-bottom: 0;
-    margin-block-end: 0;
-    background-color: rgb(219, 217, 217);
-  }
+blockquote {
+  text-align:left;
+  padding: 0.5em 10px;
+  margin: 1.5em 10px;
+  background-color: whitesmoke;
+
+}
+
+blockquote:before {  
+    content: open-quote;  
+    font-size: 24pt;  
+    text-align: center;  
+    line-height: 42px;  
+    color: #fff;  
+    background: #ddd;  
+    float: left;  
+    position: relative;  
+    border-radius: 25px;  
+   margin-right: 0.5em;
+  vertical-align: -0.4em;
   
-  body > div > div > main > div.bd-content.ps-lg-2 > div > blockquote:before {  
-      content: open-quote;  
-      font-size: 24pt;  
-      text-align: center;  
-      line-height: 42px;  
-      color: #fff;  
-      background: #ddd;  
-      float: left;  
-      position: relative;  
-      border-radius: 25px;  
-     margin-right: 0.5em;
-    vertical-align: -0.4em;
-    
-      /** define it as a block element **/  
-      display: block;  
-      height: 25px;  
-      width: 25px;  
-  }  
-  body > div > div > main > div.bd-content.ps-lg-2 > div > blockquote:after {  
-      content: close-quote;  
-      font-size: 24pt;  
-      text-align: center;  
-      line-height: 42px;  
-      color: #fff;  
-      background: #ddd;  
-      float: right;  
-      position: relative;  
-      border-radius: 25px;  
-      margin-right: 1em;
-      vertical-align: -3.5em;
-    
-      /** define it as a block element **/  
-      display: block;  
-      height: 25px;  
-      width: 25px;  
-  }  
+    /** define it as a block element **/  
+    display: block;  
+    height: 25px;  
+    width: 25px;  
+}  
+blockquote:after {  
+    content: close-quote;  
+    font-size: 24pt;  
+    text-align: center;  
+    line-height: 42px;  
+    color: #fff;  
+    background: #ddd;  
+    float: right;  
+    position: relative;  
+    border-radius: 25px;  
+    margin-right: 1em;
+    vertical-align: -0.5em;
   
-  body > div > div > main > div.bd-content.ps-lg-2 > div > blockquote:hover:after, body > div > div > main > div.bd-content.ps-lg-2 > div > blockquote:hover:before {  
-      background-color: #555; 
-      transition: all 350ms;  
-      -o-transition: all 350ms;  
-      -moz-transition: all 350ms;  
-      -webkit-transition: all 350ms; 
-  }  
+    /** define it as a block element **/  
+    display: block;  
+    height: 25px;  
+    width: 25px;  
+}  
+
+blockquote:hover:after, blockquote:hover:before {  
+    background-color: #555; 
+    transition: all 350ms;  
+    -o-transition: all 350ms;  
+    -moz-transition: all 350ms;  
+    -webkit-transition: all 350ms; 
+} 
+
+
 
 
 
