@@ -20,8 +20,8 @@
     --menck-btn-bg: whitesmoke;
     --menck-btn-border: #dcdcdc;
     --menck-btn-txt: #347DBE;
-    --menck-deets-bg: whitesmoke;
-    --menck-deets-border: whitesmoke;
+    --menck-deets-bg: none;
+    --menck-deets-border: none;
     --bs-border-color-translucent: grey;
   }
 
