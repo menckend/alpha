@@ -502,6 +502,7 @@ blockquote:after {
     position: relative;  
     border-radius: 25px;  
     margin-right: 1em;
+    margin-top: -1em;
     vertical-align: -0.5em;
   
     /** define it as a block element **/  
