@@ -495,6 +495,7 @@ blockquote > p:before {
     border-radius: 25px;  
     margin-right: 0.25em;
     margin-bottom: 12.5px;
+    vertical-align: top;
     /** define it as a block element **/  
     display: block;  
     height: 25px;  
@@ -530,9 +531,6 @@ blockquote >p:hover:after, blockquote >p:hover:before {
     -webkit-transition: all 350ms; 
 } 
 
-blockquote >p:hover {
-  background-color: rgb(237, 237, 237);
-}
 
 
 
