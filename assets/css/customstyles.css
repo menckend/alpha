@@ -518,13 +518,6 @@ blockquote >p:after {
     width: 25px;  
 }  
 
-blockquote:hover {  
-  background-color: rgb(220, 219, 219); 
-  transition: all 350ms;  
-  -o-transition: all 350ms;  
-  -moz-transition: all 350ms;  
-  -webkit-transition: all 350ms; 
-} 
 
 blockquote:hover:after, blockquote:hover:before {  
     background-color: #555; 
