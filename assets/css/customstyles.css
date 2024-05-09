@@ -467,6 +467,11 @@ body > div > div > main > div.bd-content.ps-lg-2 > div > blockquote {
     padding: 0.5em 10px;
     margin: 1.5em 10px;
   }
+
+  body > div > div > main > div.bd-content.ps-lg-2 > div > blockquote > p {
+    margin-bottom: 0;
+    margin-block-end: 0;
+  }
   
   body > div > div > main > div.bd-content.ps-lg-2 > div > blockquote:before {  
       content: open-quote;  
