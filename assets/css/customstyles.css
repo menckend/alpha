@@ -469,18 +469,13 @@ blockquote {
 }
 
 blockquote > p {
-  display:inline;
+  display: inline-block;
   text-align:left;
   padding: 0.5em 10px;
   padding-bottom: 3px;
   margin: .75em 5px;
   background-color: rgb(245, 245, 245);
   border-radius: 10px;
-  margin-left: 10%;
-  margin-right: 30%
-  margin: none;
-  padding: none;
-
 }
 
 blockquote > p:before {  
