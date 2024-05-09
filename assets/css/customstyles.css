@@ -456,6 +456,14 @@ div.mencknav * {
 }
 
 
+.blockquote {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: #6c757d;
+  background-color: #0dcaf0;
+}
+
+
 /*                                      */
 /*                                      */
 /* Mencken's customizations end here    */
