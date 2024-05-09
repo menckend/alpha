@@ -469,15 +469,19 @@ blockquote {
   margin: .75em 5px;
   background-color: whitesmoke;
   border-radius: 10px;
-  margin-left: 20%;
-  margin-right: 30%
+  margin-left: 25%;
+  margin-right: 25%
 }
 
 blockquote > p {
-  margin-bottom: 0;
+  margin: none;
+  margin-bottom: -1em;
+  padding: none;
+
 }
 
 blockquote:before {  
+    font: 16px/24px Arial, sans-serif;
     content: open-quote;  
     font-size: 24pt;  
     text-align: center;  
@@ -496,6 +500,7 @@ blockquote:before {
     width: 25px;  
 }  
 blockquote:after {  
+    font: 16px/24px Arial, sans-serif;
     content: close-quote;  
     font-size: 24pt;  
     text-align: center;  
