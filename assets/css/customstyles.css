@@ -497,7 +497,7 @@ body > div > div > main > div.bd-content.ps-lg-2 > div > blockquote {
       position: relative;  
       border-radius: 25px;  
       margin-right: 1em;
-      vertical-align: -0.5em;
+      vertical-align: -3.5em;
     
       /** define it as a block element **/  
       display: block;  
