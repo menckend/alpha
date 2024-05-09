@@ -456,7 +456,10 @@ div.mencknav * {
 }
 
 
-.blockquote {
+
+
+
+body > div > div > main > div.bd-content.ps-lg-2 > div > blockquote {
   margin-bottom: 1rem;
   color: #6c757d !important;
   font-size: 1em;
@@ -467,6 +470,7 @@ div.mencknav * {
   border-left-style: solid !important;
   border-left-width: 5px !important;
 }
+
 
 
 /*                                      */
