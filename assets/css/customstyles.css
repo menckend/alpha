@@ -527,11 +527,8 @@ blockquote >p:hover:after, blockquote >p:hover:before {
     -webkit-transition: all 350ms; 
 } 
 
-blockquote >p:hover:after, blockquote > p:hover:before {
+blockquote >p:hover {
   background-color: rgb(237, 237, 237);
-  border-radius: 10px;
-  margin-left: 10%;
-  margin-right: 20%
 }
 
 
