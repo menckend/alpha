@@ -459,8 +459,63 @@ div.mencknav * {
 
 
 
+
+
 body > div > div > main > div.bd-content.ps-lg-2 > div > blockquote {
-  margin-bottom: 1rem !important;
+    width:200px;
+    text-align:left;
+    padding: 0.5em 10px;
+    margin: 1.5em 10px;
+  }
+  
+  body > div > div > main > div.bd-content.ps-lg-2 > div > blockquote:before {  
+      content: open-quote;  
+      font-size: 24pt;  
+      text-align: center;  
+      line-height: 42px;  
+      color: #fff;  
+      background: #ddd;  
+      float: left;  
+      position: relative;  
+      border-radius: 25px;  
+     margin-right: 0.5em;
+    vertical-align: -0.4em;
+    
+      /** define it as a block element **/  
+      display: block;  
+      height: 25px;  
+      width: 25px;  
+  }  
+  body > div > div > main > div.bd-content.ps-lg-2 > div > blockquote:after {  
+      content: close-quote;  
+      font-size: 24pt;  
+      text-align: center;  
+      line-height: 42px;  
+      color: #fff;  
+      background: #ddd;  
+      float: right;  
+      position: relative;  
+      border-radius: 25px;  
+      margin-right: 1em;
+      vertical-align: -0.5em;
+    
+      /** define it as a block element **/  
+      display: block;  
+      height: 25px;  
+      width: 25px;  
+  }  
+  
+  body > div > div > main > div.bd-content.ps-lg-2 > div > blockquote:hover:after, body > div > div > main > div.bd-content.ps-lg-2 > div > blockquote:hover:before {  
+      background-color: #555; 
+      transition: all 350ms;  
+      -o-transition: all 350ms;  
+      -moz-transition: all 350ms;  
+      -webkit-transition: all 350ms; 
+  }  
+
+
+
+/*  margin-bottom: 1rem !important;
   color: #6c757d !important;
   font-size: 1em !important;
   box-sizing: border-box !important;
@@ -469,6 +524,7 @@ body > div > div > main > div.bd-content.ps-lg-2 > div > blockquote {
   border-left-color:#0dcaf0 !important;
   border-left-style: solid !important;
   border-left-width: 5px !important;
+  */
 }
 
 
