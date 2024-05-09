@@ -482,7 +482,7 @@ blockquote:before {
     font: 16px/24px Arial, sans-serif;
     content: open-quote;  
     font-size: 24pt;  
-    text-align: center;  
+    text-align: left;  
     line-height: 42px;  
     color: #fff;  
     background: #818181;  
@@ -502,7 +502,7 @@ blockquote:after {
     font: 16px/24px Arial, sans-serif;
     content: close-quote;  
     font-size: 24pt;  
-    text-align: center;  
+    text-align: right;  
     line-height: 42px;  
     color: #fff;  
     background: #818181;  
@@ -541,7 +541,6 @@ blockquote:hover:after, blockquote:hover:before {
   border-left-style: solid !important;
   border-left-width: 5px !important;
   */
-}
 
 
 
@@ -564,7 +563,7 @@ blockquote:hover:after, blockquote:hover:before {
     }
   }
   
-  
+    
   
   @media screen and (max-width: 767px) {
     .row-offcanvas {
