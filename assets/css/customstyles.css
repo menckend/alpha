@@ -478,14 +478,14 @@ blockquote > p {
   display: inline-block !important;
   padding: 0;
   margin: 0;
-  
+
 }
 
 blockquote:before {  
     font: 16px/24px Arial, sans-serif;
     content: open-quote;  
     font-size: 24pt;  
-    text-align: left;  
+    text-align: center;  
     line-height: 42px;  
     color: #fff;  
     background: #818181;  
@@ -493,8 +493,6 @@ blockquote:before {
     position: relative;  
     border-radius: 25px;  
     margin-right: 0.25em;
-    margin-bottom: 12.5px;
-    vertical-align: top;
     /** define it as a block element **/  
     display: block;  
     height: 25px;  
@@ -505,15 +503,14 @@ blockquote:after {
     font: 16px/24px Arial, sans-serif;
     content: close-quote;  
     font-size: 24pt;  
-    text-align: right;  
+    text-align: center;  
     line-height: 42px;  
     color: #fff;  
     background: #818181;  
     float: right;  
     position: relative;  
     border-radius: 25px;  
-    margin-top: 12.5px;
-    vertical-align: -0.5em;
+    margin-top: -12.5px;
   
     /** define it as a block element **/  
     display: block;  
