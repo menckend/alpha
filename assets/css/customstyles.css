@@ -466,10 +466,6 @@ blockquote {
   text-align:left;
   margin-left: 10%;
   margin-right: 30%
-}
-
-blockquote > p {
-  display: inline-block;
   text-align:left;
   padding: 0.5em 10px;
   padding-bottom: 3px;
@@ -478,7 +474,11 @@ blockquote > p {
   border-radius: 10px;
 }
 
-blockquote > p:before {  
+blockquote > p {
+  display: inline-block;
+ 
+
+blockquote:before {  
     font: 16px/24px Arial, sans-serif;
     content: open-quote;  
     font-size: 24pt;  
@@ -498,7 +498,7 @@ blockquote > p:before {
     width: 25px;  
 }
 
-blockquote >p:after {  
+blockquote:after {  
     font: 16px/24px Arial, sans-serif;
     content: close-quote;  
     font-size: 24pt;  
@@ -519,7 +519,7 @@ blockquote >p:after {
 }  
 
 
-blockquote >p:hover:after, blockquote >p:hover:before {  
+blockquote:hover:after, blockquote:hover:before {  
     background-color: #555; 
     transition: all 350ms;  
     -o-transition: all 350ms;  
