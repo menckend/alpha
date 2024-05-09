@@ -461,9 +461,11 @@ div.mencknav * {
   color: #6c757d !important;
   font-size: 1em;
   box-sizing: border-box;
-  border-left: 5px solid  #0dcaf0 !important;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
+  border-left-color:#0dcaf0 !important;
+  border-left-style: solid !important;
+  border-left-width: 5px !important;
 }
 
 
