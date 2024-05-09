@@ -464,6 +464,12 @@ div.mencknav * {
 
 blockquote {
   text-align:left;
+  margin-left: 10%;
+  margin-right: 30%
+}
+
+blockquote > p {
+  text-align:left;
   padding: 0.5em 10px;
   padding-bottom: 3px;
   margin: .75em 5px;
@@ -471,9 +477,6 @@ blockquote {
   border-radius: 10px;
   margin-left: 10%;
   margin-right: 30%
-}
-
-blockquote > p {
   margin: none;
   padding: none;
 
