@@ -469,8 +469,8 @@ blockquote {
   margin: .75em 5px;
   background-color: whitesmoke;
   border-radius: 10px;
-  margin-left: 20%;
-  margin-right: 10%
+  margin-left: 10%;
+  margin-right: 20%
 }
 
 blockquote > p {
