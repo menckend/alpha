@@ -113,3 +113,8 @@ relative_links:
   enabled:     true
   collections: false
 
+kramdown:
+  syntax_highlighter: coderay
+  syntax_highlighter_opts:
+    line_numbers: table
+    bold_every: 5
