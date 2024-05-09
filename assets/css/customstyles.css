@@ -482,7 +482,7 @@ blockquote:before {
     font: 16px/24px Arial, sans-serif;
     content: open-quote;  
     font-size: 24pt;  
-    text-align: left;  
+    text-align: center;  
     line-height: 42px;  
     color: #fff;  
     background: #818181;  
@@ -502,7 +502,7 @@ blockquote:after {
     font: 16px/24px Arial, sans-serif;
     content: close-quote;  
     font-size: 24pt;  
-    text-align: right;  
+    text-align: center;  
     line-height: 42px;  
     color: #fff;  
     background: #818181;  
