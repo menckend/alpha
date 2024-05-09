@@ -467,7 +467,7 @@ blockquote {
   padding: 0.5em 10px;
   padding-bottom: 3px;
   margin: .75em 5px;
-  background-color: whitesmoke;
+  background-color: rgb(245, 245, 245);
   border-radius: 10px;
   margin-left: 10%;
   margin-right: 20%
@@ -519,7 +519,7 @@ blockquote >p:after {
 }  
 
 
-blockquote:hover:after, blockquote:hover:before {  
+blockquote >p:hover:after, blockquote >p:hover:before {  
     background-color: #555; 
     transition: all 350ms;  
     -o-transition: all 350ms;  
@@ -527,6 +527,12 @@ blockquote:hover:after, blockquote:hover:before {
     -webkit-transition: all 350ms; 
 } 
 
+blockquote >p:hover:after, blockquote > p:hover:before {
+  background-color: rgb(237, 237, 237);
+  border-radius: 10px;
+  margin-left: 10%;
+  margin-right: 20%
+}
 
 
 
