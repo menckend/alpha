@@ -510,7 +510,7 @@ blockquote > p:after {
     position: relative;  
     border-radius: 25px;
     margin-left: 0.25em;  
-    margin-top: 0px;
+    margin-bottom: -12.5px;
       /** define it as a block element **/  
     display: block;  
     height: 25px;  
