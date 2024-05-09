@@ -495,7 +495,7 @@ blockquote:before {
     position: relative;  
     border-radius: 25px;  
     margin-right: -0.25em;
-    margin-bottom: -12.5px
+    margin-bottom: -12.5px;
     /** define it as a block element **/  
     display: block;  
     height: 25px;  
