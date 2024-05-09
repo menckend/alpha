@@ -476,6 +476,7 @@ blockquote {
 
 blockquote > p {
   display: inline-block !important;
+  background-color: whitesmoke;
   padding: 0;
   margin: 0;
 
