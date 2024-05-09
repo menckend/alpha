@@ -491,7 +491,7 @@ blockquote > p:before {
     position: relative;  
     border-radius: 25px;  
     margin-right: 0.25em;
-    margin-bottom: 1em;
+    margin-bottom: 12.5px;
     /** define it as a block element **/  
     display: block;  
     height: 25px;  
@@ -509,7 +509,7 @@ blockquote >p:after {
     float: right;  
     position: relative;  
     border-radius: 25px;  
-    margin-top 1em;
+    margin-top: 12.5px;
     vertical-align: -0.5em;
   
     /** define it as a block element **/  
