@@ -474,7 +474,7 @@ blockquote > p {
   background-color: rgb(250, 250, 250);
   padding: 0;
   padding-left: 3px;
-  padding-right: 3px;
+  margin-right: 3px;
   width: auto;
   border-radius: 10px;
 }
@@ -491,7 +491,7 @@ blockquote > p:before {
     position: relative;  
     border-radius: 25px;  
     margin-right: 0.25em;
-    margin-bottom: 12.5px;
+    margin-top: -12.5px;
     /** define it as a block element **/  
     display: block;  
     height: 25px;  
