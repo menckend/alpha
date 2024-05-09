@@ -469,6 +469,7 @@ blockquote {
   margin: 1.5em 10px;
   background-color: whitesmoke;
   border-radius: 4px
+  float: center;
 
 }
 
@@ -482,7 +483,7 @@ blockquote:before {
     line-height: 42px;  
     color: #fff;  
     background: #ddd;  
-    float: right;  
+    float: left;  
     position: relative;  
     border-radius: 25px;  
    margin-right: 0.5em;
@@ -500,7 +501,7 @@ blockquote:after {
     line-height: 42px;  
     color: #fff;  
     background: #ddd;  
-    float: left;  
+    float: right;  
     position: relative;  
     border-radius: 25px;  
     margin-right: 0;
