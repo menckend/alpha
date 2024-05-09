@@ -41,8 +41,7 @@ Adapted from code provided by markNZed (https://github.com/markNZed), provided i
                 "resize": true,
                 "edit": "_blank",
                 "editable": "true",
-                "toolbar": "zoom lightbox layers menckbutton1",
-                "toolbar-buttons": "{key:{title:menckbutton1, image:ttH/AezuH8Z6gBgqAAAAAElFTkSuQmCC, handler:function[none, enabled: true]}}"
+                "toolbar": "zoom lightbox layers",
                 "toolbar-position": "bottom",
                 "toolbar-nohide": false,
                 "lightbox": false,
@@ -61,7 +60,7 @@ Adapted from code provided by markNZed (https://github.com/markNZed), provided i
         }
         //Build the HTML content that will end up in the rendered page and acted on by viewer-min.js
         function createMxGraphHTML(json) {
-            return `<div class="mxgraph" style="max-width:100%;border:20px solid transparent;" data-mxgraph="${escapeHTML(json)}"></div>`;
+            return `<div class="mxgraph" style="max-width:100%;border:5px solid transparent;" data-mxgraph="${escapeHTML(json)}"></div>`;
         }
         // Extra extraction steps for diagrams saved in SVG containers.
         function pullDrawioCopyFromSvg (inboundText){
