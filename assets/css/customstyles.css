@@ -467,14 +467,12 @@ blockquote {
   margin-left: 10%;
   margin-right: 30%;
   width: auto;
-
-  background-color: rgb(249, 249, 249);
   border-radius: 20px;
 }
 
 blockquote > p {
   display: inline-block !important;
-  background-color: whitesmoke;
+  background-color: rgb(250, 250, 250);
   padding: 0;
   margin: 0;
   width: auto;
