@@ -460,12 +460,12 @@ div.mencknav * {
 
 
 body > div > div > main > div.bd-content.ps-lg-2 > div > blockquote {
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
   color: #6c757d !important;
-  font-size: 1em;
-  box-sizing: border-box;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
+  font-size: 1em !important;
+  box-sizing: border-box !important;
+  margin: 1.5em 10px !important;
+  padding: 0.5em 10px !important;
   border-left-color:#0dcaf0 !important;
   border-left-style: solid !important;
   border-left-width: 5px !important;
