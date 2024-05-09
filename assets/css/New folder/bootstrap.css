@@ -691,6 +691,8 @@ progress {
 .blockquote {
   margin-bottom: 1rem;
   font-size: 1.25rem;
+  color: #6c757d;
+  background-color: #0dcaf0;
 }
 .blockquote > :last-child {
   margin-bottom: 0;
