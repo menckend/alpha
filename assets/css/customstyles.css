@@ -476,7 +476,7 @@ blockquote {
 
 blockquote > p {
   display: inline-block;
- 
+}
 
 blockquote:before {  
     font: 16px/24px Arial, sans-serif;
@@ -519,7 +519,7 @@ blockquote:after {
 }  
 
 
-blockquote:hover:after, blockquote:hover:before {  
+blockquote:hover:after, blockquot:hover:before {  
     background-color: #555; 
     transition: all 350ms;  
     -o-transition: all 350ms;  
@@ -563,7 +563,7 @@ blockquote:hover:after, blockquote:hover:before {
     }
   }
   
-    
+  
   
   @media screen and (max-width: 767px) {
     .row-offcanvas {
