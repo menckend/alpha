@@ -469,6 +469,7 @@ blockquote {
 }
 
 blockquote > p {
+  display:inline;
   text-align:left;
   padding: 0.5em 10px;
   padding-bottom: 3px;
