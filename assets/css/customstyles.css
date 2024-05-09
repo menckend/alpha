@@ -463,14 +463,16 @@ div.mencknav * {
 
 
 blockquote {
-  width:60%;
+  width:40%;
   text-align:center;
   padding: 0.5em 10px;
   margin: 1.5em 10px;
+  background-color: whitesmoke;
+  border-radius: 4px
+
 }
 
 blockquote > p {
-  background-color: whitesmoke;
 }
 
 blockquote:before {  
@@ -480,7 +482,7 @@ blockquote:before {
     line-height: 42px;  
     color: #fff;  
     background: #ddd;  
-    float: left;  
+    float: right;  
     position: relative;  
     border-radius: 25px;  
    margin-right: 0.5em;
@@ -498,10 +500,10 @@ blockquote:after {
     line-height: 42px;  
     color: #fff;  
     background: #ddd;  
-    float: right;  
+    float: left;  
     position: relative;  
     border-radius: 25px;  
-    margin-right: 1em;
+    margin-right: 0;
     margin-top: -1em;
     vertical-align: -0.5em;
   
