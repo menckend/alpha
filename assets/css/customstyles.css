@@ -467,7 +467,6 @@ blockquote {
   margin-left: 10%;
   margin-right: 30%;
   width: auto;
-  border-radius: 20px;
 }
 
 blockquote > p {
@@ -476,6 +475,7 @@ blockquote > p {
   padding: 0;
   margin: 0;
   width: auto;
+  border-radius: 20px;
 }
 
 blockquote > p:before {  
@@ -509,7 +509,7 @@ blockquote > p:after {
     position: relative;  
     border-radius: 25px;
     margin-left: 0.25em;  
-    margin-top: 12.5px;
+    margin-top: 0px;
       /** define it as a block element **/  
     display: block;  
     height: 25px;  
