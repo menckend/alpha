@@ -464,12 +464,12 @@ div.mencknav * {
 
 blockquote {
   text-align:left;
-  margin-left: 10%;
-  margin-right: 30%
   text-align:left;
   padding: 0.5em 10px;
   padding-bottom: 3px;
   margin: .75em 5px;
+  margin-left: 10%;
+  margin-right: 30%
   background-color: rgb(245, 245, 245);
   border-radius: 10px;
 }
@@ -482,7 +482,7 @@ blockquote:before {
     font: 16px/24px Arial, sans-serif;
     content: open-quote;  
     font-size: 24pt;  
-    text-align: center;  
+    text-align: left;  
     line-height: 42px;  
     color: #fff;  
     background: #818181;  
@@ -502,7 +502,7 @@ blockquote:after {
     font: 16px/24px Arial, sans-serif;
     content: close-quote;  
     font-size: 24pt;  
-    text-align: center;  
+    text-align: right;  
     line-height: 42px;  
     color: #fff;  
     background: #818181;  
