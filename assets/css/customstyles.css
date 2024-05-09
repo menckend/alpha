@@ -479,7 +479,7 @@ blockquote > p {
 
 }
 
-blockquote:before {  
+blockquote > p:before {  
     font: 16px/24px Arial, sans-serif;
     content: open-quote;  
     font-size: 24pt;  
@@ -497,8 +497,9 @@ blockquote:before {
     display: block;  
     height: 25px;  
     width: 25px;  
-}  
-blockquote:after {  
+}
+
+blockquote >p:after {  
     font: 16px/24px Arial, sans-serif;
     content: close-quote;  
     font-size: 24pt;  
