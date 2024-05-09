@@ -469,8 +469,8 @@ blockquote {
   margin: .75em 5px;
   background-color: whitesmoke;
   border-radius: 10px;
-  margin-left: 25%;
-  margin-right: 25%
+  margin-left: 20%;
+  margin-right: 10%
 }
 
 blockquote > p {
@@ -491,7 +491,7 @@ blockquote:before {
     position: relative;  
     border-radius: 25px;  
    margin-right: 0.25em;
-  vertical-align: -0.4em;
+  vertical-align: -0.6em;
   
     /** define it as a block element **/  
     display: block;  
