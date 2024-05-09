@@ -475,7 +475,6 @@ blockquote {
 
 blockquote > p {
   margin: none;
-  margin-bottom: -1em;
   padding: none;
 
 }
@@ -510,8 +509,8 @@ blockquote:after {
     float: right;  
     position: relative;  
     border-radius: 25px;  
-    margin-right: 1em;
-    margin-top: -0.5em;
+    margin-right: .25em;
+    margin-bottom: -1em;
     vertical-align: -0.5em;
   
     /** define it as a block element **/  
