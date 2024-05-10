@@ -456,7 +456,26 @@ div.mencknav * {
 }
 
 
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
 
+/*
 blockquote {
   text-align:left;
   padding: 0.5em 10px;
@@ -468,7 +487,6 @@ blockquote {
   margin-right: 30%;
   width: auto;
 }
-
 blockquote > p {
   display: inline-block;
   padding: 0;
@@ -477,7 +495,6 @@ blockquote > p {
   width: auto;
   border-radius: 10px;
 }
-
 blockquote > p:before {  
     font: 16px/24px Arial, sans-serif;
     content: open-quote;  
@@ -491,12 +508,10 @@ blockquote > p:before {
     border-radius: 25px;  
     margin-right: 0.25em;
     margin-top: -6px;
-    /** define it as a block element **/  
     display: block;  
     height: 25px;  
     width: 25px;  
 }
-
 blockquote > p:after {  
     font: 16px/24px Arial, sans-serif;
     content: close-quote;  
@@ -510,13 +525,10 @@ blockquote > p:after {
     border-radius: 25px;
     margin-left: 0.25em;  
     vertical-align: text-bottom;
-      /** define it as a block element **/  
     display: block;  
     height: 25px;  
     width: 25px;  
 }  
-
-
 blockquote:hover:after, blockquot:hover:before {  
     background-color: #555; 
     transition: all 350ms;  
@@ -524,8 +536,7 @@ blockquote:hover:after, blockquot:hover:before {
     -moz-transition: all 350ms;  
     -webkit-transition: all 350ms; 
 } 
-
-
+*/
 
 
 
