@@ -18,7 +18,9 @@
 						{% include new-page-intro.html %}
 						{% include new-page-content.html %}
 					</main>
-						<div class="col-2 .d-none .d-md-block"></div>
+					{% unless page.pagenav == false %}
+						{% include new-page-toc.html %}
+					{% endunless %}
 				</div>
 			</div>
 		{% include new-page-footer.html%}
