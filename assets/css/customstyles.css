@@ -456,111 +456,16 @@ div.mencknav * {
 }
 
 
-
-
-
-
 blockquote {
   border-left: 0.3rem solid var(--menck-tn-bg);
   margin-left: 6%;
   margin-right: 2%;
-  padding: 1rem 1rem;
+  padding: .15rem .4rem;
 }
 
 blockquote *:last-child {
   margin-bottom: 0;
 }
-
-
-
-
-
-
-/*
-
-blockquote {
-  border-left: 10px solid var(--menck-tn-bg);
-  margin: 1.5em 10px;
-  margin-left: 8%;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
-}
-blockquote:before {
-  color: var(--menck-tn-bg);
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-blockquote p {
-  display: inline;
-}
-
-
-
-
-blockquote {
-  text-align:left;
-  padding: 0.5em 10px;
-  padding-bottom: 3px;
-  margin-block: 0;
-  margin-inline: 0;
-  margin: .75em 5px;
-  margin-left: 10%;
-  margin-right: 30%;
-  width: auto;
-}
-blockquote > p {
-  display: inline-block;
-  padding: 0;
-  padding-left: 3px;
-  margin-right: 3px;
-  width: auto;
-  border-radius: 10px;
-}
-blockquote > p:before {  
-    font: 16px/24px Arial, sans-serif;
-    content: open-quote;  
-    font-size: 24pt;  
-    text-align: center;  
-    line-height: 42px;  
-    color: #fff;  
-    background: #818181;  
-    float: left;  
-    position: relative;  
-    border-radius: 25px;  
-    margin-right: 0.25em;
-    margin-top: -6px;
-    display: block;  
-    height: 25px;  
-    width: 25px;  
-}
-blockquote > p:after {  
-    font: 16px/24px Arial, sans-serif;
-    content: close-quote;  
-    font-size: 24pt;  
-    text-align: center;  
-    line-height: 42px;  
-    color: #fff;  
-    background: #818181;  
-    float: right;  
-    position: relative;  
-    border-radius: 25px;
-    margin-left: 0.25em;  
-    vertical-align: text-bottom;
-    display: block;  
-    height: 25px;  
-    width: 25px;  
-}  
-blockquote:hover:after, blockquot:hover:before {  
-    background-color: #555; 
-    transition: all 350ms;  
-    -o-transition: all 350ms;  
-    -moz-transition: all 350ms;  
-    -webkit-transition: all 350ms; 
-} 
-*/
 
 
 
