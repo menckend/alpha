@@ -468,10 +468,6 @@ blockquote *:last-child {
 }
 
 
-
-
-
-
 /*  margin-bottom: 1rem !important;
   color: #6c757d !important;
   font-size: 1em !important;
@@ -484,8 +480,6 @@ blockquote *:last-child {
   */
 
 
-
-
   @media (min-width: 1400px) {
     .container,
     .container-lg,
@@ -493,7 +487,7 @@ blockquote *:last-child {
     .container-sm,
     .container-xl,
     .container-xxl {
-      max-width: 1800x;
+      max-width: 2000x;
     }
   } 
 
@@ -502,6 +496,10 @@ blockquote *:last-child {
 /*                                      */
 /* Mencken's customizations end here    */
 
+
+
+
+/* Below borrowed from the Bootstrap documentation ("bd") CSS */
 
   @media (max-width: 600px) {
     .docnav li a {
@@ -516,7 +514,6 @@ blockquote *:last-child {
       max-width: 240px;
     }
   }
-  
   
   
   @media screen and (max-width: 767px) {
@@ -599,8 +596,6 @@ blockquote *:last-child {
         width: 100%;
     }
 }
-
-
 
 
 @media (max-width: 767px) {
