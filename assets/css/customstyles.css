@@ -458,8 +458,8 @@ div.mencknav * {
 
 blockquote {
   border-left: 0.3rem solid var(--menck-tn-bg);
-  margin-left: 6%;
-  margin-right: 2%;
+  margin-left: 3%;
+  margin-right: 1%;
   padding: .1rem .1rem;
 }
 
