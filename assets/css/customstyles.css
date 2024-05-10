@@ -469,6 +469,9 @@ blockquote *:last-child {
 
 
 
+
+
+
 /*  margin-bottom: 1rem !important;
   color: #6c757d !important;
   font-size: 1em !important;
@@ -480,6 +483,19 @@ blockquote *:last-child {
   border-left-width: 5px !important;
   */
 
+
+
+
+  @media (min-width: 1400px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+      max-width: 1800x;
+    }
+  } 
 
 
 /*                                      */
