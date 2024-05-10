@@ -491,8 +491,7 @@ blockquote *:last-child {
     }
   } 
 
-#my_toc > * {
-  overflow: hidden;
+#page_toc > * {
   text-overflow: ellipsis;
   max-width: 90%;
 }
