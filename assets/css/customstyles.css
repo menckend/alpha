@@ -491,7 +491,11 @@ blockquote *:last-child {
     }
   } 
 
-
+.inline_toc * {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90%;
+}
 /*                                      */
 /*                                      */
 /* Mencken's customizations end here    */
