@@ -491,23 +491,10 @@ blockquote *:last-child {
     }
   } 
 
-.inline_toc_item > a {
-  display: block;
-  display: -webkit-box;
-  max-width: 260px;
-  height: 1.5em;
-  margin: 0 auto;
-  line-height: 1.2;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+
 /*                                      */
 /*                                      */
 /* Mencken's customizations end here    */
-
-
 
 
 /* Below borrowed from the Bootstrap documentation ("bd") CSS */
