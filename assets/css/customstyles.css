@@ -494,8 +494,8 @@ blockquote *:last-child {
 .inline_toc_item > a {
   display: block;
   display: -webkit-box;
-  max-width: 200px;
-  height: 2em;
+  max-width: 260px;
+  height: 1.5em;
   margin: 0 auto;
   line-height: 1.2;
   -webkit-line-clamp: 3;
