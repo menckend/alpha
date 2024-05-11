@@ -491,11 +491,11 @@ blockquote *:last-child {
     }
   } 
 
-.inline_toc_item * {
+.inline_toc_item > a {
   display: block;
   display: -webkit-box;
-  max-width: 250px;
-  height: 50px;
+  max-width: 200px;
+  height: 1em;
   margin: 0 auto;
   line-height: 1.2;
   -webkit-line-clamp: 3;
