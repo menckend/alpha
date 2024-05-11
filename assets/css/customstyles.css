@@ -188,34 +188,31 @@
     text-decoration: none;
     color: var(--menck-sb-text)
     }
-
   
 .menck-sidebar {
-  padding-top: 0px;
+  padding-top: 48px;
   padding-bottom: 0px;
   margin-bottom: 16px;
-  }
-  
-.menck-sidebar *{
-    background-color: transparent;
-    text-decoration: none;
-    color: var(--menck-sb-text)
-    }
-  
-.left-sidebar-chunk,
-.right-sidebar-chunk{
   background-color: var(--menck-sb-bg);
   border-radius: 5px;
+  border-style: none;  
   color: var(--menck-sb-text);
+}
+
+.menck-sidebar > * {
+    background-color: transparent;
+    text-decoration: none;
+    border-style: none;
+    color: var(--menck-sb-text)
+    }
+
+.left-sidebar-chunk,
+.right-sidebar-chunk{
   }
 
 .left-sidebar-chunk, *
 .right-sidebar-chunk *{
-  background-color: transparent;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
+ }
 
 /* Sidebar item padding*/
 
@@ -223,8 +220,6 @@
   padding: opx;
   margin: 0px;
 }
-
-
 
 /* Stylings for details elements in all contexts */
 
@@ -262,7 +257,6 @@ details summary::-webkit-details-marker {
   display: none;
  }
 
-
 /* Stylings for details elements in sidebar context */
 
 details.sbdeet {
@@ -291,7 +285,6 @@ details.sbdeet summary {
     border: hidden;
 }
 
-
 /* empty square*/
 p.l10item > a:before,
 p.l9item > a:before,
@@ -306,12 +299,10 @@ p.l3item > a:before {
     text-decoration: bold;
   }
 
-
   #my_toc {
     list-style-type: none;
     
   }
-
 
 /* full square*/
 p.l10itemactive > a:before,
@@ -327,7 +318,6 @@ p.l3itemactive > a:before {
     text-shadow: 0 0 3px #fff, 0 0 5px var(--menck-sb-shadow), 0 0 7px var(--menck-sb-shadow);
   }
 
-
 /* Replace details element's default is-not-open indicator with "plus" icon */
 details > summary:before,
 sbdeet summary:before {
@@ -338,7 +328,6 @@ sbdeet summary:before {
   padding-right: 8px;
   }
 
-
 /* Replace details element's default is-open indicator with "minus" icon */
 details[open] > summary:before {
   content: '\F2E9';
@@ -346,7 +335,6 @@ details[open] > summary:before {
   text-decoration: none;
   padding-right: 8px;
 }
-
 
 /* Try topnav color scheme in sidebar.  */
 div.medianav {
@@ -360,7 +348,6 @@ div.medianav {
 div.medianav * {
     padding: 8px;
 }
-
 
 /*  Set desired padding for hierarchical indent of content in sidebar menu */
 .l3item > a:before,
@@ -387,7 +374,6 @@ div.medianav * {
   text-decoration: none;
   }
 
-
 /*  Set text shadow for in-path items in sidebar navbar menu */
  h1, h2, h3, h4 {
 /*  text-shadow: 0 0 1.5px #fff, 0 0 2.5px var(--menck-sb-shadow), 0 0 3.5px var(--menck-sb-shadow); */
@@ -408,12 +394,12 @@ div.medianav * {
   color:black;  
 }
 
+
 .in-page-nav a {
   background-color: var(menck-sb-bg);
   border-style: none;
   border-radius: 5px;
 }
-
 
 
 p.l10item, p.l10itemactive,
@@ -432,10 +418,6 @@ p.l3item, p.l3itemactive
 
 
 div.mencknav {
-    background-color: var(--menck-sb-bg);
-    color: var(--menck-sb-txt);
-    text-decoration: none;
-    border-style: none;
 /*
     margin-top: 8px;
     margin-bottom: 8px;
@@ -446,6 +428,7 @@ div.mencknav {
     border-top-style: none;
 */
 }
+
 
 div.mencknav * {
     text-decoration: none;
