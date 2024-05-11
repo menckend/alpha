@@ -105,18 +105,18 @@
   </ul>
 -->
 <div class="in-page-nav nowrap d-flex justify-content-between align-self-start sticky-top z-0" style="padding-top: 96px; background-color: white; margin-top:-128px; padding-bottom: 16px; margin-bottom: 32px;">
+
   <a  aria-current="true" href="{{ prvurl | remove: '/'}}" style="text-decoration: none;"><i class="bi bi-chevron-double-left"></i>Previous</a>
-
-  <div class="form-check form-switch d-flex align-self-center menck-topnav-text-color">
-    <input class="form-check-input menck-tn-toggle-control menck-topnav-text-color d-flex align-self-center" type="checkbox" id="MenckSidebarToggle" data-bs-target="#MenckSidebar" data-bs-toggle="collapse" style="background-color:grey;" />
-    <label class="form-check-label menck-tn-toggle-label menck-topnav-text-color d-flex align-self-center" for="MenckSidebarToggle" style="padding:8px;"> Doc Nav</label>
+  <div>  
+    <div class="form-check form-switch d-flex" style="padding-right: 16px;">
+      <input class="form-check-input menck-tn-toggle-control" type="checkbox" id="MenckSidebarToggle" data-bs-target="#MenckSidebar" data-bs-toggle="collapse" style="background-color:grey; padding-left: 24px;" />
+      <label class="form-check-label menck-tn-toggle-label d-flex" for="MenckSidebarToggle" style="padding-left:8px;"> Document contents sidebar</label>
+    </div>
+    <div class="form-check form-switch d-flex" style="padding-left: 16px;">
+      <label class="form-check-label menck-tn-toggle-label d-flex" for="MenckRightbarToggle" style="padding-right:8px;"> Page contents sidebar </label>
+      <input class="form-check-input menck-tn-toggle-control" type="checkbox" id="MenckRightbarToggle" data-bs-target="#MenckRightbar" data-bs-toggle="collapse" style="background-color:grey;" />
+    </div>
   </div>
-
-  <div class="form-check form-switch d-flex align-self-center menck-topnav-text-color ">
-    <input class="form-check-input menck-tn-toggle-control menck-topnav-text-color d-flex align-self-center" type="checkbox" id="MenckRightbarToggle" data-bs-target="#MenckRightbar" data-bs-toggle="collapse" style="background-color:grey;" />
-    <label class="form-check-label menck-tn-toggle-label menck-topnav-text-color d-flex align-self-center" for="MenckRightbarToggle" style="padding:8px;"> Page TOC </label>
-  </div>
-
   <a  aria-current="true" href="{{ nxturl | remove: '/'}}" style="text-decoration: none;" >Next<i class="bi bi-chevron-double-right"></i></a>
 </div>
 
