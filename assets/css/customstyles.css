@@ -491,7 +491,7 @@ blockquote *:last-child {
     }
   } 
 
-#page_toc > * {
+.inline_toc_item {
   text-overflow: ellipsis;
 }
 /*                                      */
