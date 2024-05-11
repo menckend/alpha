@@ -9,22 +9,21 @@
 					{% unless page.pagenav == false %}
 						{% include in-page-nav-buttons.html %}
 					{% endunless %}
-					</div>
+				</div>
 
 				<div class="row flex-wrap">
+					{% unless page.pagenav == false %}
 						<div id="MenckSidebar" class="menck-sidebar h-50 collapse-horizontal collapse show col-lg-2 px-0 sticky-top z-n1" style="max-width: 330; min-width: 270; padding-top: 64px; margin-top:-128px;">
-								{% include new-sidebar.html %}
-							</div>
+							{% include new-sidebar.html %}
+						</div>
 					{% endunless %}
 					<main class="col menck-main ps-md-2">
-
 						{% include new-page-intro.html %}
 						{% include new-page-content.html %}
 					</main>
 					{% unless page.pagenav == false %}
 						<div id="MenckRightbar" class="menck-sidebar h-50 col-lg-2 px-0 collapse-horizontal collapse show sticky-top z-n1" style="max-width: 270; min-width: 270; padding-top: 64px; margin-top:-128px;">
-								{% include new-page-toc.html %}
-							</div>
+							{% include new-page-toc.html %}
 						</div>
 					{% endunless %}
 				</div>
