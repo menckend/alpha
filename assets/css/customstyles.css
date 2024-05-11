@@ -194,6 +194,7 @@
   margin: 16px;
   background-color: var(--menck-sb-bg);
   border-radius: 10px;
+  padding: 8px;
   border-style: none;  
   color: var(--menck-sb-text);
 }
