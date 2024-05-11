@@ -491,7 +491,7 @@ blockquote *:last-child {
     }
   } 
 
-.inline_toc_item {
+.inline_toc_item * {
   display: block;
   display: -webkit-box;
   max-width: 250px;
