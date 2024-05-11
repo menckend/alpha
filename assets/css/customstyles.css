@@ -191,10 +191,12 @@
 
     
 .menck-sidebar {
-  margin: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
   background-color: var(--menck-sb-bg);
   border-radius: 10px;
-  padding: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
   border-style: none;  
   color: var(--menck-sb-text);
 }
