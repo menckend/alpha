@@ -6,25 +6,25 @@
 		{% include newtemplate-header.html %}
 			<div class="container-xxl">
 				<div class="row flex-wrap">
-					<div id="MenckSidebar" class="collapse-horizontal collapse show col-lg-2 px-0" style="max-width: 330, min-width: 270">
-						<div class="row sticky-lg-top">
-							{% unless page.pagenav == false %}
+					{% unless page.pagenav == false %}
+						<div id="MenckSidebar" class="menck-sidebar collapse-horizontal collapse show col-lg-2 px-0" style="max-width: 330, min-width: 270">
+							<div class="row sticky-lg-top">
 								{% include new-sidebar.html %}
-							{% endunless %}
+							</div>
 						</div>
-					</div>
+					{% endunless %}
 					<main class="col menck-main ps-md-2">
 						{% include in-page-nav-buttons.html %}
 						{% include new-page-intro.html %}
 						{% include new-page-content.html %}
 					</main>
-					<div id="MenckRightbar" class="col-lg-2 px-0 collapse-horizontal collapse show" style="max-width: 270, min-width: 270">
-						<div class="row sticky-lg-top">
-							{% unless page.pagenav == false %}
+					{% unless page.pagenav == false %}
+						<div id="MenckRightbar" class="menck-sidebar col-lg-2 px-0 collapse-horizontal collapse show" style="max-width: 270, min-width: 270">
+							<div class="row sticky-lg-top">
 								{% include new-page-toc.html %}
-							{% endunless %}
+							</div>
 						</div>
-					</div>
+					{% endunless %}
 				</div>
 			</div>
 		{% include new-page-footer.html%}
