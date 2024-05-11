@@ -491,10 +491,15 @@ blockquote *:last-child {
     }
   } 
 
-
+.inline_toc_item > a {
+  display: block;
+  line-height: 1.2;
+}
 /*                                      */
 /*                                      */
 /* Mencken's customizations end here    */
+
+
 
 
 /* Below borrowed from the Bootstrap documentation ("bd") CSS */
