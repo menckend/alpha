@@ -491,11 +491,6 @@ blockquote *:last-child {
     }
   } 
 
-  
-.inline_toc_item * a {
-  .text-truncate
-}
-
 
 /*                                      */
 /*                                      */
