@@ -5,17 +5,11 @@
 		{% include new-svg-symbols.html %}
 		{% include newtemplate-header.html %}
 			<div class="container-xxl" style="margin-top: 32px;">
-
-				<div class="row flex-wrap">
-					<div col style="background-color: purple; margin-top:-128px; padding-top: 96px; padding-bottom: 16px; margin-bottom: 32px;"
-				</div>
-
-
 				<div class="row flex-wrap">
 					{% unless page.pagenav == false %}
 						<div id="MenckSidebar" class="menck-sidebar h-50 collapse-horizontal collapse show col-lg-2 px-0 sticky-lg-top z-1" style="max-width: 330; min-width: 270">
-								{% include new-sidebar.html %}
-							</div>
+							{% include new-sidebar.html %}
+						</div>
 					{% endunless %}
 					<main class="col menck-main ps-md-2">
 						{% include in-page-nav-buttons.html %}
