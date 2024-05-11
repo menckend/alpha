@@ -191,8 +191,7 @@
 
     
 .menck-sidebar {
-  padding-top: 48px;
-  padding-bottom: 0px;
+  margin-top: 48px;
   margin-bottom: 16px;
   background-color: var(--menck-sb-bg);
   border-radius: 5px;
@@ -206,14 +205,6 @@
     border-style: none;
     color: var(--menck-sb-text)
     }
-
-.left-sidebar-chunk,
-.right-sidebar-chunk{
-  }
-
-.left-sidebar-chunk, *
-.right-sidebar-chunk *{
- }
 
 /* Sidebar item padding*/
 
