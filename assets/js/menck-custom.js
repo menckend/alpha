@@ -19,7 +19,7 @@ $(document).ready(function () {
         // Make the state of the actual collapsible elements (and their control switches) match that of the localStorage items that track their state
         $(".collapse").each(function () {
             var storagecomp = "this_" + this.id;
-            if (sessionStorage.storagecomp === "true") {
+            if (sessionStorage.getItem(storagecomp) === "true") {
                 $(this).collapse("show");
                 var sidebarname = "#" + this.id;
                 $(".menck-tn-toggle-control").each(function () {
