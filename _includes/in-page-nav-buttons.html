@@ -107,16 +107,20 @@
 <div class="in-page-nav nowrap d-flex justify-content-between align-self-start" >
 
   <a  aria-current="true" href="{{ prvurl | remove: '/'}}" style="text-decoration: none;"><i class="bi bi-chevron-double-left"></i>Previous</a>
-  <div class="d-flex">  
+
+  <div class="d-flex justify-content-around">  
     <div class="form-check form-switch d-flex d-inline" style="padding-right: 8px;">
-      <input class="form-check-input menck-tn-toggle-control" type="checkbox" id="MenckSidebarToggle" data-bs-target="#MenckSidebar" data-bs-toggle="collapse" style="background-color:grey;"/>
-      <label class="form-check-label menck-tn-toggle-label d-flex" for="MenckSidebarToggle" style="padding-left:8px;">Doc tree</label>
+      <input class="form-check-input menck-tn-toggle-control" type="checkbox" role="switch" id="MenckSidebarToggle" data-bs-target="#MenckSidebar" data-bs-toggle="collapse" style="background-color:grey;"/>
+      <label class="form-check-label menck-tn-toggle-label d-flex" for="MenckSidebarToggle" style="padding-left:8px;">Doc tree </label>
+
     </div>
-      <div class="form-check form-switch d-flex d-inline-block" style="padding-left: 8px;">
+    <div class="form-check-reverse form-switch d-flex d-inline" style="padding-left: 8px;">
+      <input class="form-check-input menck-tn-toggle-control" type="checkbox" role="switch" id="MenckRightbarToggle" data-bs-target="#MenckRightbar" data-bs-toggle="collapse" style="background-color:grey;"/>
       <label class="form-check-label menck-tn-toggle-label d-flex" for="MenckRightbarToggle" style="padding-right:8px;">Pg tree</label>
-      <input class="form-check-input menck-tn-toggle-control" type="checkbox" id="MenckRightbarToggle" data-bs-target="#MenckRightbar" data-bs-toggle="collapse" style="background-color:grey;"/>
+
     </div>
   </div>
+
   <a  aria-current="true" href="{{ nxturl | remove: '/'}}" style="text-decoration: none;" >Next<i class="bi bi-chevron-double-right"></i></a>
 </div>
 
