@@ -449,7 +449,7 @@ blockquote *:last-child {
 #MenckSidebarToggle:not(.collapsed) ~ label > i:before {
   content: '\F3D2';
   font-family: "bootstrap-icons";
-  font-size: large;
+  font-size: 30px;
   text-decoration: none;
   background-color: var(--menck-sb-bg)
 
@@ -457,33 +457,27 @@ blockquote *:last-child {
 #MenckSidebarToggle.collapsed ~ label > i:before {
   content: '\F3D3';
   font-family: "bootstrap-icons";
-  font-size: large;
-    text-decoration: none;
+  font-size: 30px;
+   text-decoration: none;
   background-color: var(--menck-sb-bg)
-
-
-  #menck-rb-toggle-form > #> label
-
 }
 
 #MenckRightbarToggle:not(.collapsed) ~ label > i:before {
 
   content: '\F3D2';
-    font-family: "bootstrap-icons";
-    font-size: large;
-    text-decoration: none;
-    background-color: var(--menck-sb-bg)
+   font-family: "bootstrap-icons";
+   font-size: 30px;
+   text-decoration: none;
+   background-color: var(--menck-sb-bg)
 }
 
 #MenckRightbarToggle.collapsed ~ label > i:before {
   content: '\F3D3';
   font-family: "bootstrap-icons";
-  font-size: large;
+  font-size: 30px;
   text-decoration: none;
   background-color: var(--menck-sb-bg)
-
 }
-
 
 details[open] > summary:before {
   content: '\F2E9';
