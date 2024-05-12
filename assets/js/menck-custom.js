@@ -5,7 +5,15 @@ $(document).ready(function () {
     $(".collapse").on("show.bs.collapse", function () {
     sessionStorage.setItem("show_" + this.id, true);
     console.log ('An element was told to un-collapse/show-istelf. Tried to Write an entry to sessionStorage with this string in the key and value of true:', this.id);
-    console.log ('SessionStore contents: ' Object.keys(sessionStorage));
+ 
+    var obj = Object.keys(localStorage).reduce(function(obj, key) {
+        obj[key] = localStorage.getItem(key);
+        return obj
+     }, {});
+     
+     console.log(obj);
+
+
     });
 
     // When an item is collapsed/hidden, set the related localStorage item (item ID prepended by "show_" to "false")
