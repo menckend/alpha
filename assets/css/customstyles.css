@@ -446,11 +446,11 @@ blockquote *:last-child {
 
 /* Make the sidebar toggle/control icons toggle with state */
 
-#menck-sb-toggle-form.collapsed ~ label > i {
+#menck-sb-toggle-form.collapsed ~ label:before > i {
   content: '\F3D3';
 }
 
-#menck-sb-toggle-form:not(.collapsed) ~ label > i {
+#menck-sb-toggle-form:not(.collapsed) ~ label:before > i {
   content: '\F3D2';
 }
 
