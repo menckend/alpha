@@ -5,9 +5,10 @@ $(document).ready(function () {
     $(".collapse").on("show.bs.collapse", function () {
     sessionStorage.setItem("show_" + this.id, true);
     console.log ('An element was told to un-collapse/show-istelf. Tried to Write an entry to sessionStorage with this string in the key and value of true:', this.id);
- 
-    var obj = Object.keys(SessionStorage);
-    console.log(obj);
+
+    for (const [key, value] of Object.entries(sessionStorage)) {
+        console.log({key, value});
+    };
 
     });
 
@@ -15,7 +16,7 @@ $(document).ready(function () {
     $(".collapse").on("hide.bs.collapse", function () {
     sessionStorage.setItem("show_" + this.id, false);
     console.log ('An element was told to collapse/hide-istelf. Tried to Write an entry to sessionStorage with this string in the key and value of true:', this.id);
-    var obj = Object.keys(SessionStorage);
+    var obj = Object.keys(sessionStorage);
     console.log(obj);
 
     });
