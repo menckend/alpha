@@ -444,6 +444,29 @@ blockquote *:last-child {
   margin-bottom: 0;
 }
 
+/* Make the sidebar toggle/control icons toggle with state */
+
+#menck-sb-toggle-form.collapsed ~ label > i {
+  content: '\F3D3';
+}
+
+#menck-sb-toggle-form:not(.collapsed) ~ label > i {
+  content: '\F3D2';
+}
+
+
+
+details[open] > summary:before {
+  content: '\F2E9';
+  font-family: "bootstrap-icons";
+  text-decoration: none;
+  padding-right: 8px;
+}
+
+
+
+
+
 
 /*  margin-bottom: 1rem !important;
   color: #6c757d !important;
