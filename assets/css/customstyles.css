@@ -446,21 +446,38 @@ blockquote *:last-child {
 
 /* Make the sidebar toggle/control icons toggle with state */
 
-#MenckRightbarToggle ~ label > i:before {
-  content: '\F3D2';
-}
-
-#MenckRightbarToggle ~ label > i:before {
-  content: '\F3D3';
-
-}
-
 #MenckSidebarToggle:not(.collapsed) ~ label > i:before {
   content: '\F3D2';
-}
+  font-family: "bootstrap-icons";
+  text-decoration: none;
+  background-color: var(--menck-sb-bg)
 
+}
 #MenckSidebarToggle.collapsed ~ label > i:before {
   content: '\F3D3';
+  font-family: "bootstrap-icons";
+  text-decoration: none;
+  background-color: var(--menck-sb-bg)
+
+
+  #menck-rb-toggle-form > #> label
+
+}
+
+#MenckRightbarToggle ~ label > i:before {
+
+  content: '\F3D2';
+    font-family: "bootstrap-icons";
+    text-decoration: none;
+    background-color: var(--menck-sb-bg)
+}
+
+#MenckRightbarToggle.collapsed ~ label > i:before {
+  content: '\F3D3';
+  font-family: "bootstrap-icons";
+  text-decoration: none;
+  background-color: var(--menck-sb-bg)
+
 }
 
 
