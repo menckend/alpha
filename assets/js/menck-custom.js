@@ -8,14 +8,14 @@ $(document).ready(function () {
     });
 
     // When an item is collapsed/hidden, set the related localStorage item (item ID prepended by "show_" to "false")
-    $(".collapse").each("hide.bs.collapse", function () {
+    $(".collapse").on("hide.bs.collapse", function () {
     sessionStorage.setItem("show_" + this.id, false);
     });
 
     console.log ('Item collapse.  Set session-storage KVP to false for:', 'show_' + this.id);
 
     // Things to do if this is an existing browser session (synchronize sidebars and toggle-controls to shown/checked)
-    if (sessionStorage.getItem("menckenania-alpha-return-visitor") === "true") {
+    if ((sessionStorage.getItem("menckenania-alpha-return-visitor")) === "true") {
         // Make the state of the actual collapsible elements (and their control switches) match that of the localStorage items that track their state
         $(".collapse").each(function () {
             var storagecomp = "this_" + this.id;
