@@ -8,7 +8,7 @@ $(document).ready(function () {
     });
 
     // When an item is collapsed/hidden, set the related localStorage item (item ID prepended by "show_" to "false")
-    document.querySelectorAll(".menck-tn-toggle-control.collapse").on("hide.bs.collapse", function () {
+    $(document).querySelectorAll(".menck-tn-toggle-control.collapse").on("hide.bs.collapse", function () {
     sessionStorage.setItem("show_" + this.id, false);
     });
 
