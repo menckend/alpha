@@ -15,7 +15,7 @@ $(document).ready(function () {
     // When an item is collapsed/hidden, set the related localStorage item (item ID prepended by "show_" to "false")
     $(".collapse").on("hide.bs.collapse", function () {
     sessionStorage.setItem("show_" + this.id, false);
-    console.log ('An element was told to collapse/hide-istelf. Tried to Write an entry to sessionStorage with this string in the key and value of true:', this.id);
+    console.log ('This thing tried to collapse/hide.Tried to Write an entry to sessionStorage with this string in the key and value of true:', this.id);
 
     for (const [key, value] of Object.entries(sessionStorage)) {
         console.log({key, value});
