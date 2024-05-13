@@ -16,8 +16,9 @@ $(document).ready(function () {
     $(".collapse").on("hide.bs.collapse", function () {
     sessionStorage.setItem("show_" + this.id, false);
     console.log ('An element was told to collapse/hide-istelf. Tried to Write an entry to sessionStorage with this string in the key and value of true:', this.id);
-    var obj = Object.keys(sessionStorage);
-    console.log(obj);
+
+    for (const [key, value] of Object.entries(sessionStorage)) {
+        console.log({key, value});
 
     });
 
