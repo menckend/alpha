@@ -461,7 +461,7 @@ blockquote *:last-child {
   font-size: 30px;
   text-decoration: none;
   color: var(--menck-btn-txt);
-  margin-right:4px;
+  margin-left:-4px;
 }
 #MenckSidebarToggle.collapsed ~ label > i:before {
   content: '\F1B7';
@@ -469,7 +469,7 @@ blockquote *:last-child {
   font-size: 30px;
   text-decoration: none;
   color: var(--menck-btn-txt);
-  margin-right:4px;
+  margin-left:-4px;
 }
 
 #MenckRightbarToggle:not(.collapsed) ~ label > i:before {
@@ -479,7 +479,7 @@ blockquote *:last-child {
   font-size: 30px;
   text-decoration: none;
   color: var(--menck-btn-txt);
-  margin-left:4px;
+  margin-right:-4px;
 }
 
 #MenckRightbarToggle.collapsed ~ label > i:before {
@@ -488,7 +488,7 @@ blockquote *:last-child {
   font-size: 30px;
   text-decoration: none;
   color: var(--menck-btn-txt);
-  margin-left:4px;
+  margin-right:-4px;
 }
 
 
