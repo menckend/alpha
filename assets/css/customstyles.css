@@ -193,6 +193,8 @@
 .menck-sidebar {
   background-color: var(--menck-sb-bg);
   border-radius: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
   border-style: none;  
   color: var(--menck-sb-text);
 }
