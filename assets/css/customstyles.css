@@ -463,14 +463,14 @@ blockquote *:last-child {
   color: var(--menck-btn-txt);
 }
 #MenckSidebarToggle.collapsed ~ label > i:before {
-  content: '\F1B7';
+  content: '\F149';
   font-family: "bootstrap-icons";
   font-size: 30px;
   text-decoration: none;
   color: var(--menck-btn-txt);
 }
 
-#MenckRightbarToggle:not(.collapsed) ~ label > i:before {49
+#MenckRightbarToggle:not(.collapsed) ~ label > i:before {
 
   content: '\F14AF';
   font-family: "bootstrap-icons";
