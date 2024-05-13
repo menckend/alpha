@@ -388,7 +388,6 @@ div.medianav * {
   color:var(--menck-btn-txt);  
 }
 
-
 .in-page-nav a {
   background-color: var(menck-sb-bg);
   border-style: none;
@@ -459,17 +458,18 @@ blockquote *:last-child {
 #MenckSidebarToggle:not(.collapsed) ~ label > i:before {
   content: '\F1C0';
   font-family: "bootstrap-icons";
-  font-size: 20px;
+  font-size: 30px;
   text-decoration: none;
   color: var(--menck-btn-txt);
-
+  margin-right:4px;
 }
 #MenckSidebarToggle.collapsed ~ label > i:before {
   content: '\F1B7';
   font-family: "bootstrap-icons";
-  font-size: 20px;
+  font-size: 30px;
   text-decoration: none;
   color: var(--menck-btn-txt);
+  margin-right:4px;
 }
 
 #MenckRightbarToggle:not(.collapsed) ~ label > i:before {
@@ -479,6 +479,7 @@ blockquote *:last-child {
   font-size: 30px;
   text-decoration: none;
   color: var(--menck-btn-txt);
+  margin-left:4px;
 }
 
 #MenckRightbarToggle.collapsed ~ label > i:before {
@@ -487,6 +488,7 @@ blockquote *:last-child {
   font-size: 30px;
   text-decoration: none;
   color: var(--menck-btn-txt);
+  margin-left:4px;
 }
 
 
