@@ -385,8 +385,8 @@ div.medianav * {
 
 .in-page-nav * {
   text-shadow: 0.4px 1.4px 1px rgba(0,0,0,0.3), 0px -0.8px 2px rgba(255, 255, 255, .3);
-  font-size:20px;
-  color:black;  
+  font-size:16px;
+  color:var(--menck-btn-txt);  
 }
 
 
@@ -448,12 +448,19 @@ blockquote *:last-child {
 }
 
 
+
+.menck-tn-clps-control > label {
+  font-size: 16px;
+  color: var(--menck-btn-txt);
+}
+
+
 /* Make the sidebar toggle/control icons toggle with state */
 
 #MenckSidebarToggle:not(.collapsed) ~ label > i:before {
   content: '\F1C0';
   font-family: "bootstrap-icons";
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
   color: var(--menck-btn-txt);
 
@@ -461,14 +468,14 @@ blockquote *:last-child {
 #MenckSidebarToggle.collapsed ~ label > i:before {
   content: '\F1B7';
   font-family: "bootstrap-icons";
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
   color: var(--menck-btn-txt);
 }
 
 #MenckRightbarToggle:not(.collapsed) ~ label > i:before {
 
-  content: '\F1C0';
+  content: '\F1BF';
   font-family: "bootstrap-icons";
   font-size: 30px;
   text-decoration: none;
@@ -476,7 +483,7 @@ blockquote *:last-child {
 }
 
 #MenckRightbarToggle.collapsed ~ label > i:before {
-  content: '\F1B7';
+  content: '\F1B8';
   font-family: "bootstrap-icons";
   font-size: 30px;
   text-decoration: none;
