@@ -195,7 +195,10 @@
   border-radius: 10px;
   padding-left: 8px;
   padding-right: 8px;
-  border-style: none;  
+  border-style: none;
+  padding-top: 120px;
+  margin-top: -120px;
+  background-color:transparent;  
   color: var(--menck-sb-text);
 }
 
