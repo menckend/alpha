@@ -94,7 +94,7 @@
     <div class="form-check d-flex d-inline menck-tn-clps-control " id="menck-sb-toggle-form" style="margin:0px !important; padding:0px !important">
       <input type="checkbox" class="btn-check" id="MenckSidebarToggle" autocomplete="off" data-bs-target="#MenckSidebar" data-bs-toggle="collapse"></input>
       <label class="btn m-0 p-0 d-flex" for="MenckSidebarToggle" style="border:none;">
-          <i class="bi d-flex flex-nowrap" style="display:inline !important; margin-left: -8px;"></i>
+          <i class="bi d-flex flex-nowrap" style="display:inline !important; margin-left: -8px; margin-right:24px;"></i>
           Document Contents
       </label>    
     </div>
@@ -105,23 +105,24 @@
 
   <div class="d-flex justify-content-center">
     <a  aria-current="true" href="{{ prvurl | remove: '/'}}" style="text-decoration: none;">
-      <i class="bi bi-chevron-double-left d-flex m-0 p-0" style="font-size:30px; color:rgb(52, 125, 190);"></i>
+      <i class="bi bi-chevron-double-left d-flex m-0 p-0" style="font-size:25px; color:rgb(52, 125, 190);"></i>
     </a>
-    <div class="d-flex" style="margin-left: 2px; margin-right: 2px;">pages</div>
 
+    <i class="bi bi-book d-flex" style="font-size:30px;color:rgb(52, 125, 190); "></i>
+    
     <a  aria-current="true" href="{{ nxturl | remove: '/'}}" style="text-decoration: none;" >
-      <i class="bi bi-chevron-double-right d-flex m-0 p-0" style="font-size:30px; color:rgb(52, 125, 190);"></i>
+      <i class="bi bi-chevron-double-right d-flex m-0 p-0" style="font-size:25px; color:rgb(52, 125, 190);"></i>
     </a>
   </div>
 
-  <div class="vr" style="display:inline-block !important;background-color:rgb(52, 125, 190);width:2px !important; opacity:1;"></div>
+  <div class="vr" style="display:inline-block !important;background-color:rgb(52, 125, 190);width:3px !important; opacity:1;"></div>
 
 
   <div class="d-flex justify-content-right">
     <div class="form-check d-flex d-inline menck-tn-clps-control" id="menck-rb-toggle-form" style="margin:0px !important; padding:0px !important">
       <input type="checkbox" class="btn-check" id="MenckRightbarToggle" autocomplete="off" data-bs-target="#MenckRightbar" data-bs-toggle="collapse"></input>
       <label class="btn m-0 p-0 d-flex" for="MenckRightbarToggle" style="border:none;">Page contents
-          <i class="bi d-flex flex-nowrap" style="display:inline !important;"></i>
+          <i class="bi d-flex flex-nowrap" style="display:inline !important; margin-right:8px; margin-left: 8px;"></i>
       </label>
     </div>
   </div>
