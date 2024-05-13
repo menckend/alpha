@@ -456,7 +456,7 @@ blockquote *:last-child {
 /* Make the sidebar toggle/control icons toggle with state */
 
 #MenckSidebarToggle:not(.collapsed) ~ label > i:before {
-  content: '\F1C0';
+  content: '\F14A';
   font-family: "bootstrap-icons";
   font-size: 30px;
   text-decoration: none;
@@ -470,9 +470,9 @@ blockquote *:last-child {
   color: var(--menck-btn-txt);
 }
 
-#MenckRightbarToggle:not(.collapsed) ~ label > i:before {
+#MenckRightbarToggle:not(.collapsed) ~ label > i:before {49
 
-  content: '\F1BF';
+  content: '\F14AF';
   font-family: "bootstrap-icons";
   font-size: 30px;
   text-decoration: none;
@@ -480,7 +480,7 @@ blockquote *:last-child {
 }
 
 #MenckRightbarToggle.collapsed ~ label > i:before {
-  content: '\F1B8';
+  content: '\F149';
   font-family: "bootstrap-icons";
   font-size: 30px;
   text-decoration: none;
