@@ -19,7 +19,9 @@ $(document).ready(function () {
 
     for (const [key, value] of Object.entries(sessionStorage)) {
         console.log({key, value});
+    };
 
+   
     });
 
 
