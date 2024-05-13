@@ -447,22 +447,24 @@ blockquote *:last-child {
   margin-bottom: 0;
 }
 
+
 /* Make the sidebar toggle/control icons toggle with state */
 
 #MenckSidebarToggle:not(.collapsed) ~ label > i:before {
-  content: '\F149';
+  content: '\F1C0';
   font-family: "bootstrap-icons";
   font-size: 30px;
   text-decoration: none;
-  color: var(--menck-btn-txt)
+  margin-bottom:8px;
+  color: var(--menck-btn-txt);
 
 }
 #MenckSidebarToggle.collapsed ~ label > i:before {
-  content: '\F14A';
+  content: '\F1B7';
   font-family: "bootstrap-icons";
   font-size: 30px;
   text-decoration: none;
-  color: var(--menck-btn-txt)
+  color: var(--menck-btn-txt);
 }
 
 #MenckRightbarToggle:not(.collapsed) ~ label > i:before {
@@ -471,15 +473,15 @@ blockquote *:last-child {
   font-family: "bootstrap-icons";
   font-size: 30px;
   text-decoration: none;
-  color: var(--menck-btn-txt)
+  color: var(--menck-btn-txt);
 }
 
 #MenckRightbarToggle.collapsed ~ label > i:before {
-  content: '\F3D3';
+  content: '\F14A';
   font-family: "bootstrap-icons";
   font-size: 30px;
   text-decoration: none;
-  color: var(--menck-btn-txt)
+  color: var(--menck-btn-txt);
 }
 
 
@@ -508,7 +510,7 @@ details[open] > summary:before {
   */
 
 
-  @media (min-width: 1500px) {
+  @media (min-width: 1000px) {
     .container-xxl {
       max-width: 1600px;
     }
