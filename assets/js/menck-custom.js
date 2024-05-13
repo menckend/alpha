@@ -1,6 +1,14 @@
 $(document).ready(function () {
     // Enable statefulness across pages/refreshes for manually-toggled sidebars
 
+    // Session-storage at page-load
+    for (const [key, value] of Object.entries(sessionStorage)) {
+        console.log('Contents of SessionStorage when page has loaded')
+        console.log({key, value});
+    };
+
+
+
     // When an item is shown (un-collapsed), create a local-storage item with a key of the item's ID (prepended by "visible_") and a value of true.
     $(".collapse").on("show.bs.collapse", function () {
     sessionStorage.setItem("show_" + this.id, true);
