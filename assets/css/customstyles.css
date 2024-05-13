@@ -411,7 +411,10 @@ p.l3item, p.l3itemactive
   padding-bottom: 0px;
 }
 
-
+.menck-sblinks {
+  background-color: var(--menck-sb-bg);
+  border-radius:10px;
+}
 div.mencknav {
 /*
     margin-top: 8px;
@@ -427,7 +430,6 @@ div.mencknav {
 
 div.mencknav * {
     text-decoration: none;
-    background-color: var(--menck-sb-bg);
     padding-bottom: 2px;
     padding-top: 2px;
     color: var(--menck-sb-txt);
