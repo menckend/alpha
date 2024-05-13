@@ -453,33 +453,32 @@ blockquote *:last-child {
 #MenckSidebarToggle:not(.collapsed) ~ label > i:before {
   content: '\F1C0';
   font-family: "bootstrap-icons";
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
-  margin-bottom:8px;
   color: var(--menck-btn-txt);
 
 }
 #MenckSidebarToggle.collapsed ~ label > i:before {
   content: '\F1B7';
   font-family: "bootstrap-icons";
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
   color: var(--menck-btn-txt);
 }
 
 #MenckRightbarToggle:not(.collapsed) ~ label > i:before {
 
-  content: '\F149';
+  content: '\F1C0';
   font-family: "bootstrap-icons";
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
   color: var(--menck-btn-txt);
 }
 
 #MenckRightbarToggle.collapsed ~ label > i:before {
-  content: '\F14A';
+  content: '\F1B7';
   font-family: "bootstrap-icons";
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
   color: var(--menck-btn-txt);
 }
