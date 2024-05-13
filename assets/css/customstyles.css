@@ -497,7 +497,9 @@ details[open] > summary:before {
 }
 
 
-
+.pageTurners * {
+  display: inline-block;
+}
 
 
 
