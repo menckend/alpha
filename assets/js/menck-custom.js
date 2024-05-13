@@ -1,6 +1,36 @@
 $(document).ready(function () {
     // Enable statefulness across pages/refreshes for manually-toggled sidebars
 
+
+
+//  start with elements collapsed.
+//
+// form input element's class +/- "collapsed" drives icon status.
+// 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
     // Session-storage at page-load
     for (const [key, value] of Object.entries(sessionStorage)) {
         console.log('Contents of SessionStorage when page has loaded')
