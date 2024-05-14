@@ -458,14 +458,14 @@ blockquote *:last-child {
 #MenckSidebarToggle:not(.collapsed) ~ label > i:before {
   content: '\F149';
   font-family: "bootstrap-icons";
-  font-size: 30px;
+  font-size: 25px;
   text-decoration: none;
   color: var(--menck-btn-txt);
 }
 #MenckSidebarToggle.collapsed ~ label > i:before {
   content: '\F14A';
   font-family: "bootstrap-icons";
-  font-size: 30px;
+  font-size: 25px;
   text-decoration: none;
   color: var(--menck-btn-txt);
 }
@@ -474,7 +474,7 @@ blockquote *:last-child {
 
   content: '\F149';
   font-family: "bootstrap-icons";
-  font-size: 30px;
+  font-size: 25px;
   text-decoration: none;
   color: var(--menck-btn-txt);
 }
@@ -482,7 +482,7 @@ blockquote *:last-child {
 #MenckRightbarToggle.collapsed ~ label > i:before {
   content: '\F14A';
   font-family: "bootstrap-icons";
-  font-size: 30px;
+  font-size: 25px;
   text-decoration: none;
   color: var(--menck-btn-txt);
 }
