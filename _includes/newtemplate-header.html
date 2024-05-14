@@ -72,7 +72,7 @@
                   {% assign myl2name = myl2pages | where_exp: 'page', 'page.l3idx == nil' | sort: 'l2idx' | map: 'title' | compact | uniq %}
                   {% assign myl2url = myl2pages | where_exp: 'page', 'page.l3idx == nil' | sort: 'l2idx'| map: 'url' %}
                   <li>
-                    <a class="dropdown-item d-flex align-items-center justify-content-between active" aria-current="true" href="{{myl2url[0] | remove: "/"}}" style="background-color:transparent">
+                    <a class="dropdown-item d-flex align-items-left active" aria-current="true" href="{{myl2url[0] | remove: "/"}}" style="background-color:transparent">
                       {% if l1ix == page.l1idx and l2ix == page.l2idx %}
                         <svg class="bi" style="padding-right:4px;"><use xlink:href="#check2"></use></svg>
                       {% endif %}
