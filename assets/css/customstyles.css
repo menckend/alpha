@@ -370,7 +370,7 @@ div.medianav * {
   }
 
 /*  Set text shadow for in-path items in sidebar navbar menu */
- h1, h2, h3, h4 {
+ h1, h2, h3, h4, i {
 /*  text-shadow: 0 0 1.5px #fff, 0 0 2.5px var(--menck-sb-shadow), 0 0 3.5px var(--menck-sb-shadow); */
   text-shadow: 0.4px 1.4px 1px rgba(0,0,0,0.3), 0px -0.8px 2px rgba(255, 255, 255, .3);
 }
@@ -520,6 +520,29 @@ details[open] > summary:before {
       max-width: 1600px;
     }
   } 
+
+
+
+  .status-btn:hover, .status-btn:focus, .status-btn:not(:disabled):not(.disabled):active, .status-btn:not(:disabled):not(.disabled).active, .show > .status-btn.dropdown-toggle {
+    color: rgb(38, 92, 140);
+    border-color: whitesmoke;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*                                      */
