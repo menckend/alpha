@@ -514,10 +514,6 @@ details[open] > summary:before {
   border-left-width: 5px !important;
   */
 
-  .collapse {
-    transition:none;
-  }
-
   */
   @media (min-width: 800px) {
     .container-xxl {
