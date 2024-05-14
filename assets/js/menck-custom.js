@@ -32,6 +32,7 @@ $(document).ready(function () {
             console.log('listing the collapse-classed elements on page load ', this.id);
             var storagecomp = "this_" + this.id;
             var tempstring = sessionStorage.getItem(storagecomp);
+            console.log('tempstring ', tempstring);
             console.log('matching storage-key value ', sessionStorage.getItem(storagecomp));
             if (sessionStorage.getItem(storagecomp) === "true") {
                 $(this).collapse("show");
