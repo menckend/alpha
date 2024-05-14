@@ -31,7 +31,8 @@ $(document).ready(function () {
         $(".collapse").each(function () {
             console.log('listing the collapse-classed elements on page load ', $(this).id);
             var storagecomp = "this_" + this.id;
-            console.log('What's the storage-key value: ', sessionStorage.getItem(storagecomp));
+            var tempstring = sessionStorage.getItem(storagecomp);
+            console.log('matching storage-key value ', sessionStorage.getItem(storagecomp));
             if (sessionStorage.getItem(storagecomp) === "true") {
                 $(this).collapse("show");
                 var sidebarname = "#" + this.id;
