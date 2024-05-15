@@ -448,8 +448,8 @@ blockquote *:last-child {
 
 
 .menck-tn-clps-control > label {
-  font-size: 16px;
-  color: var(--menck-btn-txt);
+  font-size: 30px;
+  color: var(--menck-tn-txt);
 }
 
 
@@ -460,14 +460,14 @@ blockquote *:last-child {
   font-family: "bootstrap-icons";
   font-size: 30px;
   text-decoration: none;
-  color: var(--menck-tn-txt);
+  color: var(--menck-tn-txt) !important;
 }
 #MenckSidebarToggle.collapsed ~ label > i:before {
   content: '\F3D3';
   font-family: "bootstrap-icons";
   font-size: 30px;
   text-decoration: none;
-  color: var(--menck-tn-txt);
+  color: var(--menck-tn-txt) !important;
 }
 
 #MenckRightbarToggle:not(.collapsed) ~ label > i:before {
