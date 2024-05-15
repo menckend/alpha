@@ -5,13 +5,14 @@
 		{% include new-svg-symbols.html %}
 		{% include newtemplate-header.html %}
 			<div class="container-xxl">
-<!-- -->
+
+{% comment %}
 					{% unless page.pagenav == false %}
 <!-- 					<div class="row" >	-->
 						{% include sidebarToggler.html %}
 <!--				</div>		-->
 				{% endunless %}
-<!-- -->
+{% endcomment %}
 
 				<div class="row flex-wrap" style="margin-right:0px;" >
 					{% unless page.pagenav == false %}
@@ -25,13 +26,15 @@
 							{% include new-page-content.html %}
 						</div>
 					</main>
-<!--
+
+{% comment %}
 					{% unless page.pagenav == false %}
-					<div id="MenckRightbar" class="menck-sidebar col-lg-2 px-0 collapse-horizontal collapse sticky-lg-top z-0" style="max-width: 270; min-width: 270; transition:none;">
+<!--					<div id="MenckRightbar" class="menck-sidebar col-lg-2 px-0 collapse-horizontal collapse sticky-lg-top z-0" style="max-width: 270; min-width: 270; transition:none;"> -->
 							{% include new-page-toc.html %}
-						</div>
+<!--							</div> -->
 					{% endunless %}
--->
+{% endcomment %}					
+
 				</div>
 			</div>
 		{% include new-page-footer.html%}
