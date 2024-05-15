@@ -5,8 +5,11 @@
     </a>
 
    {% unless page.pagenav == false %}
-    <div class="pageTurners d-inline text-nowrap" style="margin-left:24px;">{% include turnThePage.html %}</div>
-   {% endunless %}
+    <div class="pageTurners d-inline text-nowrap" style="margin-left:0x;">{% include turnThePage.html %}</div>
+    <div class="sbToggler d-inline text-nowrap" style="margin-left:0px;">{% include topnav-sidebar-toggler %}</div>
+    {% endunless %}
+
+
 
     <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="menckNavbar" data-bs-backdrop="false" aria-labelledby="menckNavbarOffcanvasLabel" data-bs-scroll="true">
       <div class="offcanvas-header px-4 pb-0">

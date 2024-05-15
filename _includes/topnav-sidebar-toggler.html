@@ -1,0 +1,100 @@
+<!--   In-page page-navigation buttons  -->
+  {%comment%} Create previous/next in-page navigation buttons. {%endcomment%}
+  {%comment%} Figure out what the terminal-index-level of the current page is (as "mylevel") {%endcomment%}
+  {% for i in (1..10) %}
+    {% assign lvlvar = "l" | append: i | append: "idx" %}
+    {% if page[lvlvar] %}
+      {% assign myidx = page[lvlvar] %}
+      {% assign mylvl = forloop.index %}
+    {% endif %}
+  {% endfor %}
+  {% assign lvlvar = "l" | append: mylvl | append: "idx" %}
+  {% assign mylvl-int = mylvl | to_i %}
+  {% assign myidx-int = myidx | to_i %}
+  {% assign parentlvl = '' | plus: 0 %}
+  {% assign parentlvl = mylvl-int | minus: 1 %}
+  {% assign nextlvl = mylvl-int | plus: 1 %}
+  {%comment%}  Create collection of "adjacent" pages to this one. {%endcomment%}  
+  {% assign ngbr_pgs = '' | split: ',' %}
+  {% assign ngbr_urls = '' | split: ',' %}
+  {% assign ngbr_idxes = '' | split: ',' %}
+  {%comment%} Loop through all the pages in the site {%endcomment%}
+  {% for cpg in site.pages %}
+    {%comment%} Start by assuming that each page in site.pages *is* a neighbor page for the current page {%endcomment%}
+    {% assign goodpage = 'true' %}
+    {%comment%} Loop through the page-hierarchy levls from 1 up to the parent-level of the active page {%endcomment%}
+    {% for i in (1..parentlvl) %}
+      {% if goodpage == 'true' %}
+        {% assign cmpvar = 'l' | append: i | append: 'idx' %}
+        {% if cpg[cmpvar] %}
+          {% if cpg[cmpvar] != page[cmpvar] %}
+          {%comment%} Mark the looped page as "not a neighbor", because one of the higher-levels in the hierarchy has a different value than the active page {%endcomment%}
+            {% assign goodpage = 'false' %}
+          {% endif %}
+        {% else %}
+        {%comment%} Mark the looped page as "not a neighbor", because it doesn't even *have* an index for for one higher levels in the hierarchy.  {%endcomment%}
+        {% assign goodpage = 'false'%}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    {%comment%} Loop through the page-hierarchy levls from the active-page's child-level to the deepest level (10, for now) {%endcomment%}
+    {% for k in (nextlvl..10) %}
+      {% if goodpage == 'true' %}
+        {% assign cmpvar = 'l' | append: k | append: 'idx' %}
+        {% if cpg[cmpvar] %}
+          {% assign goodpage = 'false' %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+    {% if goodpage == 'true' %}
+      {% assign mystr = 'l' | append: mylvl | append: 'idx' %}
+      {% assign myval = page[mystr] %}
+      {% assign yourval = cpg[mystr] %}
+      {% if myval == yourval %}
+        {% assign goodpage = 'false' %}
+      {% endif %}
+    {% endif %}
+    {%comment%} mark the "parent-page"  of the current page as "not a neighbor"  {%endcomment%}
+    {% if goodpage == 'true' %}
+      {% assign str_aa = 'l' | append: parentlvl | append: 'idx' %}
+      {% assign str_bb = 'l' | append: mylvl | append: 'idx' %}
+      {% if cpg[str_aa] %}
+        {% unless cpg[str_bb] %}
+          {% assign goodpage = 'false' %}
+        {% endunless %}
+      {% endif %}
+    {% endif%}
+    {% if goodpage == 'true' %}
+      {% assign ngbr_pgs = ngbr_pgs | push: forloop.index0 %}
+      {% assign ngbr_urls = ngbr_urls | push: cpg.url %}
+      {% assign ngbr_idxes = ngbr_idxes | push: cpg[str_bb] %}
+    {% endif %}
+  {% endfor %}
+
+  {%comment%} Figure out the previous and next pages' site.pages' URLs, for use in the navigation buttons {%endcomment%}
+  {% assign ngct = ngbr_pgs | size | minus: 1 %}
+
+  {% assign lvlvar = "l" | append: mylvl | append: "idx" %}
+  {% assign prvidx = myidx | minus: 1 %}
+  {% assign nxtidx = myidx | plus: 1 %}
+
+  {% for xray in (0..ngct) %}
+    {% if ngbr_idxes[forloop.index0] == prvidx %}
+      {% assign prvurl = ngbr_urls[forloop.index0] %}
+    {% endif %}
+    {% if ngbr_idxes[forloop.index0] == nxtidx %}
+      {% assign nxturl = ngbr_urls[forloop.index0] %}
+    {% endif %}
+  {% endfor %}
+
+
+
+<div class="d-inline" style="display:inline !important; letter-spacing:-5px;">
+    <div class="form-check d-flex d-inline menck-tn-clps-control " id="menck-sb-toggle-form" style="margin:0px !important; padding:0px !important">
+      <input type="checkbox" class="btn-check" id="MenckSidebarToggle" autocomplete="off" data-bs-target="#MenckSidebar" data-bs-toggle="collapse"></input>
+      <label class="btn m-0 p-0 d-flex" for="MenckSidebarToggle" style="border:none; font-weight: bold; text-align:left;">
+          <i class="bi d-flex flex-nowrap" style="display:inline !important; font-size:30px;"></i>
+      </label>    
+    </div>
+</div>
+
