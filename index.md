@@ -3,28 +3,22 @@ title: "Welcome to Menckenania"
 pagenav: false
 toc: false
 permalink: index.html
-summary: "(Part portfolio, part blog, part performative screaming into the abyss)"
+summary: "Part portfolio, part blog (all performative screaming into the abyss)"
 type: "pages"
 layout: "page"
 ---
 
-
-
-## Greetings
-
-Hi there; I'm Mencken.  I'm a network architect, life-long technophile, husband, parent, and musician.  I'm other things too, obviously, but I'll leave those to your collective imaginations.
-
-## Me, me, me
+Heloo out there; I'm Mencken.  I'm a network architect, a life-long technophile, a husband, a parent, and a musician.  I'm also (apparrently) a big fan of lists.
 
 I also enjoy writing, but (until recently) I hadn't really written *just because I wanted to* in about twenty years or so.
 
-Also recently, I found myself motivated to try to re-define and re-tool the process associated with my practice as a newtork architect, needing to push it (and myself) in a much more agile/iterative/continuous direction.  If I was going to evanglize the inevitability and desirabiliyt of infrastruce-as-code/NetOps delivery models, it seemed "*only fair*" that I should be working towards an "architecture as code" framework.
+Also recently, I found myself motivated to try to re-define and re-tool the process associated with my practice as a network architect.  I needed to push it (and myself) in a much more agile/iterative/continuous direction.  If I was going to evanglize the inevitability and desirabiliyt of infrastruce-as-code/NetOps delivery models, it seemed *only fair* that I should be working towards an "architecture as code" framework.
 
-Long-story short, I started experimenting with a lot of Github's native "fringe" (not directly source-code-management related) but still interesting functionality.  Github pages turned out to be a very big part of that, and I wound up with conjuring a GH Pages / Jekyll baseline configuration that I decided was a decent framework for a personal site/blog/portfolio/whatever.  I'm having fun learning how to coax things out of Jekyll and *torturing* myself trying to do things with Liquid that would be ten-to-thirty times easier in JS.  Getting source-controlled SVG diagrams embedded *nicely* into published pages has been particularly fun.  (By "nicely", I mean they render pleasantly in the published page, and are clickable to open in-browser in diagrams.net, and still remain source-controlled.)
+Long-story short, I started experimenting with Github "pages" and "actions" (and "projects"!) and doing a lot of futzing around with Jekyll configurations, Liquid templating, Saas/CSS, and javascript.  Along the way, I wound up with a baseline github repository that seemed like a pretty nice home for things I write.
 
-So, anyway; here we are.
+So, here we are.
 
-All works presented here are my own; you'll find them categorized under the dropdown arrows in the top-right.  Ignore them; adore them; ... *abhor* them (if that's what they deserve).  Regardless, I hope you find them as much fun to read as I did to write.
+The works here are my own; you'll find them categorized under the drop-down arrows in the top-right. Adore/ignore/abhor them as you deem appropriate.  Whatever your take, I hope you find them as much fun to read as I did to write.
 
 {% include links.html %}
 
