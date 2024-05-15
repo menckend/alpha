@@ -446,13 +446,6 @@ blockquote *:last-child {
 }
 
 
-
-.menck-tn-clps-control > label {
-  font-size: 30px;
-  color: var(--menck-tn-txt);
-}
-
-
 /* Make the sidebar toggle/control icons toggle with state */
 
 #MenckSidebarToggle:not(.collapsed) ~ label > i:before {
