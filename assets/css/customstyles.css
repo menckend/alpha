@@ -460,14 +460,14 @@ blockquote *:last-child {
   font-family: "bootstrap-icons";
   font-size: 30px;
   text-decoration: none;
-  color: var(--menck-btn-txt);
+  color: var(--menck-tn-txt);
 }
 #MenckSidebarToggle.collapsed ~ label > i:before {
   content: '\F3D3';
   font-family: "bootstrap-icons";
   font-size: 30px;
   text-decoration: none;
-  color: var(--menck-btn-txt);
+  color: var(--menck-tn-txt);
 }
 
 #MenckRightbarToggle:not(.collapsed) ~ label > i:before {
