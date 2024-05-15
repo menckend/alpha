@@ -4,6 +4,10 @@
       <img class="d-flex align-self-center" src="images/menckenania-logo-with-font.drawio.svg" style="height: 50px; margin-left: 8px;"></img>
     </a>
 
+   {% unless page.pagenav == false %}
+    <div class="pageTurners d-inline text-nowrap" style="margin-left:12px;">{% include turnThePage.html %}</div>
+   {% endunless %}
+
     <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="menckNavbar" data-bs-backdrop="false" aria-labelledby="menckNavbarOffcanvasLabel" data-bs-scroll="true">
       <div class="offcanvas-header px-4 pb-0">
         <h5 class="offcanvas-title menck-topnav-text-color" id="bdNavbarOffcanvasLabel"></h5>
