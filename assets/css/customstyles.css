@@ -528,12 +528,6 @@ details[open] > summary:before {
     border-color: whitesmoke;
 }
 
-/*Don't force the off-canvas nav-menu to grow to fill the window when expanded */
-#menckNavbar > div.offcanvas-body.p-4.pt-0.p-lg-0 {
-  flex-grow: 0 !important;
-}
-
-
 
 /*                                      */
 /* Mencken's customizations end here    */
