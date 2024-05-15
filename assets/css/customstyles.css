@@ -456,16 +456,16 @@ blockquote *:last-child {
 /* Make the sidebar toggle/control icons toggle with state */
 
 #MenckSidebarToggle:not(.collapsed) ~ label > i:before {
-  content: '\F149';
+  content: '\F3D2';
   font-family: "bootstrap-icons";
-  font-size: 25px;
+  font-size: 30px;
   text-decoration: none;
   color: var(--menck-btn-txt);
 }
 #MenckSidebarToggle.collapsed ~ label > i:before {
-  content: '\F14A';
+  content: '\F3D3';
   font-family: "bootstrap-icons";
-  font-size: 25px;
+  font-size: 30px;
   text-decoration: none;
   color: var(--menck-btn-txt);
 }
