@@ -12,4 +12,3 @@ gem "bootstrap", "~> 5.3"
 gem "katex", "~> 0.10.0"
 gem "jekyll-relative-links", "~> 0.6.1"
 gem "kramdown-syntax-coderay", "~> 1.0", ">= 1.0.1"
-gem 'jekyll-favicon', '~> 0.2.7', group: :jekyll_plugins
