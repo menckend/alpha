@@ -5,9 +5,9 @@
     </a>
 
    {% unless page.pagenav == false %}
-    <div class="d-flex align-items-right justify-content-between" style="margin-left:12px; margin-right:12px;">
-      <div class="sbToggler d-inline text-nowrap" style="margin-left:4px; margin-right:0px;">{% include topnav-sidebar-toggler.html %}</div>
-      <div class="pageTurners d-inline text-nowrap" style="margin-left:0x; margin-right:4px;">{% include turnThePage.html %}</div>
+    <div class="d-flex flex-grow-1 align-items-right justify-content-end" >
+      <div class="sbToggler d-inline text-nowrap" >{% include topnav-sidebar-toggler.html %}</div>
+      <div class="pageTurners d-inline text-nowrap" style="margin-left:16px;">{% include turnThePage.html %}</div>
     </div>
     {% endunless %}
 
