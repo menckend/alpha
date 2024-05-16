@@ -435,11 +435,14 @@ div.mencknav * {
 
 
 blockquote {
-  border-left: 0.3rem solid var(--menck-tn-bg);
-  margin-left: 3%;
-  margin-right: 1%;
-  padding: .1rem .1rem;
+  border-radius: 5px;
+  border-left: 0.6rem solid var(--menck-tn-bg);
+  margin-left: 4%;
+  margin-right: 2%;
+  padding: .1rem .1rem .1rem 1rem;
+  background-color: whitesmoke;
 }
+
 
 blockquote *:last-child {
   margin-bottom: 0;
