@@ -511,11 +511,39 @@ details[open] > summary:before {
   */
 
   */
-  @media (min-width: 800px) {
-    .container-xxl {
-      max-width: 1600px;
-    }
-  } 
+
+  
+@media (min-width: 1500px) {
+  .container-xxl {
+      max-width:1420px
+  }
+}
+
+@media (min-width: 1600px) {
+  .container-xxl {
+      max-width:1520px
+  }
+}
+@media (min-width: 1700px) {
+  .container-xxl {
+      max-width:1620px
+  }
+}
+@media (min-width: 1800px) {
+  .container-xxl {
+      max-width:1720px
+  }
+}
+@media (min-width: 1900px) {
+  .container-xxl {
+      max-width:1820px
+  }
+}
+@media (min-width: 2200px) {
+  .container-xxl {
+      max-width:2120px
+  }
+}
 
 
 
