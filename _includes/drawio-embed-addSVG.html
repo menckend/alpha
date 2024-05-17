@@ -63,7 +63,7 @@ Adapted from code provided by markNZed (https://github.com/markNZed), provided i
         }
         //Build the HTML content that will end up in the rendered page and acted on by viewer-min.js
         function createMxGraphHTML{{divIdNum}}(json{{divIdNum}}) {
-            return `<div class="mxgraph" style="max-width:100%;border:5px solid transparent;" data-mxgraph="${escapeHTML(json{{divIdNum}})}"></div>`;
+            return `<div class="mxgraph" style="max-width:100%;border:5px solid transparent;" data-mxgraph="${escapeHTML{{divIdNum}}(json{{divIdNum}})}"></div>`;
         }
         // Extra extraction steps for diagrams saved in SVG containers.
         function pullDrawioCopyFromSvg{{divIdNum}} (inboundText{{divIdNum}}){
