@@ -30,12 +30,12 @@ Adapted from code provided by markNZed (https://github.com/markNZed), provided i
             return chatMap[match];
         }
         //The function we'll call later to do the escaping 
-        function escapeHTML(string) {
+        function escapeHTML{{divIdNum}}(string) {
             if (typeof string !== "string") return string;
             return string.replace(/[&'`"<>]/g, replaceMatchedCharacters);
         }
         // Prepend the imported diagram data string with keys to set viewer parameters
-        function createMxGraphData(xml, idx = new Date().getTime()) {
+        function createMxGraphData{{divIdNum}}(xml, idx = new Date().getTime()) {
             return {
                 "highlight": "#C8E0FA",
                 "nav": true,
@@ -53,41 +53,41 @@ Adapted from code provided by markNZed (https://github.com/markNZed), provided i
             };
         }
         // Take the text string from the file being imported; slice-and-dice it into something that the drawio viewer will accept
-        async function drawioConverterAsync(xml, idx) {
+        async function drawioConverterAsync{{divIdNum}}(xml, idx) {
             return new Promise((resolve) => {
-                const mxGraphData = createMxGraphData(xml, idx); 
-                const json = JSON.stringify(mxGraphData);
-                const mxGraphHTML = createMxGraphHTML(json);
-                resolve(mxGraphHTML);
+                const mxGraphData{{divIdNum}} = createMxGraphData{{divIdNum}}(xml, idx); 
+                const json{{divIdNum}} = JSON.stringify(mxGraphData{{divIdNum}});
+                const mxGraphHTML{{divIdNum}} = createMxGraphHTML{{divIdNum}}(json{{divIdNum}});
+                resolve(mxGraphHTML{{divIdNum}});
             });
         }
         //Build the HTML content that will end up in the rendered page and acted on by viewer-min.js
-        function createMxGraphHTML(json) {
-            return `<div class="mxgraph" style="max-width:100%;border:5px solid transparent;" data-mxgraph="${escapeHTML(json)}"></div>`;
+        function createMxGraphHTML{{divIdNum}}(json{{divIdNum}}) {
+            return `<div class="mxgraph" style="max-width:100%;border:5px solid transparent;" data-mxgraph="${escapeHTML(json{{divIdNum}})}"></div>`;
         }
         // Extra extraction steps for diagrams saved in SVG containers.
-        function pullDrawioCopyFromSvg (inboundText){
-            const xmlDoc = new DOMParser().parseFromString(inboundText, "text/xml");
-            const svgElements = xmlDoc.getElementsByTagName("svg");
-            if (svgElements !== null) return inboundText;
-            const mxFileAttribute = svgElements[0].attributes.content.nodeValue;
-            return mxFileAttribute;
+        function pullDrawioCopyFromSvg{{divIdNum}} (inboundText{{divIdNum}}){
+            const xmlDoc{{divIdNum}} = new DOMParser().parseFromString(inboundText{{divIdNum}}, "text/xml");
+            const svgElements{{divIdNum}} = xmlDoc{{divIdNum}}.getElementsByTagName("svg");
+            if (svgElements{{divIdNum}} !== null) return inboundText{{divIdNum}};
+            const mxFileAttribute{{divIdNum}} = svgElements[0].attributes.content.nodeValue;
+            return mxFileAttribute{{divIdNum}};
         }
         // Load Draw.io file
         function loadDrawioFile(url, divIdForMe) {
             fetch(url)
-                .then((response) => { // Get the text from the file at the URL being imported
-                    return response.text();
+                .then((response{{divIdNum}}) => { // Get the text from the file at the URL being imported
+                    return response{{divIdNum}}.text();
                 })
-                .then((resolvedText) => {
-                    return pullDrawioCopyFromSvg(resolvedText); //Run the imported text through extra SVG extraction process
+                .then((resolvedText{{divIdNum}}) => {
+                    return pullDrawioCopyFromSvg{{divIdNum}}(resolvedText{{divIdNum}}); //Run the imported text through extra SVG extraction process
                 })
-                .then((data) => {   // Run the imported text through some processing to clean it up for the draw.io viewer
-                    return drawioConverterAsync(data);
+                .then((data{{divIdNum}}) => {   // Run the imported text through some processing to clean it up for the draw.io viewer
+                    return drawioConverterAsync{{divIdNum}}(data{{divIdNum}});
                 })
-                .then((content) => {
-                    const graphContainer = document.getElementById('drawio-diagram-{{divIdNum}}'); //Grab the HTML element that we'll render the diagram in
-                    graphContainer.innerHTML = content; //Push our diagram data into the HTML element we just grabbed
+                .then((content{{divIdNum}}) => {
+                    const graphContainer{{divIdNum}} = document.getElementById('drawio-diagram-{{divIdNum}}'); //Grab the HTML element that we'll render the diagram in
+                    graphContainer{{divIdNum}}.innerHTML = content{{divIdNum}}; //Push our diagram data into the HTML element we just grabbed
                     window.GraphViewer.processElements();   //Have the draw.io viewer process/render all of the elements in the diagram data
                 })
                 .catch((err) => {
