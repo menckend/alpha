@@ -10,6 +10,7 @@ Adapted from code provided by markNZed (https://github.com/markNZed), provided i
 {% assign divIdNum = "now" | date: "%N" | modulo: diff | plus: min | append: ""%}
 <div id="drawio-diagram-{{divIdNum}}"></div>
 
+<!-- <script src="assets/js/viewer-static.min.js"></script> -->
 <script src="assets/js/viewer-static.min.js"></script>
 
 <script>
@@ -41,7 +42,7 @@ Adapted from code provided by markNZed (https://github.com/markNZed), provided i
                 "resize": true,
                 "edit": "_blank",
                 "editable": "true",
-                "toolbar": "zoom lightbox layers",
+                "toolbar": "zoom lightbox",
                 "toolbar-position": "bottom",
                 "toolbar-nohide": false,
                 "lightbox": false,
