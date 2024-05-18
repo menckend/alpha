@@ -33,10 +33,10 @@
                         {% assign myl4idxes = myl3pages | where_exp: 'page', 'page.l5idx == nil' | sort: 'l4idx' | map: 'l4idx' | compact | uniq %}
                         {% comment %} Testing to see if the current l3 index has any l4 children. {% endcomment %}
                         {% unless myl4idxes.size >  %}
-                            <p class="l3item{% if page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl3name}}" href="{{myl3url[0] | remove: '/'}}">{{myl3name}} - {{myl3url}} - {{myl3url[0]}} </a></p>
+                            <p class="l3item{% if page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl3name}}" href="{{myl3url | remove: '/'}}">{{myl3name}} - {{myl3url}} </a></p>
                         {% endunless %}
                         {% if myl4idxes.size > 0 %}
-                            <details class="sbdeet deet3{% if page.l3idx == l3ix%} inpath{%endif%}"{% if page.l3idx == l3ix %} open {%endif%}><summary><a title="{{myl3name}}" href="{{myl3url | remove: '/'}}">{{myl3name}} - {{myl3url}} - {{myl3url[0]}} </a></summary>
+                            <details class="sbdeet deet3{% if page.l3idx == l3ix%} inpath{%endif%}"{% if page.l3idx == l3ix %} open {%endif%}><summary><a title="{{myl3name}}" href="{{myl3url | remove: '/'}}">{{myl3name}} - {{myl3url}} </a></summary>
                                 {% for l4ix in myl4idxes %}
                                     {% comment %} Get a list of all the pages with *current* L4 index {% endcomment %}
                                     {% assign myl4pages = myl3pages | where: 'l4idx', l4ix %}
@@ -91,47 +91,47 @@
                                                                                                                     {% for l11ix in myl1idxes %}
                                                                                                                         {% assign myl11name = myl10pages | where: 'l11idx', l11ix | where_exp: 'page', 'page.l12idx == nil' | map: 'title' | compact | uniq %}
                                                                                                                         {% assign myl11url = myl10pages | where: 'l11idx', l1ix | where_exp: 'page', 'page.l12idx == nil' | map: 'url' | compact | uniq %}
-                                                                                                                        <p class="l11item{% if page.l11idx == l11ix and page.l10idx == l10ix and page.l9idx == l9ix and page.18idx == l8ix and page.17idx == 17ix and page.l6idx == l6ix and page.l5idx == l5ix and page.l4idx == l4ix and page.13idx == l3ix %}active{%endif%}"><a title="{{myl11name}}" href="{{myl11url[0] | remove: '/'}}">{{myl11name}}</a></p>
+                                                                                                                        <p class="l11item{% if page.l11idx == l11ix and page.l10idx == l10ix and page.l9idx == l9ix and page.18idx == l8ix and page.17idx == 17ix and page.l6idx == l6ix and page.l5idx == l5ix and page.l4idx == l4ix and page.13idx == l3ix %}active{%endif%}"><a title="{{myl11name}}" href="{{myl11url | remove: '/'}}">{{myl11name}}</a></p>
                                                                                                                     {% endfor %}
                                                                                                                 </details>
                                                                                                             {% else %}
-                                                                                                                <p class="l10item{% if page.l10idx == l10ix and page.l9idx == l9ix and page.l8idx == l8ix and page.17idx == l7ix and page.16idx == 16ix and page.l5idx == l5ix and page.l4idx == l4ix and page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl10name}}" href="{{myl10url[0] | remove: '/'}}">{{myl10name}}</a></p>
+                                                                                                                <p class="l10item{% if page.l10idx == l10ix and page.l9idx == l9ix and page.l8idx == l8ix and page.17idx == l7ix and page.16idx == 16ix and page.l5idx == l5ix and page.l4idx == l4ix and page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl10name}}" href="{{myl10url | remove: '/'}}">{{myl10name}}</a></p>
                                                                                                             {% endif %}
 
                                                                                                         {% endfor %}
                                                                                                     </details>
                                                                                                 {% else %}
-                                                                                                    <p class="l9item{% if page.l9idx == l9ix and page.l8idx == l8ix and page.17idx == l7ix and page.16idx == 16ix and page.l5idx == l5ix and page.l4idx == l4ix and page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl9name}}" href="{{myl9url[0] | remove: '/'}}">{{myl9name}}</a></p>
+                                                                                                    <p class="l9item{% if page.l9idx == l9ix and page.l8idx == l8ix and page.17idx == l7ix and page.16idx == 16ix and page.l5idx == l5ix and page.l4idx == l4ix and page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl9name}}" href="{{myl9url | remove: '/'}}">{{myl9name}}</a></p>
                                                                                                 {% endif %}
                                                                                             {% endfor %}
                                                                                         </details>
                                                                                     {% else %}
-                                                                                        <p class="l8item{% if page.l8idx == l8ix and page.17idx == l7ix and page.16idx == 16ix and page.l5idx == l5ix and page.l4idx == l4ix and page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl8name}}" href="{{myl8url[0] | remove: '/'}}">{{myl8name}}</a></p>
+                                                                                        <p class="l8item{% if page.l8idx == l8ix and page.17idx == l7ix and page.16idx == 16ix and page.l5idx == l5ix and page.l4idx == l4ix and page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl8name}}" href="{{myl8url | remove: '/'}}">{{myl8name}}</a></p>
                                                                                     {% endif %}
                                                                                 {% endfor %}
                                                                             </details>
                                                                         {% else %}
-                                                                            <p class="l7item{% if page.17idx == l7ix and page.16idx == 16ix and page.l5idx == l5ix and page.l4idx == l4ix and page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl7name}}" href="{{myl7url[0] | remove: '/'}}">{{myl7name}}</a></p>
+                                                                            <p class="l7item{% if page.17idx == l7ix and page.16idx == 16ix and page.l5idx == l5ix and page.l4idx == l4ix and page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl7name}}" href="{{myl7url | remove: '/'}}">{{myl7name}}</a></p>
                                                                         {% endif %}
                                                                     {% endfor %}
                                                                 </details>
                                                             {% else %}
-                                                                <p class="l6item{% if page.16idx == 16ix and page.l5idx == l5ix and page.l4idx == l4ix and page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl6name}}" href="{{myl6url[0] | remove: '/'}}">{{myl6name}}</a></p>
+                                                                <p class="l6item{% if page.16idx == 16ix and page.l5idx == l5ix and page.l4idx == l4ix and page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl6name}}" href="{{myl6url | remove: '/'}}">{{myl6name}}</a></p>
                                                             {% endif %}
                                                         {% endfor %}
                                                     </details>
                                                 {% else %}
-                                                    <p class="l5item{% if page.l5idx == l5ix and page.l4idx == l4ix and page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl5name}}" href="{{myl5url[0] | remove: '/'}}">{{myl5name}}</a></p>
+                                                    <p class="l5item{% if page.l5idx == l5ix and page.l4idx == l4ix and page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl5name}}" href="{{myl5url | remove: '/'}}">{{myl5name}}</a></p>
                                                 {% endif %}
                                             {% endfor %}
                                         </details>
                                     {% else %}
-                                        <p class="l4item{% if page.l4idx == l4ix and page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl4name}}" href="{{myl4url[0] | remove: '/'}}">{{myl4name}}</a></p>
+                                        <p class="l4item{% if page.l4idx == l4ix and page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl4name}}" href="{{myl4url | remove: '/'}}">{{myl4name}}</a></p>
                                     {% endif %}
                                 {% endfor %}
                             </details>
                         {% else %}
-                           <!-- <p class="l3item{% if page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl3name}}" href="{{myl3url[0] | remove: '/'}}">{{myl3name}}</a></p> -->
+                           <!-- <p class="l3item{% if page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl3name}}" href="{{myl3url | remove: '/'}}">{{myl3name}}</a></p> -->
                         {% endif %}
                     {% endfor %}
                 {% else %}
