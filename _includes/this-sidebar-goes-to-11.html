@@ -33,7 +33,7 @@
                         {% assign myl4idxes = myl3pages | where_exp: 'page', 'page.l5idx == nil' | sort: 'l4idx' | map: 'l4idx' | compact | uniq %}
                         {% comment %} Testing to see if the current l3 index has any l4 children. {% endcomment %}
                         {% if myl4idxes.size ==  0  %}
-                            <p class="l3item{% if page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl3name}}" href="{{myl3url | remove: '/'}}">{{myl3name}}</a></p>
+                         <!--   <p class="l3item{% if page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl3name}}" href="{{myl3url | remove: '/'}}">{{myl3name}}</a></p>  -->
                         {% endif %}
                         {% if myl4idxes.size > 0 %}
                             <details class="sbdeet deet3{% if page.l3idx == l3ix%} inpath{%endif%}"{% if page.l3idx == l3ix %} open {%endif%}><summary><a title="{{myl3name}}" href="{{myl3url | remove: '/'}}">{{myl3name}}</a></summary>
@@ -131,7 +131,7 @@
                                 {% endfor %}
                             </details>
                         {% else %}
-                           <!-- <p class="l3item{% if page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl3name}}" href="{{myl3url | remove: '/'}}">{{myl3name}}</a></p> -->
+                            <p class="l3item{% if page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl3name}}" href="{{myl3url | remove: '/'}}">{{myl3name}}</a></p>
                         {% endif %}
                     {% endfor %}
                 {% else %}
