@@ -128,7 +128,7 @@
                                 {% endfor %}
                             </details>
                         {% else %}
-                            <p class="l3item{% if page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl3name}}" href="{{myl3url[0] | remove: '/'}}">{{myl3name}}</a></p>
+                            <p class="l3item{% if page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl3name}}" href="{{myl3url | remove: '/'}}">{{myl3name}}</a></p>
                         {% endif %}
                     {% endfor %}
                 {% else %}
