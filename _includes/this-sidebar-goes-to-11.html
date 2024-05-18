@@ -36,7 +36,7 @@
                          <!--   <p class="l3item{% if page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl3name}}" href="{{myl3url | remove: '/'}}">{{myl3name}}</a></p>  -->
                         {% endif %}
                         {% if myl4idxes.size > 0 %}
-                            <details class="sbdeet deet3{% if page.l3idx == l3ix%} inpath{%endif%}"{% if page.l3idx == l3ix %} open {%endif%}><summary><a title="{{myl3name}}" href="{{myl3url | remove: '/'}}">{{myl3name}}</a></summary>
+                            <details class="sbdeet deet3{% if page.l3idx == l3ix%} inpath{%endif%}"{% if page.l3idx == l3ix %} open {%endif%}><summary><a title="{{myl3name[0]}}" href="{{myl3url[0] | remove: '/'}}">{{myl3name[0]}}</a></summary>
                                 {% for l4ix in myl4idxes %}
                                     {% comment %} Get a list of all the pages with *current* L4 index {% endcomment %}
                                     {% assign myl4pages = myl3pages | where: 'l4idx', l4ix %}
