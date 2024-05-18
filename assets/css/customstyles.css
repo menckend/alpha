@@ -281,6 +281,7 @@ details.sbdeet summary {
 }
 
 /* empty square*/
+p.l11item > a:before,
 p.l10item > a:before,
 p.l9item > a:before,
 p.l8item > a:before,
@@ -300,6 +301,7 @@ p.l3item > a:before {
   }
 
 /* full square*/
+p.l11itemactive > a:before,
 p.l10itemactive > a:before,
 p.l9itemactive > a:before,
 p.l8itemactive > a:before,
@@ -369,13 +371,67 @@ div.medianav * {
   text-decoration: none;
   }
 
+.l6item > a:before,
+.l6itemactive > a:before,
+.deet6 > summary:before {
+  padding-left: 52px;
+  padding-right: 8px;
+  text-decoration: none;
+  }
+
+.l7item > a:before,
+.l7itemactive > a:before,
+.deet7 > summary:before {
+  padding-left: 68px;
+  padding-right: 8px;
+  text-decoration: none;
+  }
+
+.l8item > a:before,
+.l8itemactive > a:before,
+.deet8 > summary:before {
+  padding-left: 84px;
+  padding-right: 8px;
+  text-decoration: none;
+  }
+  
+.l9item > a:before,
+.l9itemactive > a:before,
+.deet9 > summary:before {
+  padding-left: 100px;
+  padding-right: 8px;
+  text-decoration: none;
+  }
+  
+.l10item > a:before,
+.l10itemactive > a:before,
+.deet10 > summary:before {
+  padding-left: 116px;
+  padding-right: 8px;
+  text-decoration: none;
+  }
+
+.l11item > a:before,
+.l11itemactive > a:before,
+.deet11 > summary:before {
+  padding-left: 132px;
+  padding-right: 8px;
+  text-decoration: none;
+  }
+
+
+
+
+
+
+
 /*  Set text shadow for in-path items in sidebar navbar menu */
  h1, h2, h3, h4, i {
 /*  text-shadow: 0 0 1.5px #fff, 0 0 2.5px var(--menck-sb-shadow), 0 0 3.5px var(--menck-sb-shadow); */
   text-shadow: 0.4px 1.4px 1px rgba(0,0,0,0.3), 0px -0.8px 2px rgba(255, 255, 255, .3);
 }
 
-.l3itemactive, .l4itemactive, .l5itemactive,
+.l3itemactive, .l4itemactive, .l5itemactive, .l6itemactive, .l7itemactive, .l8itemactive, .l9itemactive, .l10itemactive, .l11itemactive
 .sbtitle,.inpath > summary:before,
 .inpath > summary > a {
   /* text-shadow: 0 0 3px #fff, 0 0 5px var(--menck-sb-shadow), 0 0 7px var(--menck-sb-shadow); */
@@ -394,7 +450,7 @@ div.medianav * {
   border-radius: 5px;
 }
 
-
+p.l11item, p.l11itemactive,
 p.l10item, p.l10itemactive,
 p.l9item, p.l9itemactive,
 p.l8item, p.l8itemactive,
@@ -546,10 +602,9 @@ details[open] > summary:before {
 }
 
 
-
-  .status-btn:hover, .status-btn:focus, .status-btn:not(:disabled):not(.disabled):active, .status-btn:not(:disabled):not(.disabled).active, .show > .status-btn.dropdown-toggle {
-    color: rgb(38, 92, 140);
-    border-color: whitesmoke;
+.status-btn:hover, .status-btn:focus, .status-btn:not(:disabled):not(.disabled):active, .status-btn:not(:disabled):not(.disabled).active, .show > .status-btn.dropdown-toggle {
+  color: rgb(38, 92, 140);
+  border-color: whitesmoke;
 }
 
 
