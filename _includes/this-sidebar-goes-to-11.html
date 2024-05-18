@@ -20,7 +20,7 @@
             {% comment %} start building the tree if there *are* any other pages that match *this* page's l1|2 index values. {% endcomment %}
             {% if ourpages.size > 0 %}
                 {% comment %} Get a list of all the unique/sorted l3 indices from sbpages {% endcomment %}
-                {% assign ourl3idxes = scourpages | where_exp: 'page', 'page.l4idx == nil' | sort: 'l3idx' | map: 'l3idx' | compat | uniq %}
+                {% assign ourl3idxes = scourpages | where_exp: 'page', 'page.l4idx == nil' | sort: 'l3idx' | map: 'l3idx' | compact | uniq %}
                 {% comment %} Loop through all the unique L3 indices and create the first level entries in the sidebar menu {% endcomment %}
                 {% if ourl3idxes.size > 0 %}
                     {% for l3ix in ourl3idxes %}
