@@ -45,14 +45,14 @@
                                     {% comment %} Get all the unique L5 indices in pages with *current* L3&L4 index {% endcomment %}
                                     {% assign myl5idxes = myl4pages | where_exp: 'page', 'page.l6idx == nil' | sort: '15idx' | map: 'l5idx' | compact | uniq %}
                                     {% if myl5idxes.size > 0 %}
-                                        <details class="sbdeet deet4{% if page.l4idx == l4ix and page.l3idx == l3ix %} inpath{%endif%}" {% if page.l4idx == l4ix and page.l3idx == l3ix %} open {%endif%}><summary><a title="{{myl4name}}" href="{{myl4url | remove: '/'}}">{{myl4name}}</a></summary>
+                                        <details class="sbdeet deet4{% if page.l4idx == l4ix and page.l3idx == l3ix %} inpath{%endif%}" {% if page.l4idx == l4ix and page.l3idx == l3ix %} open {%endif%}><summary><a title="{{myl4name[0]}}" href="{{myl4url[0] | remove: '/'}}">{{myl4name[0]}}</a></summary>
                                             {% for l5ix in myl5idxes %}
                                                 {% assign myl5pages = myl4pages | where: 'l5idx', l5ix %}
                                                 {% assign myl5name = myl5pages | where_exp: 'page', 'page.l6idx == nil' | map: 'title' | compact | uniq %}
                                                 {% assign myl5url  = myl5pages | where_exp: 'page', 'page.l6idx == nil' | map: 'url' | array_to_sentence_string %}
                                                 {% assign myl6idxes = myl5pages | where_exp: 'page', 'page.l7idx == nil' | sort: '16idx' | map: 'l6idx' | compact | uniq %}
                                                 {% if myl6idxes.size > 0 %}
-                                                    <details class="sbdeet deet5{% if page.l5idx == l5ix and page.l4idx == l4ix and page.13idx == l3ix %} inpath{%endif%}" {% if page.l5idx ==l5ix and page.l4idx == l4ix and page.l3idx == l3ix %} open {%endif%}><summary><a title="{{myl5name}}" href="{{myl5url | remove: '/'}}">{{myl5name}}</a></summary>
+                                                    <details class="sbdeet deet5{% if page.l5idx == l5ix and page.l4idx == l4ix and page.13idx == l3ix %} inpath{%endif%}" {% if page.l5idx ==l5ix and page.l4idx == l4ix and page.l3idx == l3ix %} open {%endif%}><summary><a title="{{myl5name[0]}}" href="{{myl5url[0] | remove: '/'}}">{{myl5name[0]}}</a></summary>
                                                         {% for l6ix in myl6idxes %}
                                                             {% assign myl6pages = myl5pages | where: 'l6idx', l6ix %}
                                                             {% assign myl6name = myl6pages | where_exp: 'page', 'page.l7idx == nil' | map: 'title' | compact | uniq %}
