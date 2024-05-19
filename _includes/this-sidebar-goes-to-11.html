@@ -7,7 +7,6 @@
             {% for heynong in ourpages %}
                 {% assign heycount = heycount | plus: 1 %}
                 {% unless heynong.l3idx%}
-                    {% assign progenitor = ourpages[heycount] %}
                     {% assign sbtitle = heynong.title %}
                     {% assign sburl = heynong.url %}
                 {% endunless %}
@@ -17,10 +16,13 @@
             </div>
             {% comment %} Get a list of all pages with l1/l2 index values that match *this* page (other than the l1 and l2 apex pages).  (these are *all* the pages that should be in the sidebar)  {% endcomment %}
             {% assign scourpages = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx | where_exp: 'page', 'page.l3idx' %}
+            <h1><p>All of the page URLs in "scourpages" {{ scourpages.url }}</p></h1>
             {% comment %} start building the tree if there *are* any other pages that match *this* page's l1|2 index values. {% endcomment %}
-            {% if ourpages.size > 0 %}
+            {% if scourpages.size > 0 %}
                 {% comment %} Get a list of all the unique/sorted l3 indices from sbpages {% endcomment %}
                 {% assign ourl3idxes = scourpages | where_exp: 'page', 'page.l4idx == nil' | sort: 'l3idx' | map: 'l3idx' | compat | uniq %}
+                <h1><p>All of the page URLs in "ourl3idxes:" {{ ourl3idxes.url }}</p></h1>
+                 
                 {% comment %} Loop through all the unique L3 indices and create the first level entries in the sidebar menu {% endcomment %}
                 {% if ourl3idxes.size > 0 %}
                     {% for l3ix in ourl3idxes %}
