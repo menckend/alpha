@@ -60,6 +60,7 @@
                                                             {% assign myl7idxes = myl6pages | where_exp: 'page', 'page.l8idx == nil' | sort: '17idx' | map: 'l7idx' | compact | uniq %}
                                                             {% if myl7idxes.size > 0 %}
                                                                 <details class="sbdeet deet6{% if page.l6idx == l6ix and page.l5idx == l5ix and page.l4idx == l4ix and page.13idx == l3ix %} inpath{%endif%}" {% if page.l6idx == l6ix and page.l5idx ==l5ix and page.l4idx == l4ix and page.l3idx == l3ix %} open {%endif%}><summary><a title="{{myl6name[0]}}" href="{{myl6url[0] | remove: '/'}}">{{myl6name[0]}}</a></summary>
+
                                                                     {% for l7ix in myl7idxes %}
                                                                         {% assign myl7pages = myl6pages | where: 'l7idx', l7ix | sort: '17idx' %}
                                                                         {% assign myl7name = myl7pages | where_exp: 'page', 'page.l8idx == nil' | sort" 'l7idx' | map: 'title' | compact | uniq %}
@@ -67,6 +68,7 @@
                                                                         {% assign myl8idxes = myl7pages | where_exp: 'page', 'page.l9idx == nil' | sort: '18idx' | map: 'l8idx' | compact | uniq %}
                                                                         {% if myl8idxes.size > 0 %}
                                                                             <details class="sbdeet deet7{% if page.17idx == 17ix and page.l6idx == l6ix and page.l5idx == l5ix and page.l4idx == l4ix and page.13idx == l3ix %} inpath{%endif%}" {% if page.l7idx == l7ix and page.l6idx == l6ix and page.l5idx ==l5ix and page.l4idx == l4ix and page.l3idx == l3ix %} open {%endif%}><summary><a title="{{myl7name[0]}}" href="{{myl7url[0] | remove: '/'}}">{{myl7name[0]}}</a></summary>
+
                                                                                 {% for l8ix in myl8idxes %}
                                                                                     {% assign myl8pages = myl7pages | where: 'l8idx', l8ix %}
                                                                                     {% assign myl8name = myl8pages | where_exp: 'page', 'page.l9idx == nil' | map: 'title' | compact | uniq %}
@@ -74,6 +76,7 @@
                                                                                     {% assign myl9idxes = myl8pages | where_exp: 'page', 'page.l10idx == nil' | sort: '19idx' | map: 'l9idx' | compact | uniq %}
                                                                                     {% if myl9idxes.size > 0 %}
                                                                                         <details class="sbdeet deet8{% if page.18idx == l8ix and page.17idx == 17ix and page.l6idx == l6ix and page.l5idx == l5ix and page.l4idx == l4ix and page.13idx == l3ix %} inpath{%endif%}" {% if page.18idx == l8ix and page.l7idx == l7ix and page.l6idx == l6ix and page.l5idx ==l5ix and page.l4idx == l4ix and page.l3idx == l3ix %} open {%endif%}><summary><a title="{{myl8name[0]}}" href="{{myl8url[0] | remove: '/'}}">{{myl8[0]name}}</a></summary>
+
                                                                                             {% for l9ix in myl9idxes %}
                                                                                                 {% assign myl9pages = myl8pages | where: 'l9idx', l9ix %}
                                                                                                 {% assign myl9name = myl9pages | where_exp: 'page', 'page.l10idx == nil' | map: 'title' | compact | uniq %}
@@ -81,6 +84,7 @@
                                                                                                 {% assign myl10idxes = myl9pages | where_exp: 'page', 'page.l11idx == nil' | sort: '110idx' | map: 'l10idx' | compact | uniq %}
                                                                                                 {% if myl10idxes.size > 0 %}
                                                                                                     <details class="sbdeet deet9{% if page.l9idx == l9ix and page.18idx == l8ix and page.17idx == 17ix and page.l6idx == l6ix and page.l5idx == l5ix and page.l4idx == l4ix and page.13idx == l3ix %} inpath{%endif%}" {% if page.l9idx == l9ix and page.18idx == l8ix and page.l7idx == l7ix and page.l6idx == l6ix and page.l5idx ==l5ix and page.l4idx == l4ix and page.l3idx == l3ix %} open {%endif%}><summary><a title="{{myl9name[0]}}" href="{{myl9url[0] | remove: '/'}}">{{myl9name[0]}}</a></summary>
+
                                                                                                         {% for l10ix in myl10idxes %}
                                                                                                             {% assign myl10pages = myl9pages | where: 'l10idx', l10ix %}
                                                                                                             {% assign myl10name = myl10pages | where_exp: 'page', 'page.l11idx == nil' | map: 'title' | compact | uniq %}
@@ -88,6 +92,7 @@
                                                                                                             {% assign myl11idxes = myl10pages | where_exp: 'page', 'page.l12idx == nil' | sort: '11idx' | map: 'l11idx' | compact | uniq %}
                                                                                                             {% if myl11idxes.size > 0 %}
                                                                                                                 <details class="sbdeet deet10{% if page.l10idx == l10ix and page.l9idx == l9ix and page.18idx == l8ix and page.17idx == 17ix and page.l6idx == l6ix and page.l5idx == l5ix and page.l4idx == l4ix and page.13idx == l3ix %} inpath{%endif%}" {% if page.l10idx == l10ix and page.l9idx == l9ix and page.18idx == l8ix and page.l7idx == l7ix and page.l6idx == l6ix and page.l5idx ==l5ix and page.l4idx == l4ix and page.l3idx == l3ix %} open {%endif%}><summary><a title="{{myl10name[0]}}" href="{{myl10url[0] | remove: '/'}}">{{myl10name[0]}}</a></summary>
+
                                                                                                                     {% for l11ix in myl1idxes %}
                                                                                                                         {% assign myl11name = myl10pages | where: 'l11idx', l11ix | where_exp: 'page', 'page.l12idx == nil' | map: 'title' | compact | uniq %}
                                                                                                                         {% assign myl11url = myl10pages | where: 'l11idx', l1ix | where_exp: 'page', 'page.l12idx == nil' | map: 'url' | compact | uniq %}

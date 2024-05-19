@@ -1,25 +1,15 @@
 <nav class="bs-links w-100 menck-sblinks" id="bd-docs-nav" aria-label="Docs navigation">
     <ul class="bs-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2" "style="margin:0; padding:0;">
         <div class="mencknav left-sidebar-chunk">
-                                                        {% comment %} Get a list of all pages with l1/l2 index values that match *this* page.  (these are *all* the pages that should be in the sidebar)
-                                                        {% assign ourpages = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx %}
-                                                        {% assign heycount = -1 | plus: 0 %}
-                                                        {% for heynong in ourpages %}
-                                                            {% assign heycount = heycount | plus: 1 %}
-                                                            {% unless heynong.l3idx%}
-                                                                {% assign sbtitle = heynong.title %}
-                                                                {% assign sburl = heynong.url %}
-                                                            {% endunless %}
-                                                        {% endfor %}
-                                                        <div>
-                                                            <p><strong><a class="sbtitle" title="{{sbtitle}}" href="{{sburl | remove: '/'}}">{{sbtitle}}</a></strong></p>
-                                                        </div>
-                                                        {% endcomment %}
 
             {% comment %} Get an array of pages with the same l1/l2 index values as this page and *no* l4/l5/l6/7/l8/l9/l10/l11 indices.  (There should only be one such page; the title page of this article.)   {% endcomment %}
-            {% assign titlepages = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx | where_exp: 'l3idx == nil' %}
+            {% assign titlepages = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx | where_exp: 'l3idx == nil'| where_exp: 'l4idx == nil' | where_exp: 'l5idx == nil' | where_exp: 'l6idx == nil' | where_exp: 'l7idx == nil' | where_exp: 'l8idx == nil' | where_exp: 'l9idx == nil | where_exp: 'l10idx == nil' | where_exp: 'l11idx == nil'  %}
             <div>
+                {% if titlepages.size > 2 %}
+                <p><strong><a class="sbtitle">Oops!  There are {{titlepages.size}} pages using the same index.  Look for frontmatter matching: {{ titlepages[0].url | remove: '/'}}</a></strong></p>
+                {% else %}
                 <p><strong><a class="sbtitle" title="{{ titlepages[0].title}}" href="{{ titlepages[0].url | remove: '/'}}">{{ titlepages[0].title }}</a></strong></p>
+                {% endif %}
             </div>
             
             {% comment %} Get a list of ALL pages with l1/l2 index values that match *this* page (other than the l1 and l2 apex pages).  (these are *all* the pages that should be in the sidebar)  {% endcomment %}
