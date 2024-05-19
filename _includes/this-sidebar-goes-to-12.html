@@ -30,13 +30,9 @@
                         {% if l3ixchildren.size == 0 or l3ixchildren.size == nil %}
                             <p class="l3item{% if page.l3idx == l3ix %}active{%endif%}"><a title="{{ l3ixpgs[0].title}}" href="{{l3ixpgs[0].url | remove: '/'}}">{{l3ixpgs[0].title}}</a></p>
                         {% else%%}
-                            {% comment %} Start looping through the child-pages of the current l3-root page %}
+                            {% comment %} Start looping through the child-pages of the current l3-root page {% endcomment %}
                             {% for l3ixchild in l3ixchildren %}
                                 {% comment%} Figure out if *these* l3-children/L4-roots are barren of have children of their own to recurse {% endcomment %}
-                                
-
-
-
                         {% endif %}
 
                         {% assign myl4idxes = myl3pages | where_exp: 'page', 'page.l5idx == nil' | sort: 'l4idx' | map: 'l4idx' | compact | uniq %}
