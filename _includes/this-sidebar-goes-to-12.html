@@ -3,15 +3,16 @@
         <div class="mencknav left-sidebar-chunk">
 
             {% comment %} Get an array of pages with the same l1/l2 index values as this page and *no* l4/l5/l6/7/l8/l9/l10/l11 indices.  (There should only be one such page; the title page of this article.)   {% endcomment %}
-            {% assign titlepages = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx | where_exp: 'l3idx == nil'| where_exp: 'l4idx == nil' | where_exp: 'l5idx == nil' | where_exp: 'l6idx == nil' | where_exp: 'l7idx == nil' | where_exp: 'l8idx == nil' | where_exp: 'l9idx == nil | where_exp: 'l10idx == nil' | where_exp: 'l11idx == nil'  %}
+            {% assign titlepages = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx | where_exp: 'l3idx == nil'| where_exp: 'l4idx == nil' | where_exp: 'l5idx == nil' | where_exp: 'l6idx == nil' | where_exp: 'l7idx == nil' | where_exp: 'l8idx == nil' | where_exp: 'l9idx == nil | where_exp: 'l10idx == nil' | where_exp: 'l11idx == nil' %}
             <div>
+                {% comment %} Print a warning if there are multiple matching title-pages   {% endcomment %}
                 {% if titlepages.size > 2 %}
-                <p><strong><a class="sbtitle">Oops!  There are {{titlepages.size}} pages using the same index.  Look for frontmatter matching: {{ titlepages[0].url | remove: '/'}}</a></strong></p>
+                    <p><strong><a class="sbtitle">Oops!  There are {{titlepages.size}} pages using the same index.  Look for frontmatter matching: {{ titlepages[0].url | remove: '/'}}</a></strong></p>
                 {% else %}
-                <p><strong><a class="sbtitle" title="{{ titlepages[0].title}}" href="{{ titlepages[0].url | remove: '/'}}">{{ titlepages[0].title }}</a></strong></p>
+                    {% comment %} Add the article title to the sidebar if there is only one matching title page   {% endcomment %}
+                    <p><strong><a class="sbtitle" title="{{ titlepages[0].title}}" href="{{ titlepages[0].url | remove: '/'}}">{{ titlepages[0].title }}</a></strong></p>
                 {% endif %}
             </div>
-            
             {% comment %} Get a list of ALL pages with l1/l2 index values that match *this* page (other than the l1 and l2 apex pages).  (these are *all* the pages that should be in the sidebar)  {% endcomment %}
             {% assign sbpgs = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx | where_exp: 'page', 'page.l3idx != nil' %}
             {% comment %} start building the tree if there *are* any other pages that match *this* page's l1|2 index values. {% endcomment %}
@@ -25,10 +26,10 @@
                         {% assign l3ixpgs = sbpgs | where 'l3idx', l3ix %}
                         {% comment %} Get a separate array of only the child-pages {% endcomment %}
                         {% assign l3ixchildren = l3ixpgs | where_exp 'page', 'l4idx != nil' %}
-                        {% If there *are* no child-pages; write the single-line entry for the barren l3 root page into the sidebar %}
+                        {% comment %} If there *are* no child-pages; write the single-line entry for the barren l3 root page into the sidebar {% endcomment %}
                         {% if l3ixchildren.size == 0 or l3ixchildren.size == nil %}
                             <p class="l3item{% if page.l3idx == l3ix %}active{%endif%}"><a title="{{ l3ixpgs[0].title}}" href="{{l3ixpgs[0].url | remove: '/'}}">{{l3ixpgs[0].title}}</a></p>
-                        {$ else %}
+                        {% else%%}
                             {% comment %} Start looping through the child-pages of the current l3-root page %}
                             {% for l3ixchild in l3ixchildren %}
                                 {% comment%} Figure out if *these* l3-children/L4-roots are barren of have children of their own to recurse {% endcomment %}
