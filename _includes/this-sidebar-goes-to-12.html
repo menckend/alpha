@@ -4,7 +4,7 @@
             <div>
                 {% assign titlepages = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx | where_exp: 'page', 'page.l3idx == nil'| where_exp: 'page', 'page.l4idx == nil' | where_exp: 'page', 'page.l5idx == nil' | where_exp: 'page', 'page.l6idx == nil' | where_exp: 'page', 'page.l7idx == nil' | where_exp: 'page', 'page.l8idx == nil' | where_exp: 'page', 'page.l9idx == nil' | where_exp: 'page', 'page.l10idx == nil' | where_exp: 'page', 'page.l11idx == nil' %}
 
-                {% if titlepages.size > 2 %}
+                {% if titlepages.size > 1 %}
                     <p><strong><a class="sbtitle">Oops!  There are {{titlepages.size}} pages using the same index.  Look for frontmatter matching: {{ titlepages[0].url }}</a></strong></p>
                 {% else %}
 
