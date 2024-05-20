@@ -18,5 +18,3 @@ Long-story short, I started experimenting with Github "pages" and "actions" (and
 
 The works here are my own; you'll find them categorized under the drop-down arrows in the top-right. Adore/ignore/abhor them as you deem appropriate.  *Whatever* your take, I hope you find them as much fun to read as I did to write.
 
-{% include links.html %}
-
