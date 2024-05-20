@@ -8,9 +8,10 @@
             Page last updated:> {{page.last_updated}} <br/>
           {% endif %} 
           Site last generated: {{ site.time | date: "%b %-d, %Y"  }} <br />
-          <img src="{{ "assets/images/menckenania-logo-with-font-black-grey.png" }} "style="margin-left:-12px; height:2em; display:inline"/>
-          <img src="{{ "favicon.svg" }}"style="margin-left:-12px; height:4em; width:4em; display:inline"/>
-
+          <div d-flex align-items-right justify-content-between>
+            <img src="{{ "assets/images/menckenania-logo-with-font-black-grey.png" }} "style="margin-left:-12px; height:2em; display:inline"/>
+            <img src="{{ "favicon.svg" }}"style="margin-left:-12px; height:4em; width:4em;/>
+          </div>
       </div>
   </div>
   </div>
