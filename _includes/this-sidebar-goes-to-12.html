@@ -3,10 +3,13 @@
         <div class="mencknav left-sidebar-chunk">
             <div>
                 {% assign titlepages = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx | where_exp: 'page', 'page.l3idx == nil'| where_exp: 'page', 'page.l4idx == nil' | where_exp: 'page', 'page.l5idx == nil' | where_exp: 'page', 'page.l6idx == nil' | where_exp: 'page', 'page.l7idx == nil' | where_exp: 'page', 'page.l8idx == nil' | where_exp: 'page', 'page.l9idx == nil' | where_exp: 'page', 'page.l10idx == nil' | where_exp: 'page', 'page.l11idx == nil' %}
+
                 {% if titlepages.size > 2 %}
                     <p><strong><a class="sbtitle">Oops!  There are {{titlepages.size}} pages using the same index.  Look for frontmatter matching: {{ titlepages[0].url }}</a></strong></p>
                 {% else %}
-                    <p><strong><a class="sbtitle" title="{{ titlepages[0].title}}" href="{{ titlepages[0].url | remove: '/'}}">{{ titlepages[0].title }}</a></strong></p>
+
+                    <p><strong><a class="sbtitle" title="{{ titlepages[0].title}}" href="{{ titlepages[0].url | remove: '/'}}">{{ titlepages[0].title }}.  This many titlepages: {{titlepages.size }}</a></strong></p>
+    
                 {% endif %}
             </div>
             {% assign sidebarbpgs = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx | where_exp: 'page', 'page.l3idx != nil' %}
