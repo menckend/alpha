@@ -48,7 +48,6 @@ kramdown:
  auto_ids: true
  hard_wrap: false
  syntax_highlighter: rouge
-
 # filter used to process markdown. note that kramdown differs from github-flavored markdown in some subtle ways
 
 collections:
@@ -92,8 +91,8 @@ description: "A site for me to put things that I think may be worth sharing (som
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only
-# url: http://menckend.githubio.com
-# baseurl: /writing
+ url: http://menckend.githubio.com/alpha
+ baseurl: /
 
 github: [metadata]
 
@@ -114,7 +113,7 @@ relative_links:
   collections: false
 
 kramdown:
-  syntax_highlighter: coderay
+  syntax_highlighter: rouge
   syntax_highlighter_opts:
     line_numbers: table
     bold_every: 5

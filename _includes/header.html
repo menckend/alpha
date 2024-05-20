@@ -1,0 +1,120 @@
+<header class="navbar navbar-expand-lg menck-navbar sticky-top z-2" style="padding-top: 2px; padding-bottom: 2px;">
+  <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Main navigation" style="height:50px; padding: 0px;">
+    <a class="navbar-brand p-0 me-0 me-lg-1 d-flex align-self-center" href="/alpha"  aria-label="Site icon, links to site's home page">
+      <img class="d-flex align-self-center" src="assets/images/menckenania-logo-with-font.drawio.svg" style="height: 50px; margin-left: 8px;"></img>
+    </a>
+
+   {% unless page.pagenav == false %}
+    <div class="d-flex flex-grow-1 align-items-right justify-content-around" >
+      <div class="sbToggler d-inline text-nowrap" >{% include topnav-sidebar-toggler.html %}</div>
+      <div class="pageTurners d-inline text-nowrap" style="margin-left:16px;">{% include turnThePage.html %}</div>
+      <div>&nbsp;</div>
+    </div>
+    {% endunless %}
+
+    <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="menckNavbar" data-bs-backdrop="false" aria-labelledby="menckNavbarOffcanvasLabel" data-bs-scroll="true">
+      <div class="offcanvas-header px-4 pb-0">
+        <h5 class="offcanvas-title menck-topnav-text-color" id="bdNavbarOffcanvasLabel"></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#menckNavbar">
+              </button>
+      </div>
+      <div class="offcanvas-body p-4 pt-0 p-lg-0">
+        <ul class="navbar-nav flex-row flex-wrap ms-md-auto align-self-center">
+          <li class="nav-item dropdown menck-topnav-text-color">
+            <button type="button" class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle menck-topnav-text-color show" data-bs-toggle="dropdown" aria-expanded="true" data-bs-display="static">
+              Socials
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end menck-tn-bg-color" data-bs-popper="static">
+              <li>
+                <div class="d-flex justify-content-between" >
+
+                  <a class="nav-link py-2 px-0 px-lg-2 menck-topnav-text-color" href="mailto:mencken@gmail.com" target="_blank" rel="noopener">
+                    <i class="bi bi-envelope" style="font-size: 20px"></i>
+                    <small class="d-lg-none ms-2"></small>
+                  </a>
+                  <a class="nav-link py-2 px-0 px-lg-2 menck-topnav-text-color" href="https://github.com/menckend/" target="_blank" rel="noopener">
+                    <i class="bi bi-github" style="font-size: 20px"></i>
+                    <small class="d-lg-none ms-2"></small>
+                  </a>
+                  <a class="nav-link py-2 px-0 px-lg-2 menck-topnav-text-color" href="https://twitter.com/totstroc" target="_blank" rel="noopener">
+                    <i class="bi bi-twitter" style="font-size: 20px"></i>
+                    <small class="d-lg-none ms-2"></small>
+                  </a>
+                  <a class="nav-link py-2 px-0 px-lg-2 menck-topnav-text-color" href="ttps://open.spotify.com/user/menckendavidson" target="_blank" rel="noopener">
+                    <i class="bi bi-spotify" style="font-size: 20px"></i>
+                    <small class="d-lg-none ms-2"></small>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- Replace above section with a loop through the social-media data yaml-->
+          <!-- Dropdown menus -->
+          {% comment %} entries with drop-downs appear here {% endcomment %}
+          {% comment %} Get an array of all the unique "l1idx" values in all the pages on the site  {% endcomment %}
+          {% assign l1idxes = site.pages | where_exp: 'page', 'page.l2idx == nil' | sort: '11idx' | map: 'l1idx' | compact | uniq %}
+          {% comment %} Loop through the unique l1idx values {% endcomment %}
+          {% for l1ix in l1idxes %}
+            {% comment %} Get all pages with this ("my") l1idx value {% endcomment %}
+            {% assign myl1pages = site.pages | where: 'l1idx', l1ix | sort: 'l1idx' | compact %}
+            {% comment %} Get l1name value that corresponds to the this("my") l1idx value {% endcomment %}
+            {% assign thisl1name = myl1pages | where_exp: 'page', 'page.l2idx == nil' | map: 'title' | compact | uniq %}
+            {% assign thisl1url = myl1pages | where_exp: 'page', 'page.l2idx == nil' | map: 'url' %}
+            {% comment %} Building a dropdown button for each unique l1idx value in our pages  {% endcomment %}
+
+            <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+              <div class="vr d-none d-lg-flex h-100 mx-lg-2 menck-topnav-text-color"></div>
+            </li>
+
+
+            <!-- library/dropdown-menu -->
+            <li class="nav-item dropdown menck-topnav-text-color">
+              <button type="button" class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle menck-topnav-text-color show" data-bs-toggle="dropdown" aria-expanded="true" data-bs-display="static">
+                {{ thisl1name }}
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end menck-tn-bg-color" data-bs-popper="static">
+                {% assign l2idxes = myl1pages | sort: 'l2idx' | map: 'l2idx' | compact | uniq %}
+                {% comment %} Loop through the l2idxes to build the entries in the dropdown menu {% endcomment %}
+                {% for l2ix in l2idxes %}
+                  {% assign myl2pages = myl1pages | where: 'l2idx', l2ix | sort: 'l2idx' | compact | uniq %}
+                  {% assign myl2name = myl2pages | where_exp: 'page', 'page.l3idx == nil' | sort: 'l2idx' | map: 'title' | compact | uniq %}
+                  {% assign myl2url = myl2pages | where_exp: 'page', 'page.l3idx == nil' | sort: 'l2idx'| map: 'url' %}
+                  <li>
+                    <a class="dropdown-item d-flex align-items-left active" aria-current="true" href="{{myl2url[0] | remove: "/"}}" style="background-color:transparent">
+                      {% if l1ix == page.l1idx and l2ix == page.l2idx %}
+                        <svg class="bi" style="padding-right:4px;"><use xlink:href="#check2"></use></svg>
+                      {% endif %}
+                      {{ myl2name }}
+                    </a>
+                {% endfor %}
+              </ul>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+<!--
+    <div class="col-auto" style="padding-left:32px; padding-right:16px;">
+      <div class="row-auto">
+        <div class="col">
+               <div class="form-check form-switch d-flex menck-topnav-text-color">
+                  <input class="form-check-input menck-tn-toggle-control menck-topnav-text-color d-flex align-self-end" type="checkbox" id="MenckSidebarToggle" data-bs-target="#MenckSidebar" data-target="#MenckSidebar" data-bs-toggle="collapse" style="background-color:grey;">
+                  <label class="form-check-label menck-tn-toggle-label menck-topnav-text-color d-flex align-self-center" for="MenckSidebarToggle" style="padding-left:8px;"> Doc Nav </label>
+          </div>
+        </div>
+        <div class="w-100"></div>
+        <div class="col">
+          <div class="form-check form-switch d-flex menck-topnav-text-color ">
+            <input class="form-check-input menck-tn-toggle-control menck-topnav-text-color d-flex align-self-start" type="checkbox" id="MenckRightbarToggle" data-bs-target="#MenckRightbar" data-target="#MenckRightbar" data-bs-toggle="collapse" style="background-color:grey;">
+            <label class="form-check-label menck-tn-toggle-label menck-topnav-text-color d-flex align-self-center" for="MenckRightbarToggle" style="padding-left:8px;"> Page TOC </label>
+          </div>	
+        </div>
+      </div>
+    </div>
+-->
+
+    <a class="btn btn-menck-tn d-lg-none " data-bs-toggle="offcanvas" href="#menckNavbar" role="button" aria-controls="offcanvasResponsive" type="button" style="border-style:none;"><i class="bi bi-list d-flex align-self-center"" style="font-size:40px;""></i></a>
+  </nav>
+  </div>
+</header>
