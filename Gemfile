@@ -7,6 +7,7 @@ source "https://rubygems.org"
 #gem "jekyll"
 
 gem "jekyll", "~> 4.3"
+gem "psych", "~> 5.1"
 gem "webrick", "~> 1.7"
 gem "bootstrap", "~> 5.3"
 gem "katex", "~> 0.10.0"
