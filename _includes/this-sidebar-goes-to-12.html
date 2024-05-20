@@ -1,165 +1,33 @@
 <nav class="bs-links w-100 menck-sblinks" id="bd-docs-nav" aria-label="Docs navigation">
     <ul class="bs-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2" "style="margin:0; padding:0;">
         <div class="mencknav left-sidebar-chunk">
-
-            {% comment %} Get an array of pages with the same l1/l2 index values as this page and *no* l4/l5/l6/7/l8/l9/l10/l11 indices.  (There should only be one such page; the title page of this article.)   {% endcomment %}
-            {% assign titlepages = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx | where_exp: 'l3idx == nil'| where_exp: 'l4idx == nil' | where_exp: 'l5idx == nil' | where_exp: 'l6idx == nil' | where_exp: 'l7idx == nil' | where_exp: 'l8idx == nil' | where_exp: 'l9idx == nil | where_exp: 'l10idx == nil' | where_exp: 'l11idx == nil' %}
             <div>
-                {% comment %} Print a warning if there are multiple matching title-pages   {% endcomment %}
+                {% assign titlepages = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx | where_exp: 'l3idx == nil'| where_exp: 'l4idx == nil' | where_exp: 'l5idx == nil' | where_exp: 'l6idx == nil' | where_exp: 'l7idx == nil' | where_exp: 'l8idx == nil' | where_exp: 'l9idx == nil | where_exp: 'l10idx == nil' | where_exp: 'l11idx == nil' %}
                 {% if titlepages.size > 2 %}
-                    <p><strong><a class="sbtitle">Oops!  There are {{titlepages.size}} pages using the same index.  Look for frontmatter matching: {{ titlepages[0].url | remove: '/'}}</a></strong></p>
+                    <p><strong><a class="sbtitle">Oops!  There are {{titlepages.size}} pages using the same index.  Look for frontmatter matching: {{ titlepages[0].url }}</a></strong></p>
                 {% else %}
-                    {% comment %} Add the article title to the sidebar if there is only one matching title page   {% endcomment %}
                     <p><strong><a class="sbtitle" title="{{ titlepages[0].title}}" href="{{ titlepages[0].url | remove: '/'}}">{{ titlepages[0].title }}</a></strong></p>
                 {% endif %}
             </div>
-            {% comment %} Get a list of ALL pages with l1/l2 index values that match *this* page (other than the l1 and l2 apex pages).  (these are *all* the pages that should be in the sidebar)  {% endcomment %}
-            {% assign sbpgs = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx | where_exp: 'page', 'page.l3idx != nil' %}
-            {% comment %} start building the tree if there *are* any other pages that match *this* page's l1|2 index values. {% endcomment %}
-            {% if sbpgs.size != nil and sbpgs.size > 0 %}
-                {% comment %} Get a list of all the unique/sorted l3 root indices in our page {% endcomment %}
+            {% assign sidebarbpgs = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx | where_exp: 'page', 'page.l3idx != nil' %}
+            {% if sidebarpgs.size != nil and sbpgs.size > 0 %}
                 {% assign ourl3idxes = sbpgs | sort: 'l3idx' | map: 'l3idx' | compact | uniq %}
-                {% comment %} Loop through all the unique L3 indices and create the first level entries in the sidebar menu {% endcomment %}
                 {% if ourl3idxes.size != nil and ourl3idxes.size > 0  %}
                     {% for l3ix in ourl3idxes %}
-                        {% comment get an array of the l3-root page and any child pages for the current l3ix value {% endcomment%}
                         {% assign l3ixpgs = sbpgs | where 'l3idx', l3ix %}
-                        {% comment %} Get a separate array of only the child-pages {% endcomment %}
                         {% assign l3ixchildren = l3ixpgs | where_exp 'page', 'l4idx != nil' %}
-                        {% comment %} If there *are* no child-pages; write the single-line entry for the barren l3 root page into the sidebar {% endcomment %}
                         {% if l3ixchildren.size == 0 or l3ixchildren.size == nil %}
                             <p class="l3item{% if page.l3idx == l3ix %}active{%endif%}"><a title="{{ l3ixpgs[0].title}}" href="{{l3ixpgs[0].url | remove: '/'}}">{{l3ixpgs[0].title}}</a></p>
-                        {% else%%}
-                            {% comment %} Start looping through the child-pages of the current l3-root page {% endcomment %}
-                            {% for l3ixchild in l3ixchildren %}
-                                {% comment%} Figure out if *these* l3-children/L4-roots are barren of have children of their own to recurse {% endcomment %}
-                        {% endif %}
-
-                        {% assign myl4idxes = myl3pages | where_exp: 'page', 'page.l5idx == nil' | sort: 'l4idx' | map: 'l4idx' | compact | uniq %}
-                        {% comment %} Testing to see if the current l3 index has any l4 children. {% endcomment %}
-                        {% if myl4idxes.size ==  0  %}
-                            <p class="l3item{% if page.l3idx == l3ix %}active{%endif%}"><a title="{{l3ixpgs[0]}}" href="{{myl3url | remove: '/'}}">{{myl3name}}</a></p>  -->
-                        {% endif %}
-
-
-
-
-                        {% comment %} Get a list of all the pages with *current* L3 index {% endcomment %}
-                        {% assign myl3pages = scourpages | where: 'l3idx', l3ix | sort: 'l3idx' %}
-                        {% comment %} set variables for the l3name and url value that corresponds to the l3index value of the current iteration of the loop {% endcomment %}
-                        {% assign myl3name = myl3pages | where_exp: 'page', 'page.l4idx == nil' | map: 'title' | compact | uniq %}
-                        {% assign myl3url = myl3pages | where_exp: 'page', 'page.l4idx == nil' | map: 'url' | array_to_sentence_string %}
-                        {% comment %} Get all the unique L4 indices in pages with *current* L3 index {% endcomment %}
-                        {% assign myl4idxes = myl3pages | where_exp: 'page', 'page.l5idx == nil' | sort: 'l4idx' | map: 'l4idx' | compact | uniq %}
-                        {% comment %} Testing to see if the current l3 index has any l4 children. {% endcomment %}
-                        {% if myl4idxes.size ==  0  %}
-                         <!--   <p class="l3item{% if page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl3name}}" href="{{myl3url | remove: '/'}}">{{myl3name}}</a></p>  -->
-                        {% endif %}
-                        {% if myl4idxes.size > 0 %}
-                            <details class="sbdeet deet3{% if page.l3idx == l3ix%} inpath{%endif%}"{% if page.l3idx == l3ix %} open {%endif%}><summary><a title="{{myl3name[0]}}" href="{{myl3url | remove: '/'}}">{{myl3name[0]}}</a></summary>
-                                {% for l4ix in myl4idxes %}
-                                    {% comment %} Get a list of all the pages with *current* L4 index {% endcomment %}
-                                    {% assign myl4pages = myl3pages | where: 'l4idx', l4ix %}
-                                    {% assign myl4name = myl4pages | where_exp: 'page', 'page.l5idx == nil' | map: 'title' | compact | uniq %}
-                                    {% assign myl4url  = myl4pages | where_exp: 'page', 'page.l5idx == nil' | map: 'url' | array_to_sentence_string %}
-                                    {% comment %} Get all the unique L5 indices in pages with *current* L3&L4 index {% endcomment %}
-                                    {% assign myl5idxes = myl4pages | where_exp: 'page', 'page.l6idx == nil' | sort: '15idx' | map: 'l5idx' | compact | uniq %}
-                                    {% if myl5idxes.size > 0 %}
-                                        <details class="sbdeet deet4{% if page.l4idx == l4ix and page.l3idx == l3ix %} inpath{%endif%}" {% if page.l4idx == l4ix and page.l3idx == l3ix %} open {%endif%}><summary><a title="{{myl4name[0]}}" href="{{myl4url | remove: '/'}}">{{myl4name[0]}}</a></summary>
-                                            {% for l5ix in myl5idxes %}
-                                                {% assign myl5pages = myl4pages | where: 'l5idx', l5ix %}
-                                                {% assign myl5name = myl5pages | where_exp: 'page', 'page.l6idx == nil' | map: 'title' | compact | uniq %}
-                                                {% assign myl5url  = myl5pages | where_exp: 'page', 'page.l6idx == nil' | map: 'url' | array_to_sentence_string %}
-                                                {% assign myl6idxes = myl5pages | where_exp: 'page', 'page.l7idx == nil' | sort: '16idx' | map: 'l6idx' | compact | uniq %}
-                                                {% if myl6idxes.size > 0 %}
-                                                    <details class="sbdeet deet5{% if page.l5idx == l5ix and page.l4idx == l4ix and page.13idx == l3ix %} inpath{%endif%}" {% if page.l5idx ==l5ix and page.l4idx == l4ix and page.l3idx == l3ix %} open {%endif%}><summary><a title="{{myl5name[0]}}" href="{{myl5url | remove: '/'}}">{{myl5name[0]}}</a></summary>
-                                                        {% for l6ix in myl6idxes %}
-                                                            {% assign myl6pages = myl5pages | where: 'l6idx', l6ix %}
-                                                            {% assign myl6name = myl6pages | where_exp: 'page', 'page.l7idx == nil' | map: 'title' | compact | uniq %}
-                                                            {% assign myl6url  = myl6pages | where_exp: 'page', 'page.l7idx == nil' | map: 'url' | array_to_sentence_string %}
-                                                            {% assign myl7idxes = myl6pages | where_exp: 'page', 'page.l8idx == nil' | sort: '17idx' | map: 'l7idx' | compact | uniq %}
-                                                            {% if myl7idxes.size > 0 %}
-                                                                <details class="sbdeet deet6{% if page.l6idx == l6ix and page.l5idx == l5ix and page.l4idx == l4ix and page.13idx == l3ix %} inpath{%endif%}" {% if page.l6idx == l6ix and page.l5idx ==l5ix and page.l4idx == l4ix and page.l3idx == l3ix %} open {%endif%}><summary><a title="{{myl6name[0]}}" href="{{myl6url | remove: '/'}}">{{myl6name[0]}}</a></summary>
-                                                                    {% for l7ix in myl7idxes %}
-                                                                        {% assign myl7pages = myl6pages | where: 'l7idx', l7ix %}
-                                                                        {% assign myl7name = myl7pages | where_exp: 'page', 'page.l8idx == nil' | map: 'title' | compact | uniq %}
-                                                                        {% assign myl7url  = myl7pages | where_exp: 'page', 'page.l8idx == nil' | map: 'url' | array_to_sentence_string %}
-                                                                        {% assign myl8idxes = myl7pages | where_exp: 'page', 'page.l9idx == nil' | sort: '18idx' | map: 'l8idx' | compact | uniq %}
-                                                                        {% if myl8idxes.size > 0 %}
-                                                                            <details class="sbdeet deet7{% if page.17idx == 17ix and page.l6idx == l6ix and page.l5idx == l5ix and page.l4idx == l4ix and page.13idx == l3ix %} inpath{%endif%}" {% if page.l7idx == l7ix and page.l6idx == l6ix and page.l5idx ==l5ix and page.l4idx == l4ix and page.l3idx == l3ix %} open {%endif%}><summary><a title="{{myl7name[0]}}" href="{{myl7url | remove: '/'}}">{{myl7name[0]}}</a></summary>
-                                                                                {% for l8ix in myl8idxes %}
-                                                                                    {% assign myl8pages = myl7pages | where: 'l8idx', l8ix %}
-                                                                                    {% assign myl8name = myl8pages | where_exp: 'page', 'page.l9idx == nil' | map: 'title' | compact | uniq %}
-                                                                                    {% assign myl8url  = myl8pages | where_exp: 'page', 'page.l9idx == nil' | map: 'url' | array_to_sentence_string %}
-                                                                                    {% assign myl9idxes = myl8pages | where_exp: 'page', 'page.l10idx == nil' | sort: '19idx' | map: 'l9idx' | compact | uniq %}
-                                                                                    {% if myl9idxes.size > 0 %}
-                                                                                        <details class="sbdeet deet8{% if page.18idx == l8ix and page.17idx == 17ix and page.l6idx == l6ix and page.l5idx == l5ix and page.l4idx == l4ix and page.13idx == l3ix %} inpath{%endif%}" {% if page.18idx == l8ix and page.l7idx == l7ix and page.l6idx == l6ix and page.l5idx ==l5ix and page.l4idx == l4ix and page.l3idx == l3ix %} open {%endif%}><summary><a title="{{myl8name[0]}}" href="{{myl8url | remove: '/'}}">{{myl8[0]name}}</a></summary>
-                                                                                            {% for l9ix in myl9idxes %}
-                                                                                                {% assign myl9pages = myl8pages | where: 'l9idx', l9ix %}
-                                                                                                {% assign myl9name = myl9pages | where_exp: 'page', 'page.l10idx == nil' | map: 'title' | compact | uniq %}
-                                                                                                {% assign myl9url  = myl9pages | where_exp: 'page', 'page.l10idx == nil' | map: 'url' | array_to_sentence_string %}
-                                                                                                {% assign myl10idxes = myl9pages | where_exp: 'page', 'page.l11idx == nil' | sort: '110idx' | map: 'l10idx' | compact | uniq %}
-                                                                                                {% if myl10idxes.size > 0 %}
-                                                                                                    <details class="sbdeet deet9{% if page.l9idx == l9ix and page.18idx == l8ix and page.17idx == 17ix and page.l6idx == l6ix and page.l5idx == l5ix and page.l4idx == l4ix and page.13idx == l3ix %} inpath{%endif%}" {% if page.l9idx == l9ix and page.18idx == l8ix and page.l7idx == l7ix and page.l6idx == l6ix and page.l5idx ==l5ix and page.l4idx == l4ix and page.l3idx == l3ix %} open {%endif%}><summary><a title="{{myl9name[0]}}" href="{{myl9url | remove: '/'}}">{{myl9name[0]}}</a></summary>
-                                                                                                        {% for l10ix in myl10idxes %}
-                                                                                                            {% assign myl10pages = myl9pages | where: 'l10idx', l10ix %}
-                                                                                                            {% assign myl10name = myl10pages | where_exp: 'page', 'page.l11idx == nil' | map: 'title' | compact | uniq %}
-                                                                                                            {% assign myl10url  = myl10pages | where_exp: 'page', 'page.l11idx == nil' | map: 'url' | array_to_sentence_string %}
-                                                                                                            {% assign myl11idxes = myl10pages | where_exp: 'page', 'page.l12idx == nil' | sort: '11idx' | map: 'l11idx' | compact | uniq %}
-                                                                                                            {% if myl11idxes.size > 0 %}
-                                                                                                                <details class="sbdeet deet10{% if page.l10idx == l10ix and page.l9idx == l9ix and page.18idx == l8ix and page.17idx == 17ix and page.l6idx == l6ix and page.l5idx == l5ix and page.l4idx == l4ix and page.13idx == l3ix %} inpath{%endif%}" {% if page.l10idx == l10ix and page.l9idx == l9ix and page.18idx == l8ix and page.l7idx == l7ix and page.l6idx == l6ix and page.l5idx ==l5ix and page.l4idx == l4ix and page.l3idx == l3ix %} open {%endif%}><summary><a title="{{myl10name[0]}}" href="{{myl10url | remove: '/'}}">{{myl10name[0]}}</a></summary>
-                                                                                                                    {% for l11ix in myl1idxes %}
-                                                                                                                        {% assign myl11name = myl10pages | where: 'l11idx', l11ix | where_exp: 'page', 'page.l12idx == nil' | map: 'title' | compact | uniq %}
-                                                                                                                        {% assign myl11url = myl10pages | where: 'l11idx', l1ix | where_exp: 'page', 'page.l12idx == nil' | map: 'url' | compact | uniq %}
-                                                                                                                        <p class="l11item{% if page.l11idx == l11ix and page.l10idx == l10ix and page.l9idx == l9ix and page.18idx == l8ix and page.17idx == 17ix and page.l6idx == l6ix and page.l5idx == l5ix and page.l4idx == l4ix and page.13idx == l3ix %}active{%endif%}"><a title="{{myl11name}}" href="{{myl11url | remove: '/'}}">{{myl11name}}</a></p>
-                                                                                                                    {% endfor %}
-                                                                                                                </details>
-                                                                                                            {% else %}
-                                                                                                                <p class="l10item{% if page.l10idx == l10ix and page.l9idx == l9ix and page.l8idx == l8ix and page.17idx == l7ix and page.16idx == 16ix and page.l5idx == l5ix and page.l4idx == l4ix and page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl10name}}" href="{{myl10url | remove: '/'}}">{{myl10name}}</a></p>
-                                                                                                            {% endif %}
-
-                                                                                                        {% endfor %}
-                                                                                                    </details>
-                                                                                                {% else %}
-                                                                                                    <p class="l9item{% if page.l9idx == l9ix and page.l8idx == l8ix and page.17idx == l7ix and page.16idx == 16ix and page.l5idx == l5ix and page.l4idx == l4ix and page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl9name}}" href="{{myl9url | remove: '/'}}">{{myl9name}}</a></p>
-                                                                                                {% endif %}
-                                                                                            {% endfor %}
-                                                                                        </details>
-                                                                                    {% else %}
-                                                                                        <p class="l8item{% if page.l8idx == l8ix and page.17idx == l7ix and page.16idx == 16ix and page.l5idx == l5ix and page.l4idx == l4ix and page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl8name}}" href="{{myl8url | remove: '/'}}">{{myl8name}}</a></p>
-                                                                                    {% endif %}
-                                                                                {% endfor %}
-                                                                            </details>
-                                                                        {% else %}
-                                                                            <p class="l7item{% if page.17idx == l7ix and page.16idx == 16ix and page.l5idx == l5ix and page.l4idx == l4ix and page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl7name}}" href="{{myl7url | remove: '/'}}">{{myl7name}}</a></p>
-                                                                        {% endif %}
-                                                                    {% endfor %}
-                                                                </details>
-                                                            {% else %}
-                                                                <p class="l6item{% if page.16idx == 16ix and page.l5idx == l5ix and page.l4idx == l4ix and page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl6name}}" href="{{myl6url | remove: '/'}}">{{myl6name}}</a></p>
-                                                            {% endif %}
-                                                        {% endfor %}
-                                                    </details>
-                                                {% else %}
-                                                    <p class="l5item{% if page.l5idx == l5ix and page.l4idx == l4ix and page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl5name}}" href="{{myl5url | remove: '/'}}">{{myl5name}}</a></p>
-                                                {% endif %}
-                                            {% endfor %}
-                                        </details>
-                                    {% else %}
-                                        <p class="l4item{% if page.l4idx == l4ix and page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl4name}}" href="{{myl4url | remove: '/'}}">{{myl4name}}</a></p>
-                                    {% endif %}
-                                {% endfor %}
-                            </details>
                         {% else %}
-                            <p class="l3item{% if page.l3idx == l3ix and page.12idx == l2ix %}active{%endif%}"><a title="{{myl3name}}" href="{{myl3url | remove: '/'}}">{{myl3name}}</a></p>
+                            <details class="sbdeet deet3{% if page.l3idx == l3ix%} inpath{%endif%}"{% if page.l3idx == l3ix %} open {%endif%}><summary><a title="{{myl3name[0]}}" href="{{myl3url[0] | remove: '/'}}">{{myl3name[0]}}</a></summary>
+                            {% for l3ixchild in l3ixchildren %}
+                                {% comment %}  This is where we have to start digging down the rabbit-hole with nested if/for logic to get all the way "down" to l11idxes.
+                            {% endfor %}
                         {% endif %}
                     {% endfor %}
                 {% else %}
                     <p> Nothing here yet; check back later</p>
                 {% endif %}
-            {% else %}
-                <p> Nothing here yet; check back later</p>
-            {% endif %}   
         </div>
     </ul>
 </nav>
