@@ -1,0 +1,128 @@
+<nav class="bs-links w-100 menck-sblinks" id="bd-docs-nav" aria-label="Docs navigation">
+    <ul class="bs-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2" "style="margin:0; padding:0;">
+        <div class="mencknav left-sidebar-chunk">
+            <div>
+                {% assign titlepages = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx | where_exp: 'page', 'page.l3idx == nil'| where_exp: 'page', 'page.l4idx == nil' | where_exp: 'page', 'page.l5idx == nil' | where_exp: 'page', 'page.l6idx == nil' | where_exp: 'page', 'page.l7idx == nil' | where_exp: 'page', 'page.l8idx == nil' | where_exp: 'page', 'page.l9idx == nil' | where_exp: 'page', 'page.l10idx == nil' | where_exp: 'page', 'page.l11idx == nil' %}
+                {% if titlepages.size >= 2 %}
+                    <p><strong><a class="sbtitle">Oops!  There are {{titlepages.size}} pages using the same index.  Look for frontmatter matching: {{ titlepages[0].url }}</a></strong></p>
+                {% else %}
+                    <p><strong><a class="sbtitle" title="{{ titlepages[0].title}}" href="{{ titlepages[0].url | remove: '/'}}">{{ titlepages[0].title }}.  This many titlepages: {{titlepages.size }}</a></strong></p>
+                {% endif %}
+            </div>
+
+            {% comment %} Get a list of all pages with l1/l2 index values that match *this* page (other than the l1 and l2 apex pages).  (these are *all* the pages that should be in the sidebar)  {% endcomment %}
+            {% assign articlepgs = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx | where_exp: 'page', 'page.l3idx' %}
+
+            {% comment %} Get a list of all the unique/sorted l3 indices from sbpages {% endcomment %}
+            {% assign ourl3idxes = articlepgs | where_exp: 'page', 'page.l4idx == nil' | sort: 'l3idx' | map: 'l3idx' | compact | uniq %}
+
+            {% if ourl3idxes.size >= 1 %}
+                {% comment %} Loop through all the unique L3 indices and create the 1ST LEVEL ENTRIES in the sidebar menu {% endcomment %}
+                {% for l3ix in ourl3idxes %}
+                    {%comment%} set the name and URL for the nav-tree entry for the current l3 index {%endcomment%}
+                    {% assign ourl3name = articlepgs | where: 'l3idx', l3ix | where_exp: 'page', 'page.l4idx == nil' | map: 'title' | compact | uniq %}
+                    {% assign ourl3url = articlepgs | where: 'l3idx', l3ix | where_exp: 'page', 'page.l4idx == nil' | map: 'url' | compact | uniq %}
+                    {%comment%} figure out if we need to make a flat-entry or an accordion entry for this l3ix {%endcomment%}
+                    {% assign ourl4idxes = articlepgs | where: 'l3idx', l3ix | where_exp: 'page', 'page.l4idx' | where_exp: 'page', 'page.l5idx == nil' |sort: 'l4idx' | map: 'l4idx' | compact | uniq %}
+                    {% comment %} Make a flat-entry if there are no l4 "children" to the current l3ix {% endcomment %}
+                    {% if ourl4idxes.size == 0 or ourl4ixes == nil %}
+                        <p class="l3item{% if page.l3idx == l3ix%}active{%endif%}"><a title="{{ourl3name[0]}}" href="{{ourl3url[0] | remove: '/'}}">{{ourl3name[0]}}</a></p>
+                    {% else %}
+                    {% comment %} Make an accordion entry if there ARE l4 "children" to the current l3ix {% endcomment %}
+                        <details class="sbdeet deet3{% if page.l3idx == l3ix%} inpath{%endif%}"{% if page.l3idx == l3ix %} open {%endif%}><summary><a title="{{ourl3name[0]}}" href="{{ourl3url[0] | remove: '/'}}">{{ourl3name[0]}}</a></summary>
+
+                            {% comment %} Loop through all the unique L4 indices (under the current l3 index) and create the 2ND LEVEL ENTRIES in the sidebar menu {% endcomment %}
+                            {% for l4ix in ourl4idxes %}
+                                {%comment%} set the name and URL for the nav-tree entry for the current l4 index {%endcomment%}
+                                {% assign ourl4name = articlepgs | where: 'l3idx', l3ix | where: 'l4idx', l4ix | where_exp: 'page', 'page.l5idx == nil' | map: 'title' | compact | uniq %}
+                                {% assign ourl4url = articlepgs | where: 'l3idx', l3ix | where: 'l4idx', l4ix | where_exp: 'page', 'page.l5idx == nil' | map: 'url' | compact | uniq %}
+                                {%comment%} figure out if we need to make a flat-entry or an accordion entry for this l4ix {%endcomment%}
+                                {% assign ourl5idxes = articlepgs | where: 'l3idx', l3ix | where: 'l4idx', l4ix | where_exp: 'page', 'page.l5idx' | where_exp: 'page', 'page.l6idx == nil' |sort: 'l5idx' | map: 'l5idx' | compact | uniq %}
+                                {% comment %} Make a flat-entry if there are no l5 "children" to the current l4ix {% endcomment %}
+                                {% if ourl5idxes.size == 0 or ourl5ixes == nil %}
+                                    <p class="l4item{% if page.l3idx == l3ix% and page.l4idx == l4ix %}active{%endif%}"><a title="{{ourl4name[0]}}" href="{{ourl4url[0] | remove: '/'}}">{{ourl4name[0]}}</a></p>
+                                {% else %}
+                                {% comment %} Make an accordion entry if there ARE l5 "children" to the current l4ix {% endcomment %}
+                                    <details class="sbdeet deet4{% if page.l3idx == l3ix and page.l4idx == l4ix %} inpath{%endif%}"{% if page.l3idx == l3ix and page.l4idx == l4ix %} open {%endif%}><summary><a title="{{ourl4name[0]}}" href="{{ourl4url[0] | remove: '/'}}">{{ourl4name[0]}}</a></summary>
+
+                                        {% comment %} Loop through all the unique L5 indices (under the current l4 index) and create the 3RD LEVEL ENTRIES in the sidebar menu {% endcomment %}
+                                        {% for l5ix in ourl5idxes %}
+                                            {%comment%} set the name and URL for the nav-tree entry for the current l5 index {%endcomment%}
+                                            {% assign ourl5name = articlepgs | where: 'l3idx', l3ix | where: 'l4idx', l4ix | where: 'l5idx', l5ix | where_exp: 'page', 'page.l6idx == nil' | map: 'title' | compact | uniq %}
+                                            {% assign ourl5url = articlepgs | where: 'l3idx', l3ix | where: 'l4idx', l4ix | where: 'l5idx', l5ix | where_exp: 'page', 'page.l6idx == nil' | map: 'url' | compact | uniq %}
+                                            {%comment%} figure out if we need to make a flat-entry or an accordion entry for this l5ix {%endcomment%}
+                                            {% assign ourl6idxes = articlepgs | where: 'l3idx', l3ix | where: 'l4idx', l4ix | where: 'l5idx', l5ix | where_exp: 'page', 'page.l6idx' | where_exp: 'page', 'page.l7idx == nil' |sort: 'l6idx' | map: 'l6idx' | compact | uniq %}
+                                            {% comment %} Make a flat-entry if there are no l6 "children" to the current l5ix {% endcomment %}
+                                            {% if ourl6idxes.size == 0 or ourl6ixes == nil %}
+                                                <p class="l5item{% if page.l3idx == l3ix% and page.l4idx == l4ix and page.l5idx == l5ix %}active{%endif%}"><a title="{{ourl5name[0]}}" href="{{ourl5url[0] | remove: '/'}}">{{ourl5name[0]}}</a></p>
+                                            {% else %}
+                                            {% comment %} Make an accordion entry if there ARE l6 "children" to the current l5ix {% endcomment %}
+                                                <details class="sbdeet deet5{% if page.l3idx == l3ix and page.l4idx == l4ix and page.l5idx == l5ix%} inpath{%endif%}"{% if page.l3idx == l3ix and page.l4idx == l4ix and page.l5idx == l5ix %} open {%endif%}><summary><a title="{{ourl5name[0]}}" href="{{ourl5url[0] | remove: '/'}}">{{ourl5name[0]}}</a></summary>
+            
+                                                    {% comment %} Loop through all the unique L6 indices (under the current l5 index) and create the 4TH LEVEL ENTRIES in the sidebar menu {% endcomment %}
+                                                    {% for l6ix in ourl6idxes %}
+                                                        {%comment%} set the name and URL for the nav-tree entry for the current l6 index {%endcomment%}
+                                                        {% assign ourl6name = articlepgs | where: 'l3idx', l3ix | where: 'l4idx', l4ix | where: 'l5idx', l5ix | where: 'l6idx', l6ix | where_exp: 'page', 'page.l7idx == nil' | map: 'title' | compact | uniq %}
+                                                        {% assign ourl6url = articlepgs | where: 'l3idx', l3ix | where: 'l4idx', l4ix | where: 'l5idx', l5ix | where: 'l6idx', l6ix | where_exp: 'page', 'page.l7idx == nil' | map: 'url' | compact | uniq %}
+                                                        {%comment%} figure out if we need to make a flat-entry or an accordion entry for this l6ix {%endcomment%}
+                                                        {% assign ourl7idxes = articlepgs | where: 'l3idx', l3ix | where: 'l4idx', l4ix | where: 'l5idx', l5ix | where: 'l6idx', l6ix | where_exp: 'page', 'page.l7idx' | where_exp: 'page', 'page.l8idx == nil' |sort: 'l7idx' | map: 'l7idx' | compact | uniq %}
+                                                        {% comment %} Make a flat-entry if there are no l7 "children" to the current l6ix {% endcomment %}
+                                                        {% if ourl7idxes.size == 0 or ourl7ixes == nil %}
+                                                            <p class="l6item{% if page.l3idx == l3ix% and page.l4idx == l4ix and page.l5idx == l5ix and page.l6idx == l6ix %}active{%endif%}"><a title="{{ourl6name[0]}}" href="{{ourl6url[0] | remove: '/'}}">{{ourl6name[0]}}</a></p>
+                                                        {% else %}
+                                                        {% comment %} Make an accordion entry if there ARE l7 "children" to the current l6ix {% endcomment %}
+                                                            <details class="sbdeet deet6{% if page.l3idx == l3ix and page.l4idx == l4ix and page.l5idx == l5ix and page.l6idx == l6ix %} inpath{%endif%}"{% if page.l3idx == l3ix and page.l4idx == l4ix and page.l5idx == l5ix and page.l6idx == l6ix %} open {%endif%}><summary><a title="{{ourl6name[0]}}" href="{{ourl6url[0] | remove: '/'}}">{{ourl6name[0]}}</a></summary>
+            
+                                                                {% comment %} Loop through all the unique L7 indices (under the current l6 index) and create the 5th LEVEL ENTRIES in the sidebar menu {% endcomment %}
+                                                                {% for l7ix in ourl7idxes %}
+                                                                    {%comment%} set the name and URL for the nav-tree entry for the current l7 index {%endcomment%}
+                                                                    {% assign ourl7name = articlepgs | where: 'l3idx', l3ix | where: 'l4idx', l4ix | where: 'l5idx', l5ix | where: 'l6idx', l6ix | where: 'l7idx', l7ix | where_exp: 'page', 'page.l8idx == nil' | map: 'title' | compact | uniq %}
+                                                                    {% assign ourl7url = articlepgs | where: 'l3idx', l3ix | where: 'l4idx', l4ix | where: 'l5idx', l5ix | where: 'l6idx', l6ix | where: 'l7idx', l7ix | where_exp: 'page', 'page.l8idx == nil' | map: 'url' | compact | uniq %}
+                                                                    {%comment%} figure out if we need to make a flat-entry or an accordion entry for this l7ix {%endcomment%}
+                                                                    {% assign ourl8idxes = articlepgs | where: 'l3idx', l3ix | where: 'l4idx', l4ix | where: 'l5idx', l5ix | where: 'l6idx', l6ix | where: '17idx', l7ix | where_exp: 'page', 'page.l8idx' | where_exp: 'page', 'page.l9idx == nil' |sort: 'l8idx' | map: 'l8idx' | compact | uniq %}
+                                                                    {% comment %} Make a flat-entry if there are no l8 "children" to the current l7ix {% endcomment %}
+                                                                    {% if ourl8idxes.size == 0 or ourl8ixes == nil %}
+                                                                        <p class="l7item{% if page.l3idx == l3ix% and page.l4idx == l4ix and page.l5idx == l5ix and page.l6idx == l6ix and page.l7idx == l7ix %}active{%endif%}"><a title="{{ourl7name[0]}}" href="{{ourl7url[0] | remove: '/'}}">{{ourl7name[0]}}</a></p>
+                                                                    {% else %}
+                                                                    {% comment %} Make an accordion entry if there ARE l8 "children" to the current l7ix {% endcomment %}
+                                                                        <details class="sbdeet deet7{% if page.l3idx == l3ix and page.l4idx == l4ix and page.l5idx == l5ix and page.l6idx == l6ix and page.l7idx == l7ix%} inpath{%endif%}"{% if page.l3idx == l3ix and page.l4idx == l4ix and page.l5idx == l5ix and page.l6idx == l6ix and page.l7idx == l7ix %} open {%endif%}><summary><a title="{{ourl7name[0]}}" href="{{ourl7url[0] | remove: '/'}}">{{ourl7name[0]}}</a></summary>
+            
+                                                                            {% comment %} Loop through all the unique L8 indices (under the current l7 index) and create the 6th LEVEL ENTRIES in the sidebar menu {% endcomment %}
+                                                                            {% for l8ix in ourl8idxes %}
+                                                                                {%comment%} set the name and URL for the nav-tree entry for the current l8 index {%endcomment%}
+                                                                                {% assign ourl8name = articlepgs | where: 'l3idx', l3ix | where: 'l4idx', l4ix | where: 'l5idx', l5ix | where: 'l6idx', l6ix | where: 'l7idx', l7ix | where: 'l8idx', l8ix | where_exp: 'page', 'page.l9idx == nil' | map: 'title' | compact | uniq %}
+                                                                                {% assign ourl8url = articlepgs | where: 'l3idx', l3ix | where: 'l4idx', l4ix | where: 'l5idx', l5ix | where: 'l6idx', l6ix | where: 'l7idx', l7ix | where: 'l8idx', l8ix | where_exp: 'page', 'page.l9idx == nil' | map: 'url' | compact | uniq %}
+                                                                                {%comment%} figure out if we need to make a flat-entry or an accordion entry for this l8ix {%endcomment%}
+                                                                                {% assign ourl9idxes = articlepgs | where: 'l3idx', l3ix | where: 'l4idx', l4ix | where: 'l5idx', l5ix | where: 'l6idx', l6ix | where: '17idx', l7ix | where: 'l8idx', l8ix | where_exp: 'page', 'page.l9idx' | where_exp: 'page', 'page.l10idx == nil' |sort: 'l9idx' | map: 'l9idx' | compact | uniq %}
+                                                                                {% comment %} Make a flat-entry if there are no l9 "children" to the current l8ix {% endcomment %}
+                                                                                {% if ourl9idxes.size == 0 or ourl9ixes == nil %}
+                                                                                    <p class="l8item{% if page.l3idx == l3ix% and page.l4idx == l4ix and page.l5idx == l5ix and page.l6idx == l6ix and page.l7idx == l7ix and page.18idx == l8ix %}active{%endif%}"><a title="{{ourl8name[0]}}" href="{{ourl8url[0] | remove: '/'}}">{{ourl8name[0]}}</a></p>
+                                                                                {% else %}
+                                                                                {% comment %} Make an accordion entry if there ARE l9 "children" to the current l8ix {% endcomment %}
+                                                                                    <details class="sbdeet deet7{% if page.l3idx == l3ix and page.l4idx == l4ix and page.l5idx == l5ix and page.l6idx == l6ix and page.l7idx == l7ix and page.l8idx == l8ix %} inpath{%endif%}"{% if page.l3idx == l3ix and page.l4idx == l4ix and page.l5idx == l5ix and page.l6idx == l6ix and page.l7idx == l7ix and page.l8idx == l8ix %} open {%endif%}><summary><a title="{{ourl8name[0]}}" href="{{ourl8url[0] | remove: '/'}}">{{ourl8name[0]}}</a></summary>
+
+                                                                                    
+ 
+
+                                                                                    </details>
+                                                                                {%endif%}
+                                                                            {%endfor%}
+                                                                        </details>
+                                                                    {%endif%}
+                                                                {%endfor%}
+                                                            </details>
+                                                        {%endif%}
+                                                    {%endfor%}
+                                                </details>
+                                            {%endif%}
+                                        {%endfor%}
+                                    </details>
+                                {%endif%}
+                            {%endfor%}
+                        </details>
+                    {%endif%}
+                {%endfor%}
+            {%endif%}
+        </div>
+    </ul>
+</nav>
