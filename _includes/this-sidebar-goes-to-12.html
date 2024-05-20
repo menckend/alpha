@@ -2,7 +2,7 @@
     <ul class="bs-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2" "style="margin:0; padding:0;">
         <div class="mencknav left-sidebar-chunk">
             <div>
-                {% assign titlepages = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx | where_exp: 'l3idx == nil'| where_exp: 'l4idx == nil' | where_exp: 'l5idx == nil' | where_exp: 'l6idx == nil' | where_exp: 'l7idx == nil' | where_exp: 'l8idx == nil' | where_exp: 'l9idx == nil | where_exp: 'l10idx == nil' | where_exp: 'l11idx == nil' %}
+                {% assign titlepages = site.pages | where: 'l1idx', page.l1idx | where: 'l2idx', page.l2idx | where_exp: 'page', 'page.l3idx == nil'| where_exp: 'page', 'page.l4idx == nil' | where_exp: 'page', 'page.l5idx == nil' | where_exp: 'page', 'page.l6idx == nil' | where_exp: 'page', 'page.l7idx == nil' | where_exp: 'page', 'page.l8idx == nil' | where_exp: 'page', 'page.l9idx == nil' | where_exp: 'page', 'page.l10idx == nil' | where_exp: 'page', 'page.l11idx == nil' %}
                 {% if titlepages.size > 2 %}
                     <p><strong><a class="sbtitle">Oops!  There are {{titlepages.size}} pages using the same index.  Look for frontmatter matching: {{ titlepages[0].url }}</a></strong></p>
                 {% else %}
