@@ -114,4 +114,3 @@ The name (Basic Input-Output System) says it all
 {% capture summary %}### Utility Compute{% endcapture %}{% include details.html %}
 {% endcapture %}
 {% capture summary %}## Examples of Layered Architecture Models{% endcapture %}{% include details.html %}
-{% include links.html %}

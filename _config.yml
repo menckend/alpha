@@ -92,8 +92,8 @@ description: "A site for me to put things that I think may be worth sharing (som
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only
-# url: http://menckend.githubio.com
-# baseurl: /writing
+url: http://menckend.githubio.com/alpha
+baseurl: /
 
 github: [metadata]
 

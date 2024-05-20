@@ -145,5 +145,3 @@ The name (Basic Input-Output System) says it all
 ...
 {% endcapture %}
 {% capture summary %}expand/collapse{% endcapture %}{% include details.html %}
-
-{% include links.html %}

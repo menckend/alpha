@@ -8,5 +8,3 @@ summary: "Still migrating content from Confluence"
 ---
 
 ![image](./capacity-resiliency-allactive.drawio.svg){:class="img-fluid"}
-
-{% include links.html %}
