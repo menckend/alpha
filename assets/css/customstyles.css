@@ -580,6 +580,7 @@ details[open] > summary:before {
       max-width:1520px
   }
 }
+/*
 @media (min-width: 1700px) {
   .container-xxl {
       max-width:1620px
@@ -600,7 +601,7 @@ details[open] > summary:before {
       max-width:2120px
   }
 }
-
+*/
 
 .status-btn:hover, .status-btn:focus, .status-btn:not(:disabled):not(.disabled):active, .status-btn:not(:disabled):not(.disabled).active, .show > .status-btn.dropdown-toggle {
   color: rgb(38, 92, 140);
