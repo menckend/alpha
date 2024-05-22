@@ -7,8 +7,8 @@
 
 <style>
 	path {
-		stroke: none;
-		stroke-width: 1;
+		stroke: #347DBE;
+		stroke-width: .05%;
 		stroke-dasharray: none;
 		stroke-linecap: butt;
 		stroke-dashoffset: 0;
