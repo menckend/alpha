@@ -3,7 +3,7 @@ title: "Welcome to Menckenania"
 pagenav: false
 toc: false
 permalink: index.html
-summary: "Part portfolio, part blog (all performative screaming into the abyss)"
+summary: "Part portfolio, part blog."
 type: "pages"
 layout: "page"
 ---
@@ -16,5 +16,5 @@ Also recently, I found myself motivated to try to re-define and re-tool the proc
 
 Long-story short, I started experimenting with Github "pages" and "actions" (and "projects") and doing a lot of futzing around with Jekyll configurations, Liquid templating, Saas/CSS, and javascript.  Along the way, I wound up with a baseline github repository that seemed like a pretty nice home for things I write.  So, here we are.
 
-The works here are my own; you'll find them categorized under the drop-down arrows in the top-right. Adore/ignore/abhor them as you deem appropriate.  *Whatever* your take, I hope you find them as much fun to read as I did to write.
+The works here are my own; you'll find them categorized under the drop-down arrows in the top-right. Adore/ignore/abhor them, or... *don't*, I guess?  *Whatever* your take, I hope you find them as much fun to read as I did to write.
 
