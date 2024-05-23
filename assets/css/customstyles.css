@@ -581,7 +581,6 @@ details[open] > summary:before {
       max-width:1520px
   }
 }
-/*
 @media (min-width: 1700px) {
   .container-xxl {
       max-width:1620px
@@ -592,6 +591,8 @@ details[open] > summary:before {
       max-width:1720px
   }
 }
+/*
+
 @media (min-width: 1900px) {
   .container-xxl {
       max-width:1820px
