@@ -1,17 +1,17 @@
 <footer>
-  <div>
-    <div class="container-xxl" style="padding-top: 32px;">
-      <div class="col-12 footer d-flex flex-row-reverse" style="padding-right: 0px;">
-        <span>
-          &copy;{{ site.time | date: "%Y"  }} {{site.company_name}}. All rights reserved. <br />
-          {% if page.last_updated %}
-            Page last updated:> {{page.last_updated}} <br/>
-          {% endif %} 
-          <div style="margin-right: 30px;">Site last generated: {{ site.time | date: "%b %-d, %Y"  }} </div> <br />
-            <img src="{{ "assets\images\footer-logo-combined-blue.png" }}" style="margin:0px; margin-left: 160px; margin-top: -4.0em; padding:0px;height:3.5em; display:inline-block;"/>
-          <br />
-        </span>
-      </div>
-  </div>
-  </div>
+  <div class="container-xxl" style="padding-top: 32px;">
+    <div class="col-12 footer d-flex flex-row-reverse" style="padding-right: 0px;">
+      <span>
+        &copy;{{ site.time | date: "%Y"  }} {{site.company_name}}. All rights reserved. <br />
+        {% if page.last_updated %}
+        Page last updated:> {{page.last_updated}} <br/>
+      {% endif %} 
+
+        <span style="margin-right: 30px;">Site last generated: {{ site.time | date: "%b %-d, %Y"  }} <br></span>
+      </span>
+    </div>
+    <div class="col-12 footer d-flex flex-row-reverse" style="padding-right: 0px;">
+        <img src="assets\images\footer-logo-combined-blue.png" style="margin-top: -1.5em; padding:0px;height:3.5em; display:inline-block;">
+
+</div></div>
 </footer>
