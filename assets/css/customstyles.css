@@ -1,147 +1,132 @@
+
 /* Mencken's customizations start here  */
 /*                                      */
 /*                                      */
 
 :root {
-    --menck-content-bg: white;
-    --menck-content-txt: black;
-    --menck-tn-bg: #347DBE;
-    --menck-tn-border: #347DBE;
-    --menck-tn-text: white;
-    --menck-tn-dd-border: whitesmoke;
-    --menck-tn-dd-txt: #347DBE;
-    --menck-tn-dd-bg: white;
-    --menck-sb-bg: whitesmoke;
-    --menck-sb-text: #347DBE;
-    --menck-sb-shadow: grey;
-    --menck-sb-border: #347DBE;
-    --menck-summary-bar: #347DBE;
-    --menck-summary-txt: #347DBE;
-    --menck-btn-bg: whitesmoke;
-    --menck-btn-border: #dcdcdc;
-    --menck-btn-txt: #347DBE;
-    --menck-deets-bg: none;
-    --menck-deets-border: none;
-    --bs-border-color-translucent: grey;
+  --menck-content-bg: white;
+  --menck-content-txt: black;
+  --menck-tn-bg: #347DBE;
+  --menck-tn-border: #347DBE;
+  --menck-tn-text: white;
+  --menck-tn-dd-border: whitesmoke;
+  --menck-tn-dd-txt: #347DBE;
+  --menck-tn-dd-bg: white;
+  --menck-sb-bg: whitesmoke;
+  --menck-sb-text: #347DBE;
+  --menck-sb-shadow: grey;
+  --menck-sb-border: #347DBE;
+  --menck-summary-bar: #347DBE;
+  --menck-summary-txt: #347DBE;
+  --menck-btn-bg: whitesmoke;
+  --menck-btn-border: #dcdcdc;
+  --menck-btn-txt: #347DBE;
+  --menck-deets-bg: none;
+  --menck-deets-border: none;
+  --bs-border-color-translucent: grey;
   }
 
-  .btn-menck-tn {
-    --bs-btn-color: var(--menck-tn-text);
-    --bs-btn-bg:  var(--menck-tn-bg);
-    --bs-btn-border-color: grey;
-    --bs-btn-hover-color: var(--menck-tn-text);
-    --bs-btn-hover-bg:var(--menck-tn-bg);
-    --bs-btn-hover-border-color: #grey;
-    --bs-btn-active-color:var(--menck-tn-text);
-    --bs-btn-active-bg:var(--menck-tn-bg);
-    --bs-btn-active-border-color:grey;
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: var(--menck-tn-bg);
-    --bs-btn-disabled-border-color: grey;
+.btn-menck-tn {
+  --bs-btn-color: var(--menck-tn-text);
+  --bs-btn-bg:  var(--menck-tn-bg);
+  --bs-btn-border-color: grey;
+  --bs-btn-hover-color: var(--menck-tn-text);
+  --bs-btn-hover-bg:var(--menck-tn-bg);
+  --bs-btn-hover-border-color: #grey;
+  --bs-btn-active-color:var(--menck-tn-text);
+  --bs-btn-active-bg:var(--menck-tn-bg);
+  --bs-btn-active-border-color:grey;
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--menck-tn-bg);
+  --bs-btn-disabled-border-color: grey;
   }
     
   #bdNavbar > div.offcanvas-body > ul.navbar-nav.flex-row> li > * {
-    background-color: var(--menck-tn-bg) !important;
-    color:  var(--menck-tn-text) !important;
-  }
-
-/*
-  .bd-navbar .dropdown-menu {
-    --bs-dropdown-link-hover-bg: var(--menck-tn-bg);
-    --bs-dropdown-link-active-bg: var(--menck-tn-bg);
-    --bs-dropdown-color: var(--menck-tn-text);
-    --bs-dropdown-bg: var(--menck-tn-bg);
-    --bs-dropdown-border-color: var(-menck-btn-border);
-    --bs-dropdown-border-width: 2px;
-    }
-*/
-
-  .dropdown-menu {
-/*    --bs-dropdown-bg: var(--menck-tn-bg); */
-    --bs-dropdown-bg: whitesmoke;
-    --bs-dropdown-border-color: var(--bs-border-color-translucent);
-    --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
-    --bs-dropdown-link-color: var(--menck-tn-bg));
-    --bs-dropdown-link-hover-color: var(--menck-tn-bg));
-/*    --bs-dropdown-link-hover-bg: var(--menck-tn-bg); */
-    --bs-dropdown-link-hover-bg: whitesmoke;
-    --bs-dropdown-link-active-color: var(--menck-tn-bg);
-/*    --bs-dropdown-link-active-bg: var(--menck-tn-bg); */
-    --bs-dropdown-link-active-bg: whitesmoke; 
-    --bs-dropdown-link-disabled-color: var(--menck-tn-bg);
-    --bs-dropdown-header-color: #6c757d;
-
-    color: var(--menck-tn-text);
-    background-color: var(--menck-tn-bg);
-/*    border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);
-    border-radius: var(--bs-dropdown-border-radius);; */
-    border-style: none;
+  background-color: var(--menck-tn-bg) !important;
+  color:  var(--menck-tn-text) !important;
   }
   
-  .dropdown-item {
-    display: block;
-    width: 100%;
-    color: var(--menck-tn-text);
-    text-align: inherit;
-    text-decoration: none;
-    white-space: nowrap;
-    background-color: transparent;
-    border-style: none;
+.dropdown-menu {
+  --bs-dropdown-bg: whitesmoke;
+  --bs-dropdown-border-color: var(--bs-border-color-translucent);
+  --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
+  --bs-dropdown-link-color: var(--menck-tn-bg));
+  --bs-dropdown-link-hover-color: var(--menck-tn-bg));
+  --bs-dropdown-link-hover-bg: whitesmoke;
+  --bs-dropdown-link-active-color: var(--menck-tn-bg);
+  --bs-dropdown-link-active-bg: whitesmoke; 
+  --bs-dropdown-link-disabled-color: var(--menck-tn-bg);
+  --bs-dropdown-header-color: #6c757d;
+  color: var(--menck-tn-text);
+  background-color: var(--menck-tn-bg);
+  border-radius: var(--bs-dropdown-border-radius);; */
+  border-style: none;
   }
 
-  .dropdown-item:hover, .dropdown-item:focus {
-    color: var(--menck-tn-text);
-    background-color: transparent;
+.dropdown-item {
+  display: block;
+  width: 100%;
+  color: var(--menck-tn-text);
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-style: none;
   }
 
-  .dropdown-item.active, .dropdown-item:active {
-    color: var(--menck-tn-text);
-    background-color: transparent;
+.dropdown-item:hover, .dropdown-item:focus {
+  color: var(--menck-tn-text);
+  background-color: transparent;
   }
 
-  .dropdown-item.disabled, .dropdown-item:disabled {
-    color: var(--menck-tn-text);
-    background-color: transparent;
-  }
-  
-  .dropdown-menu.show {
-    display: block;
-  }
-  
-  .dropdown-header {
-    display: block;
-    padding: var(--bs-dropdown-header-padding-y) var(--bs-dropdown-header-padding-x);
-    margin-bottom: 0;
-    font-size: 0.875rem;
-    color: var(--bs-dropdown-header-color);
-    white-space: nowrap;
-  }
-  
-  .dropdown-item-text {
-    display: block;
-    padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
-    color: var(--menck-tn-text);
+.dropdown-item.active, .dropdown-item:active {
+  color: var(--menck-tn-text);
+  background-color: transparent;
   }
 
-  .offcanvas, .offcanvas-xxl, .offcanvas-xl, .offcanvas-lg, .offcanvas-md, .offcanvas-sm {
-    --bs-offcanvas-zindex: 1045;
-    --bs-offcanvas-width: 400px;
-    --bs-offcanvas-height: 30vh;
-    --bs-offcanvas-padding-x: 1rem;
-    --bs-offcanvas-padding-y: 1rem;
-    --bs-offcanvas-color: var(--menck-tn-text);
-    --bs-offcanvas-bg: var(--menck-tn-bg);
-    --bs-offcanvas-border-width: var(--bs-border-width);
-    --bs-offcanvas-border-color: var(--bs-border-color-translucent);
-/*    --bs-offcanvas-box-shadow: var(--bs-box-shadow-sm); */
-    --bs-offcanvas-transition: transform 0.3s ease-in-out;
-    --bs-offcanvas-title-line-height: 1.5;
+.dropdown-item.disabled, .dropdown-item:disabled {
+  color: var(--menck-tn-text);
+  background-color: transparent;
+  }
+
+.dropdown-menu.show {
+  display: block;
+  }
+
+.dropdown-header {
+  display: block;
+  padding: var(--bs-dropdown-header-padding-y) var(--bs-dropdown-header-padding-x);
+  margin-bottom: 0;
+  font-size: 0.875rem;
+  color: var(--bs-dropdown-header-color);
+  white-space: nowrap;
+  }
+
+.dropdown-item-text {
+  display: block;
+  padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+  color: var(--menck-tn-text);
+  }
+
+.offcanvas, .offcanvas-xxl, .offcanvas-xl, .offcanvas-lg, .offcanvas-md, .offcanvas-sm {
+  --bs-offcanvas-zindex: 1045;
+  --bs-offcanvas-width: 400px;
+  --bs-offcanvas-height: 30vh;
+  --bs-offcanvas-padding-x: 1rem;
+  --bs-offcanvas-padding-y: 1rem;
+  --bs-offcanvas-color: var(--menck-tn-text);
+  --bs-offcanvas-bg: var(--menck-tn-bg);
+  --bs-offcanvas-border-width: var(--bs-border-width);
+  --bs-offcanvas-border-color: var(--bs-border-color-translucent);
+  /*  --bs-offcanvas-box-shadow: var(--bs-box-shadow-sm); */
+  --bs-offcanvas-transition: transform 0.3s ease-in-out;
+  --bs-offcanvas-title-line-height: 1.5;
   }
 
 .menck-main{
-    grid-area:main;
-    padding-top: 0px;
-    }
+  grid-area:main;
+  padding-top: 0px;
+  }
 
 .menck-tn-bg-color {
   color: var(--menck-tn-bg) !important;
@@ -209,7 +194,6 @@
     }
 
 /* Sidebar item padding*/
-
 .left-sidebar-chunk > p {
   padding: opx;
   margin: 0px;
@@ -345,83 +329,96 @@ div.medianav * {
     padding: 8px;
 }
 
-/*  Set desired padding for hierarchical indent of content in sidebar menu */
-.l3item > a:before,
-.l3itemactive > a:before,
-.deet3 > summary:before {
-  padding-left: 4px;
-  padding-right: 8px;
+/*  Set desired margins for hierarchical indent of content in sidebar menu */
+
+
+.l3item, .l3itemactive, .deet3 > summary,
+.l4item, .l4itemactive, .deet4 > summary,
+.l5item, .l5itemactive, .deet5 > summary,
+.l6item, .l6itemactive, .deet6 > summary,
+.l7item, .l7itemactive, .deet7 > summary,
+.l8item, .l8itemactive, .deet8 > summary,
+.l9item, .l9itemactive, .deet9 > summary,
+.l10item, .l10itemactive, .deet10 > summary,
+.l11item, .l11itemactive, .deet11 > summary {
+  margin: 0px;
+  padding: 0px;
+  margin-right: 8px;
   text-decoration: none;
   }
 
-.l4item > a:before,
-.l4itemactive > a:before,
-.deet4 > summary:before {
-  padding-left: 20px;
-  padding-right: 8px;
-  text-decoration: none;
-  }
-  
-.l5item > a:before,
-.l5itemactive > a:before,
-.deet5 > summary:before {
-  padding-left: 36px;
-  padding-right: 8px;
+
+.l3item,
+.l3itemactive,
+.deet3 > summary {
+  margin-left: 4px;
+  margin-right: 8px;
   text-decoration: none;
   }
 
-.l6item > a:before,
-.l6itemactive > a:before,
-.deet6 > summary:before {
-  padding-left: 52px;
-  padding-right: 8px;
-  text-decoration: none;
-  }
-
-.l7item > a:before,
-.l7itemactive > a:before,
-.deet7 > summary:before {
-  padding-left: 68px;
-  padding-right: 8px;
-  text-decoration: none;
-  }
-
-.l8item > a:before,
-.l8itemactive > a:before,
-.deet8 > summary:before {
-  padding-left: 84px;
+.l4item,
+.l4itemactive,
+.deet4 > summary {
+  margin-left: 20px;
   padding-right: 8px;
   text-decoration: none;
   }
   
-.l9item > a:before,
-.l9itemactive > a:before,
-.deet9 > summary:before {
-  padding-left: 100px;
+.l5item,
+.l5itemactive,
+.deet5 > summary {
+  margin-left: 36px;
+  padding-right: 8px;
+  text-decoration: none;
+  }
+
+.l6item,
+.l6itemactive,
+.deet6 > summary {
+  margin-left: 52px;
+  padding-right: 8px;
+  text-decoration: none;
+  }
+
+.l7item,
+.l7itemactive,
+.deet7 > summary {
+  margin-left: 68px;
+  padding-right: 8px;
+  text-decoration: none;
+  }
+
+.l8item,
+.l8itemactive,
+.deet8 > summary {
+  margin-left: 84px;
   padding-right: 8px;
   text-decoration: none;
   }
   
-.l10item > a:before,
-.l10itemactive > a:before,
-.deet10 > summary:before {
-  padding-left: 116px;
+.l9item,
+.l9itemactive,
+.deet9 > summary {
+  margin-left: 100px;
+  padding-right: 8px;
+  text-decoration: none;
+  }
+  
+.l10item,
+.l10itemactive,
+.deet10 > summary {
+  margin-left: 116px;
   padding-right: 8px;
   text-decoration: none;
   }
 
-.l11item > a:before,
-.l11itemactive > a:before,
-.deet11 > summary:before {
-  padding-left: 132px;
+.l11item,
+.l11itemactive,
+.deet11 > summary {
+  margin-left: 132px;
   padding-right: 8px;
   text-decoration: none;
   }
-
-
-
-
-
 
 
 /*  Set text shadow headers in page contents */
@@ -451,37 +448,12 @@ div.medianav * {
   border-radius: 5px;
 }
 
-p.l11item, p.l11itemactive,
-p.l10item, p.l10itemactive,
-p.l9item, p.l9itemactive,
-p.l8item, p.l8itemactive,
-p.l7item, p.l7itemactive,
-p.l6item, p.l6itemactive,
-p.l5item, p.l5itemactive,
-p.l4item, p.l4itemactive,
-p.l3item, p.l3itemactive
- {
-  margin: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
 .menck-sblinks {
   background-color: var(--menck-sb-bg);
   border-radius:10px;
 }
 div.mencknav {
-/*
-    margin-top: 8px;
-    margin-bottom: 8px;
-    border-bottom-color: var(--menck-sb-border);
-    border-bottom-width: 2px;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-top-style: none;
-*/
 }
-
 
 div.mencknav * {
     text-decoration: none;
@@ -489,7 +461,6 @@ div.mencknav * {
     padding-top: 2px;
     color: var(--menck-sb-txt);
 }
-
 
 blockquote {
   border-radius: 5px;
@@ -554,20 +525,6 @@ details[open] > summary:before {
   display: inline !important;
 }
 
-
-
-/*  margin-bottom: 1rem !important;
-  color: #6c757d !important;
-  font-size: 1em !important;
-  box-sizing: border-box !important;
-  margin: 1.5em 10px !important;
-  padding: 0.5em 10px !important;
-  border-left-color:#0dcaf0 !important;
-  border-left-style: solid !important;
-  border-left-width: 5px !important;
-  */
-
-  */
 
   
 @media (min-width: 1500px) {
