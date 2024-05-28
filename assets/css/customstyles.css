@@ -276,6 +276,7 @@ p.l3item > a:before {
     content: '\F584';
     font-family: "bootstrap-icons";
     text-decoration: bold;
+    margin-right: 8px;
   }
 
   #my_toc {
@@ -296,6 +297,7 @@ p.l3itemactive > a:before {
     content: '\F582';
     font-family: "bootstrap-icons";
     text-shadow: 0 0 3px #fff, 0 0 5px var(--menck-sb-shadow), 0 0 7px var(--menck-sb-shadow);
+    margin-right: 8px;
   }
 
 /* Replace details element's default is-not-open indicator with "plus" icon */
@@ -304,8 +306,7 @@ sbdeet summary:before {
   content: '\F4FD';
   font-family: "bootstrap-icons";
   text-decoration: none;
-  padding-left: 8px;
-  padding-right: 8px;
+  margin-right: 8px;
   }
 
 /* Replace details element's default is-open indicator with "minus" icon */
@@ -313,7 +314,7 @@ details[open] > summary:before {
   content: '\F2E9';
   font-family: "bootstrap-icons";
   text-decoration: none;
-  padding-right: 8px;
+  margin-right: 8px;
 }
 
 /* Try topnav color scheme in sidebar.  */
@@ -347,78 +348,62 @@ div.medianav * {
   text-decoration: none;
   }
 
-
 .l3item,
 .l3itemactive,
 .deet3 > summary {
   margin-left: 4px;
-  margin-right: 8px;
-  text-decoration: none;
   }
 
 .l4item,
 .l4itemactive,
 .deet4 > summary {
   margin-left: 20px;
-  padding-right: 8px;
-  text-decoration: none;
   }
   
 .l5item,
 .l5itemactive,
 .deet5 > summary {
   margin-left: 36px;
-  padding-right: 8px;
-  text-decoration: none;
   }
 
 .l6item,
 .l6itemactive,
 .deet6 > summary {
   margin-left: 52px;
-  padding-right: 8px;
-  text-decoration: none;
   }
 
 .l7item,
 .l7itemactive,
 .deet7 > summary {
   margin-left: 68px;
-  padding-right: 8px;
-  text-decoration: none;
   }
 
 .l8item,
 .l8itemactive,
 .deet8 > summary {
   margin-left: 84px;
-  padding-right: 8px;
-  text-decoration: none;
   }
   
 .l9item,
 .l9itemactive,
 .deet9 > summary {
   margin-left: 100px;
-  padding-right: 8px;
-  text-decoration: none;
   }
   
 .l10item,
 .l10itemactive,
 .deet10 > summary {
   margin-left: 116px;
-  padding-right: 8px;
-  text-decoration: none;
   }
 
 .l11item,
 .l11itemactive,
 .deet11 > summary {
   margin-left: 132px;
-  padding-right: 8px;
-  text-decoration: none;
   }
+
+
+
 
 
 /*  Set text shadow headers in page contents */
