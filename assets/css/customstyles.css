@@ -435,8 +435,11 @@ div.medianav * {
 
 .menck-sblinks {
   background-color: var(--menck-sb-bg);
+  border-left: solid 8px var(--menck-sb-bg);
   border-radius:10px;
-}
+  line-height: 1.5;
+  }
+  
 div.mencknav {
 }
 
