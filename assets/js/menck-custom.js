@@ -14,10 +14,10 @@ $(document).ready(function () {
         $(".collapse").each(function () {
             const storagecomp = "show_" + this.id;
             if (sessionStorage.getItem(storagecomp) === "false") {
-                $(this).collapse('hide');
+//                $(this).collapse('hide');
             };
             if (sessionStorage.getItem(storagecomp) === "true") {
-                $(this).collapse('show');
+//                $(this).collapse('show');
             };
         });
     }
