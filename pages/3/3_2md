@@ -1,0 +1,81 @@
+---
+l1idx: 3
+l2idx: 2
+title: "My first F/OSS project"
+permalink: 3_2.html
+summary:  "At least as much journey than destination, but a fun package of Python modules to poll Arista switches' EOS API and turn their collective run-states into a GNS3 virtual lab."
+pagenav: false
+toc: false
+---
+
+## TL/DR
+
+I was futzing around a couple of years ago with some BASH scripts to convert Arista switch configs (from "live" physical switches) to functionally equivalent, but cEOS-friendly configurations that I could run in a GNS3 virtual-lab.  I circled back a couple of months ago and decided to have a go at "doing it right."  The result is https://[menckend.github.io/dcnodatg/](https://menckend.github.io/dcnodatg/), which is out there now, in case anyone has a use for it.
+
+## Verbose Version
+
+Like I said above, I was hacking away at this basic functionality a couple of years ago, but decided to revisit it recently and be a bit more "rigorous about it.
+
+#### Things it (the dcnodatg Python package) does
+
+##### Takes input as CLI or Python function arguments OR via interactive prompts
+
+- A list of switch names (must be DNS resolvable)
+- Username/password for authenticating to Arista eAPI
+- IP address of a GNS3 server
+- Project name to use for the new project it will create on the GNS3 server
+
+##### Gets freaky with the Python and APIs
+
+This is all greasy kids' stuff for "real" developers, but it was pretty exciting to me figuring it out
+
+- Part 1  (asynchronous loop; 10-20x faster than synchronous execution)
+  - Uses the Python asyncio module's to_thread function to enable *concurrent* polling of multiple Arista switches
+    - I let it use up to twenty threads without any issues -- the threads themselves are short-lived and low-resource
+    - *Without* asyncio.to_thread, it took a couple of seconds to poll each switch, and each one had to finish before the next one could start
+- Part 2 (synchronous execution, but no significantly blocking functions)
+  - Gets startup-config, show version, show lldp neighbors, and show lldp local output from each switch.
+  - Sanitizes its copy of each switch's startup-config for life as a cEOS container
+    - Setting a system_mac at the container-level that replicates the production switch's system-mac
+      - The docker bridge defaults to assigning containers MAC addresses with the U/L bit set to "L", but MLAG requires it to be set to "U"
+    - Getting rid of all the CPU-intensive, functionally irrelevant management-plane configuration options
+    - Getting rid of configuration items that aren't applicable-to/valid-on the cEOS image
+  - Builds a list of switch-to-switch connections to be replicated in the GNS lab
+    - Grabs the LLDP neighbor output from every switch
+    - Grabs the LLDP local-info from every switch
+    - Iterates this, enumerates that, aggreates the other...
+      - Ends up with a list of switch/interface : switch/interface mappings that need to be replicated
+    - Creates a new project on the GNS3 server
+  - Pulls the list of exising templates on the GNS3 server (via GNS3 API v2, using Python requests library)
+    - Iterates through that and the list of "show version" output from all the switches
+        - Ending up with the GNS3 UID of the cEOS-image template on the GNS3 server that "matches" each switch's EOS version
+  - Creates a new node on the GNS3 project for each Arista switch that it was originally told to process
+  - Pushes a copy of the switch's startup-config onto the specific docker container that the new GNS3 node is currently using
+    - Using the docker client API's put_archive function
+      - When the container is not running, only its / directory can be used as the destination for files transferred this way.
+      - We want it to end up in /mnt/flash -- but we dont' wont' every single container to start running at once, and we also don't want to have to wait 5-10 seconds for each container to finish shutting down.
+  - Tells the GNS3 server to start the GNS3-node/cEOS-container (just long enough to use the Docker API to run "mv /startup-config /mnt/flash/startup-config"
+  - Part 2.5 (asynchronous loop)
+    - Sends API calls to GNS3, telling it to STOP each node after it's finished running the docker API call to move the startup-config around from / to /mnt/flash
+    - Moves on to the next-switch in the part-2 loop while it's waiting for the last one to finish shutting down.
+    - Without this part, it took about ten seconds to get through every switch before it would move onto the next one.
+      - *With* this part added, it ran about eight times faster
+- Part 3 (synchronous)
+- Project name to use for the new project it will create on the GNS3 server
+  - Goes back through the data it's collected, and 
+    - Updates the "connections I need to make" list, to include the GNS3 UIDs of each switch
+    - Constructs a list of URLs and JSONs payload for each of those connections
+  - Loops through the list of URL/JSON strings
+    - For each entry, it spawns a "task" requesting that an  aoihttp session send an "awaitable" HTTP POST request to the GNS3 server
+      - Part 3.5 (asynchronous)
+        - The asyncio event loop receives all of these tasks and:
+          - Fires off the POST request of the first task in the queue
+            - While it's waiting for a response; it fires off the POST request from the *next* task in the queue
+              - And while it's waiting, it fires off the POST request from the *next* task in the queue...
+                - etc...
+
+#### Things I learned along the way
+
+So much!  I finally got a bit more "rigorous" in my approach to Python.  I documented just about everything with Python docstrings, and I got Sphinx and its autoapi extension to generate nice-looking documentation from them.  I also got *very* comfortable with github actions and using/modifying/writing workflows to publish my packages to PyPi.  This also involved learning a "fair bit" about the semantics of Python packaging and getting things squared away to the point where the package can be used in-code as a Python module, or outside the Python interpreter as an executable program.
+
+I'm sure I'll have more to say about it later, but that's it in a nutshell for now.
