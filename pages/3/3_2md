@@ -48,7 +48,7 @@ This is all greasy kids' stuff for "real" developers, but it was pretty exciting
     - Creates a new project on the GNS3 server
   - Pulls the list of exising templates on the GNS3 server (via GNS3 API v2, using Python requests library)
     - Iterates through that and the list of "show version" output from all the switches
-        - Ending up with the GNS3 UID of the cEOS-image template on the GNS3 server that "matches" each switch's EOS version
+      - Ending up with the GNS3 UID of the cEOS-image template on the GNS3 server that "matches" each switch's EOS version
   - Creates a new node on the GNS3 project for each Arista switch that it was originally told to process
   - Pushes a copy of the switch's startup-config onto the specific docker container that the new GNS3 node is currently using
     - Using the docker client API's put_archive function
