@@ -16,16 +16,16 @@ I was futzing around a couple of years ago with some BASH scripts to convert Ari
 
 Like I said above, I was hacking away at this basic functionality a couple of years ago, but decided to revisit it recently and be a bit more "rigorous about it.
 
-#### Things it (the dcnodatg Python package) does
+### Things it (the dcnodatg Python package) does
 
-##### Takes input as CLI or Python function arguments OR via interactive prompts
+#### Takes input as CLI or Python function arguments OR via interactive prompts
 
 - A list of switch names (must be DNS resolvable)
 - Username/password for authenticating to Arista eAPI
 - IP address of a GNS3 server
 - Project name to use for the new project it will create on the GNS3 server
 
-##### Gets freaky with the Python and APIs
+#### Gets freaky with the Python and APIs
 
 This is all greasy kids' stuff for "real" developers, but it was pretty exciting to me figuring it out
 
@@ -74,7 +74,7 @@ This is all greasy kids' stuff for "real" developers, but it was pretty exciting
               - And while it's waiting, it fires off the POST request from the *next* task in the queue...
                 - etc...
 
-#### Things I learned along the way
+### Things I learned along the way
 
 So much!  I finally got a bit more "rigorous" in my approach to Python.  I documented just about everything with Python docstrings, and I got Sphinx and its autoapi extension to generate nice-looking documentation from them.  I also got *very* comfortable with github actions and using/modifying/writing workflows to publish my packages to PyPi.  This also involved learning a "fair bit" about the semantics of Python packaging and getting things squared away to the point where the package can be used in-code as a Python module, or outside the Python interpreter as an executable program.
 
