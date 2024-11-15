@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Menckenania"
-pagenav: false
+pagenav: true
 toc: false
 permalink: index.html
 summary: "Part portfolio, part blog."
