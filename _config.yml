@@ -19,10 +19,16 @@ port: 4000
 # the port where the preview is rendered. You can leave this as is unless you have other Jekyll builds using this same port that might cause conflicts. in that case, use another port such as 4006.
 
 exclude:
+  - tmp/
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+  - pages-draft
   - .idea/
   - .gitignore
   - vendor
   - draft-pages/
+
 # these are the files and directories that jekyll will exclude from the build
 
 feedback_subject_line: menckenania feedback
@@ -96,13 +102,6 @@ url: http://menckend.githubio.com/alpha
 baseurl: /
 
 github: [metadata]
-
-exclude:
-  - tmp/
-  - vendor/
-  - Gemfile
-  - Gemfile.lock
-  - pages-draft
 
 emptyArray: []
 
