@@ -553,6 +553,7 @@ table-alpha {
   unicode-bidi: isolate;
   border-spacing: 2px;
   border-color: var(--menck-tn-bg);
+  border-width: 2px;
   background-color: transparent;
   border-top-color: transparent;
   border-bottom-color: transparent;
