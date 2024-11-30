@@ -545,15 +545,20 @@ details[open] > summary:before {
   border-color: whitesmoke;
 }
 
-
-
-.mbtablestyle {
-  border-collapse: collapse;
-
-> table, td, th {
-  border: 1px solid black;
-  }
+table-alpha {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  unicode-bidi: isolate;
+  border-spacing: 2px;
+  border-color: whitesmoke;
+  background-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
 }
+
+
 
 
 /*                                      */
