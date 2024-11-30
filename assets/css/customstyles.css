@@ -551,12 +551,12 @@ table-alpha {
   box-sizing: border-box;
   text-indent: initial;
   unicode-bidi: isolate;
-  border-spacing: 2px;
-  border-color: var(--menck-tn-bg);
+  border-spacing: 2px !important;
+  border-color: var(--menck-tn-bg) !important;
   border-width: 2px;
-  background-color: transparent;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
+  background-color: transparent  !important;
+  border-top-color: transparent  !important;
+  border-bottom-color: transparent  !important;
 }
 
 
