@@ -552,7 +552,7 @@ table-alpha {
   text-indent: initial;
   unicode-bidi: isolate;
   border-spacing: 2px;
-  border-color: whitesmoke;
+  border-color: var(--menck-tn-bg);
   background-color: transparent;
   border-top-color: transparent;
   border-bottom-color: transparent;
