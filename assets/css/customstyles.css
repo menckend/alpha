@@ -42,7 +42,7 @@
   }
 
 
-table-alpha {
+.table-alpha {
   display: table;
   border-collapse: separate;
   box-sizing: border-box;
