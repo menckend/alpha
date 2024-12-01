@@ -40,7 +40,24 @@
   --bs-btn-disabled-bg: var(--menck-tn-bg);
   --bs-btn-disabled-border-color: grey;
   }
+
+
+table-alpha {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  unicode-bidi: isolate;
+  border-spacing: 2px !important;
+  border-color: var(--menck-tn-bg) !important;
+  border-width: 2px;
+  background-color: transparent  !important;
+  border-top-color: transparent  !important;
+  border-bottom-color: transparent  !important;
+}
     
+
+
   #bdNavbar > div.offcanvas-body > ul.navbar-nav.flex-row> li > * {
   background-color: var(--menck-tn-bg) !important;
   color:  var(--menck-tn-text) !important;
@@ -544,22 +561,6 @@ details[open] > summary:before {
   color: rgb(38, 92, 140);
   border-color: whitesmoke;
 }
-
-table-alpha {
-  display: table;
-  border-collapse: separate;
-  box-sizing: border-box;
-  text-indent: initial;
-  unicode-bidi: isolate;
-  border-spacing: 2px !important;
-  border-color: var(--menck-tn-bg) !important;
-  border-width: 2px;
-  background-color: transparent  !important;
-  border-top-color: transparent  !important;
-  border-bottom-color: transparent  !important;
-}
-
-
 
 
 /*                                      */
