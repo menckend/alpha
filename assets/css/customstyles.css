@@ -26,12 +26,10 @@
 --menck-bg1-color: #2a384b;
 --menck-mg1-color: #43536a ;
 --menck-mg2-color: #566c89;
+--menck-mg3-color: #6985aa;
 --menck-fg1-color: whitesmoke ;
 --menck-fg2-color: #3f3f3f ;
-
 --menck-bg2-color: #2a384b;
-
-
 --menck-accent1-color: #424a4e71;
 --menck-accent2-color: #5c839571;
 
@@ -239,10 +237,10 @@ border: hidden;
 details[open] {
 overflow: hidden;
 border-collapse: separate;
-border-color: var(--menck-accent1-color1-color);
+border-color: var(--menck-mg3-color);
 margin-bottom: 15px;
 border-style: hidden;
-background-color: var(--menck-bg1-color);
+background-color: var(--menck-mg3-color);
 border-radius: 5px;
 }
 
@@ -595,7 +593,7 @@ border-color:var(--menck-mg1-color);
 background-color: var(--menck-bg1-color) }
 
 .table-alpha > tbody > tr:nth-child(odd) > td {
-background-color: var(--menck-bg2-color) }
+background-color: var(--menck-mg2-color) }
 
 .table-alpha > tbody > tr > :last-child, 
 .table-alpha > thead > tr > th:last-child {
