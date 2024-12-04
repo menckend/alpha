@@ -574,7 +574,7 @@ details[open] > summary:before {
 }
 table.CodeRay {
   margin: 0px;
-  background-color: #5777a1;
+  background-color:-var(menck-sb-bg);
   color: whitesmoke;
   font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace
   padding-left: 25px;
@@ -604,12 +604,11 @@ table.CodeRay > tbody > tr > td.code  {
 
 .CodeRay .line-numbers, .CodeRay .no {
   background-color:whitesmoke;
-  color:whitesmoke;
   text-align: -webkit-left;
 }
 
 .CodeRay .line-numbers a {
-  color:#5777a1;
+  color:-var(menck-sb-bg);
 }
 
 
