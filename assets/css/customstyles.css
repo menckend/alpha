@@ -566,6 +566,65 @@ details[open] > summary:before {
 }
 
 
+
+/* Style CodeRay code-blocks  */
+
+.highlighter-coderay {
+  padding-left: 35px;
+}
+table.CodeRay {
+  margin: 0px;
+  background-color: #5777a1;
+  color: whitesmoke;
+  font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace
+  padding-left: 25px;
+  border-radius: 8px;
+  border-style:hidden
+}
+
+table.CodeRay td {
+  padding: 2em .75em;
+  vertical-align: top;
+}
+
+table.CodeRay > tbody > tr > td.line-numbers  {
+  border-radius: 8px;
+  border-style:hidden;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding-bottom: 0px;
+  padding-top: 12px;
+
+}
+
+table.CodeRay > tbody > tr > td.code  {
+  padding-top: 12px;
+  padding-bottom: 0px;
+}
+
+.CodeRay .line-numbers, .CodeRay .no {
+  background-color:whitesmoke;
+  color:whitesmoke;
+  text-align: -webkit-left;
+}
+
+.CodeRay .line-numbers a {
+  color:#5777a1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*                                      */
 /* Mencken's customizations end here    */
 /*                                      */
