@@ -26,7 +26,7 @@
 --menck-bg1-color: #2a384b;
 --menck-mg1-color: #43536a ;
 --menck-mg2-color: #566c89;
---menck-mg3-color: #6985aa;
+--menck-mg3-color: #c5d5ea;
 --menck-fg1-color: whitesmoke ;
 --menck-fg2-color: #3f3f3f ;
 --menck-bg2-color: #2a384b;
@@ -355,8 +355,6 @@ div.medianav * {
 }
 
 /*  Set desired margins for hierarchical indent of content in sidebar menu */
-
-
 .l3item, .l3itemactive, .deet3 > summary,
 .l4item, .l4itemactive, .deet4 > summary,
 .l5item, .l5itemactive, .deet5 > summary,
@@ -481,6 +479,7 @@ margin-left: 4%;
 margin-right: 2%;
 padding: .1rem .1rem .1rem 1rem;
 background-color:var(--menck-accent2-color);
+width: 60%
 }
 
 
