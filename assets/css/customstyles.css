@@ -246,6 +246,7 @@
   margin-top: -72px;
   background-color:transparent;  
   color: var(--menck-fg1-color);
+  ; max-width: 10vw;
   }
   
   .menck-sidebar * {
@@ -518,8 +519,8 @@
   blockquote {
   border-radius: 3px;
   border-left: 0.6rem solid var(--menck-bg1-color);
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
   padding: .1rem .1rem .1rem 1rem;
   background-color:var(--menck-accent2-color);
   width: fit-content
@@ -646,9 +647,8 @@
   /* Style CodeRay code-blocks  */
   
   .highlighter-coderay {
-  margin-left: 5vw;
-  margin-right: 5%;
-  padding-left: 16;
+  margin-left: 2.5vw;
+  margin-right: 0.5vw;
   margin-bottom: 16px;
   }
   
@@ -657,7 +657,6 @@
   background-color: var(--menck-bg1-color);
   color: var(--menck-fg1-color);
   font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace
-  padding-left: 25px;
   border-radius: 8px;
   border-style:hidden;
   }
@@ -673,12 +672,13 @@
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   padding-bottom: 0px;
-  padding-top: 12px;
+  padding-top: 0px;
   }
 
   table.CodeRay > tbody > tr > td.code  {
   padding-top: 12px;
   padding-bottom: 0px;
+  padding-right: 9px;
   }
 
   .CodeRay .line-numbers, .CodeRay  .no {
@@ -690,14 +690,10 @@
   color: var(--menck-bg1-color);
   }
 
-table.CodeRay > tbody {
-  margin-right: 16px;
-}
-
 td.code > pre {
   padding-bottom: 16px;
-  max-width: 80vw;
-  } 
+  max-width: 45vw;
+} 
 
 
   /*                                      */
