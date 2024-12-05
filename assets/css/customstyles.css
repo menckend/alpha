@@ -661,12 +661,12 @@
   border-radius: 8px;
   border-style:hidden;
   }
-  
+
   table.CodeRay td {
   padding: 2em .75em;
   vertical-align: top;
   }
-  
+
   table.CodeRay > tbody > tr > td.line-numbers  {
   border-radius: 8px;
   border-style:hidden;
@@ -675,13 +675,13 @@
   padding-bottom: 0px;
   padding-top: 12px;
   }
-  
+
   table.CodeRay > tbody > tr > td.code  {
   padding-top: 12px;
   padding-bottom: 0px;
   }
-  
-  .CodeRay .line-numbers, .CodeRay .no {
+
+  .CodeRay .line-numbers, .CodeRay  .no {
   background-color: var(--menck-fg1-color);
   text-align: -webkit-left;
   }
@@ -689,10 +689,16 @@
   .CodeRay .line-numbers a {
   color: var(--menck-bg1-color);
   }
-  
-  
-  
-  
+
+table.CodeRay > tbody {
+max-width: 50% !important;
+margin-right: 16px !important;
+}
+
+td.code > pre {
+  padding-bottom: 16px;
+  max-width: 80vw !important;
+  } 
   
   /*                                      */
   /* Mencken's customizations end here    */
