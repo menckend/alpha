@@ -6,6 +6,7 @@ source "https://rubygems.org"
 # to publish without github page
 #gem "jekyll"
 
+gem "glib2"
 gem "jekyll", "~> 4.3"
 gem "psych", "~> 3.3"
 gem 'rsvg2', '~> 3.0', '>= 3.0.7'
