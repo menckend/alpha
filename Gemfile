@@ -6,13 +6,14 @@ source "https://rubygems.org"
 # to publish without github page
 #gem "jekyll"
 
-gem "glib2", "~> 3.5.1"
-gem "jekyll", "~> 4.3"
-gem "psych", "~> 3.3"
+gem "glib2"
+gem "jekyll"
+gem "psych"
 gem 'rsvg2'
-gem "webrick", "~> 1.7"
-gem "bootstrap", "~> 5.3"
-gem "katex", "~> 0.10.0"
-gem "jekyll-relative-links", "~> 0.6.1"
+gem "webrick"
+gem "bootstrap"
+gem "katex"
+gem "jekyll-relative-links"
 gem "rouge"
-gem "kramdown-syntax-coderay", "~> 1.0", ">= 1.0.1"
+gem "kramdown-syntax-coderay"
+
