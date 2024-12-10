@@ -8,7 +8,7 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 4.3"
 gem "psych", "~> 3.3"
-gem 'rsvg2', '~> 3.0', '>= 3.0.7'
+gem 'rsvg2', '~> 3.0', '== 3.0.7'
 gem "webrick", "~> 1.7"
 gem "bootstrap", "~> 5.3"
 gem "katex", "~> 0.10.0"
