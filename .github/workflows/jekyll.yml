@@ -33,7 +33,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-     - name: install glib2
+      - name: install glib2
         run:
           sudo apt-get update
           sudo apt-get install ruby-glib2
