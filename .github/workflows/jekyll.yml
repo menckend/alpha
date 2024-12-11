@@ -36,7 +36,7 @@ jobs:
       - name: install glib2
         run:
           sudo apt-get update &&
-          sudo apt-get install -y ruby-glib2
+          sudo apt-get install -y libglib2.0-dev
           
       - name: Setup Ruby
 
