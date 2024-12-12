@@ -664,9 +664,11 @@ border-color: whitesmoke;
 .table-alpha > tbody > tr > td, 
 .table-alpha > thead > tr > th {
   padding: 0px;
+  padding-left: 4px;
+  padding-right: 4px;
   border-style: none;
   border-right-style:solid; 
-  border-width: 3px;
+  border-width: 4px;
   background-color: var(--menck-bg1-color) 
 }
 
