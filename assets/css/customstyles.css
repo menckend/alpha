@@ -722,7 +722,8 @@ td.code > pre {
 
 svg > g.menck-footer-logo {
   fill: var(--menck-fg1-color);
-  
+  transform:  scale(8%, 8%) translate(-80px, 10px);
+  display: inline;  
 }
 
 /*                                      */
