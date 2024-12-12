@@ -57,7 +57,7 @@
   --menck-bg1-color: #2a384b;
   --menck-mg1-color: #43536a ;
   --menck-mg2-color: #425165;
-  --menck-mg3-color: #454545;
+  --menck-mg3-color: #525252;
   --menck-mg5-color: #ececec;
   --menck-fg1-color: whitesmoke ;
   --menck-bg4-color: #3f3f3f ;
@@ -512,7 +512,7 @@ border-left: 0.6rem solid var(--menck-bg1-color);
 margin-left: 2.5vw;
 margin-right: 2.5vw;
 padding: .1rem .1rem .1rem 1rem;
-background-color:var(--menck-accent2-color);
+background-color:var(--menck-mg3-color);
 width: fit-content
 }
 
@@ -611,79 +611,6 @@ color: rgb(38, 92, 140);
 border-color: whitesmoke;
 }
 
-/* Style tables */
-
-.table-alpha {
-width: 100%;
-color: var(--menck-fg1-color)}
-.table-alpha > tbody > tr > td, 
-.table-alpha > thead > tr > th{
-border-style: none;
-border-right-style:solid; 
-border-width: 4px;
-border-color: lightslategray;
-background-color: var(--menck-bg1-color) }
-
-.table-alpha > tbody > tr:nth-child(odd) > td {
-background-color: var(--menck-mg2-color) }
-
-.table-alpha > tbody > tr > :last-child, 
-.table-alpha > thead > tr > th:last-child {
-border-right-style: none
-}
-  
-  
-  
-/* Style CodeRay code-blocks  */
-
-.highlighter-coderay {
-margin-left: 2.5vw;
-margin-right: 0.5vw;
-margin-bottom: 16px;
-}
-  
-table.CodeRay {
-margin: 0px;
-background-color: var(--menck-bg1-color);
-color: var(--menck-fg1-color);
-font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
-border-radius: 8px;
-border-style:hidden;
-}
-
-table.CodeRay td {
-padding: 2em .5em;
-vertical-align: top;
-}
-
-table.CodeRay > tbody > tr > td.line-numbers  {
-border-radius: 8px;
-border-style:hidden;
-border-top-right-radius: 0px;
-border-bottom-right-radius: 0px;
-padding-bottom: 0px;
-padding-top: 6px;
-}
-
-table.CodeRay > tbody > tr > td.code  {
-padding-top: 6px;
-padding-bottom: 0px;
-padding-right: 9px;
-}
-
-.CodeRay .line-numbers, .CodeRay  .no {
-background-color: var(--menck-fg1-color);
-text-align: -webkit-left;
-}
-  
-.CodeRay .line-numbers a {
-color: var(--menck-bg1-color);
-}
-
-td.code > pre {
-  padding-bottom: 16px;
-  max-width: 45vw;
-} 
 .navbar-header {
   float: none;
 }
@@ -717,6 +644,90 @@ td.code > pre {
 .collapse.in{
   display:block !important;
 }
+
+
+
+
+
+/* Style tables */
+.table-alpha {
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+  border-style: solid;
+  border-width: 8px;
+  border-radius: 32px !important;
+  border-color: var(--menck-mg3-color);
+  max-width: 100%;
+  color: var(--menck-fg1-color)
+}
+
+.table-alpha > tbody > tr > td, 
+.table-alpha > thead > tr > th {
+  padding: 0px;
+  border-style: none;
+  border-right-style:solid; 
+  border-width: 3px;
+  background-color: var(--menck-bg1-color) 
+}
+
+.table-alpha > tbody > tr:nth-child(odd) > td {
+  background-color: var(--menck-mg2-color) }
+
+.table-alpha > tbody > tr > :last-child, 
+.table-alpha > thead > tr > th:last-child {
+  border-right-style: none
+}
+  
+  
+/* Style CodeRay code-blocks  */
+.highlighter-coderay {
+  margin-left: 2.5vw;
+  margin-right: 0.5vw;
+  margin-bottom: 16px;
+}
+  
+table.CodeRay {
+  margin: 0px;
+  background-color: var(--menck-bg1-color);
+  color: var(--menck-fg1-color);
+  font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+  border-radius: 8px;
+  border-style:hidden;
+}
+
+table.CodeRay td {
+  padding: 2em .5em;
+  vertical-align: top;
+}
+
+table.CodeRay > tbody > tr > td.line-numbers  {
+  border-radius: 8px;
+  border-style:hidden;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding-bottom: 0px;
+  padding-top: 6px;
+}
+
+table.CodeRay > tbody > tr > td.code  {
+  padding-top: 6px;
+  padding-bottom: 0px;
+  padding-right: 9px;
+}
+
+.CodeRay .line-numbers, .CodeRay  .no {
+  background-color: var(--menck-fg1-color);
+  text-align: -webkit-left;
+}
+  
+.CodeRay .line-numbers a {
+color: var(--menck-bg1-color);
+}
+
+td.code > pre {
+  padding-bottom: 16px;
+  max-width: 45vw;
+} 
 
 svg > g.menck-footer-logo {
   fill: var(--menck-mg5-color);
