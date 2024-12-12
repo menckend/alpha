@@ -58,7 +58,7 @@
   --menck-mg1-color: #43536a ;
   --menck-mg2-color: #425165;
   --menck-mg3-color: #454545;
-  --menck-mg5-color: #8ba6cc;
+  --menck-mg5-color: #ececec;
   --menck-fg1-color: whitesmoke ;
   --menck-bg4-color: #3f3f3f ;
   --menck-bg2-color: #2a384b;
@@ -719,7 +719,6 @@ td.code > pre {
 }
 
 svg > g.menck-footer-logo {
-  stroke: var(--menck-bg1-color);
   fill: var(--menck-mg5-color);
   transform:  scale(15%, 15%) translate(-115px, 15px);
   display: inline;
