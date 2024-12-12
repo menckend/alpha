@@ -57,7 +57,8 @@
   --menck-bg1-color: #2a384b;
   --menck-mg1-color: #43536a ;
   --menck-mg2-color: #425165;
-  --menck-mg3-color: #555f6b;
+  --menck-mg3-color: #454545;
+  --menck-mg5-color: #8ba6cc;
   --menck-fg1-color: whitesmoke ;
   --menck-bg4-color: #3f3f3f ;
   --menck-bg2-color: #2a384b;
@@ -651,7 +652,7 @@ border-style:hidden;
 }
 
 table.CodeRay td {
-padding: 2em .75em;
+padding: 2em .5em;
 vertical-align: top;
 }
 
@@ -661,11 +662,11 @@ border-style:hidden;
 border-top-right-radius: 0px;
 border-bottom-right-radius: 0px;
 padding-bottom: 0px;
-padding-top: 0px;
+padding-top: 6px;
 }
 
 table.CodeRay > tbody > tr > td.code  {
-padding-top: 12px;
+padding-top: 6px;
 padding-bottom: 0px;
 padding-right: 9px;
 }
@@ -718,10 +719,12 @@ td.code > pre {
 }
 
 svg > g.menck-footer-logo {
-  fill: var(--menck-fg1-color);
-  transform:  scale(8%, 8%) translate(-80px, 10px);
-  display: inline;  
-}
+  stroke: var(--menck-bg1-color);
+  fill: var(--menck-mg5-color);
+  transform:  scale(15%, 15%) translate(-115px, 15px);
+  display: inline;
+  }
+
 
 /*                                      */
 /* Mencken's customizations end here    */
