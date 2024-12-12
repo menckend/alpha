@@ -62,13 +62,10 @@
   --menck-bg4-color: #3f3f3f ;
   --menck-bg2-color: #2a384b;
   --menck-accent1-color: #424a4e71;
-  --menck-accent2-color: #4c646e71;
-  
-  
+  --menck-accent2-color: #4c646e71;  
   --menck-deets-bg: none;
-  --menck-deets-border: none, table-bordered-alpha  
+  --menck-deets-border: none;
   --bs-border-color-translucent: grey;
-  
 }
   
       
@@ -623,7 +620,7 @@ color: var(--menck-fg1-color)}
 border-style: none;
 border-right-style:solid; 
 border-width: 4px;
-border-color:var(--menck-mg1-color);
+border-color: lightslategray;
 background-color: var(--menck-bg1-color) }
 
 .table-alpha > tbody > tr:nth-child(odd) > td {
