@@ -38,8 +38,8 @@ jobs:
           sudo apt-get update &&
           sudo apt-get install -y libglib2.0-dev &&
           sudo apt-get install -y libcairo-gobject2 &&
-          sudo apt-get install -y gobject-introspection
-          
+          sudo apt-get install -y gobject-introspection &&
+          sudo apt-get install -y libgirepository1.0-dev
       - name: Setup Ruby
 
         uses: ruby/setup-ruby@v1
