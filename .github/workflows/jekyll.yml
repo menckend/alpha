@@ -37,7 +37,7 @@ jobs:
         run:
           sudo apt-get update &&
           sudo apt-get install -y libglib2.0-dev &&
-          sudo apt-get install -y cairo-gobject
+          sudo apt-get install -y libcairo-gobject2
           
       - name: Setup Ruby
 
