@@ -280,10 +280,10 @@ border: hidden;
 details[open] {
 overflow: hidden;
 border-collapse: separate;
-border-color: var(--menck-mg3-color);
+/* border-color: var(--menck-mg3-color); */
 margin-bottom: 15px;
 border-style: hidden;
-background-color: var(--menck-mg3-color);
+/* background-color: var(--menck-mg3-color); */
 border-radius: 5px;
 width: fit-content;
 padding-right: 16px
