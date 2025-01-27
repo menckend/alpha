@@ -78,7 +78,13 @@ body{
 .bd-title{
     color: var(--menck-fg1-color)
 }
-  
+
+
+
+.menck-diagram {
+  background-color: lightgrey;
+}
+
   
   
 .btn-menck-tn {

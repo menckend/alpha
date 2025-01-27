@@ -9,7 +9,7 @@ summary: "Hear me out!"
 
 #### “MTU propagation over EVPN Overlays”
 
-Use of ICMP multi-part extension to capture enough of the overlay-packet headers in PTBs so that tunnel interfaces can successfully translate underlay PTB into overlay PTBs
+Use of ICMP multi-part extension to capture enough of the overlay-packet headers in PTBs so that tunnel interfaces can successfully translate underlay PTB into overlay PTBs.  This is proposed in an IETF draft: [draft-saum-nvo3-mtu-propagation-over-evpn-overlays]
 
 This seems  _very_  promising to me
 
@@ -17,9 +17,7 @@ _Does_  put additional compute burden on TEPs, but seems relatively manageable
 
 ##### Purely Speculative Paths to MTU(topia?)
 
-
 ##### IP/ICMP PMTUD w/ inference?
-
 
 * PMTUD works for  _all_  IP traffic.
   * Implemented at  _IP/ICMP_  layer
@@ -29,6 +27,7 @@ _Does_  put additional compute burden on TEPs, but seems relatively manageable
   * Yes, we can!
   * We’ve all used the “ping –m do -s…” test to zero in on path MTU at  _some_  point
     * Let’s bake that behavior into host’s IP interface implementations?
+
 
 
 ##### Decouple Interface and Path MTU?
