@@ -7,7 +7,7 @@ permalink: 1_2_6.html
 summary: "Hear me out!"
 ---
 
-# “MTU propagation over EVPN Overlays”
+#### “MTU propagation over EVPN Overlays”
 
 Use of ICMP multi\-part extension to capture enough of the overlay\-packet headers in PTBs so that tunnel interfaces can successfully translate underlay PTB into overlay PTBs
 
@@ -15,10 +15,10 @@ This seems  _very_  promising to me
 
 _Does_  put additional compute burden on TEPs\, but seems relatively manageable
 
-# Purely Speculative Paths to MTU(topia?)
+##### Purely Speculative Paths to MTU(topia?)
 
 
-## IP/ICMP PMTUD w/ inference?
+##### IP/ICMP PMTUD w/ inference?
 
 
 * PMTUD works for  _all_  IP traffic\.
@@ -31,7 +31,7 @@ _Does_  put additional compute burden on TEPs\, but seems relatively manageable
     * Let’s bake that behavior into host’s IP interface implementations?
 
 
-## Decouple Interface and Path MTU?
+##### Decouple Interface and Path MTU?
 
 PMTUD \(all varieties\) are only designed to detect path MTU that is  _lower_  than the local egress  _interface_  MTU
 
