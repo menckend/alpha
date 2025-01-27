@@ -1,0 +1,42 @@
+---
+l1idx: 1
+l2idx: 2
+l3idx: 6
+title: "Paths to MTU(topia?)"
+permalink: 1_2_6.html
+summary: "Hear me out!"
+---
+
+# “MTU propagation over EVPN Overlays”
+
+Use of ICMP multi\-part extension to capture enough of the overlay\-packet headers in PTBs so that tunnel interfaces can successfully translate underlay PTB into overlay PTBs
+
+This seems  _very_  promising to me
+
+_Does_  put additional compute burden on TEPs\, but seems relatively manageable
+
+# Purely Speculative Paths to MTU(topia?)
+
+
+## IP/ICMP PMTUD w/ inference?
+
+
+* PMTUD works for  _all_  IP traffic\.
+  * Implemented at  _IP/ICMP_  layer
+* PLPMTUD  _only_  requires participation by the endpoints
+  * Uses  _inference_  of PMTU based on correlation of packet\-length and  _lack_  of acknowledgement
+* Can we  _infer_  PMTUD at the IP/ICMP layer?
+  * Yes\, we can\!
+  * We’ve all used the “ping –m do \-s…” test to zero in on path MTU at  _some_  point
+    * Let’s bake that behavior into host’s IP interface implementations?
+
+
+## Decouple Interface and Path MTU?
+
+PMTUD \(all varieties\) are only designed to detect path MTU that is  _lower_  than the local egress  _interface_  MTU
+
+But\, as we know\,  _interface_  MTU is inherently untrustworthy\.
+
+Let’s “take the leash off” of path\-MTU and allow it to probe up  _past_  the local interface MTU value\.
+
+Would allow “senseless victim flows” to realize  _actual_  path MTU\, even though the origin network’s MTU had been “dumbed down” because of one weak\-link somewhere upstream that only  _some_  traffic was routed through\.
