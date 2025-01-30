@@ -254,7 +254,8 @@ padding-top: 72px;
 margin-top: -72px;
 background-color:transparent;  
 color: var(--menck-fg1-color);
-; max-width: 10vw;
+; 
+max-width: 10vw;
 }
   
 .menck-sidebar * {
