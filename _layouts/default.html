@@ -7,7 +7,7 @@
 			<div class="container-xxl"; style="margin-top:16px;">
 				<div class="row flex-wrap" style="margin-right:goes0px;" >
 					{% unless page.pagenav == false %}
-						<div id="MenckSidebar" class="menck-sidebar collapse-horizontal show px-0" style="transition:none; max-width: 300px;">
+						<div id="MenckSidebar" class="menck-sidebar collapse-horizontal show px-0" style="transition:none; max-width: 400px;">
 							{% include this-sidebar-goes-to-11.html %}
 						</div>
 					{% endunless %}
@@ -19,8 +19,8 @@
 					</main>
 
 					{% unless page.pagenav == false %}
-					<div id="MenckRightbar" class="menck-sidebar collapse-horizontal show px-0 sticky-top z-0" style="max-width: 375; min-width: 270; transition:none;">
-							<nav class="bs-links w-100 menck-sblinks" id="page-toc" aria-label="Page TOC">
+					<div id="MenckRightbar" class="menck-sidebar collapse-horizontal show px-0 " style="max-width: 400; min-width: 270; transition:none;">
+							<nav class="bs-links w-100 menck-sblinks sticky-top z-0 max-width: 400; min-width: 300" id="page-toc" aria-label="Page TOC">
 								<ul class="bs-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
 								<div class="mencknav right-sidebar-chunk">
 									<div style="padding-top: 16px;"><p><strong><a class="sbtitle">On <i>this</i> page</a></strong></p></div>
