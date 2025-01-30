@@ -249,7 +249,6 @@ text-decoration: none;
 background-color:transparent;  
 color: var(--menck-fg1-color);
 ; 
-max-width: 10vw;
 }
   
 .menck-sidebar * {
