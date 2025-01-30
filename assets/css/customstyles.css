@@ -246,12 +246,6 @@ text-decoration: none;
 }
   
 .menck-sidebar {
-border-radius: 10px;
-padding-left: 8px;
-padding-right: 8px;
-border-style: none;
-padding-top: 72px;
-margin-top: -72px;
 background-color:transparent;  
 color: var(--menck-fg1-color);
 ; 
@@ -504,6 +498,11 @@ border-radius: 5px;
 }
   
 .menck-sblinks {
+border-radius: 10px;
+padding-left: 8px;
+padding-right: 8px;
+border-style: none;
+  
 background-color: var(--menck-bg1-color);
 border-left: solid 8px var(--menck-bg1-color);
 border-radius:10px;
