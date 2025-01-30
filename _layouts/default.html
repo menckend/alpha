@@ -19,12 +19,12 @@
 					</main>
 
 					{% unless page.pagenav == false %}
-					<div id="MenckRightbar" class="menck-sidebar col-lg-2 px-0 collapse-horizontal show sticky-lg-top z-0" style="max-width: 270; min-width: 270; transition:none;">
+					<div id="MenckRightbar" class="menck-sidebar collapse-horizontal show px-0" style="max-width: 270; min-width: 270; transition:none;">
 							<nav class="bs-links w-100 menck-sblinks" id="page-toc" aria-label="Page TOC">
 								<ul class="bs-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
 								<div class="mencknav right-sidebar-chunk">
-									<div style="padding-top: 16px;"><p><strong><a class="sbtitle">On this page</a></strong></p></div>
-									{% include toc.html html=content sanitize=true class="inline_toc" item_class="inline_toc_item" id="my_toc" h_min=2 h_max=3 %}
+									<div style="padding-top: 16px;"><p><strong><a class="sbtitle">On <i>this</i> page</a></strong></p></div>
+									{% include toc.html html=content sanitize=true class="inline_toc" item_class="inline_toc_item" id="my_toc" h_min=1 h_max=4 %}
 								</div>
 								</ul>
 							</nav>
