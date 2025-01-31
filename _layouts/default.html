@@ -11,7 +11,7 @@
 							{% include this-sidebar-goes-to-11.html %}
 						</div>
 					{% endunless %}
-					<main class="col menck-main ps-md-2" style="padding-left: 8px; padding-right: 8px; margin-left:12px; margin-right:12px; min-width: 75vw;">
+					<main class="col menck-main ps-md-2" style="padding-left: 8px; padding-right: 8px; margin-left:12px; margin-right:12px; min-width: 55vw;">
 						<div class="row">
 							{% include intro.html %}
 							{% include content.html %}
@@ -19,12 +19,12 @@
 					</main>
 
 					{% unless page.pagenav == false %}
-					<div id="MenckRightbar" class="menck-sidebar collapse-horizontal show px-0 " style="max-width:225px; min-width:175px; transition:none;">
+					<div id="MenckRightbar" class="menck-sidebar collapse-horizontal show px-0 " style="max-width:225px; min-width:225px; transition:none;">
 							<nav class="sticky-top z-0 " id="page-toc" aria-label="Page TOC">
 								
 								<ul class="bs-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
 									<p>&nbsp;</p><p>&nbsp;</p>
-									<div class="menck-sblinks mencknav right-sidebar-chunk" style="max-width:15vw;">
+									<div class="menck-sblinks mencknav right-sidebar-chunk" style="max-width:225px; min-width:225px;">
 									<div style="padding-top: 16px;"><p><strong><a class="sbtitle">On <i>this</i> page</a></strong></p></div>
 									{% include toc.html html=content sanitize=true class="inline_toc" item_class="inline_toc_item" id="my_toc" h_min=1 h_max=4 %}
 								</div>
