@@ -7,18 +7,18 @@
 			<div class="container-xxl"; style="margin-top:16px;">
 				<div class="row flex-wrap" style="margin-right:goes0px;" >
 					{% unless page.pagenav == false %}
-						<div id="MenckSidebar" class="mx-3 menck-sidebar collapse-horizontal show px-0" style="transition:none; max-width: 300px; min-width:250px;">
+						<div id="MenckSidebar" class="me-3 menck-sidebar collapse-horizontal show px-0" style="transition:none; max-width: 300px; min-width:250px;">
 							{% include this-sidebar-goes-to-11.html %}
 						</div>
 					{% endunless %}
-					<main class="mx-5 col menck-main ps-md-2" style="padding-left: 8px; padding-right: 8px; margin-left:12px; margin-right:12px; min-width: 55vw; max-width: 55vw;">
+					<main class="mx-0 col menck-main ps-md-2" style="padding-left: 8px; padding-right: 8px; margin-left:12px; margin-right:12px; min-width: 55vw; max-width: 55vw;">
 						<div class="row">
 							{% include intro.html %}
 							{% include content.html %}
 						</div>
 					</main>
 					{% unless page.pagenav == false %}
-					<div id="MenckRightbar" class="mx-3 menck-sidebar collapse-horizontal show px-0 " style="max-width:300px; min-width:250px; transition:none;">
+					<div id="MenckRightbar" class="ms-3 menck-sidebar collapse-horizontal show px-0 " style="max-width:300px; min-width:250px; transition:none;">
 							<nav class="sticky-top z-0 " id="page-toc" aria-label="Page TOC">
 								
 								<ul class="bs-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
