@@ -1,0 +1,264 @@
+<mxGraphModel dx="800" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2100" pageHeight="1500" background="#ffffff">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    <mxCell id="2" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/546/356/&quot; target=&quot;_blank&quot;&gt;Central Virginia Community College v. Katz, 546 U.S. 356 (2006)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=red;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="0" y="0" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="3" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/551/877/&quot; target=&quot;_blank&quot;&gt;Leegin Creative Leather Products, Inc. v. PSKS, Inc., 551 U.S. 877 (2007)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=red;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="300" y="0" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="4" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/551/205/&quot; target=&quot;_blank&quot;&gt;Bowles v. Russell, 551 U.S. 205 (2007)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=red;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="600" y="0" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="5" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/555/223/&quot; target=&quot;_blank&quot;&gt;Pearson v. Callahan, 555 U.S. 223 (2009)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=red;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="900" y="0" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="6" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/556/778/&quot; target=&quot;_blank&quot;&gt;Montejo v. Louisiana, 556 U.S. 778 (2009)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=red;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="1200" y="0" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="7" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/558/310/&quot; target=&quot;_blank&quot;&gt;Citizens United v. FEC, 558 U.S. 310 (2010)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=red;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="1500" y="0" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="8" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/570/99/&quot; target=&quot;_blank&quot;&gt;Alleyne v. United States, 570 U.S. 99 (2013)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=red;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="1800" y="0" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="9" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/576/644/&quot; target=&quot;_blank&quot;&gt;Obergefell v. Hodges, 576 U.S. 644 (2015)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=red;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="0" y="150" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="10" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/576/591/&quot; target=&quot;_blank&quot;&gt;Johnson v. United States, 576 U.S. 591 (2015)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=red;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="300" y="150" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="11" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/577/92/&quot; target=&quot;_blank&quot;&gt;Hurst v. Florida, 577 U.S. 92 (2016)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=red;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="600" y="150" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="12" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/585/667/&quot; target=&quot;_blank&quot;&gt;Trump v. Hawaii, 585 U.S. 667 (2018)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=red;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="900" y="150" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="13" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/585/17-494/&quot; target=&quot;_blank&quot;&gt;South Dakota v. Wayfair, Inc., 585 U.S. ___ (2018)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=red;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="1200" y="150" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="14" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/585/16-1466/&quot; target=&quot;_blank&quot;&gt;Janus v. AFSCME, 585 U.S. ___ (2018)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=red;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="1500" y="150" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="15" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/588/18-422/&quot; target=&quot;_blank&quot;&gt;Rucho v. Common Cause, 588 U.S. 684 (2019)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=red;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="1800" y="150" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="16" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/588/17-647/&quot; target=&quot;_blank&quot;&gt;Knick v. Township of Scott, 588 U.S. ___ (2019)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=red;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="0" y="300" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="17" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/587/17-532/&quot; target=&quot;_blank&quot;&gt;Herrera v. Wyoming, 587 U.S. 329 (2019)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=red;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="300" y="300" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="18" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/587/17-1299/&quot; target=&quot;_blank&quot;&gt;Franchise Tax Board v. Hyatt, 587 U.S. ___ (2019)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=red;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="600" y="300" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="19" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/590/18-5924/&quot; target=&quot;_blank&quot;&gt;Ramos v. Louisiana, 590 U.S. ___ (2020)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=red;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="900" y="300" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="20" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/593/19-5807/&quot; target=&quot;_blank&quot;&gt;Edwards v. Vannoy, 593 U.S. ___ (2021)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=red;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="1200" y="300" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="21" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/597/19-1392/&quot; target=&quot;_blank&quot;&gt;Dobbs v. Jackson Women’s Health Org., 597 U.S. ___ (2022)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=red;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="1500" y="300" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="22" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/603/22-451/&quot; target=&quot;_blank&quot;&gt;Loper Bright Enterprises v. Raimondo, 603 U.S. ___ (2024)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=red;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="1800" y="300" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="23" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/492/96/&quot; target=&quot;_blank&quot;&gt;Hoffman v. Connecticut Dept. of Income Maint., 492 U.S. 96 (1989)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="0" y="150" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="24" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/220/373/&quot; target=&quot;_blank&quot;&gt;Dr. Miles Medical Co. v. John D. Park &amp; Sons Co., 220 U.S. 373 (1911)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="300" y="150" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="25" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/375/384/&quot; target=&quot;_blank&quot;&gt;Thompson v. INS, 375 U.S. 384 (1964)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="560" y="150" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="26" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/371/215/&quot; target=&quot;_blank&quot;&gt;Harris Truck Lines, Inc. v. Cherry Meat Packers, Inc., 371 U.S. 215 (1962)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="640" y="150" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="27" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/533/194/&quot; target=&quot;_blank&quot;&gt;Saucier v. Katz, 533 U.S. 194 (2001)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="900" y="150" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="28" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/475/625/&quot; target=&quot;_blank&quot;&gt;Michigan v. Jackson, 475 U.S. 625 (1986)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="1200" y="150" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="29" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/494/652/&quot; target=&quot;_blank&quot;&gt;Austin v. Michigan Chamber of Commerce, 494 U.S. 652 (1990)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="1460" y="150" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="30" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/540/93/&quot; target=&quot;_blank&quot;&gt;McConnell v. FEC, 540 U.S. 93 (2003)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="1540" y="150" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="31" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/536/545/&quot; target=&quot;_blank&quot;&gt;Harris v. United States, 536 U.S. 545 (2002)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="1800" y="150" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="32" value="&lt;div&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Baker_v._Nelson&quot; target=&quot;_blank&quot;&gt;Baker v. Nelson, 409 U.S. 810 (1972)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="0" y="300" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="33" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/564/1/&quot; target=&quot;_blank&quot;&gt;Sykes v. United States, 564 U.S. 1 (2011)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="260" y="300" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="34" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/550/192/&quot; target=&quot;_blank&quot;&gt;James v. United States, 550 U.S. 192 (2007)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="340" y="300" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="35" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/490/638/&quot; target=&quot;_blank&quot;&gt;Hildwin v. Florida, 490 U.S. 638 (1989)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="600" y="300" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="36" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/468/447/&quot; target=&quot;_blank&quot;&gt;Spaziano v. Florida, 468 U.S. 447 (1984)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="680" y="300" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="37" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/323/214/&quot; target=&quot;_blank&quot;&gt;Korematsu v. United States, 323 U.S. 214 (1944)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="900" y="300" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="38" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/504/298/&quot; target=&quot;_blank&quot;&gt;Quill Corp. v. North Dakota, 504 U.S. 298 (1992)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="1160" y="300" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="39" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/386/753/&quot; target=&quot;_blank&quot;&gt;National Bellas Hess, Inc. v. Department of Revenue, 386 U.S. 753 (1967)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="1240" y="300" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="40" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/431/209/&quot; target=&quot;_blank&quot;&gt;Abood v. Detroit Board of Education, 431 U.S. 209 (1977)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="1500" y="300" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="41" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/478/109/&quot; target=&quot;_blank&quot;&gt;Davis v. Bandemer, 478 U.S. 109 (1986)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="1800" y="300" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="42" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/473/172/&quot; target=&quot;_blank&quot;&gt;Williamson County Regional Planning Comm’n v. Hamilton Bank, 473 U.S. 172 (1985)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="0" y="450" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="43" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/163/504/&quot; target=&quot;_blank&quot;&gt;Ward v. Race Horse, 163 U.S. 504 (1896)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="300" y="450" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="44" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/440/410/&quot; target=&quot;_blank&quot;&gt;Nevada v. Hall, 440 U.S. 410 (1979)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="600" y="450" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="45" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/406/404/&quot; target=&quot;_blank&quot;&gt;Apodaca v. Oregon, 406 U.S. 404 (1972)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="900" y="450" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="46" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/406/356/&quot; target=&quot;_blank&quot;&gt;Johnson v. Louisiana, 406 U.S. 356 (1972)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="980" y="450" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="47" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/489/288/&quot; target=&quot;_blank&quot;&gt;Teague v. Lane, 489 U.S. 288 (1989)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="1200" y="450" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="48" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/410/113/&quot; target=&quot;_blank&quot;&gt;Roe v. Wade, 410 U.S. 113 (1973)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="1500" y="450" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="49" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/505/833/&quot; target=&quot;_blank&quot;&gt;Planned Parenthood of Southeastern Pa. v. Casey, 505 U.S. 833 (1992)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="1580" y="450" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="50" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/467/837/&quot; target=&quot;_blank&quot;&gt;Chevron U.S.A., Inc. v. NRDC, 467 U.S. 837 (1984)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=blue;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="1800" y="450" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <!-- Gray descendant nodes -->
+    <mxCell id="51" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/473/234/&quot; target=&quot;_blank&quot;&gt;Atascadero State Hospital v. Scanlon, 473 U.S. 234 (1985)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=gray;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="0" y="300" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="52" value="&lt;div&gt;&lt;a href=&quot;https://law.justia.com/cases/federal/appellate-courts/F3/119/1140/607648/&quot; target=&quot;_blank&quot;&gt;In re Creative Goldsmiths, Inc., 119 F.3d 1140 (4th Cir. 1997)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=gray;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="0" y="450" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="53" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/541/440/&quot; target=&quot;_blank&quot;&gt;Tennessee Student Assistance Corp. v. Hood, 541 U.S. 440 (2004)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=gray;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="0" y="600" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="54" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/250/300/&quot; target=&quot;_blank&quot;&gt;United States v. Colgate &amp; Co., 250 U.S. 300 (1919)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=gray;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="300" y="300" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="55" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/362/29/&quot; target=&quot;_blank&quot;&gt;United States v. Parke, Davis &amp; Co., 362 U.S. 29 (1960)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=gray;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="300" y="450" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="56" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/433/36/&quot; target=&quot;_blank&quot;&gt;Cont’l T.V., Inc. v. GTE Sylvania Inc., 433 U.S. 36 (1977)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=gray;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="300" y="600" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="57" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/522/3/&quot; target=&quot;_blank&quot;&gt;State Oil Co. v. Khan, 522 U.S. 3 (1997)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=gray;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="300" y="750" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <mxCell id="58" value="&lt;div&gt;&lt;a href=&quot;https://supreme.justia.com/cases/federal/us/475/292/&quot; target=&quot;_blank&quot;&gt;Chicago Teachers Union v. Hudson, 475 U.S. 292 (1986)&lt;/a&gt;&lt;/div&gt;" style="rounded=1;html=1;fillColor=gray;strokeColor=black;verticalAlign=middle;whiteSpace=wrap" vertex="1" parent="1">
+      <mxGeometry x="1500" y="450" width="160" height="60" as="geometry"/>
+    </mxCell>
+    <!-- (Omitted many descendant nodes for brevity; all descendant nodes would be listed similarly with their respective id, label (with link), style, and geometry) -->
+    <mxCell id="200" edge="1" parent="1" source="2" target="23">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="201" edge="1" parent="1" source="3" target="24">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="202" edge="1" parent="1" source="4" target="25">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="203" edge="1" parent="1" source="4" target="26">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="204" edge="1" parent="1" source="5" target="27">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="205" edge="1" parent="1" source="6" target="28">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="206" edge="1" parent="1" source="7" target="29">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="207" edge="1" parent="1" source="7" target="30">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="208" edge="1" parent="1" source="8" target="31">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="209" edge="1" parent="1" source="9" target="32">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="210" edge="1" parent="1" source="10" target="33">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="211" edge="1" parent="1" source="10" target="34">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="212" edge="1" parent="1" source="11" target="35">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="213" edge="1" parent="1" source="11" target="36">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="214" edge="1" parent="1" source="12" target="37">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="215" edge="1" parent="1" source="13" target="38">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="216" edge="1" parent="1" source="13" target="39">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="217" edge="1" parent="1" source="14" target="40">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="218" edge="1" parent="1" source="15" target="41">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="219" edge="1" parent="1" source="16" target="42">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="220" edge="1" parent="1" source="17" target="43">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="221" edge="1" parent="1" source="18" target="44">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="222" edge="1" parent="1" source="19" target="45">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="223" edge="1" parent="1" source="19" target="46">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="224" edge="1" parent="1" source="20" target="47">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="225" edge="1" parent="1" source="21" target="48">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="226" edge="1" parent="1" source="21" target="49">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="227" edge="1" parent="1" source="22" target="50">
+      <mxGeometry relative="1" as="geometry"/>
+    </mxCell>
+    <!-- (Omitted many edges for brevity; all edges connecting nodes as per the dependency structure would be listed similarly) -->
+  </root>
+</mxGraphModel>
